@@ -1,0 +1,22 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://github.com/GiuseppeLomb/arranja/schemas/model_family.schema.json",
+	"title": "Família de modelos",
+	"description": "Agrupa modelos de uma marca por padrões do identificador. Exige fonte que comprove o agrupamento.",
+	"type": "object",
+	"required": ["id", "brand", "appliance_type", "nome", "sources"],
+	"additionalProperties": false,
+	"anyOf": [{ "required": ["prefixos"] }, { "required": ["regex"] }, { "required": ["modelos"] }],
+	"properties": {
+		"id": { "$ref": "common.schema.json#/$defs/id" },
+		"brand": { "$ref": "common.schema.json#/$defs/id" },
+		"appliance_type": { "$ref": "common.schema.json#/$defs/id" },
+		"nome": { "type": "string", "minLength": 3, "maxLength": 80 },
+		"notas": { "type": "string", "maxLength": 500 },
+		"prefixos": { "type": "array", "minItems": 1, "items": { "$ref": "common.schema.json#/$defs/padraoModelo" } },
+		"regex": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 2, "maxLength": 200 } },
+		"modelos": { "type": "array", "minItems": 1, "items": { "$ref": "common.schema.json#/$defs/padraoModelo" } },
+		"sources": { "$ref": "common.schema.json#/$defs/sources" },
+		"example": { "$ref": "common.schema.json#/$defs/example" }
+	}
+}

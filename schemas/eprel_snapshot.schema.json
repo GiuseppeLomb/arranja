@@ -1,0 +1,27 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://github.com/GiuseppeLomb/arranja/schemas/eprel_snapshot.schema.json",
+	"title": "Snapshot EPREL de um grupo de produto",
+	"type": "object",
+	"required": ["fonte", "grupo", "appliance_type", "total", "modelos"],
+	"additionalProperties": false,
+	"properties": {
+		"fonte": {
+			"type": "object",
+			"required": ["nome", "entidade", "url", "termos", "obtido_em", "aviso"],
+			"additionalProperties": false,
+			"properties": {
+				"nome": { "type": "string" },
+				"entidade": { "type": "string" },
+				"url": { "$ref": "common.schema.json#/$defs/url" },
+				"termos": { "$ref": "common.schema.json#/$defs/url" },
+				"obtido_em": { "type": "string", "format": "date-time" },
+				"aviso": { "type": "string" }
+			}
+		},
+		"grupo": { "type": "string", "pattern": "^[a-z0-9]+$" },
+		"appliance_type": { "$ref": "common.schema.json#/$defs/id" },
+		"total": { "type": "integer", "minimum": 0 },
+		"modelos": { "type": "array", "items": { "$ref": "model.schema.json" } }
+	}
+}

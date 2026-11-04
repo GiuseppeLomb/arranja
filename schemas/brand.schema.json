@@ -1,0 +1,17 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://github.com/GiuseppeLomb/arranja/schemas/brand.schema.json",
+	"title": "Marca (só nome em texto — sem logótipos)",
+	"type": "object",
+	"required": ["id", "nome"],
+	"additionalProperties": false,
+	"properties": {
+		"id": { "$ref": "common.schema.json#/$defs/id" },
+		"nome": { "type": "string", "minLength": 1, "maxLength": 60 },
+		"pagina_pecas": {
+			"$ref": "common.schema.json#/$defs/url",
+			"description": "Página oficial de peças do fabricante (sem afiliados)."
+		},
+		"example": { "$ref": "common.schema.json#/$defs/example" }
+	}
+}

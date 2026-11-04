@@ -1,0 +1,47 @@
+name: Correção
+description: Algo está errado, incompleto ou perigoso num guia, diagnóstico, código de erro, família ou modelo.
+title: '[Correção] '
+labels: ['correção']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Se a correção for de **segurança** (um passo perigoso, um risco mal classificado), diz isso logo no título — é tratada primeiro.
+        Erros nos dados de modelos vindos do EPREL devem ser reportados ao EPREL (ENER-EPREL-HELPDESK@ec.europa.eu); aqui só corrigimos a forma como os usamos.
+
+  - type: input
+    id: onde
+    attributes:
+      label: Onde está o problema
+      description: Link da página na app ou caminho do ficheiro (ex.: data/guias/…yaml).
+    validations:
+      required: true
+
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo de problema
+      options:
+        - Segurança
+        - Informação técnica errada
+        - Fonte em falta, inválida ou indisponível
+        - Família de modelos (padrão errado ou demasiado largo)
+        - Licença ou atribuição
+        - Texto (ortografia, clareza)
+        - Erro na app
+    validations:
+      required: true
+
+  - type: textarea
+    id: descricao
+    attributes:
+      label: O que está errado e qual a correção
+    validations:
+      required: true
+
+  - type: textarea
+    id: fontes
+    attributes:
+      label: Fontes que suportam a correção
+      description: URL e data de consulta. Obrigatório para correções técnicas.
+      placeholder: '- https://… (consultado a 2026-11-04)'

@@ -1,0 +1,47 @@
+# EXEMPLO — conteúdo fictício, visível só em desenvolvimento.
+# Esquema: schemas/diagnostic_tree.schema.json
+# Percorre os três finais possíveis: guia, técnico e dados insuficientes.
+
+id: exemplo-nao-arranca
+titulo: "[Exemplo] Árvore de diagnóstico fictícia"
+sintoma: "[Exemplo] Sintoma fictício"
+appliance_type: maquina-lavar-roupa
+aplicavel_a:
+  - brand: exemplo
+codigos: [exemplo-ex01]
+inicio: p1
+nos:
+  p1:
+    tipo: pergunta
+    texto: "[Exemplo] Primeira pergunta fictícia: escolhe uma resposta."
+    ajuda: Conteúdo de teste. As respostas levam a finais diferentes para experimentar todos os ecrãs.
+    respostas:
+      - texto: Sim
+        ir_para: p2
+      - texto: Não
+        ir_para: fim-tecnico
+      - texto: Não sei
+        ir_para: fim-sem-dados
+  p2:
+    tipo: pergunta
+    texto: "[Exemplo] Segunda pergunta fictícia."
+    respostas:
+      - texto: Opção A
+        ir_para: fim-guia
+      - texto: Opção B
+        ir_para: fim-tecnico
+  fim-guia:
+    tipo: guia
+    guias: [exemplo-guia]
+    nota: Final de exemplo que leva a um guia.
+  fim-tecnico:
+    tipo: tecnico
+    motivo: "[Exemplo] Final fictício que recomenda chamar um técnico."
+  fim-sem-dados:
+    tipo: dados_insuficientes
+    nota: "[Exemplo] Final fictício sem dados suficientes."
+sources:
+  - url: https://example.com/fonte-de-exemplo
+    titulo: Fonte fictícia (exemplo)
+    consultado_em: 2026-11-04
+example: true

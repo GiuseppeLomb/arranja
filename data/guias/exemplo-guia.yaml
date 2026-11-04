@@ -1,0 +1,37 @@
+# EXEMPLO — conteúdo fictício, visível só em desenvolvimento.
+# Esquema: schemas/guide.schema.json
+# O passo "Desliga da corrente (e da água, se aplicável)" é acrescentado pela app.
+
+id: exemplo-guia
+titulo: "[Exemplo] Guia fictício para testar os ecrãs"
+resumo: Conteúdo de teste. Os passos não descrevem nenhuma reparação real — não seguir.
+appliance_type: maquina-lavar-roupa
+aplicavel_a:
+  - brand: exemplo
+    familias: [exemplo-serie-ex]
+risk_level: medio
+perigos: [eletricidade, agua]
+avisos:
+  - "[Exemplo] Aviso de risco fictício, para testar a checklist."
+ferramentas: [chave-phillips, balde, toalhas, lanterna]
+tempo_estimado: 20
+passos:
+  - texto: "[Exemplo] Passo fictício 1. Texto de teste — não seguir."
+  - texto: "[Exemplo] Passo fictício 2, com imagem de exemplo e licença declarada."
+    imagem:
+      src: imagens/exemplo/passo-exemplo.svg
+      alt: Ilustração de exemplo, sem conteúdo técnico.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: "[Exemplo] Passo fictício 3, com aviso."
+    aviso: "[Exemplo] Aviso fictício dentro de um passo."
+pecas:
+  - nome: "[Exemplo] Peça fictícia"
+    codigo_oficial: EX-0000
+    link_oficial: https://example.com/pecas
+sources:
+  - url: https://example.com/fonte-de-exemplo
+    titulo: Fonte fictícia (exemplo)
+    consultado_em: 2026-11-04
+license: CC-BY-NC-SA-4.0
+example: true

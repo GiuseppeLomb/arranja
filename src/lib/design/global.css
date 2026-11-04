@@ -1,0 +1,305 @@
+@import '@fontsource-variable/bricolage-grotesque/wght.css';
+@import '@fontsource-variable/atkinson-hyperlegible-next/wght.css';
+@import './tokens.css';
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+	background: var(--fundo);
+}
+
+body {
+	margin: 0;
+	min-height: 100dvh;
+	background: var(--fundo);
+	color: var(--texto);
+	font-family: var(--fonte-texto);
+	font-size: var(--t-md);
+	line-height: 1.55;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: transparent;
+	overflow-x: hidden;
+}
+
+/* Modo Oficina: letra maior em toda a app */
+:root[data-oficina='true'] body {
+	font-size: 1.3rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: var(--fonte-titulo);
+	font-weight: 700;
+	line-height: 1.15;
+	letter-spacing: -0.015em;
+	margin: 0;
+	text-wrap: balance;
+}
+
+h1 {
+	font-size: var(--t-2xl);
+}
+h2 {
+	font-size: var(--t-xl);
+}
+h3 {
+	font-size: var(--t-lg);
+}
+
+p {
+	margin: 0;
+	text-wrap: pretty;
+}
+
+a {
+	color: var(--primaria);
+	text-underline-offset: 0.18em;
+	text-decoration-thickness: 1px;
+}
+
+a:hover {
+	text-decoration-thickness: 2px;
+}
+
+img,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+	font: inherit;
+	color: inherit;
+}
+
+button {
+	cursor: pointer;
+}
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+}
+
+:focus-visible {
+	outline: 3px solid var(--foco);
+	outline-offset: 2px;
+	border-radius: 6px;
+}
+
+::selection {
+	background: var(--destaque);
+	color: var(--sobre-destaque);
+}
+
+.vh {
+	position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	padding: 0 !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	clip: rect(0, 0, 0, 0) !important;
+	white-space: nowrap !important;
+	border: 0 !important;
+}
+
+.saltar {
+	position: absolute;
+	left: var(--e-4);
+	top: -100px;
+	z-index: 100;
+	padding: var(--e-3) var(--e-4);
+	background: var(--primaria);
+	color: var(--sobre-primaria);
+	border-radius: var(--raio-controlo);
+}
+.saltar:focus {
+	top: var(--e-4);
+}
+
+.pagina {
+	width: 100%;
+	max-width: var(--largura-max);
+	margin: 0 auto;
+	padding: var(--e-4) var(--e-4) calc(var(--nav-altura) + env(safe-area-inset-bottom) + var(--e-8));
+}
+
+.pilha {
+	display: flex;
+	flex-direction: column;
+	gap: var(--e-4);
+}
+
+.pilha-lg {
+	display: flex;
+	flex-direction: column;
+	gap: var(--e-8);
+}
+
+.secao-titulo {
+	font-size: var(--t-sm);
+	font-family: var(--fonte-texto);
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--texto-suave);
+}
+
+.prosa {
+	display: flex;
+	flex-direction: column;
+	gap: var(--e-4);
+	max-width: 62ch;
+}
+.prosa h2 {
+	margin-top: var(--e-4);
+}
+.prosa ul,
+.prosa ol {
+	padding-left: 1.3em;
+	display: flex;
+	flex-direction: column;
+	gap: var(--e-2);
+}
+.prosa code,
+.prosa pre {
+	font-family: ui-monospace, 'Cascadia Code', Menlo, Consolas, monospace;
+	font-size: 0.9em;
+	background: var(--superficie-2);
+	border-radius: 6px;
+}
+.prosa code {
+	padding: 0.1em 0.35em;
+}
+.prosa pre {
+	padding: var(--e-4);
+	overflow-x: auto;
+	line-height: 1.45;
+}
+.prosa pre code {
+	background: none;
+	padding: 0;
+}
+
+/* ---------- View Transitions ---------- */
+
+::view-transition-old(root),
+::view-transition-new(root) {
+	animation-duration: var(--dur-ecra);
+	animation-timing-function: var(--ease);
+}
+
+::view-transition-old(root) {
+	animation-name: vt-sair;
+}
+::view-transition-new(root) {
+	animation-name: vt-entrar;
+}
+
+::view-transition-group(*) {
+	animation-duration: var(--dur-ecra);
+	animation-timing-function: var(--ease);
+}
+
+/* A navegação inferior fica fixa durante as transições */
+::view-transition-old(nav-inferior),
+::view-transition-new(nav-inferior) {
+	animation: none;
+}
+
+/* Passos do fluxo/guia: deslizar horizontal conforme a direção */
+:root[data-direcao='avancar']::view-transition-old(root) {
+	animation-name: vt-sair-esq;
+}
+:root[data-direcao='avancar']::view-transition-new(root) {
+	animation-name: vt-entrar-dir;
+}
+:root[data-direcao='recuar']::view-transition-old(root) {
+	animation-name: vt-sair-dir;
+}
+:root[data-direcao='recuar']::view-transition-new(root) {
+	animation-name: vt-entrar-esq;
+}
+
+@keyframes vt-sair {
+	to {
+		opacity: 0;
+		transform: translateY(-8px);
+	}
+}
+@keyframes vt-entrar {
+	from {
+		opacity: 0;
+		transform: translateY(12px);
+	}
+}
+@keyframes vt-sair-esq {
+	to {
+		opacity: 0;
+		transform: translateX(-32px);
+	}
+}
+@keyframes vt-entrar-dir {
+	from {
+		opacity: 0;
+		transform: translateX(32px);
+	}
+}
+@keyframes vt-sair-dir {
+	to {
+		opacity: 0;
+		transform: translateX(32px);
+	}
+}
+@keyframes vt-entrar-esq {
+	from {
+		opacity: 0;
+		transform: translateX(-32px);
+	}
+}
+
+/* ---------- Movimento reduzido: só fades curtos ---------- */
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		scroll-behavior: auto !important;
+	}
+	::view-transition-group(*),
+	::view-transition-old(*),
+	::view-transition-new(*) {
+		animation-duration: 120ms !important;
+	}
+	::view-transition-old(root),
+	:root[data-direcao]::view-transition-old(root) {
+		animation-name: vt-fade-sair;
+	}
+	::view-transition-new(root),
+	:root[data-direcao]::view-transition-new(root) {
+		animation-name: vt-fade-entrar;
+	}
+}
+
+@keyframes vt-fade-sair {
+	to {
+		opacity: 0;
+	}
+}
+@keyframes vt-fade-entrar {
+	from {
+		opacity: 0;
+	}
+}

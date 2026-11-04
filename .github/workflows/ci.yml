@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validar:
+    name: Validar dados, tipos e build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Validar dados (JSON Schema + regras) e contraste
+        run: npm run validate
+
+      - name: Verificar tipos (svelte-check)
+        run: npm run check
+
+      - name: Build de produção
+        run: npm run build
+        env:
+          BASE_PATH: /${{ github.event.repository.name }}

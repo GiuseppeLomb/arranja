@@ -1,0 +1,99 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://github.com/GiuseppeLomb/arranja/schemas/guide.schema.json",
+	"title": "Guia de reparação",
+	"description": "O passo \"Desliga da corrente (e da água, se aplicável)\" é acrescentado automaticamente pela app e não faz parte dos dados.",
+	"type": "object",
+	"required": ["id", "titulo", "appliance_type", "aplicavel_a", "risk_level", "ferramentas", "tempo_estimado", "passos", "pecas", "sources", "license"],
+	"additionalProperties": false,
+	"properties": {
+		"id": { "$ref": "common.schema.json#/$defs/id" },
+		"titulo": { "type": "string", "minLength": 5, "maxLength": 120 },
+		"resumo": { "type": "string", "maxLength": 300 },
+		"appliance_type": { "$ref": "common.schema.json#/$defs/id" },
+		"aplicavel_a": { "$ref": "common.schema.json#/$defs/aplicavelA" },
+		"risk_level": { "enum": ["baixo", "medio", "alto", "proibido"] },
+		"perigos": {
+			"type": "array",
+			"uniqueItems": true,
+			"description": "gas-combustivel, gas-refrigerante, micro-ondas-interior e ligacao-400v obrigam a risk_level: proibido.",
+			"items": {
+				"enum": [
+					"eletricidade",
+					"agua",
+					"peso",
+					"arestas-cortantes",
+					"temperatura",
+					"gas-combustivel",
+					"gas-refrigerante",
+					"micro-ondas-interior",
+					"ligacao-400v"
+				]
+			}
+		},
+		"explicacao_perigo": {
+			"type": "string",
+			"minLength": 20,
+			"maxLength": 800,
+			"description": "Obrigatória quando risk_level é proibido."
+		},
+		"avisos": { "type": "array", "items": { "type": "string", "minLength": 5, "maxLength": 300 } },
+		"ferramentas": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/id" } },
+		"tempo_estimado": { "type": "integer", "minimum": 1, "maximum": 600, "description": "Minutos." },
+		"passos": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"required": ["texto"],
+				"additionalProperties": false,
+				"properties": {
+					"texto": { "type": "string", "minLength": 5, "maxLength": 800 },
+					"aviso": { "type": "string", "minLength": 5, "maxLength": 300 },
+					"imagem": { "$ref": "common.schema.json#/$defs/imagem" }
+				}
+			}
+		},
+		"pecas": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"required": ["nome"],
+				"additionalProperties": false,
+				"properties": {
+					"nome": { "type": "string", "minLength": 2, "maxLength": 120 },
+					"codigo_oficial": { "type": "string", "minLength": 1, "maxLength": 40 },
+					"link_oficial": {
+						"$ref": "common.schema.json#/$defs/url",
+						"description": "Página oficial de peças do fabricante. Sem links de afiliados."
+					}
+				}
+			}
+		},
+		"sources": { "$ref": "common.schema.json#/$defs/sources" },
+		"license": { "enum": ["CC-BY-NC-SA-4.0", "CC-BY-NC-SA-3.0"] },
+		"attribution": {
+			"type": "object",
+			"description": "Obrigatória quando o guia deriva de conteúdo de terceiros (ex.: iFixit).",
+			"required": ["texto", "url"],
+			"additionalProperties": false,
+			"properties": {
+				"texto": { "type": "string", "minLength": 5, "maxLength": 300 },
+				"url": { "$ref": "common.schema.json#/$defs/url" },
+				"licenca_original": { "type": "string", "maxLength": 40 }
+			}
+		},
+		"example": { "$ref": "common.schema.json#/$defs/example" }
+	},
+	"allOf": [
+		{
+			"if": { "properties": { "risk_level": { "const": "proibido" } } },
+			"then": {
+				"required": ["explicacao_perigo"],
+				"properties": { "passos": { "type": "array", "maxItems": 0 } }
+			},
+			"else": {
+				"properties": { "passos": { "type": "array", "minItems": 1 } }
+			}
+		}
+	]
+}

@@ -1,0 +1,95 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://github.com/GiuseppeLomb/arranja/schemas/common.schema.json",
+	"title": "Definições comuns",
+	"$defs": {
+		"id": {
+			"type": "string",
+			"pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+			"maxLength": 80,
+			"description": "Identificador em minúsculas, com hífens (kebab-case)."
+		},
+		"data": {
+			"type": "string",
+			"format": "date",
+			"description": "Data no formato AAAA-MM-DD."
+		},
+		"url": {
+			"type": "string",
+			"format": "uri",
+			"pattern": "^https://",
+			"description": "URL https."
+		},
+		"source": {
+			"type": "object",
+			"description": "Fonte verificável. Obrigatória para todo o conteúdo de reparação.",
+			"required": ["url", "consultado_em"],
+			"additionalProperties": false,
+			"properties": {
+				"url": { "$ref": "#/$defs/url" },
+				"titulo": { "type": "string", "minLength": 3, "maxLength": 200 },
+				"consultado_em": { "$ref": "#/$defs/data" }
+			}
+		},
+		"sources": {
+			"type": "array",
+			"minItems": 1,
+			"items": { "$ref": "#/$defs/source" }
+		},
+		"padraoModelo": {
+			"type": "string",
+			"pattern": "^[A-Z0-9]+$",
+			"description": "Identificador normalizado: maiúsculas, sem espaços, hífens, pontos ou barras."
+		},
+		"aplicavelA": {
+			"type": "array",
+			"minItems": 1,
+			"description": "A que marcas/famílias/modelos se aplica. Sem familias/prefixos/regex/modelos = todos os modelos da marca.",
+			"items": {
+				"type": "object",
+				"required": ["brand"],
+				"additionalProperties": false,
+				"properties": {
+					"brand": {
+						"oneOf": [{ "$ref": "#/$defs/id" }, { "const": "*" }],
+						"description": "Id da marca, ou \"*\" para todas as marcas."
+					},
+					"familias": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/id" } },
+					"prefixos": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/padraoModelo" } },
+					"regex": {
+						"type": "array",
+						"minItems": 1,
+						"items": { "type": "string", "minLength": 2, "maxLength": 200 },
+						"description": "Expressões regulares aplicadas ao identificador normalizado."
+					},
+					"modelos": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/padraoModelo" } }
+				}
+			}
+		},
+		"licencaImagem": {
+			"type": "string",
+			"enum": ["CC0-1.0", "CC-BY-4.0", "CC-BY-SA-4.0", "CC-BY-NC-4.0", "CC-BY-NC-SA-4.0", "CC-BY-NC-SA-3.0"],
+			"description": "Licença da imagem. Fotos próprias: CC-BY-NC-SA-4.0."
+		},
+		"imagem": {
+			"type": "object",
+			"required": ["src", "alt", "licenca", "autor"],
+			"additionalProperties": false,
+			"properties": {
+				"src": {
+					"type": "string",
+					"pattern": "^imagens/[a-z0-9/_.-]+\\.(webp|png|jpg|jpeg|svg)$",
+					"description": "Caminho relativo a /static (ex.: imagens/guias/x/passo-1.webp)."
+				},
+				"alt": { "type": "string", "minLength": 5, "maxLength": 300 },
+				"licenca": { "$ref": "#/$defs/licencaImagem" },
+				"autor": { "type": "string", "minLength": 2, "maxLength": 120 },
+				"fonte_url": { "$ref": "#/$defs/url" }
+			}
+		},
+		"example": {
+			"type": "boolean",
+			"description": "Conteúdo de exemplo: só aparece em desenvolvimento."
+		}
+	}
+}

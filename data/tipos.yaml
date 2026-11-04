@@ -1,0 +1,58 @@
+# Tipos de eletrodoméstico. Esquema: schemas/appliance_type.schema.json
+# eprel_grupos: "url_code" devolvido por https://eprel.ec.europa.eu/api/product-groups
+# (regulamento atual + regulamento anterior, para incluir aparelhos mais antigos).
+
+- id: maquina-lavar-roupa
+  nome: Máquina de lavar roupa
+  nome_curto: Lavar roupa
+  icone: maquina-lavar-roupa
+  usa_agua: true
+  eprel_grupos:
+    - grupo: washingmachines2019
+      regulamento: Regulamento (UE) 2019/2014
+    - grupo: washingmachines
+      regulamento: Regulamento (UE) 1061/2010
+
+- id: maquina-lavar-loica
+  nome: Máquina de lavar loiça
+  nome_curto: Lavar loiça
+  icone: maquina-lavar-loica
+  usa_agua: true
+  eprel_grupos:
+    - grupo: dishwashers2019
+      regulamento: Regulamento (UE) 2019/2017
+    - grupo: dishwashers
+      regulamento: Regulamento (UE) 1059/2010
+
+- id: maquina-secar
+  nome: Máquina de secar roupa
+  nome_curto: Secar roupa
+  icone: maquina-secar
+  usa_agua: false
+  eprel_grupos:
+    - grupo: tumbledryers20232534
+      regulamento: Regulamento (UE) 2023/2534
+    - grupo: tumbledriers
+      regulamento: Regulamento (UE) 392/2012
+
+- id: maquina-lavar-secar
+  nome: Máquina de lavar e secar roupa
+  nome_curto: Lavar e secar
+  icone: maquina-lavar-secar
+  usa_agua: true
+  eprel_grupos:
+    - grupo: washerdriers2019
+      regulamento: Regulamento (UE) 2019/2014
+    - grupo: washerdriers
+      regulamento: Diretiva 96/60/CE
+
+- id: frigorifico
+  nome: Frigorífico
+  nome_curto: Frigorífico
+  icone: frigorifico
+  usa_agua: false
+  eprel_grupos:
+    - grupo: refrigeratingappliances2019
+      regulamento: Regulamento (UE) 2019/2016
+    - grupo: refrigeratingappliances
+      regulamento: Regulamento (UE) 1060/2010

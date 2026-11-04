@@ -1,0 +1,20 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://github.com/GiuseppeLomb/arranja/schemas/model.schema.json",
+	"title": "Modelo",
+	"description": "Registo de modelo. Os modelos EPREL são gerados por scripts/import-eprel.ts e regem-se pelos termos da API EPREL (não pela CC BY-NC-SA).",
+	"type": "object",
+	"required": ["brand", "model_identifier", "appliance_type", "eprel_url", "source"],
+	"additionalProperties": false,
+	"properties": {
+		"brand": { "type": "string", "minLength": 1, "maxLength": 120, "description": "Marca tal como registada (supplierOrTrademark)." },
+		"model_identifier": { "type": "string", "minLength": 1, "maxLength": 200 },
+		"appliance_type": { "$ref": "common.schema.json#/$defs/id" },
+		"grupo": { "type": "string", "pattern": "^[a-z0-9]+$" },
+		"eprel_registration_number": { "type": "string", "pattern": "^[0-9]+$" },
+		"eprel_url": { "$ref": "common.schema.json#/$defs/url" },
+		"mercado_inicio": { "anyOf": [{ "$ref": "common.schema.json#/$defs/data" }, { "type": "null" }] },
+		"mercado_fim": { "anyOf": [{ "$ref": "common.schema.json#/$defs/data" }, { "type": "null" }] },
+		"source": { "enum": ["eprel"] }
+	}
+}

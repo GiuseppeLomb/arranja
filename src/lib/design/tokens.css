@@ -1,0 +1,141 @@
+/*
+ * Arranja — tokens de design.
+ *
+ * Estrutura (o script scripts/contraste.ts depende dela):
+ *   1. :root                                    → tema claro + tokens independentes do tema
+ *   2. @media (prefers-color-scheme: dark)      → tema escuro automático
+ *   3. :root[data-theme='dark']                 → tema escuro manual (deve ser igual ao bloco 2)
+ *
+ * Cores de risco (--risco-*) usam-se EXCLUSIVAMENTE para indicar risco.
+ * Tons ajustados para WCAG AA estão marcados com "AA".
+ */
+
+:root {
+	color-scheme: light;
+
+	/* Marca */
+	--tinta: #14302b;
+	--cobre: #d9772b;
+	--linho: #f6f1e9;
+	--superficie: #ffffff;
+	--grafite: #1e1e1c;
+
+	/* Semântica — tema claro */
+	--fundo: #f6f1e9;
+	--superficie-1: #ffffff;
+	--superficie-2: #efe8dc;
+	--superficie-3: #e4dacb;
+	--texto: #1e1e1c;
+	--texto-suave: #5a5a55;
+	--primaria: #14302b;
+	--sobre-primaria: #ffffff;
+	--destaque: #d9772b;
+	--sobre-destaque: #1e1e1c; /* AA: branco sobre cobre só dá 3.2:1 */
+	--destaque-texto: #a4521a; /* AA: cobre ajustado para texto sobre fundo claro */
+	--foco: #a4521a;
+	--linha: #e2d8c8;
+	--linha-forte: #857d70; /* AA: 3:1 para limites de controlos */
+	--sombra-cor: 20 48 43;
+	--verificado: #14302b;
+	--sobre-verificado: #ffffff;
+
+	/* Risco (exclusivo) */
+	--risco-baixo: #3a9e6e;
+	--sobre-risco-baixo: #1e1e1c;
+	--risco-medio: #e8b931;
+	--sobre-risco-medio: #1e1e1c;
+	--risco-alto: #c8372d;
+	--sobre-risco-alto: #ffffff;
+	--risco-proibido: #7a1a14;
+	--sobre-risco-proibido: #ffffff;
+
+	/* Forma */
+	--raio-cartao: 16px;
+	--raio-chip: 999px;
+	--raio-controlo: 12px;
+	--sombra-1: 0 1px 2px rgb(var(--sombra-cor) / 0.06), 0 2px 8px rgb(var(--sombra-cor) / 0.06);
+	--sombra-2: 0 2px 4px rgb(var(--sombra-cor) / 0.07), 0 12px 32px rgb(var(--sombra-cor) / 0.12);
+	--sombra-3: 0 -4px 24px rgb(var(--sombra-cor) / 0.14);
+
+	/* Espaçamento — escala de 4px */
+	--e-1: 4px;
+	--e-2: 8px;
+	--e-3: 12px;
+	--e-4: 16px;
+	--e-5: 20px;
+	--e-6: 24px;
+	--e-8: 32px;
+	--e-10: 40px;
+	--e-12: 48px;
+	--e-16: 64px;
+
+	/* Alvos de toque */
+	--alvo: 48px;
+	--alvo-grande: 56px;
+	--alvo-gigante: 72px;
+
+	/* Tipografia */
+	--fonte-titulo: 'Bricolage Grotesque Variable', ui-sans-serif, system-ui, sans-serif;
+	--fonte-texto: 'Atkinson Hyperlegible Next Variable', ui-sans-serif, system-ui, sans-serif;
+	--t-xs: 0.8125rem;
+	--t-sm: 0.9375rem;
+	--t-md: 1.0625rem;
+	--t-lg: 1.25rem;
+	--t-xl: 1.5rem;
+	--t-2xl: 2rem;
+	--t-3xl: 2.5rem;
+
+	/* Motion */
+	--dur-micro: 150ms;
+	--dur-padrao: 250ms;
+	--dur-ecra: 350ms;
+	--ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+
+	/* Layout */
+	--largura-max: 640px;
+	--nav-altura: 64px;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root:not([data-theme='light']) {
+		color-scheme: dark;
+		--fundo: #0f1a18;
+		--superficie-1: #182623;
+		--superficie-2: #22332f;
+		--superficie-3: #2c403b;
+		--texto: #ede7dc;
+		--texto-suave: #b5afa4;
+		--primaria: #8ccfbf; /* AA: tinta clareada */
+		--sobre-primaria: #0f1a18;
+		--destaque: #e8894a;
+		--sobre-destaque: #0f1a18;
+		--destaque-texto: #e8894a;
+		--foco: #e8894a;
+		--linha: #2c3e3a;
+		--linha-forte: #7d918c;
+		--sombra-cor: 0 0 0;
+		--verificado: #8ccfbf;
+		--sobre-verificado: #0f1a18;
+	}
+}
+
+:root[data-theme='dark'] {
+	color-scheme: dark;
+	--fundo: #0f1a18;
+	--superficie-1: #182623;
+	--superficie-2: #22332f;
+	--superficie-3: #2c403b;
+	--texto: #ede7dc;
+	--texto-suave: #b5afa4;
+	--primaria: #8ccfbf; /* AA: tinta clareada */
+	--sobre-primaria: #0f1a18;
+	--destaque: #e8894a;
+	--sobre-destaque: #0f1a18;
+	--destaque-texto: #e8894a;
+	--foco: #e8894a;
+	--linha: #2c3e3a;
+	--linha-forte: #7d918c;
+	--sombra-cor: 0 0 0;
+	--verificado: #8ccfbf;
+	--sobre-verificado: #0f1a18;
+}

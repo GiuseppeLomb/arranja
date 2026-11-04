@@ -1,0 +1,101 @@
+name: Atualizar modelos EPREL
+
+# Mensal: importa os modelos do EPREL, substitui os snapshots em data/eprel e abre um PR.
+# Nunca faz commit direto na main.
+#
+# Requisitos (uma vez):
+#   1. Secret EPREL_API_KEY (Settings → Secrets and variables → Actions).
+#      Pedido da chave: https://eprel.ec.europa.eu/screen/requestpublicapikey
+#   2. Settings → Actions → General → "Allow GitHub Actions to create and approve pull requests".
+
+on:
+  schedule:
+    - cron: '17 4 2 * *' # dia 2 de cada mês, 04:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: eprel
+  cancel-in-progress: false
+
+jobs:
+  importar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    env:
+      EPREL_API_KEY: ${{ secrets.EPREL_API_KEY }}
+    steps:
+      - name: Sem chave EPREL
+        if: env.EPREL_API_KEY == ''
+        run: |
+          echo "::notice::EPREL_API_KEY não configurada — nada a importar. Pede a chave em https://eprel.ec.europa.eu/screen/requestpublicapikey e guarda-a como secret do repositório."
+
+      - uses: actions/checkout@v7
+        if: env.EPREL_API_KEY != ''
+
+      - uses: actions/setup-node@v7
+        if: env.EPREL_API_KEY != ''
+        with:
+          node-version: 24
+          cache: npm
+
+      - if: env.EPREL_API_KEY != ''
+        run: npm ci
+
+      - name: Importar do EPREL
+        id: importar
+        if: env.EPREL_API_KEY != ''
+        continue-on-error: true
+        run: npm run import:eprel
+
+      - name: Validar snapshots
+        if: env.EPREL_API_KEY != ''
+        run: npm run validate
+
+      - name: Abrir PR com a atualização
+        if: env.EPREL_API_KEY != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RESULTADO: ${{ steps.importar.outcome }}
+        run: |
+          if [ -z "$(git status --porcelain -- data/eprel)" ]; then
+            echo "Sem alterações nos dados EPREL."
+            exit 0
+          fi
+          MES=$(date -u +%Y-%m)
+          RAMO="eprel/atualizacao-$MES"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$RAMO"
+          git add data/eprel
+          git commit -m "EPREL: atualização mensal ($MES)"
+          git push --force -u origin "$RAMO"
+
+          {
+            echo "Atualização automática dos modelos EPREL ($MES)."
+            echo
+            echo "Cada snapshot em \`data/eprel/\` foi **substituído por inteiro**, para refletir correções e remoções feitas no EPREL (termos da API, art. 4.º §2 f)."
+            echo
+            if [ "$RESULTADO" != "success" ]; then
+              echo "> ⚠️ Alguns grupos falharam — ver o resumo da execução. Os snapshots desses grupos não foram alterados."
+              echo
+            fi
+            git diff --stat HEAD~1 -- data/eprel | tail -n 20 | sed 's/^/    /'
+            echo
+            echo "Fonte: EPREL — Comissão Europeia. O Arranja não é afiliado, patrocinado nem aprovado pela Comissão Europeia."
+            echo
+            echo "_PRs criados pelo GITHUB_TOKEN não disparam o workflow CI: fecha e reabre o PR para o correr antes do merge._"
+          } > corpo-pr.md
+
+          if gh pr view "$RAMO" --json state -q .state 2>/dev/null | grep -q OPEN; then
+            gh pr edit "$RAMO" --body-file corpo-pr.md
+          else
+            gh pr create --base main --head "$RAMO" --title "EPREL: atualização mensal ($MES)" --body-file corpo-pr.md
+          fi
+
+      - name: Falhar se a importação falhou
+        if: env.EPREL_API_KEY != '' && steps.importar.outcome != 'success'
+        run: exit 1

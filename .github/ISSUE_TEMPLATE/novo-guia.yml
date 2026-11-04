@@ -1,0 +1,107 @@
+name: Novo guia
+description: Propor um guia de reparação, diagnóstico, código de erro ou família de modelos.
+title: '[Novo guia] '
+labels: ['conteúdo', 'novo guia']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por ajudar! Antes de começar, lê as [regras de verificação](https://github.com/GiuseppeLomb/arranja/blob/main/CONTRIBUTING.md).
+        **Sem fonte verificável, o conteúdo não entra.** Escreve por palavras tuas — nunca copies texto de manuais.
+
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Eletrodoméstico
+      options:
+        - Máquina de lavar roupa
+        - Máquina de lavar loiça
+        - Máquina de secar roupa
+        - Máquina de lavar e secar roupa
+        - Frigorífico
+        - Outro (indica abaixo)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: conteudo
+    attributes:
+      label: O que propões
+      multiple: true
+      options:
+        - Guia de reparação
+        - Árvore de diagnóstico (perguntas e respostas)
+        - Código de erro
+        - Família de modelos
+    validations:
+      required: true
+
+  - type: input
+    id: marca
+    attributes:
+      label: Marca e modelos/família
+      description: Ex.: «Marca X, modelos começados por ABC12». Indica exemplos reais de modelos.
+    validations:
+      required: true
+
+  - type: textarea
+    id: problema
+    attributes:
+      label: Problema ou código de erro
+      description: Sintoma tal como o utilizador o vê (ou o código no visor) e o que significa.
+    validations:
+      required: true
+
+  - type: textarea
+    id: passos
+    attributes:
+      label: Passos, ferramentas e peças
+      description: |
+        Um passo por linha, por palavras tuas. Indica ferramentas e peças (nome, código oficial e link para a página oficial de peças do fabricante — sem afiliados).
+        Não incluas o passo «Desliga da corrente»: a app acrescenta-o sempre.
+      placeholder: |
+        1. …
+        2. …
+        Ferramentas: chave Torx T20, balde…
+        Peças: …
+
+  - type: dropdown
+    id: risco
+    attributes:
+      label: Nível de risco proposto
+      description: Gás (combustível ou refrigerante), interior de micro-ondas e ligações a 400 V são sempre «proibido».
+      options:
+        - baixo
+        - médio
+        - alto
+        - proibido (só explicar o perigo)
+    validations:
+      required: true
+
+  - type: textarea
+    id: fontes
+    attributes:
+      label: Fontes (obrigatório)
+      description: URL de cada fonte e a data em que a consultaste. Manuais e catálogos oficiais, páginas de peças do fabricante, iFixit (indica o link exato)…
+      placeholder: |
+        - https://… (consultado a 2026-11-04)
+    validations:
+      required: true
+
+  - type: textarea
+    id: imagens
+    attributes:
+      label: Fotos
+      description: Só fotos tuas ou com licença compatível (CC0, CC BY, CC BY-SA, CC BY-NC, CC BY-NC-SA). Indica autor e licença de cada uma.
+
+  - type: checkboxes
+    id: confirmacoes
+    attributes:
+      label: Confirmações
+      options:
+        - label: Escrevi por palavras minhas (não copiei texto de manuais nem de outros sites).
+          required: true
+        - label: Todas as afirmações técnicas têm fonte indicada acima.
+          required: true
+        - label: Aceito que o conteúdo seja publicado sob CC BY-NC-SA 4.0.
+          required: true

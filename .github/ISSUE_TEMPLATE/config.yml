@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Regras de segurança
+    url: https://giuseppelomb.github.io/arranja/seguranca
+    about: Lê antes de propor qualquer guia.
+  - name: Como contribuir
+    url: https://github.com/GiuseppeLomb/arranja/blob/main/CONTRIBUTING.md
+    about: Regras de verificação, formato dos dados e revisão.

@@ -1,0 +1,14 @@
+# EXEMPLO — conteúdo fictício, visível só em desenvolvimento.
+# Esquema: schemas/model_family.schema.json
+
+- id: exemplo-serie-ex
+  brand: exemplo
+  appliance_type: maquina-lavar-roupa
+  nome: "[Exemplo] Série EX"
+  notas: Família fictícia para testar a correspondência por prefixo (escreve um modelo começado por EX, ex. EX-1000).
+  prefixos: [EX]
+  sources:
+    - url: https://example.com/fonte-de-exemplo
+      titulo: Fonte fictícia (exemplo)
+      consultado_em: 2026-11-04
+  example: true

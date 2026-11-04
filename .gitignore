@@ -1,0 +1,20 @@
+node_modules/
+/build/
+/.svelte-kit/
+/package/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db
+
+# Gerado no build a partir de /data
+/src/lib/generated/
+/static/data/
+
+# Ferramentas locais
+/.lighthouse/
+
+# Configuração local de ferramentas
+/.claude/

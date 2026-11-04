@@ -1,0 +1,52 @@
+# Glossário de ferramentas. Esquema: schemas/tool.schema.json
+# As ilustrações são SVG próprios (src/lib/ilustracoes/IlustracaoFerramenta.svelte), com o mesmo id.
+
+- id: chave-fendas
+  nome: Chave de fendas (plana)
+  descricao: Chave com ponta achatada, para parafusos com uma única ranhura. Escolhe a largura da ponta igual à da ranhura para não a danificar.
+
+- id: chave-phillips
+  nome: Chave Phillips (cruz)
+  descricao: Chave com ponta em cruz, para parafusos com ranhura em cruz. Os tamanhos mais comuns são PH1 e PH2.
+  cuidado: Uma ponta do tamanho errado escorrega e estraga a cabeça do parafuso.
+
+- id: chave-torx
+  nome: Chave Torx (estrela)
+  descricao: Chave com ponta em forma de estrela de seis pontas, usada em muitos eletrodomésticos. Os tamanhos indicam-se com a letra T (ex. T20).
+
+- id: chave-inglesa
+  nome: Chave inglesa (ajustável)
+  descricao: Chave com abertura regulável para porcas e uniões de vários tamanhos, como as das mangueiras.
+
+- id: alicate
+  nome: Alicate universal
+  descricao: Para agarrar, segurar e dobrar. Útil para soltar abraçadeiras e segurar peças pequenas.
+
+- id: alicate-pontas
+  nome: Alicate de pontas
+  descricao: Alicate de pontas finas e compridas, para chegar a sítios apertados e retirar objetos pequenos.
+
+- id: espatula-plastico
+  nome: Espátula de plástico
+  descricao: Ferramenta plana de plástico para separar tampas e encaixes sem riscar nem partir as peças.
+
+- id: multimetro
+  nome: Multímetro
+  descricao: Aparelho de medida elétrica. No Arranja só é usado com o eletrodoméstico desligado da corrente, para testar continuidade ou resistência de peças.
+  cuidado: Nunca medir com o aparelho ligado à corrente.
+
+- id: lanterna
+  nome: Lanterna
+  descricao: Luz dirigida para ver dentro de filtros, condutas e cantos escuros. A do telemóvel serve.
+
+- id: balde
+  nome: Balde ou recipiente baixo
+  descricao: Para recolher água ao abrir filtros ou desligar mangueiras. Um tabuleiro baixo cabe melhor junto ao chão.
+
+- id: toalhas
+  nome: Toalhas ou panos
+  descricao: Para proteger o chão e secar água. Tem sempre alguns por perto quando o aparelho usa água.
+
+- id: luvas
+  nome: Luvas de trabalho
+  descricao: Protegem as mãos de arestas cortantes de chapa e de sujidade.

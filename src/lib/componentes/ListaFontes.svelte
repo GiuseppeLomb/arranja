@@ -1,0 +1,70 @@
+<script lang="ts">
+	import type { Fonte } from '#lib/data/tipos.ts';
+
+	type Props = {
+		fontes: Fonte[];
+		licenca?: string;
+		atribuicao?: { texto: string; url: string; licenca_original?: string };
+	};
+	let { fontes, licenca, atribuicao }: Props = $props();
+
+	const data = (iso: string) => new Date(`${iso}T12:00:00`).toLocaleDateString('pt-PT', { day: 'numeric', month: 'short', year: 'numeric' });
+	const host = (u: string) => {
+		try {
+			return new URL(u).hostname.replace(/^www\./, '');
+		} catch {
+			return u;
+		}
+	};
+</script>
+
+<section class="fontes" aria-labelledby="fontes-titulo">
+	<h2 id="fontes-titulo" class="secao-titulo">Fontes</h2>
+	<ul>
+		{#each fontes as f (f.url)}
+			<li>
+				<a href={f.url} target="_blank" rel="noopener noreferrer external">{f.titulo ?? host(f.url)}</a>
+				<span class="meta">{host(f.url)} · consultado a {data(f.consultado_em)}</span>
+			</li>
+		{/each}
+	</ul>
+	{#if atribuicao}
+		<p class="atribuicao">
+			{atribuicao.texto} — <a href={atribuicao.url} target="_blank" rel="noopener noreferrer external">página original</a>
+			{#if atribuicao.licenca_original}({atribuicao.licenca_original}){/if}
+		</p>
+	{/if}
+	{#if licenca}
+		<p class="licenca">Conteúdo sob licença {licenca.replace(/-/g, ' ').replace('CC BY NC SA', 'CC BY-NC-SA')}.</p>
+	{/if}
+</section>
+
+<style>
+	.fontes {
+		display: flex;
+		flex-direction: column;
+		gap: var(--e-3);
+		padding-top: var(--e-4);
+		border-top: 1px solid var(--linha);
+	}
+	ul {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		gap: var(--e-3);
+	}
+	li {
+		display: flex;
+		flex-direction: column;
+	}
+	li a {
+		font-weight: 700;
+		overflow-wrap: anywhere;
+	}
+	.meta,
+	.licenca,
+	.atribuicao {
+		font-size: var(--t-sm);
+		color: var(--texto-suave);
+	}
+</style>

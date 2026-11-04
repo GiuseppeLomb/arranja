@@ -1,0 +1,32 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://github.com/GiuseppeLomb/arranja/schemas/appliance_type.schema.json",
+	"title": "Tipo de eletrodoméstico",
+	"type": "object",
+	"required": ["id", "nome", "icone", "usa_agua", "eprel_grupos"],
+	"additionalProperties": false,
+	"properties": {
+		"id": { "$ref": "common.schema.json#/$defs/id" },
+		"nome": { "type": "string", "minLength": 3, "maxLength": 60 },
+		"nome_curto": { "type": "string", "minLength": 3, "maxLength": 24 },
+		"icone": {
+			"type": "string",
+			"enum": ["maquina-lavar-roupa", "maquina-lavar-loica", "maquina-secar", "maquina-lavar-secar", "frigorifico"],
+			"description": "Ícone SVG próprio (src/lib/ilustracoes)."
+		},
+		"usa_agua": { "type": "boolean" },
+		"eprel_grupos": {
+			"type": "array",
+			"description": "Grupos de produto EPREL (url_code de /api/product-groups).",
+			"items": {
+				"type": "object",
+				"required": ["grupo", "regulamento"],
+				"additionalProperties": false,
+				"properties": {
+					"grupo": { "type": "string", "pattern": "^[a-z0-9]+$" },
+					"regulamento": { "type": "string" }
+				}
+			}
+		}
+	}
+}

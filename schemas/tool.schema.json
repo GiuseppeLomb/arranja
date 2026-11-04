@@ -1,0 +1,14 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://github.com/GiuseppeLomb/arranja/schemas/tool.schema.json",
+	"title": "Ferramenta (glossário)",
+	"type": "object",
+	"required": ["id", "nome", "descricao"],
+	"additionalProperties": false,
+	"properties": {
+		"id": { "$ref": "common.schema.json#/$defs/id" },
+		"nome": { "type": "string", "minLength": 3, "maxLength": 60 },
+		"descricao": { "type": "string", "minLength": 10, "maxLength": 400 },
+		"cuidado": { "type": "string", "maxLength": 300 }
+	}
+}

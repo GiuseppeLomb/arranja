@@ -1,0 +1,29 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://github.com/GiuseppeLomb/arranja/schemas/error_code.schema.json",
+	"title": "Código de erro",
+	"type": "object",
+	"required": ["id", "brand", "appliance_type", "code", "descricao", "sources"],
+	"additionalProperties": false,
+	"properties": {
+		"id": { "$ref": "common.schema.json#/$defs/id" },
+		"brand": { "$ref": "common.schema.json#/$defs/id" },
+		"appliance_type": { "$ref": "common.schema.json#/$defs/id" },
+		"code": { "type": "string", "minLength": 1, "maxLength": 16, "description": "Como aparece no visor (ex.: E18)." },
+		"aliases": { "type": "array", "items": { "type": "string", "minLength": 1, "maxLength": 16 } },
+		"descricao": {
+			"type": "string",
+			"minLength": 10,
+			"maxLength": 600,
+			"description": "Em PT-PT, reescrita por palavras próprias (nunca copiada)."
+		},
+		"aplicavel_a": {
+			"$ref": "common.schema.json#/$defs/aplicavelA",
+			"description": "Opcional: restringe a famílias/modelos. Todas as entradas têm de ser da mesma marca do código."
+		},
+		"arvore": { "$ref": "common.schema.json#/$defs/id", "description": "Árvore de diagnóstico associada." },
+		"guias": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/id" } },
+		"sources": { "$ref": "common.schema.json#/$defs/sources" },
+		"example": { "$ref": "common.schema.json#/$defs/example" }
+	}
+}

@@ -1,0 +1,30 @@
+# EXEMPLO — conteúdo fictício, visível só em desenvolvimento.
+# Esquema: schemas/error_code.schema.json
+
+- id: exemplo-ex01
+  brand: exemplo
+  appliance_type: maquina-lavar-roupa
+  code: EX01
+  aliases: [EX-01]
+  descricao: "[Exemplo] Descrição fictícia de um código de erro, para testar o ecrã. Não corresponde a nenhum aparelho real."
+  aplicavel_a:
+    - brand: exemplo
+      familias: [exemplo-serie-ex]
+  arvore: exemplo-nao-arranca
+  sources:
+    - url: https://example.com/fonte-de-exemplo
+      titulo: Fonte fictícia (exemplo)
+      consultado_em: 2026-11-04
+  example: true
+
+- id: exemplo-ex02
+  brand: exemplo
+  appliance_type: maquina-lavar-roupa
+  code: EX02
+  descricao: "[Exemplo] Segundo código fictício, ligado diretamente a um guia de exemplo. Não corresponde a nenhum aparelho real."
+  guias: [exemplo-guia]
+  sources:
+    - url: https://example.com/fonte-de-exemplo
+      titulo: Fonte fictícia (exemplo)
+      consultado_em: 2026-11-04
+  example: true
