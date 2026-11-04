@@ -166,7 +166,9 @@
 	<title>{tipo.nome} · Arranja</title>
 </svelte:head>
 
-<BarraTopo titulo={tipo.nome} voltar={resolve('/reparar')} vt="tipo-{tipo.id}" />
+<BarraTopo titulo={tipo.nome} voltar={resolve('/reparar')} vt="tipo-{tipo.id}">
+	{#snippet icone()}<IconeEletrodomestico icone={tipo.icone} tamanho={28} />{/snippet}
+</BarraTopo>
 <Migalhas itens={migalhas} />
 
 {#key passo}

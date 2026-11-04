@@ -55,7 +55,8 @@ export const CHAVES = {
 	tema: 'tema',
 	favoritos: 'favoritos',
 	recentes: 'recentes',
-	oficina: 'oficina'
+	oficina: 'oficina',
+	vistaInicio: 'vista-inicio'
 } as const;
 
 /** Apaga todos os dados locais do Arranja. Devolve quantos foram apagados. */

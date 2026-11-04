@@ -8,7 +8,7 @@
 	import Monograma from '#lib/ilustracoes/Monograma.svelte';
 	import IconeEletrodomestico from '#lib/ilustracoes/IconeEletrodomestico.svelte';
 	import PesquisaGlobal from '#lib/componentes/PesquisaGlobal.svelte';
-	import GrelhaTipos from '#lib/componentes/GrelhaTipos.svelte';
+	import Cozinha from '#lib/componentes/Cozinha.svelte';
 	import Button from '#lib/design/Button.svelte';
 	import { conteudo, tipos } from '#lib/data/conteudo.ts';
 	import { recentes, favoritos, carregarColecoes, type Recente } from '#lib/estado/colecoes.svelte.ts';
@@ -43,7 +43,7 @@
 	<PesquisaGlobal bind:valor={consulta} />
 
 	{#if consulta.trim().length < 2}
-		<GrelhaTipos />
+		<Cozinha />
 
 		{#if recentes.lista.length}
 			<section class="pilha" aria-labelledby="recentes-titulo" in:entrar>

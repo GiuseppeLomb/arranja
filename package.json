@@ -27,7 +27,8 @@
     "validate": "node --import tsx scripts/validate.ts",
     "check": "node --import tsx scripts/build-data.ts && node node_modules/@sveltejs/kit/svelte-kit.js sync && node node_modules/svelte-check/bin/svelte-check --tsconfig ./tsconfig.json --fail-on-warnings",
     "import:eprel": "node --import tsx scripts/import-eprel.ts",
-    "icons": "node node_modules/@vite-pwa/assets-generator/bin/pwa-assets-generator.mjs"
+    "icons": "node node_modules/@vite-pwa/assets-generator/bin/pwa-assets-generator.mjs",
+    "svg": "node --import tsx scripts/otimizar-svg.ts"
   },
   "dependencies": {
     "@fontsource-variable/atkinson-hyperlegible-next": "5.3.0",
@@ -50,6 +51,7 @@
     "magicast": "0.5.5",
     "svelte": "5.57.3",
     "svelte-check": "4.7.8",
+    "svgo": "4.1.0",
     "tsx": "4.23.15",
     "typescript": "6.0.3",
     "vite": "8.3.5",

@@ -40,6 +40,7 @@
 		<li><code>{PREFIXO}{CHAVES.recentes}</code> — os últimos aparelhos (tipo, marca e modelo) que consultaste.</li>
 		<li><code>{PREFIXO}{CHAVES.tema}</code> — tema claro/escuro, se o escolheste.</li>
 		<li><code>{PREFIXO}{CHAVES.oficina}</code> — se o Modo Oficina está ligado.</li>
+		<li><code>{PREFIXO}{CHAVES.vistaInicio}</code> — se preferes ver os eletrodomésticos em lista em vez da ilustração.</li>
 		<li><code>{PREFIXO}selecao</code> (só durante a sessão) — as escolhas do fluxo de reparação em curso.</li>
 	</ul>
 	<p>A cópia offline da app é guardada pelo service worker na cache do browser.</p>

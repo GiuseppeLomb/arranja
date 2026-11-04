@@ -1,0 +1,259 @@
+<!--
+  Arranja — Cozinha (ilustração original, CC BY-NC-SA 4.0).
+  Fonte legível: este ficheiro. A app usa cozinha.min.svg, gerado com `npm run svg` (svgo).
+
+  Regras:
+  - Cores só por classes (k-*), definidas com tokens CSS em src/lib/design/tokens.css → modo escuro sem segunda imagem.
+  - Cada eletrodoméstico navegável é um <a class="k-ap" data-tipo> com:
+      .k-sombra (sombra no chão), .k-corpo (o aparelho), .k-halo (contorno cobre) e .k-anel (anel de foco).
+  - Aparelhos "Brevemente" (forno, exaustor): <g class="k-breve" data-brevemente>, não navegáveis.
+  - Sem marcas nem logótipos.
+  - viewBox 300×400 (3:4). Em paisagem o CSS usa preserveAspectRatio slice e corta o topo decorativo.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" preserveAspectRatio="xMidYMax slice" class="k-svg" role="group" aria-labelledby="k-titulo">
+  <title id="k-titulo">Cozinha: escolhe o eletrodoméstico avariado</title>
+  <defs>
+    <!-- Azulejo: losango ao centro e quartos de círculo nos cantos -->
+    <pattern id="k-azul" width="14" height="14" patternUnits="userSpaceOnUse" x="63" y="194">
+      <rect width="14" height="14" class="k-azulejo"/>
+      <path class="k-azulejo-3" d="M0 0h3.5a3.5 3.5 0 0 1-3.5 3.5zM14 0v3.5a3.5 3.5 0 0 1-3.5-3.5zM14 14h-3.5a3.5 3.5 0 0 1 3.5-3.5zM0 14v-3.5a3.5 3.5 0 0 1 3.5 3.5z"/>
+      <path class="k-azulejo-2" d="M7 3.4 10.6 7 7 10.6 3.4 7z"/>
+      <circle class="k-azulejo" cx="7" cy="7" r="1.3"/>
+      <path class="k-junta" d="M0 0h14v14"/>
+    </pattern>
+    <clipPath id="k-clip-ls"><circle cx="209" cy="337" r="16.5"/></clipPath>
+    <clipPath id="k-clip-lr"><circle cx="267" cy="337" r="16.5"/></clipPath>
+    <clipPath id="k-clip-sec"><circle cx="267" cy="256" r="16.5"/></clipPath>
+  </defs>
+
+  <!-- ===================== Cenário ===================== -->
+  <g class="k-cenario" aria-hidden="true">
+    <rect class="k-parede" width="300" height="372"/>
+    <rect class="k-parede-2" width="300" height="5"/>
+
+    <!-- Relógio -->
+    <circle class="k-movel-3" cx="34" cy="62" r="13"/>
+    <circle class="k-azulejo" cx="34" cy="62" r="11"/>
+    <path class="k-traco" d="M34 62v-7M34 62l5 3"/>
+    <circle class="k-visor" cx="34" cy="62" r="1.2"/>
+
+    <!-- Prateleira com frascos -->
+    <rect class="k-movel-3" x="8" y="108" width="52" height="3" rx="1"/>
+    <rect class="k-azulejo-3" x="12" y="93" width="10" height="15" rx="2"/>
+    <rect class="k-cobre" x="12" y="91" width="10" height="3" rx="1"/>
+    <rect class="k-roupa-3" x="25" y="97" width="9" height="11" rx="2"/>
+    <rect class="k-cobre-2" x="25" y="95" width="9" height="3" rx="1"/>
+    <path class="k-cobre" d="M38 101h18a9 7 0 0 1-18 0z"/>
+
+    <!-- Janela com telhados -->
+    <rect class="k-movel" x="234" y="48" width="60" height="102" rx="2"/>
+    <rect class="k-ceu" x="239" y="53" width="50" height="92"/>
+    <circle class="k-astro" cx="277" cy="70" r="6"/>
+    <path class="k-telhado" d="M239 145v-18h6v-5l5-4 5 4v5h4v-10l5-4 5 4v10h5v-6l4-3 4 3v6h7v18z"/>
+    <path class="k-caixilho" d="M264 53v92M239 99h50"/>
+    <rect class="k-movel-3" x="230" y="150" width="68" height="5" rx="1"/>
+
+    <!-- Armários superiores -->
+    <rect class="k-movel" x="5" y="140" width="58" height="52" rx="2"/>
+    <rect class="k-movel-2" x="59" y="140" width="4" height="52"/>
+    <rect class="k-movel-2" x="5" y="188" width="58" height="4"/>
+    <rect class="k-puxador" x="29" y="182" width="10" height="2" rx="1"/>
+
+    <rect class="k-movel" x="65" y="116" width="56" height="78" rx="2"/>
+    <rect class="k-movel-2" x="117" y="116" width="4" height="78"/>
+    <rect class="k-movel-2" x="92.5" y="120" width="1" height="66"/>
+    <rect class="k-movel-2" x="65" y="190" width="56" height="4"/>
+    <rect class="k-puxador" x="87" y="175" width="2" height="9" rx="1"/>
+    <rect class="k-puxador" x="97" y="175" width="2" height="9" rx="1"/>
+
+    <rect class="k-movel" x="181" y="116" width="56" height="78" rx="2"/>
+    <rect class="k-movel-2" x="233" y="116" width="4" height="78"/>
+    <rect class="k-movel-2" x="208.5" y="120" width="1" height="66"/>
+    <rect class="k-movel-2" x="181" y="190" width="56" height="4"/>
+    <rect class="k-puxador" x="203" y="175" width="2" height="9" rx="1"/>
+    <rect class="k-puxador" x="213" y="175" width="2" height="9" rx="1"/>
+
+    <!-- Azulejos e bancada -->
+    <rect fill="url(#k-azul)" x="63" y="194" width="176" height="92"/>
+    <rect class="k-sombra-parede" x="63" y="194" width="176" height="4"/>
+    <rect class="k-bancada" x="61" y="286" width="178" height="8"/>
+    <rect class="k-bancada-2" x="61" y="286" width="178" height="2"/>
+
+    <!-- Manjerico -->
+    <path class="k-telhado" d="M97 286l-2-9h14l-2 9z"/>
+    <circle class="k-planta" cx="102" cy="270" r="7.5"/>
+    <circle class="k-planta-2" cx="99.5" cy="267.5" r="3"/>
+    <path class="k-cobre" d="M107 263l2.5-3.5 2.5 2-3 2.5z"/>
+
+    <!-- Placa e cataplana -->
+    <rect class="k-visor" x="128" y="283" width="46" height="3" rx="1"/>
+    <rect class="k-cobre-2" x="134.5" y="274.5" width="5" height="2.5" rx="1"/>
+    <rect class="k-cobre-2" x="162.5" y="274.5" width="5" height="2.5" rx="1"/>
+    <path class="k-cobre" d="M139 276a12 9 0 0 1 24 0z"/>
+    <path class="k-cobre-2" d="M139 276h24a12 6 0 0 1-24 0z"/>
+    <rect class="k-cobre-2" x="149.5" y="265" width="3" height="2.5" rx="1"/>
+    <path class="k-brilho" d="M144.5 272.5a8 6 0 0 1 5-3.5"/>
+
+    <!-- Fruteira -->
+    <path class="k-movel-3" d="M196 280h26l-3 6h-20z"/>
+    <circle class="k-cobre" cx="202.5" cy="277" r="4.2"/>
+    <circle class="k-cobre-2" cx="215.5" cy="277" r="4.2"/>
+    <circle class="k-cobre" cx="209" cy="273.5" r="4.2"/>
+
+    <!-- Coluna da lavandaria: base de empilhamento e planta -->
+    <rect class="k-apar-3" x="239" y="291" width="56" height="3"/>
+    <path class="k-telhado" d="M256 213l-2-12h18l-2 12z"/>
+    <path class="k-planta" d="M263 201c-9-5-12-15-6-22 3 8 7 13 6 22zM263 201c3-10 11-15 18-12-5 4-11 8-18 12z"/>
+    <path class="k-planta-2" d="M263 201c-1-11 3-19 9-22-1 8-4 15-9 22z"/>
+
+    <!-- Chão -->
+    <rect class="k-chao" y="372" width="300" height="28"/>
+    <rect class="k-chao-2" y="372" width="300" height="3"/>
+    <path class="k-junta-chao" d="M30 375l-5 25M90 375l-2 25M150 375v25M210 375l2 25M270 375l5 25M0 388h300"/>
+  </g>
+
+  <!-- ===================== Brevemente ===================== -->
+  <g class="k-breve" data-brevemente="Exaustor" role="img" aria-label="Exaustor (brevemente)">
+    <title>Brevemente</title>
+    <rect class="k-breve-1" x="139" y="5" width="24" height="200"/>
+    <rect class="k-breve-2" x="157" y="5" width="6" height="200"/>
+    <path class="k-breve-1" d="M121 222h60l-10-18h-40z"/>
+    <path class="k-breve-2" d="M171 204l10 18h-7l-9-18z"/>
+    <rect class="k-breve-3" x="121" y="222" width="60" height="4" rx="1"/>
+  </g>
+
+  <g class="k-breve" data-brevemente="Forno" role="img" aria-label="Forno (brevemente)">
+    <title>Brevemente</title>
+    <rect class="k-breve-1" x="123" y="294" width="56" height="78" rx="2"/>
+    <rect class="k-breve-2" x="173" y="294" width="6" height="78"/>
+    <rect class="k-breve-2" x="123" y="294" width="56" height="11"/>
+    <circle class="k-breve-3" cx="131" cy="299.5" r="3"/>
+    <circle class="k-breve-3" cx="167" cy="299.5" r="3"/>
+    <rect class="k-breve-3" x="144" y="297" width="14" height="5" rx="1"/>
+    <rect class="k-breve-3" x="129" y="309" width="44" height="3" rx="1.5"/>
+    <rect class="k-breve-3" x="129" y="316" width="44" height="42" rx="3"/>
+    <rect class="k-breve-2" x="133" y="320" width="36" height="34" rx="2"/>
+    <rect class="k-breve-2" x="127" y="363" width="48" height="5" rx="1"/>
+  </g>
+
+  <!-- ===================== Eletrodomésticos ===================== -->
+
+  <!-- Frigorífico -->
+  <a href="/reparar/frigorifico" class="k-ap" data-tipo="frigorifico" aria-label="Frigorífico">
+    <ellipse class="k-sombra" cx="34" cy="373" rx="31" ry="3"/>
+    <g class="k-corpo">
+      <rect class="k-frig" x="5" y="197" width="58" height="175" rx="5"/>
+      <rect class="k-frig-2" x="56" y="199" width="6" height="171" rx="2"/>
+      <rect class="k-frig-3" x="7.5" y="201" width="3" height="167" rx="1.5"/>
+      <rect class="k-frig-2" x="5" y="300" width="58" height="2.5"/>
+      <rect class="k-puxador-claro" x="47" y="212" width="3" height="44" rx="1.5"/>
+      <rect class="k-puxador-claro" x="47" y="308" width="3" height="26" rx="1.5"/>
+      <rect class="k-roupa-3" x="16" y="226" width="13" height="16" rx="1" transform="rotate(-6 22.5 234)"/>
+      <path class="k-traco-cobre" d="M18.5 236.5l3-4 3 3 3-5"/>
+      <circle class="k-cobre" cx="22" cy="222.5" r="2.2"/>
+      <circle class="k-roupa-2" cx="33" cy="258" r="2.6"/>
+      <rect class="k-frig-2" x="9" y="370" width="7" height="2" rx="1"/>
+      <rect class="k-frig-2" x="52" y="370" width="7" height="2" rx="1"/>
+      <rect class="k-halo" x="3" y="195" width="62" height="179" rx="7"/>
+      <rect class="k-anel" x="0.5" y="192.5" width="67" height="184" rx="9"/>
+    </g>
+  </a>
+
+  <!-- Máquina de lavar loiça -->
+  <a href="/reparar/maquina-lavar-loica" class="k-ap" data-tipo="maquina-lavar-loica" aria-label="Máquina de lavar loiça">
+    <ellipse class="k-sombra" cx="93" cy="373" rx="28" ry="2.5"/>
+    <g class="k-corpo">
+      <rect class="k-apar" x="65" y="294" width="56" height="78" rx="2"/>
+      <rect class="k-apar-2" x="115" y="294" width="6" height="78" rx="1"/>
+      <rect class="k-apar-3" x="65" y="294" width="56" height="11"/>
+      <circle class="k-luz" cx="71.5" cy="299.5" r="1.4"/>
+      <circle class="k-apar-2" cx="78" cy="299.5" r="1.6"/>
+      <circle class="k-apar-2" cx="84" cy="299.5" r="1.6"/>
+      <rect class="k-visor" x="95" y="297" width="16" height="5" rx="1"/>
+      <rect class="k-puxador" x="77" y="309" width="32" height="3" rx="1.5"/>
+      <rect class="k-apar-2" x="69" y="316" width="48" height="52" rx="2"/>
+      <rect class="k-apar" x="71" y="318" width="44" height="48" rx="1.5"/>
+      <circle class="k-icone" cx="88" cy="342" r="8"/>
+      <circle class="k-icone" cx="88" cy="342" r="4"/>
+      <path class="k-icone" d="M101.5 334h7l-1.2 12h-4.6z"/>
+      <rect class="k-halo" x="63" y="292" width="60" height="82" rx="4"/>
+      <rect class="k-anel" x="60.5" y="289.5" width="65" height="87" rx="6"/>
+    </g>
+  </a>
+
+  <!-- Máquina de lavar e secar (variante) -->
+  <a href="/reparar/maquina-lavar-secar" class="k-ap" data-tipo="maquina-lavar-secar" aria-label="Máquina de lavar e secar roupa">
+    <ellipse class="k-sombra" cx="209" cy="373" rx="28" ry="2.5"/>
+    <g class="k-corpo">
+      <rect class="k-apar" x="181" y="294" width="56" height="78" rx="2"/>
+      <rect class="k-apar-2" x="231" y="294" width="6" height="78" rx="1"/>
+      <rect class="k-apar-3" x="181" y="294" width="56" height="11"/>
+      <rect class="k-apar-2" x="185" y="297" width="11" height="5" rx="1"/>
+      <circle class="k-apar-2" cx="202" cy="299.5" r="3.2"/>
+      <path class="k-traco" d="M202 299.5v-2.2"/>
+      <rect class="k-visor" x="208" y="297" width="12" height="5" rx="1"/>
+      <circle class="k-luz" cx="225" cy="299.5" r="1.4"/>
+      <path class="k-gota" d="M189 309.5c-2 2.8-3 4.2-3 5.6a3 3 0 0 0 6 0c0-1.4-1-2.8-3-5.6z"/>
+      <path class="k-onda" d="M195.5 317.5c1.2-1.4 1.2-2.6 0-4s-1.2-2.6 0-4"/>
+      <circle class="k-apar-3" cx="209" cy="337" r="22"/>
+      <circle class="k-vidro" cx="209" cy="337" r="17"/>
+      <g class="k-tambor k-tambor-lento" clip-path="url(#k-clip-ls)">
+        <circle class="k-vidro-2" cx="209" cy="337" r="15"/>
+        <path class="k-roupa-1" d="M197 344c4-6 10-5 13-1s9 3 12-1c-1 6-6 8-12 8s-11-2-13-6z"/>
+        <path class="k-roupa-2" d="M201 330c3-3 8-3 10 0 2 2 5 2 6 0 0 4-4 6-8 5s-7-2-8-5z"/>
+      </g>
+      <path class="k-brilho" d="M197.5 330a13 13 0 0 1 8.5-7.5"/>
+      <rect class="k-halo" x="179" y="292" width="60" height="82" rx="4"/>
+      <rect class="k-anel" x="176.5" y="289.5" width="65" height="87" rx="6"/>
+    </g>
+  </a>
+
+  <!-- Máquina de secar roupa (coluna, sobre a máquina de lavar) -->
+  <a href="/reparar/maquina-secar" class="k-ap" data-tipo="maquina-secar" aria-label="Máquina de secar roupa">
+    <ellipse class="k-sombra" cx="267" cy="292" rx="26" ry="1.6"/>
+    <g class="k-corpo">
+      <rect class="k-apar" x="239" y="213" width="56" height="78" rx="2"/>
+      <rect class="k-apar-2" x="289" y="213" width="6" height="78" rx="1"/>
+      <rect class="k-apar-3" x="239" y="213" width="56" height="11"/>
+      <rect class="k-apar-2" x="243" y="216" width="14" height="5" rx="1"/>
+      <path class="k-onda" d="M262 222c1.2-1.2 1.2-2.2 0-3.4s-1.2-2.2 0-3.4M266 222c1.2-1.2 1.2-2.2 0-3.4s-1.2-2.2 0-3.4"/>
+      <rect class="k-visor" x="271" y="216" width="10" height="5" rx="1"/>
+      <circle class="k-luz" cx="285" cy="218.5" r="1.4"/>
+      <circle class="k-apar-3" cx="267" cy="256" r="22"/>
+      <circle class="k-vidro" cx="267" cy="256" r="17"/>
+      <g clip-path="url(#k-clip-sec)">
+        <circle class="k-vidro-2" cx="267" cy="256" r="15"/>
+        <path class="k-roupa-3" d="M255 262c5-5 10-4 13 0s8 3 11-1c0 6-5 9-12 9s-11-3-12-8z"/>
+      </g>
+      <path class="k-brilho" d="M255.5 249a13 13 0 0 1 8.5-7.5"/>
+      <rect class="k-halo" x="237" y="211" width="60" height="82" rx="4"/>
+      <rect class="k-anel" x="234.5" y="208.5" width="65" height="87" rx="6"/>
+    </g>
+  </a>
+
+  <!-- Máquina de lavar roupa -->
+  <a href="/reparar/maquina-lavar-roupa" class="k-ap" data-tipo="maquina-lavar-roupa" aria-label="Máquina de lavar roupa">
+    <ellipse class="k-sombra" cx="267" cy="373" rx="28" ry="2.5"/>
+    <g class="k-corpo">
+      <rect class="k-apar" x="239" y="294" width="56" height="78" rx="2"/>
+      <rect class="k-apar-2" x="289" y="294" width="6" height="78" rx="1"/>
+      <rect class="k-apar-3" x="239" y="294" width="56" height="11"/>
+      <rect class="k-apar-2" x="243" y="297" width="11" height="5" rx="1"/>
+      <circle class="k-apar-2" cx="260" cy="299.5" r="3.2"/>
+      <path class="k-traco" d="M260 299.5l1.6-1.6"/>
+      <rect class="k-visor" x="266" y="297" width="12" height="5" rx="1"/>
+      <circle class="k-luz" cx="283" cy="299.5" r="1.4"/>
+      <circle class="k-apar-3" cx="267" cy="337" r="22"/>
+      <circle class="k-vidro" cx="267" cy="337" r="17"/>
+      <g class="k-tambor" clip-path="url(#k-clip-lr)">
+        <circle class="k-vidro-2" cx="267" cy="337" r="15"/>
+        <path class="k-roupa-2" d="M255 343c4-6 10-5 13-1s9 3 12-1c-1 6-6 8-12 8s-11-2-13-6z"/>
+        <path class="k-roupa-1" d="M259 329c3-3 8-3 10 0 2 2 5 2 6 0 0 4-4 6-8 5s-7-2-8-5z"/>
+        <path class="k-roupa-3" d="M262 336c2-1.5 4-1.5 6 0s4 1.5 6 0c-1 3-3 4-6 4s-5-1-6-4z"/>
+      </g>
+      <path class="k-brilho" d="M255.5 330a13 13 0 0 1 8.5-7.5"/>
+      <rect class="k-halo" x="237" y="292" width="60" height="82" rx="4"/>
+      <rect class="k-anel" x="234.5" y="289.5" width="65" height="87" rx="6"/>
+    </g>
+  </a>
+</svg>

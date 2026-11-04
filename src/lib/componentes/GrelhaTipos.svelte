@@ -6,11 +6,15 @@
 	import { escolherTipo } from '#lib/estado/selecao.svelte.ts';
 	import { entrar, cascata } from '#lib/motion/index.ts';
 
-	let { titulo = 'Que eletrodoméstico avariou?', id = 'tipos-titulo' }: { titulo?: string; id?: string } = $props();
+	let {
+		titulo = 'Que eletrodoméstico avariou?',
+		id = 'tipos-titulo',
+		mostrarTitulo = true
+	}: { titulo?: string; id?: string; mostrarTitulo?: boolean } = $props();
 </script>
 
 <section class="pilha" aria-labelledby={id}>
-	<h2 {id} class="secao-titulo">{titulo}</h2>
+	<h2 {id} class={mostrarTitulo ? 'secao-titulo' : 'vh'}>{titulo}</h2>
 	<ul class="grelha">
 		{#each conteudo.tipos as t, i (t.id)}
 			<li in:entrar={{ delay: cascata(i) }}>
