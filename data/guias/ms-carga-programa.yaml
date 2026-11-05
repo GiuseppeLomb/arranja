@@ -1,0 +1,38 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: maquina-secar
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: ms-carga-programa
+titulo: Acertar a carga e o programa
+resumo: Carga a mais, carga muito pequena ou o programa errado deixam a roupa húmida ou com vincos.
+perigos: []
+avisos:
+  - "Risco de incêndio: não seques roupa por lavar nem peças com espuma de borracha, e tira isqueiros e fósforos dos bolsos."
+  - Peças com óleo, cera ou tinta têm de ser lavadas antes em água quente com detergente (Bosch). Peças que estiveram em contacto com gasolina, solventes ou outras substâncias inflamáveis não podem ir à máquina de secar (Samsung).
+ferramentas: []
+tempo_estimado: 5
+passos:
+  - texto: "Não ultrapasses a carga máxima do programa: vê a tabela de programas do manual."
+  - texto: Separa as peças pesadas das leves e esvazia os bolsos antes de secar.
+  - texto: Com uma carga muito pequena, a Samsung sugere juntar algumas toalhas; a Bosch sugere um programa por tempo.
+  - texto: "No fim, a roupa quente parece mais húmida do que está: desdobra-a e deixa-a arrefecer antes de avaliares."
+  - texto: Se ainda estiver húmida, aumenta o grau de secagem ou usa um programa por tempo para acabar de secar.
+  - texto: Tira a roupa logo no fim do programa para não ganhar vincos.
+sources:
+  - url: https://media3.bsh-group.com/Documents/9001378644_A.pdf
+    titulo: Bosch WTR85V90ES — Instrucciones de uso e instalación, secadora con bomba de calor (ES)
+    pagina: 8, 10, 23, 40–41
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/5864042_MAQ_SECAR_ROUPS_BECKEN_8KG_BDM2741_HP_manual.pdf
+    titulo: Becken BDM2740/BDM2741 HP — Manual de instruções da máquina de secar (secção PT; páginas do PDF)
+    pagina: 20–21, 24, 26
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DV90BB5245AW&CttFileID=8724284&CDCttType=UM&VPath=UM%2F202208%2F20220815150115831%2FB-PJT_DV5000B_SimpleUX_WEB_English.pdf
+    titulo: Samsung DV5000B (DV90BB5245AW) — Tumble dryer user manual (EN)
+    pagina: 8, 49–50
+    consultado_em: 2026-11-04

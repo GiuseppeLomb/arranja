@@ -1,0 +1,41 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: maquina-secar
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: ms-esvaziar-deposito
+titulo: Esvaziar o depósito da água
+resumo: As máquinas de condensação juntam a água da roupa num depósito. Cheio, o programa para.
+perigos:
+  - peso
+ferramentas: []
+tempo_estimado: 5
+passos:
+  - texto: "Puxa o depósito para fora na horizontal. Quando sair até meio, segura-o por baixo com a outra mão: cheio, é pesado."
+    imagem:
+      src: imagens/guias/secar/deposito.svg
+      alt: Depósito de água a ser retirado na horizontal da máquina de secar, seguro com as duas mãos.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: Despeja a água pela abertura do depósito.
+    aviso: "Esta água não é potável: não a bebas nem a reutilizes."
+  - texto: "A Samsung indica lavar o interior do depósito ao esvaziá-lo: enche-o com água morna e um pouco de detergente neutro, deixa atuar 30 minutos, enxagua e seca."
+  - texto: Volta a encaixar o depósito até ao fim.
+  - texto: "Esvazia-o depois de cada secagem. Se encher a meio, a máquina para: depois de o esvaziares, carrega em iniciar para continuar."
+sources:
+  - url: https://media3.bsh-group.com/Documents/9001378644_A.pdf
+    titulo: Bosch WTR85V90ES — Instrucciones de uso e instalación, secadora con bomba de calor (ES)
+    pagina: 29–30
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/5864042_MAQ_SECAR_ROUPS_BECKEN_8KG_BDM2741_HP_manual.pdf
+    titulo: Becken BDM2740/BDM2741 HP — Manual de instruções da máquina de secar (secção PT; páginas do PDF)
+    pagina: "25"
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DV90BB5245AW&CttFileID=8724284&CDCttType=UM&VPath=UM%2F202208%2F20220815150115831%2FB-PJT_DV5000B_SimpleUX_WEB_English.pdf
+    titulo: Samsung DV5000B (DV90BB5245AW) — Tumble dryer user manual (EN)
+    pagina: "43"
+    consultado_em: 2026-11-04

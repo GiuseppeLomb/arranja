@@ -366,3 +366,79 @@
     - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
       titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
       consultado_em: 2026-11-04
+- id: samsung-ms-tc
+  brand: samsung
+  appliance_type: maquina-secar
+  code: tC
+  descricao: Problema no sensor de temperatura do ar. Limpa o filtro de cotão ou o permutador de calor; se continuar, contacta a assistência.
+  guias:
+    - ms-limpar-filtro-cotao
+    - ms-limpar-permutador
+  sources:
+    - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DV90BB5245AW&CttFileID=8724284&CDCttType=UM&VPath=UM%2F202208%2F20220815150115831%2FB-PJT_DV5000B_SimpleUX_WEB_English.pdf
+      titulo: Samsung DV5000B (DV90BB5245AW) — Tumble dryer user manual (EN)
+      pagina: "51"
+      consultado_em: 2026-11-04
+- id: samsung-ms-tc5
+  brand: samsung
+  appliance_type: maquina-secar
+  code: tC5
+  descricao: Problema no sensor de temperatura do compressor. Espera dois a três minutos, volta a ligar a máquina e recomeça.
+  sources:
+    - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DV90BB5245AW&CttFileID=8724284&CDCttType=UM&VPath=UM%2F202208%2F20220815150115831%2FB-PJT_DV5000B_SimpleUX_WEB_English.pdf
+      titulo: Samsung DV5000B (DV90BB5245AW) — Tumble dryer user manual (EN)
+      pagina: "51"
+      consultado_em: 2026-11-04
+- id: samsung-ms-tc7
+  brand: samsung
+  appliance_type: maquina-secar
+  code: tC7
+  descricao: Verificar o sensor de temperatura de entrada do evaporador. Volta a ligar a máquina e recomeça; se continuar, contacta a assistência.
+  sources:
+    - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DV90BB5245AW&CttFileID=8724284&CDCttType=UM&VPath=UM%2F202208%2F20220815150115831%2FB-PJT_DV5000B_SimpleUX_WEB_English.pdf
+      titulo: Samsung DV5000B (DV90BB5245AW) — Tumble dryer user manual (EN)
+      pagina: "51"
+      consultado_em: 2026-11-04
+- id: samsung-ms-3c
+  brand: samsung
+  appliance_type: maquina-secar
+  code: 3C
+  descricao: Verificar o funcionamento do motor. Tenta recomeçar o programa; se continuar, contacta a assistência.
+  sources:
+    - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DV90BB5245AW&CttFileID=8724284&CDCttType=UM&VPath=UM%2F202208%2F20220815150115831%2FB-PJT_DV5000B_SimpleUX_WEB_English.pdf
+      titulo: Samsung DV5000B (DV90BB5245AW) — Tumble dryer user manual (EN)
+      pagina: "51"
+      consultado_em: 2026-11-04
+- id: samsung-ms-ac6
+  brand: samsung
+  appliance_type: maquina-secar
+  code: AC6
+  descricao: Falha de comunicação entre a placa principal e a placa do inversor. Tenta recomeçar o programa; se continuar, contacta a assistência.
+  sources:
+    - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DV90BB5245AW&CttFileID=8724284&CDCttType=UM&VPath=UM%2F202208%2F20220815150115831%2FB-PJT_DV5000B_SimpleUX_WEB_English.pdf
+      titulo: Samsung DV5000B (DV90BB5245AW) — Tumble dryer user manual (EN)
+      pagina: "52"
+      consultado_em: 2026-11-04
+- id: samsung-ms-hcl
+  brand: samsung
+  appliance_type: maquina-secar
+  code: HCL
+  descricao: "Fuga de gás refrigerante. Não uses a máquina (só a podes ligar ou desligar) até a assistência a verificar. O refrigerante é inflamável: mantém chamas e fontes de ignição longe."
+  sources:
+    - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DV90BB5245AW&CttFileID=8724284&CDCttType=UM&VPath=UM%2F202208%2F20220815150115831%2FB-PJT_DV5000B_SimpleUX_WEB_English.pdf
+      titulo: Samsung DV5000B (DV90BB5245AW) — Tumble dryer user manual (EN)
+      pagina: 8, 52
+      consultado_em: 2026-11-04
+- id: samsung-ms-hc
+  brand: samsung
+  appliance_type: maquina-secar
+  code: HC
+  descricao: Sobreaquecimento do compressor. Verifica se o permutador de calor e o filtro de cotão estão limpos; se continuar, contacta a assistência.
+  guias:
+    - ms-limpar-filtro-cotao
+    - ms-limpar-permutador
+  sources:
+    - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DV90BB5245AW&CttFileID=8724284&CDCttType=UM&VPath=UM%2F202208%2F20220815150115831%2FB-PJT_DV5000B_SimpleUX_WEB_English.pdf
+      titulo: Samsung DV5000B (DV90BB5245AW) — Tumble dryer user manual (EN)
+      pagina: "52"
+      consultado_em: 2026-11-04

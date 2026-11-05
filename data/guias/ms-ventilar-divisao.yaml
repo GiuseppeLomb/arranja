@@ -1,0 +1,38 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: maquina-secar
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: ms-ventilar-divisao
+titulo: Arejar a divisão e libertar a entrada de ar
+resumo: A máquina de secar troca ar com a divisão. Num espaço fechado, a humidade sobe e a secagem demora mais.
+perigos: []
+ferramentas: []
+tempo_estimado: 5
+passos:
+  - texto: "Areja a divisão enquanto a máquina trabalha: abre uma janela ou a porta."
+    imagem:
+      src: imagens/guias/secar/ventilar.svg
+      alt: Máquina de secar junto a uma janela aberta, com setas de ar a entrar e a sair.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: Mantém livre a entrada de ar da máquina e não reduzas o espaço por baixo dela com tapetes grossos.
+  - texto: A Bosch indica que, abaixo de 15 °C ou acima de 30 °C na divisão, a secagem pode demorar mais.
+  - texto: Se a humidade na divisão subir muito, a Becken indica limpar a grelha de arrefecimento e confirmar que o condensador está bem colocado.
+sources:
+  - url: https://media3.bsh-group.com/Documents/9001378644_A.pdf
+    titulo: Bosch WTR85V90ES — Instrucciones de uso e instalación, secadora con bomba de calor (ES)
+    pagina: 40–41
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/5864042_MAQ_SECAR_ROUPS_BECKEN_8KG_BDM2741_HP_manual.pdf
+    titulo: Becken BDM2740/BDM2741 HP — Manual de instruções da máquina de secar (secção PT; páginas do PDF)
+    pagina: 23, 26
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DV90BB5245AW&CttFileID=8724284&CDCttType=UM&VPath=UM%2F202208%2F20220815150115831%2FB-PJT_DV5000B_SimpleUX_WEB_English.pdf
+    titulo: Samsung DV5000B (DV90BB5245AW) — Tumble dryer user manual (EN)
+    pagina: 49–50
+    consultado_em: 2026-11-04

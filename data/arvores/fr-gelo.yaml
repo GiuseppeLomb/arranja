@@ -1,0 +1,77 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/diagnostic_tree.schema.json
+appliance_type: frigorifico
+aplicavel_a:
+  - brand: "*"
+id: fr-gelo
+ordem: 4
+titulo: Forma-se muito gelo no congelador ou nas paredes
+sintoma: Gelo em excesso
+inicio: porta
+nos:
+  porta:
+    tipo: pergunta
+    texto: A porta fica bem fechada, sem alimentos a impedir e com o vedante limpo?
+    respostas:
+      - texto: Não ou não sei
+        ir_para: fim-porta
+      - texto: Sim
+        ir_para: saidas
+  saidas:
+    tipo: pergunta
+    texto: Há alimentos encostados às saídas de ar, ou a porta é aberta muitas vezes?
+    respostas:
+      - texto: Sim
+        ir_para: fim-arrumar
+      - texto: Não
+        ir_para: repete
+  repete:
+    tipo: pergunta
+    texto: Já descongelaste e o gelo voltou a formar-se depressa?
+    respostas:
+      - texto: Não
+        ir_para: fim-descongelar
+      - texto: Sim
+        ir_para: fim-tecnico
+  fim-porta:
+    tipo: guia
+    guias:
+      - fr-limpar-vedante
+      - fr-arrumar-alimentos
+  fim-arrumar:
+    tipo: guia
+    guias:
+      - fr-arrumar-alimentos
+  fim-descongelar:
+    tipo: guia
+    guias:
+      - fr-descongelar-congelador
+    nota: Nos congeladores sem No Frost, a camada de gelo deve ser tirada com regularidade (Bosch).
+  fim-tecnico:
+    tipo: tecnico
+    motivo: Se o gelo volta a formar-se depressa com a porta a fechar bem e as saídas de ar livres, contacta a assistência. O circuito de refrigeração tem gás refrigerante inflamável e os fabricantes avisam que só técnicos podem mexer nele; não tentes reparar o aparelho por tua conta.
+sources:
+  - url: https://media3.bsh-group.com/Documents/9000942200_E.pdf
+    titulo: Bosch KGV… — Instruções de serviço, combinação de frigorífico e congelador (secção PT)
+    pagina: 47, 50
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=RB34T602EWW&CttFileID=11390423&CDCttType=UM&VPath=UM%2F202604%2F20260424171513199%2FOID34016-07_BMF_RB7300T_EN_260417.pdf
+    titulo: Samsung RB7300T (RB34T602EWW) — Refrigerator user manual (EN)
+    pagina: 6, 55
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7267518_FRIGORIFICO_BECKEN_NF_BDD5394_WH_manual.pdf
+    titulo: Becken BDD5394 NF — Manual de instruções do frigorífico (secção PT)
+    pagina: 102, 106
+    consultado_em: 2026-11-04
+  - url: https://media3.bsh-group.com/Documents/9000942200_E.pdf
+    titulo: Bosch KGV… — Instruções de serviço, combinação de frigorífico e congelador (secção PT)
+    pagina: "30"
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=RB34T602EWW&CttFileID=11390423&CDCttType=UM&VPath=UM%2F202604%2F20260424171513199%2FOID34016-07_BMF_RB7300T_EN_260417.pdf
+    titulo: Samsung RB7300T (RB34T602EWW) — Refrigerator user manual (EN)
+    pagina: 2, 60
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7267518_FRIGORIFICO_BECKEN_NF_BDD5394_WH_manual.pdf
+    titulo: Becken BDD5394 NF — Manual de instruções do frigorífico (secção PT)
+    pagina: 74, 104
+    consultado_em: 2026-11-04

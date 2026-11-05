@@ -1,0 +1,70 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/diagnostic_tree.schema.json
+appliance_type: maquina-secar
+aplicavel_a:
+  - brand: "*"
+id: ms-cheiro
+ordem: 6
+titulo: A máquina de secar ou a roupa cheiram mal
+sintoma: Cheiro mau
+inicio: filtro
+nos:
+  filtro:
+    tipo: pergunta
+    texto: Voltaste a pôr o filtro de cotão ainda molhado?
+    respostas:
+      - texto: Sim ou não sei
+        ir_para: fim-filtro
+      - texto: Não
+        ir_para: roupa
+  roupa:
+    tipo: pergunta
+    texto: A roupa ficou muito tempo molhada na máquina de lavar antes de ir para a de secar?
+    respostas:
+      - texto: Sim
+        ir_para: fim-roupa
+      - texto: Não
+        ir_para: divisao
+  divisao:
+    tipo: pergunta
+    texto: A divisão está arejada, sem cheiros fortes de tintas ou produtos de limpeza?
+    respostas:
+      - texto: Não ou não sei
+        ir_para: fim-divisao
+      - texto: Sim
+        ir_para: fim-tecnico
+  fim-filtro:
+    tipo: guia
+    guias:
+      - ms-limpar-filtro-cotao
+    nota: "Um filtro molhado pode criar bolor e maus cheiros: deixa-o secar bem antes de o voltares a pôr (Samsung)."
+  fim-roupa:
+    tipo: guia
+    guias:
+      - ms-carga-programa
+    nota: A Samsung desaconselha secar roupa que ficou muito tempo molhada na máquina.
+  fim-divisao:
+    tipo: guia
+    guias:
+      - ms-ventilar-divisao
+    nota: Cheiros da divisão podem entrar na máquina com o ar (Samsung).
+  fim-tecnico:
+    tipo: tecnico
+    motivo: "Se o cheiro continua, contacta a assistência. Os fabricantes avisam que não deves abrir a máquina: há risco de choque elétrico e as reparações são só para técnicos autorizados."
+sources:
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DV90BB5245AW&CttFileID=8724284&CDCttType=UM&VPath=UM%2F202208%2F20220815150115831%2FB-PJT_DV5000B_SimpleUX_WEB_English.pdf
+    titulo: Samsung DV5000B (DV90BB5245AW) — Tumble dryer user manual (EN)
+    pagina: 46, 49–50
+    consultado_em: 2026-11-04
+  - url: https://media3.bsh-group.com/Documents/9001378644_A.pdf
+    titulo: Bosch WTR85V90ES — Instrucciones de uso e instalación, secadora con bomba de calor (ES)
+    pagina: "41"
+    consultado_em: 2026-11-04
+  - url: https://media3.bsh-group.com/Documents/9001378644_A.pdf
+    titulo: Bosch WTR85V90ES — Instrucciones de uso e instalación, secadora con bomba de calor (ES)
+    pagina: "34"
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/5864042_MAQ_SECAR_ROUPS_BECKEN_8KG_BDM2741_HP_manual.pdf
+    titulo: Becken BDM2740/BDM2741 HP — Manual de instruções da máquina de secar (secção PT; páginas do PDF)
+    pagina: 20, 26
+    consultado_em: 2026-11-04

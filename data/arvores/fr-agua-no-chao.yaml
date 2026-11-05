@@ -1,0 +1,70 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/diagnostic_tree.schema.json
+appliance_type: frigorifico
+aplicavel_a:
+  - brand: "*"
+id: fr-agua-no-chao
+ordem: 6
+titulo: Há água no chão junto ao frigorífico
+sintoma: Água no chão
+inicio: desligado
+nos:
+  desligado:
+    tipo: pergunta
+    texto: O aparelho esteve desligado há pouco tempo?
+    ajuda: Depois de estar desligado muito tempo, o gelo derrete e a água pode escorrer para o chão (Becken).
+    respostas:
+      - texto: Sim
+        ir_para: fim-desligado
+      - texto: Não
+        ir_para: orificio
+  orificio:
+    tipo: pergunta
+    texto: O orifício de escoamento no fundo do frigorífico está limpo?
+    respostas:
+      - texto: Não ou não sei
+        ir_para: fim-orificio
+      - texto: Sim
+        ir_para: fim-tecnico
+  fim-desligado:
+    tipo: guia
+    guias:
+      - fr-descongelar-congelador
+    nota: Seca a água e confirma se o gelo derretido explica a água no chão.
+  fim-orificio:
+    tipo: guia
+    guias:
+      - fr-limpar-orificio-descongelacao
+    nota: Com o orifício entupido, a água pode acabar no chão (Becken).
+  fim-tecnico:
+    tipo: tecnico
+    motivo: "Se a água continua, contacta a assistência. A Becken explica que pode vir do reservatório ou do tubo de escoamento atrás, junto ao compressor: zona com o circuito de refrigeração (gás inflamável) e peças quentes, só para técnicos."
+sources:
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7267518_FRIGORIFICO_BECKEN_NF_BDD5394_WH_manual.pdf
+    titulo: Becken BDD5394 NF — Manual de instruções do frigorífico (secção PT)
+    pagina: "106"
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7452604_FRIGORIFICO_COMBINADO_BECKEN_BC4322_manual.pdf
+    titulo: Becken BC4322 — Manual de instruções do combinado No Frost (secção PT; páginas do PDF)
+    pagina: 75, 97
+    consultado_em: 2026-11-04
+  - url: https://media3.bsh-group.com/Documents/9000942200_E.pdf
+    titulo: Bosch KGV… — Instruções de serviço, combinação de frigorífico e congelador (secção PT)
+    pagina: "47"
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=RB34T602EWW&CttFileID=11390423&CDCttType=UM&VPath=UM%2F202604%2F20260424171513199%2FOID34016-07_BMF_RB7300T_EN_260417.pdf
+    titulo: Samsung RB7300T (RB34T602EWW) — Refrigerator user manual (EN)
+    pagina: "9"
+    consultado_em: 2026-11-04
+  - url: https://media3.bsh-group.com/Documents/9000942200_E.pdf
+    titulo: Bosch KGV… — Instruções de serviço, combinação de frigorífico e congelador (secção PT)
+    pagina: "30"
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=RB34T602EWW&CttFileID=11390423&CDCttType=UM&VPath=UM%2F202604%2F20260424171513199%2FOID34016-07_BMF_RB7300T_EN_260417.pdf
+    titulo: Samsung RB7300T (RB34T602EWW) — Refrigerator user manual (EN)
+    pagina: 2, 60
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7267518_FRIGORIFICO_BECKEN_NF_BDD5394_WH_manual.pdf
+    titulo: Becken BDD5394 NF — Manual de instruções do frigorífico (secção PT)
+    pagina: 74, 104
+    consultado_em: 2026-11-04

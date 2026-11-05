@@ -1,0 +1,40 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: maquina-secar
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: ms-nivelar
+titulo: Nivelar a máquina de secar
+resumo: Desnivelada, a máquina faz mais barulho, vibra e pode verter água.
+perigos:
+  - peso
+ferramentas:
+  - nivel-bolha
+tempo_estimado: 15
+passos:
+  - texto: Confirma que a máquina está num piso firme, plano e limpo.
+    imagem:
+      src: imagens/guias/secar/nivelar.svg
+      alt: Máquina de secar vista de frente com um nível de bolha em cima e os pés reguláveis em destaque.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: Pousa um nível de bolha em cima da máquina e verifica de lado a lado e da frente para trás.
+  - texto: "Roda os pés reguláveis até a máquina ficar nivelada e com os quatro pés bem assentes no chão. Não estiques os pés mais do que o necessário: a máquina vibra mais (Samsung)."
+  - texto: Nunca tires os pés da máquina (Becken).
+sources:
+  - url: https://media3.bsh-group.com/Documents/9001378644_A.pdf
+    titulo: Bosch WTR85V90ES — Instrucciones de uso e instalación, secadora con bomba de calor (ES)
+    pagina: 14–15, 40
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/5864042_MAQ_SECAR_ROUPS_BECKEN_8KG_BDM2741_HP_manual.pdf
+    titulo: Becken BDM2740/BDM2741 HP — Manual de instruções da máquina de secar (secção PT; páginas do PDF)
+    pagina: 23, 26
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DV90BB5245AW&CttFileID=8724284&CDCttType=UM&VPath=UM%2F202208%2F20220815150115831%2FB-PJT_DV5000B_SimpleUX_WEB_English.pdf
+    titulo: Samsung DV5000B (DV90BB5245AW) — Tumble dryer user manual (EN)
+    pagina: 19, 49
+    consultado_em: 2026-11-04

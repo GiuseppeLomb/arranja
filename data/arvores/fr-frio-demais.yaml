@@ -1,0 +1,56 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/diagnostic_tree.schema.json
+appliance_type: frigorifico
+aplicavel_a:
+  - brand: "*"
+id: fr-frio-demais
+ordem: 3
+titulo: O frigorífico está frio demais ou congela os alimentos
+sintoma: Frio demais
+inicio: regulacao
+nos:
+  regulacao:
+    tipo: pergunta
+    texto: A temperatura está regulada muito fria ou a supercongelação está ativa?
+    respostas:
+      - texto: Sim ou não sei
+        ir_para: fim-regulacao
+      - texto: Não
+        ir_para: fim-tecnico
+  fim-regulacao:
+    tipo: guia
+    guias:
+      - fr-regular-temperatura
+    nota: Regula uma temperatura menos fria e verifica no dia seguinte (Bosch).
+  fim-tecnico:
+    tipo: tecnico
+    motivo: Se continua frio demais com a regulação certa, contacta a assistência. O circuito de refrigeração tem gás refrigerante inflamável e os fabricantes avisam que só técnicos podem mexer nele; não tentes reparar o aparelho por tua conta.
+sources:
+  - url: https://media3.bsh-group.com/Documents/9000942200_E.pdf
+    titulo: Bosch KGV… — Instruções de serviço, combinação de frigorífico e congelador (secção PT)
+    pagina: "51"
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=RB34T602EWW&CttFileID=11390423&CDCttType=UM&VPath=UM%2F202604%2F20260424171513199%2FOID34016-07_BMF_RB7300T_EN_260417.pdf
+    titulo: Samsung RB7300T (RB34T602EWW) — Refrigerator user manual (EN)
+    pagina: "54"
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7267518_FRIGORIFICO_BECKEN_NF_BDD5394_WH_manual.pdf
+    titulo: Becken BDD5394 NF — Manual de instruções do frigorífico (secção PT)
+    pagina: "106"
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7452604_FRIGORIFICO_COMBINADO_BECKEN_BC4322_manual.pdf
+    titulo: Becken BC4322 — Manual de instruções do combinado No Frost (secção PT; páginas do PDF)
+    pagina: "96"
+    consultado_em: 2026-11-04
+  - url: https://media3.bsh-group.com/Documents/9000942200_E.pdf
+    titulo: Bosch KGV… — Instruções de serviço, combinação de frigorífico e congelador (secção PT)
+    pagina: "30"
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=RB34T602EWW&CttFileID=11390423&CDCttType=UM&VPath=UM%2F202604%2F20260424171513199%2FOID34016-07_BMF_RB7300T_EN_260417.pdf
+    titulo: Samsung RB7300T (RB34T602EWW) — Refrigerator user manual (EN)
+    pagina: 2, 60
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7267518_FRIGORIFICO_BECKEN_NF_BDD5394_WH_manual.pdf
+    titulo: Becken BDD5394 NF — Manual de instruções do frigorífico (secção PT)
+    pagina: 74, 104
+    consultado_em: 2026-11-04

@@ -1,0 +1,47 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: frigorifico
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: fr-arrumar-alimentos
+titulo: Arrumar os alimentos sem tapar a ventilação
+resumo: Alimentos encostados às saídas de ar, comida quente e a porta muito tempo aberta são causas simples de gelo, condensação e pouco frio.
+perigos: []
+avisos:
+  - "Não guardes garrafas nem latas de líquidos no congelador, sobretudo bebidas com gás: podem rebentar (Bosch, Becken)."
+  - Não guardes no aparelho sprays com gás inflamável nem substâncias explosivas (Bosch, Samsung).
+ferramentas: []
+tempo_estimado: 5
+passos:
+  - texto: Não encostes alimentos às saídas de ar e não sobrecarregues o frigorífico.
+    imagem:
+      src: imagens/guias/frigorifico/arrumar.svg
+      alt: Interior do frigorífico com alimentos espaçados e setas de ar a circular.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: Deixa arrefecer a comida quente antes de a guardar.
+  - texto: Tapa bem os alimentos com cheiro forte ou com muita humidade.
+  - texto: Abre a porta o mínimo de tempo possível e confirma que nada a impede de fechar.
+  - texto: Não congeles de uma vez mais alimentos frescos do que a capacidade máxima indicada na placa de características (Bosch).
+  - texto: "Mantém as gavetas e prateleiras na posição original: ajudam a circulação do ar (Bosch, Samsung)."
+sources:
+  - url: https://media3.bsh-group.com/Documents/9000942200_E.pdf
+    titulo: Bosch KGV… — Instruções de serviço, combinação de frigorífico e congelador (secção PT)
+    pagina: 31–32, 42–43, 50–51
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=RB34T602EWW&CttFileID=11390423&CDCttType=UM&VPath=UM%2F202604%2F20260424171513199%2FOID34016-07_BMF_RB7300T_EN_260417.pdf
+    titulo: Samsung RB7300T (RB34T602EWW) — Refrigerator user manual (EN)
+    pagina: 5–6, 9, 18, 54–55
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7267518_FRIGORIFICO_BECKEN_NF_BDD5394_WH_manual.pdf
+    titulo: Becken BDD5394 NF — Manual de instruções do frigorífico (secção PT)
+    pagina: 105–106
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7452604_FRIGORIFICO_COMBINADO_BECKEN_BC4322_manual.pdf
+    titulo: Becken BC4322 — Manual de instruções do combinado No Frost (secção PT; páginas do PDF)
+    pagina: "74"
+    consultado_em: 2026-11-04

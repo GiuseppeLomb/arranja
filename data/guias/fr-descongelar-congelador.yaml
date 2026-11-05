@@ -1,0 +1,51 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: frigorifico
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: fr-descongelar-congelador
+titulo: Descongelar o congelador
+resumo: Uma camada de gelo grossa dificulta o frio e aumenta o consumo. Mesmo os No Frost podem ganhar gelo se a porta ficar aberta muito tempo.
+perigos:
+  - agua
+avisos:
+  - "Nunca raspes o gelo com facas ou objetos pontiagudos: podes furar a tubagem do gás refrigerante, que é inflamável e perigoso para os olhos."
+  - "Se danificares o circuito de refrigeração: mantém chamas e fontes de ignição longe, areja a divisão, tira a ficha da tomada e chama a assistência (Bosch, Samsung)."
+ferramentas:
+  - toalhas
+  - balde
+tempo_estimado: 120
+passos:
+  - texto: Escolhe uma altura em que o congelador esteja quase vazio. A Bosch sugere ligar a supercongelação cerca de 4 horas antes, para os alimentos aguentarem mais tempo fora.
+  - texto: Tira os alimentos e guarda-os num sítio fresco, bem tapados (com acumuladores de frio, se tiveres).
+  - texto: Deixa a porta do congelador aberta e areja a divisão para acelerar.
+    imagem:
+      src: imagens/guias/frigorifico/descongelar.svg
+      alt: Congelador aberto com gelo nas paredes, um recipiente com água quente sobre um apoio e um pano.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: Se o teu modelo tiver uma saída para a água da descongelação, abre-a e põe um recipiente por baixo (Bosch).
+  - texto: Para acelerar, a Bosch indica pôr dois recipientes com água quente dentro do congelador, sobre um apoio para panelas. Não uses outros meios que o fabricante não recomende (Samsung).
+  - texto: Quando o gelo derreter, apanha a água com uma esponja e limpa o interior com um pano macio e água morna. Para soltar o gelo, a Becken admite apenas um raspador de plástico.
+  - texto: Seca tudo muito bem e fecha a saída da água, se a abriste. Só voltes a ligar o aparelho com o interior completamente seco (Becken).
+sources:
+  - url: https://media3.bsh-group.com/Documents/9000942200_E.pdf
+    titulo: Bosch KGV… — Instruções de serviço, combinação de frigorífico e congelador (secção PT)
+    pagina: 30, 47–48
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7267518_FRIGORIFICO_BECKEN_NF_BDD5394_WH_manual.pdf
+    titulo: Becken BDD5394 NF — Manual de instruções do frigorífico (secção PT)
+    pagina: 102–103
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7452604_FRIGORIFICO_COMBINADO_BECKEN_BC4322_manual.pdf
+    titulo: Becken BC4322 — Manual de instruções do combinado No Frost (secção PT; páginas do PDF)
+    pagina: "75"
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=RB34T602EWW&CttFileID=11390423&CDCttType=UM&VPath=UM%2F202604%2F20260424171513199%2FOID34016-07_BMF_RB7300T_EN_260417.pdf
+    titulo: Samsung RB7300T (RB34T602EWW) — Refrigerator user manual (EN)
+    pagina: 2, 60
+    consultado_em: 2026-11-04

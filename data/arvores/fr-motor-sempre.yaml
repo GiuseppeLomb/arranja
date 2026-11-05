@@ -1,0 +1,65 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/diagnostic_tree.schema.json
+appliance_type: frigorifico
+aplicavel_a:
+  - brand: "*"
+id: fr-motor-sempre
+ordem: 11
+titulo: O motor do frigorífico parece estar sempre a trabalhar
+sintoma: Motor sempre a trabalhar
+inicio: motivo
+nos:
+  motivo:
+    tipo: pergunta
+    texto: "Aconteceu algum destes casos: regulação muito fria, comida quente guardada há pouco, dia muito quente, porta aberta muitas vezes, ou aparelho ligado há pouco?"
+    ajuda: É normal ouvir o motor com frequência; nestes casos trabalha mais tempo (Becken).
+    respostas:
+      - texto: Sim
+        ir_para: fim-motivo
+      - texto: Não
+        ir_para: local
+  local:
+    tipo: pergunta
+    texto: O aparelho tem espaço à volta e a traseira está sem pó?
+    respostas:
+      - texto: Não ou não sei
+        ir_para: fim-local
+      - texto: Sim
+        ir_para: fim-tecnico
+  fim-motivo:
+    tipo: guia
+    guias:
+      - fr-regular-temperatura
+      - fr-arrumar-alimentos
+  fim-local:
+    tipo: guia
+    guias:
+      - fr-instalacao-ventilacao
+  fim-tecnico:
+    tipo: tecnico
+    motivo: Se o motor continua sem parar sem nenhum destes motivos, contacta a assistência. O circuito de refrigeração tem gás refrigerante inflamável e os fabricantes avisam que só técnicos podem mexer nele; não tentes reparar o aparelho por tua conta.
+sources:
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7267518_FRIGORIFICO_BECKEN_NF_BDD5394_WH_manual.pdf
+    titulo: Becken BDD5394 NF — Manual de instruções do frigorífico (secção PT)
+    pagina: "105"
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=RB34T602EWW&CttFileID=11390423&CDCttType=UM&VPath=UM%2F202604%2F20260424171513199%2FOID34016-07_BMF_RB7300T_EN_260417.pdf
+    titulo: Samsung RB7300T (RB34T602EWW) — Refrigerator user manual (EN)
+    pagina: 6, 54
+    consultado_em: 2026-11-04
+  - url: https://media3.bsh-group.com/Documents/9000942200_E.pdf
+    titulo: Bosch KGV… — Instruções de serviço, combinação de frigorífico e congelador (secção PT)
+    pagina: "50"
+    consultado_em: 2026-11-04
+  - url: https://media3.bsh-group.com/Documents/9000942200_E.pdf
+    titulo: Bosch KGV… — Instruções de serviço, combinação de frigorífico e congelador (secção PT)
+    pagina: "30"
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=RB34T602EWW&CttFileID=11390423&CDCttType=UM&VPath=UM%2F202604%2F20260424171513199%2FOID34016-07_BMF_RB7300T_EN_260417.pdf
+    titulo: Samsung RB7300T (RB34T602EWW) — Refrigerator user manual (EN)
+    pagina: 2, 60
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7267518_FRIGORIFICO_BECKEN_NF_BDD5394_WH_manual.pdf
+    titulo: Becken BDD5394 NF — Manual de instruções do frigorífico (secção PT)
+    pagina: 74, 104
+    consultado_em: 2026-11-04

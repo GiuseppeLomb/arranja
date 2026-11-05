@@ -1,0 +1,69 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/diagnostic_tree.schema.json
+appliance_type: frigorifico
+aplicavel_a:
+  - brand: "*"
+id: fr-nao-liga
+ordem: 1
+titulo: O frigorífico não liga
+sintoma: Não liga (sem luzes)
+inicio: luzes
+nos:
+  luzes:
+    tipo: pergunta
+    texto: Alguma luz ou o painel acende?
+    respostas:
+      - texto: Não
+        ir_para: energia
+      - texto: Sim
+        ir_para: fim-arrefece
+  energia:
+    tipo: pergunta
+    texto: Já confirmaste a ficha, a tomada e o fusível?
+    respostas:
+      - texto: Não
+        ir_para: fim-energia
+      - texto: Sim
+        ir_para: fim-tecnico
+  fim-energia:
+    tipo: guia
+    guias:
+      - fr-verificar-energia
+  fim-tecnico:
+    tipo: tecnico
+    motivo: Se a tomada e o fusível estão bem e o aparelho continua sem luzes, contacta a assistência. O circuito de refrigeração tem gás refrigerante inflamável e os fabricantes avisam que só técnicos podem mexer nele; não tentes reparar o aparelho por tua conta.
+  fim-arrefece:
+    tipo: guia
+    guias:
+      - fr-regular-temperatura
+      - fr-instalacao-ventilacao
+    nota: Se o painel acende mas o aparelho não arrefece, vê o sintoma «Arrefece pouco».
+sources:
+  - url: https://media3.bsh-group.com/Documents/9000942200_E.pdf
+    titulo: Bosch KGV… — Instruções de serviço, combinação de frigorífico e congelador (secção PT)
+    pagina: "51"
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=RB34T602EWW&CttFileID=11390423&CDCttType=UM&VPath=UM%2F202604%2F20260424171513199%2FOID34016-07_BMF_RB7300T_EN_260417.pdf
+    titulo: Samsung RB7300T (RB34T602EWW) — Refrigerator user manual (EN)
+    pagina: "54"
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7267518_FRIGORIFICO_BECKEN_NF_BDD5394_WH_manual.pdf
+    titulo: Becken BDD5394 NF — Manual de instruções do frigorífico (secção PT)
+    pagina: "105"
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7452604_FRIGORIFICO_COMBINADO_BECKEN_BC4322_manual.pdf
+    titulo: Becken BC4322 — Manual de instruções do combinado No Frost (secção PT; páginas do PDF)
+    pagina: 96–97
+    consultado_em: 2026-11-04
+  - url: https://media3.bsh-group.com/Documents/9000942200_E.pdf
+    titulo: Bosch KGV… — Instruções de serviço, combinação de frigorífico e congelador (secção PT)
+    pagina: "30"
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=RB34T602EWW&CttFileID=11390423&CDCttType=UM&VPath=UM%2F202604%2F20260424171513199%2FOID34016-07_BMF_RB7300T_EN_260417.pdf
+    titulo: Samsung RB7300T (RB34T602EWW) — Refrigerator user manual (EN)
+    pagina: 2, 60
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7267518_FRIGORIFICO_BECKEN_NF_BDD5394_WH_manual.pdf
+    titulo: Becken BDD5394 NF — Manual de instruções do frigorífico (secção PT)
+    pagina: 74, 104
+    consultado_em: 2026-11-04

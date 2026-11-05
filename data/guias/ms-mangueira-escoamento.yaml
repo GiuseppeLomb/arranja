@@ -1,0 +1,42 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: maquina-secar
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: ms-mangueira-escoamento
+titulo: Verificar a mangueira de escoamento da condensação
+resumo: Se a máquina escoa a água por uma mangueira, uma dobra ou gelo na mangueira impede o escoamento.
+perigos:
+  - agua
+ferramentas:
+  - toalhas
+  - balde
+tempo_estimado: 15
+passos:
+  - texto: Se a tua máquina tem a mangueira de escoamento ligada, segue-a e confirma que não está dobrada, torcida nem danificada.
+    imagem:
+      src: imagens/guias/secar/mangueira.svg
+      alt: Máquina de secar com uma mangueira fina a sair da traseira até ao esgoto, com uma dobra assinalada.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: Confirma que está bem ligada ao esgoto (Bosch, Samsung).
+  - texto: Se a mangueira estiver congelada, a Samsung indica envolvê-la cerca de 10 minutos numa toalha embebida em água morna para descongelar e voltar a ligá-la.
+    aviso: "A água congelada pode rachar as mangueiras: não instales a máquina num sítio onde possa gelar (Bosch, Becken)."
+  - texto: "Se a máquina não tem mangueira ligada, a água vai para o depósito: esvazia-o (guia «Esvaziar o depósito da água»)."
+sources:
+  - url: https://media3.bsh-group.com/Documents/9001378644_A.pdf
+    titulo: Bosch WTR85V90ES — Instrucciones de uso e instalación, secadora con bomba de calor (ES)
+    pagina: 4, 40
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/5864042_MAQ_SECAR_ROUPS_BECKEN_8KG_BDM2741_HP_manual.pdf
+    titulo: Becken BDM2740/BDM2741 HP — Manual de instruções da máquina de secar (secção PT; páginas do PDF)
+    pagina: "26"
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DV90BB5245AW&CttFileID=8724284&CDCttType=UM&VPath=UM%2F202208%2F20220815150115831%2FB-PJT_DV5000B_SimpleUX_WEB_English.pdf
+    titulo: Samsung DV5000B (DV90BB5245AW) — Tumble dryer user manual (EN)
+    pagina: 50–51
+    consultado_em: 2026-11-04

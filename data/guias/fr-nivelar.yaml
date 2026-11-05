@@ -1,0 +1,47 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: frigorifico
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: fr-nivelar
+titulo: Nivelar o frigorífico para as portas fecharem bem
+resumo: Desnivelado, o frigorífico faz barulho e as portas podem não fechar nem vedar bem.
+perigos:
+  - peso
+avisos:
+  - Para nivelar, a Samsung indica fazê-lo com o frigorífico vazio.
+ferramentas:
+  - nivel-bolha
+  - chave-fendas
+tempo_estimado: 20
+passos:
+  - texto: Confirma que o aparelho está num piso firme e plano.
+    imagem:
+      src: imagens/guias/frigorifico/nivelar.svg
+      alt: Frigorífico visto de lado, ligeiramente inclinado para trás, com um nível de bolha e o pé da frente em destaque.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: Ajusta os pés da frente (nalguns modelos, com uma chave de fendas) até o aparelho ficar nivelado de lado a lado.
+  - texto: Deixa a frente ligeiramente mais alta do que a traseira, para as portas fecharem sozinhas. A Becken indica uma inclinação para trás de 10 a 15 mm.
+  - texto: Confirma que o aparelho não toca na parede nem nos móveis vizinhos e que as portas fecham e vedam bem.
+sources:
+  - url: https://media3.bsh-group.com/Documents/9000942200_E.pdf
+    titulo: Bosch KGV… — Instruções de serviço, combinação de frigorífico e congelador (secção PT)
+    pagina: 35, 50
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=RB34T602EWW&CttFileID=11390423&CDCttType=UM&VPath=UM%2F202604%2F20260424171513199%2FOID34016-07_BMF_RB7300T_EN_260417.pdf
+    titulo: Samsung RB7300T (RB34T602EWW) — Refrigerator user manual (EN)
+    pagina: 9, 21–22
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7267518_FRIGORIFICO_BECKEN_NF_BDD5394_WH_manual.pdf
+    titulo: Becken BDD5394 NF — Manual de instruções do frigorífico (secção PT)
+    pagina: "106"
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7452604_FRIGORIFICO_COMBINADO_BECKEN_BC4322_manual.pdf
+    titulo: Becken BC4322 — Manual de instruções do combinado No Frost (secção PT; páginas do PDF)
+    pagina: 86, 96
+    consultado_em: 2026-11-04

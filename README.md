@@ -12,15 +12,21 @@ Projeto aberto e sem fins lucrativos: sem contas, sem backend, sem cookies, sem 
 Ajudar quem tem um eletrodoméstico avariado a perceber se consegue resolver o problema em segurança antes
 de chamar um técnico ou de o deitar fora. O fluxo é simples:
 
-1. **Eletrodoméstico → Marca → Modelo → Problema** (sintoma ou código de erro).
-2. **Diagnóstico** por árvore de decisão determinística, uma pergunta de cada vez.
+1. **Eletrodoméstico → Problema** (lista de sintomas sempre visível). Marca e modelo são opcionais
+   («Refinar com marca e modelo»): só acrescentam códigos de erro e guias específicos. Nunca há becos sem saída.
+2. **Diagnóstico** por árvore de decisão determinística, uma pergunta de cada vez. Cada final é um guia
+   concreto ou «Chama um técnico», com o porquê.
 3. **Checklist** de ferramentas, peças e avisos de risco.
 4. **Guia passo a passo** com Modo Oficina (ecrã sempre ligado, letra maior, botões gigantes).
 
 ### Regras do projeto
 
-- **Nada inventado.** Todo o conteúdo de reparação tem `sources` (URL + data de consulta). Sem dados
-  verificados, a app diz «Ainda não temos dados verificados para este modelo».
+- **Nada inventado.** Todo o conteúdo de reparação tem `sources` (URL, página e data de consulta), só de
+  manuais e páginas oficiais dos fabricantes ou do iFixit, de domínios em `data/fontes-permitidas.yaml`
+  (o `npm run validate` rejeita outros). Cada facto é confirmado por um revisor independente contra a fonte.
+  Sem dados verificados para um modelo, a app diz «Ainda não temos dados verificados para este modelo»,
+  mas os sintomas e guias universais continuam disponíveis.
+- **Marcas.** Lista curada em `data/brands.yaml`; grupo ou distribuidor só com fonte oficial.
 - **Segurança.** Cada guia tem `risk_level` (`baixo`, `medio`, `alto`, `proibido`). Gás (combustível e
   refrigerante), interior de micro-ondas e ligações a 400 V são sempre `proibido`: só se explica o perigo.
   Todos os guias começam com o passo fixo «Desliga da corrente (e da água, se aplicável)».

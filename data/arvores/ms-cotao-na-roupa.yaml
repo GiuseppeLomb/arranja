@@ -1,0 +1,54 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/diagnostic_tree.schema.json
+appliance_type: maquina-secar
+aplicavel_a:
+  - brand: "*"
+id: ms-cotao-na-roupa
+ordem: 10
+titulo: A roupa sai com cotão
+sintoma: Roupa com cotão
+inicio: filtro
+nos:
+  filtro:
+    tipo: pergunta
+    texto: O filtro de cotão estava limpo antes de começares?
+    respostas:
+      - texto: Não ou não sei
+        ir_para: fim-filtro
+      - texto: Sim
+        ir_para: mistura
+  mistura:
+    tipo: pergunta
+    texto: Secaste juntas peças que largam cotão (como toalhas) e peças onde o cotão agarra?
+    respostas:
+      - texto: Sim
+        ir_para: fim-carga
+      - texto: Não
+        ir_para: bolsos
+  bolsos:
+    tipo: pergunta
+    texto: Esvaziaste os bolsos (lenços de papel, por exemplo)?
+    respostas:
+      - texto: Não ou não sei
+        ir_para: fim-carga
+      - texto: Sim
+        ir_para: fim-filtro
+  fim-filtro:
+    tipo: guia
+    guias:
+      - ms-limpar-filtro-cotao
+    nota: Com peças que largam muito cotão, pode ser preciso limpar o filtro a meio do programa (Samsung).
+  fim-carga:
+    tipo: guia
+    guias:
+      - ms-carga-programa
+    nota: Seca à parte as peças que largam cotão (Samsung).
+sources:
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DV90BB5245AW&CttFileID=8724284&CDCttType=UM&VPath=UM%2F202208%2F20220815150115831%2FB-PJT_DV5000B_SimpleUX_WEB_English.pdf
+    titulo: Samsung DV5000B (DV90BB5245AW) — Tumble dryer user manual (EN)
+    pagina: "50"
+    consultado_em: 2026-11-04
+  - url: https://media3.bsh-group.com/Documents/9001378644_A.pdf
+    titulo: Bosch WTR85V90ES — Instrucciones de uso e instalación, secadora con bomba de calor (ES)
+    pagina: "30"
+    consultado_em: 2026-11-04

@@ -1,0 +1,35 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: frigorifico
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: fr-limpar-orificio-descongelacao
+titulo: Limpar o orifício de escoamento da água
+resumo: A água da descongelação automática sai por um pequeno orifício no fundo do frigorífico. Entupido, a água junta-se no fundo.
+perigos: []
+ferramentas:
+  - toalhas
+tempo_estimado: 15
+passos:
+  - texto: Tira a prateleira de vidro por cima da gaveta dos legumes e, se existir, a peça que tapa a calha de escoamento (Bosch).
+    imagem:
+      src: imagens/guias/frigorifico/orificio.svg
+      alt: Parede do fundo do frigorífico com a calha de escoamento e o pequeno orifício, e um cotonete.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: Limpa a calha de recolha da água e o orifício de escoamento com um cotonete ou um objeto semelhante, para a água voltar a correr.
+  - texto: Seca a água que se juntou no fundo do frigorífico.
+  - texto: Verifica este orifício com regularidade (Becken).
+sources:
+  - url: https://media3.bsh-group.com/Documents/9000942200_E.pdf
+    titulo: Bosch KGV… — Instruções de serviço, combinação de frigorífico e congelador (secção PT)
+    pagina: 47, 49, 51
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7452604_FRIGORIFICO_COMBINADO_BECKEN_BC4322_manual.pdf
+    titulo: Becken BC4322 — Manual de instruções do combinado No Frost (secção PT; páginas do PDF)
+    pagina: 75, 97
+    consultado_em: 2026-11-04

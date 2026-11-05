@@ -1,0 +1,49 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: frigorifico
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: fr-limpar-interior
+titulo: Limpar o interior e tirar maus cheiros
+resumo: Alimentos estragados e embalagens sujas são a causa habitual dos maus cheiros.
+perigos:
+  - eletricidade
+avisos:
+  - "Não deites água diretamente sobre o aparelho e não uses máquinas de limpar a vapor: há risco de choque elétrico."
+  - Não uses velas acesas para tirar cheiros nem secadores de cabelo lá dentro (Samsung), não ligues aparelhos elétricos dentro do frigorífico (Bosch, Samsung) e não deixes entrar água na iluminação (Bosch).
+ferramentas:
+  - toalhas
+tempo_estimado: 30
+passos:
+  - texto: Tira todos os alimentos e deita fora o que estiver estragado. Guarda o resto num sítio fresco.
+    imagem:
+      src: imagens/guias/frigorifico/limpar.svg
+      alt: Frigorífico vazio e aberto, com as prateleiras retiradas e um pano.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: "Tira as prateleiras e gavetas. A Bosch desaconselha lavá-las na máquina de lavar loiça: podem deformar-se."
+  - texto: Limpa o interior com um pano macio, água morna e um pouco de detergente neutro. Não uses produtos abrasivos, solventes, lixívia nem com cloro.
+  - texto: "Cada marca tem as suas regras: a Samsung desaconselha vinagre e bicarbonato; a Becken indica uma solução fraca de bicarbonato para o congelador. Segue o manual da tua."
+  - texto: "Não laves prateleiras de vidro frias com água quente: podem partir-se (Samsung)."
+  - texto: Seca tudo bem, limpa as embalagens e volta a arrumar, tapando bem os alimentos com cheiro forte. A Bosch sugere verificar passadas 24 horas se o cheiro voltou.
+sources:
+  - url: https://media3.bsh-group.com/Documents/9000942200_E.pdf
+    titulo: Bosch KGV… — Instruções de serviço, combinação de frigorífico e congelador (secção PT)
+    pagina: 31, 48–49
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=RB34T602EWW&CttFileID=11390423&CDCttType=UM&VPath=UM%2F202604%2F20260424171513199%2FOID34016-07_BMF_RB7300T_EN_260417.pdf
+    titulo: Samsung RB7300T (RB34T602EWW) — Refrigerator user manual (EN)
+    pagina: 13, 52, 55, 60
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7267518_FRIGORIFICO_BECKEN_NF_BDD5394_WH_manual.pdf
+    titulo: Becken BDD5394 NF — Manual de instruções do frigorífico (secção PT)
+    pagina: 101–102, 105
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7452604_FRIGORIFICO_COMBINADO_BECKEN_BC4322_manual.pdf
+    titulo: Becken BC4322 — Manual de instruções do combinado No Frost (secção PT; páginas do PDF)
+    pagina: "95"
+    consultado_em: 2026-11-04

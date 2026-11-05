@@ -1,0 +1,82 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/diagnostic_tree.schema.json
+appliance_type: frigorifico
+aplicavel_a:
+  - brand: "*"
+id: fr-barulho
+ordem: 7
+titulo: O frigorífico faz barulho
+sintoma: Barulho
+inicio: normal
+nos:
+  normal:
+    tipo: pergunta
+    texto: O barulho é um zumbido, um borbulhar, cliques ou estalidos?
+    ajuda: "Estes sons são normais: o compressor e a ventoinha a trabalhar, o gás a circular nos tubos, cliques do motor e estalidos durante a descongelação (Bosch, Samsung, Becken)."
+    respostas:
+      - texto: Sim
+        ir_para: fim-normal
+      - texto: Não, é outro barulho
+        ir_para: nivel
+  nivel:
+    tipo: pergunta
+    texto: O aparelho está nivelado e afastado da parede e dos móveis?
+    respostas:
+      - texto: Não ou não sei
+        ir_para: fim-nivel
+      - texto: Sim
+        ir_para: garrafas
+  garrafas:
+    tipo: pergunta
+    texto: Há garrafas ou recipientes a tocar uns nos outros, ou prateleiras soltas?
+    respostas:
+      - texto: Sim
+        ir_para: fim-arrumar
+      - texto: Não
+        ir_para: fim-tecnico
+  fim-normal:
+    tipo: guia
+    guias:
+      - fr-nivelar
+    nota: Não é avaria. Se o som parecer mais alto do que antes, confirma que o aparelho está nivelado e não toca em nada.
+  fim-nivel:
+    tipo: guia
+    guias:
+      - fr-nivelar
+  fim-arrumar:
+    tipo: guia
+    guias:
+      - fr-arrumar-alimentos
+    nota: Afasta ligeiramente garrafas e recipientes e volta a encaixar as peças soltas (Bosch).
+  fim-tecnico:
+    tipo: tecnico
+    motivo: Se o barulho anormal continua, contacta a assistência. O circuito de refrigeração tem gás refrigerante inflamável e os fabricantes avisam que só técnicos podem mexer nele; não tentes reparar o aparelho por tua conta.
+sources:
+  - url: https://media3.bsh-group.com/Documents/9000942200_E.pdf
+    titulo: Bosch KGV… — Instruções de serviço, combinação de frigorífico e congelador (secção PT)
+    pagina: "50"
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=RB34T602EWW&CttFileID=11390423&CDCttType=UM&VPath=UM%2F202604%2F20260424171513199%2FOID34016-07_BMF_RB7300T_EN_260417.pdf
+    titulo: Samsung RB7300T (RB34T602EWW) — Refrigerator user manual (EN)
+    pagina: 56–57
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7267518_FRIGORIFICO_BECKEN_NF_BDD5394_WH_manual.pdf
+    titulo: Becken BDD5394 NF — Manual de instruções do frigorífico (secção PT)
+    pagina: "105"
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7452604_FRIGORIFICO_COMBINADO_BECKEN_BC4322_manual.pdf
+    titulo: Becken BC4322 — Manual de instruções do combinado No Frost (secção PT; páginas do PDF)
+    pagina: "96"
+    consultado_em: 2026-11-04
+  - url: https://media3.bsh-group.com/Documents/9000942200_E.pdf
+    titulo: Bosch KGV… — Instruções de serviço, combinação de frigorífico e congelador (secção PT)
+    pagina: "30"
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=RB34T602EWW&CttFileID=11390423&CDCttType=UM&VPath=UM%2F202604%2F20260424171513199%2FOID34016-07_BMF_RB7300T_EN_260417.pdf
+    titulo: Samsung RB7300T (RB34T602EWW) — Refrigerator user manual (EN)
+    pagina: 2, 60
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7267518_FRIGORIFICO_BECKEN_NF_BDD5394_WH_manual.pdf
+    titulo: Becken BDD5394 NF — Manual de instruções do frigorífico (secção PT)
+    pagina: 74, 104
+    consultado_em: 2026-11-04

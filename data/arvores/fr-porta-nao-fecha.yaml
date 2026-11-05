@@ -1,0 +1,76 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/diagnostic_tree.schema.json
+appliance_type: frigorifico
+aplicavel_a:
+  - brand: "*"
+id: fr-porta-nao-fecha
+ordem: 9
+titulo: A porta do frigorífico não fecha bem
+sintoma: A porta não fecha bem
+inicio: obstaculo
+nos:
+  obstaculo:
+    tipo: pergunta
+    texto: Algum alimento, prateleira ou gaveta impede a porta de fechar?
+    respostas:
+      - texto: Sim ou não sei
+        ir_para: fim-arrumar
+      - texto: Não
+        ir_para: nivel
+  nivel:
+    tipo: pergunta
+    texto: O aparelho está nivelado e ligeiramente inclinado para trás?
+    respostas:
+      - texto: Não ou não sei
+        ir_para: fim-nivel
+      - texto: Sim
+        ir_para: vedante
+  vedante:
+    tipo: pergunta
+    texto: O vedante está limpo e inteiro?
+    respostas:
+      - texto: Não ou não sei
+        ir_para: fim-vedante
+      - texto: Sim
+        ir_para: fim-tecnico
+  fim-arrumar:
+    tipo: guia
+    guias:
+      - fr-arrumar-alimentos
+  fim-nivel:
+    tipo: guia
+    guias:
+      - fr-nivelar
+  fim-vedante:
+    tipo: guia
+    guias:
+      - fr-limpar-vedante
+    nota: Se o vedante estiver rasgado, a substituição é com a assistência.
+  fim-tecnico:
+    tipo: tecnico
+    motivo: Se a porta continua a não fechar, contacta a assistência. O circuito de refrigeração tem gás refrigerante inflamável e os fabricantes avisam que só técnicos podem mexer nele; não tentes reparar o aparelho por tua conta.
+sources:
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7267518_FRIGORIFICO_BECKEN_NF_BDD5394_WH_manual.pdf
+    titulo: Becken BDD5394 NF — Manual de instruções do frigorífico (secção PT)
+    pagina: 103, 106
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7452604_FRIGORIFICO_COMBINADO_BECKEN_BC4322_manual.pdf
+    titulo: Becken BC4322 — Manual de instruções do combinado No Frost (secção PT; páginas do PDF)
+    pagina: "86"
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=RB34T602EWW&CttFileID=11390423&CDCttType=UM&VPath=UM%2F202604%2F20260424171513199%2FOID34016-07_BMF_RB7300T_EN_260417.pdf
+    titulo: Samsung RB7300T (RB34T602EWW) — Refrigerator user manual (EN)
+    pagina: 21–22, 55
+    consultado_em: 2026-11-04
+  - url: https://media3.bsh-group.com/Documents/9000942200_E.pdf
+    titulo: Bosch KGV… — Instruções de serviço, combinação de frigorífico e congelador (secção PT)
+    pagina: "30"
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=RB34T602EWW&CttFileID=11390423&CDCttType=UM&VPath=UM%2F202604%2F20260424171513199%2FOID34016-07_BMF_RB7300T_EN_260417.pdf
+    titulo: Samsung RB7300T (RB34T602EWW) — Refrigerator user manual (EN)
+    pagina: 2, 60
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7267518_FRIGORIFICO_BECKEN_NF_BDD5394_WH_manual.pdf
+    titulo: Becken BDD5394 NF — Manual de instruções do frigorífico (secção PT)
+    pagina: 74, 104
+    consultado_em: 2026-11-04

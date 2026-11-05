@@ -1,0 +1,44 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: frigorifico
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: fr-instalacao-ventilacao
+titulo: Verificar o local, o espaço à volta e a traseira
+resumo: Sem espaço para o ar circular, ao sol ou perto de uma fonte de calor, o frigorífico arrefece pior e trabalha mais.
+perigos:
+  - peso
+avisos:
+  - "Não tires a tampa do painel traseiro: há risco de choque elétrico (Samsung)."
+  - "A traseira e o fundo têm o circuito de refrigeração, arestas e peças que podem estar quentes (compressor, condensador): não metas aí as mãos nem objetos metálicos (Samsung, Becken)."
+  - Com refrigerante R600a, a divisão tem de ter pelo menos 1 m³ por cada 8 g de refrigerante indicados na placa de características (Bosch, Samsung).
+ferramentas: []
+tempo_estimado: 15
+passos:
+  - texto: Confirma que o aparelho está num local seco e arejado, fora do sol direto e longe de fogões, radiadores e outras fontes de calor.
+    imagem:
+      src: imagens/guias/frigorifico/ventilacao.svg
+      alt: Frigorífico com espaço livre dos lados, atrás e em cima, longe de um fogão.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: "Deixa espaço à volta para o ar circular: a Samsung e a Becken indicam pelo menos 5 cm dos lados e atrás, e a Samsung 10 cm por cima."
+  - texto: Não tapes as grelhas de ventilação nem a zona por baixo do aparelho.
+  - texto: "Com a ficha fora da tomada, limpa o pó da parte de trás de vez em quando, sem tocar nos tubos: a Samsung sugere aspirar uma ou duas vezes por ano."
+  - texto: "Se o aparelho foi instalado há pouco: a Bosch indica esperar pelo menos 1 hora e a Becken 4 horas antes de o ligar. Depois, espera que chegue à temperatura regulada (Samsung)."
+sources:
+  - url: https://media3.bsh-group.com/Documents/9000942200_E.pdf
+    titulo: Bosch KGV… — Instruções de serviço, combinação de frigorífico e congelador (secção PT)
+    pagina: 30, 35, 37, 50
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=RB34T602EWW&CttFileID=11390423&CDCttType=UM&VPath=UM%2F202604%2F20260424171513199%2FOID34016-07_BMF_RB7300T_EN_260417.pdf
+    titulo: Samsung RB7300T (RB34T602EWW) — Refrigerator user manual (EN)
+    pagina: 2, 6, 9, 18, 22, 52, 54, 60
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7452604_FRIGORIFICO_COMBINADO_BECKEN_BC4322_manual.pdf
+    titulo: Becken BC4322 — Manual de instruções do combinado No Frost (secção PT; páginas do PDF)
+    pagina: 75, 86
+    consultado_em: 2026-11-04

@@ -1,0 +1,107 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/diagnostic_tree.schema.json
+appliance_type: frigorifico
+aplicavel_a:
+  - brand: "*"
+id: fr-arrefece-pouco
+ordem: 2
+titulo: O frigorífico ou o congelador não arrefece o suficiente
+sintoma: Arrefece pouco
+inicio: recente
+nos:
+  recente:
+    tipo: pergunta
+    texto: O aparelho foi ligado ou instalado nas últimas horas?
+    ajuda: Depois de ligado, pode demorar até 12 horas a chegar à temperatura regulada (Bosch).
+    respostas:
+      - texto: Sim
+        ir_para: fim-recente
+      - texto: Não
+        ir_para: regulacao
+  regulacao:
+    tipo: pergunta
+    texto: A temperatura regulada está correta e sem modo de férias ativo?
+    ajuda: "Nas Bosch, se o painel e a luz acendem mas o aparelho não arrefece, pode estar ligado o modo de exposição: o manual indica fazer o auto-teste e, se este assinalar uma anomalia, chamar a assistência."
+    respostas:
+      - texto: Não ou não sei
+        ir_para: fim-regulacao
+      - texto: Sim
+        ir_para: porta
+  porta:
+    tipo: pergunta
+    texto: A porta fecha bem, com o vedante a assentar em toda a volta?
+    respostas:
+      - texto: Não ou não sei
+        ir_para: fim-porta
+      - texto: Sim
+        ir_para: carga
+  carga:
+    tipo: pergunta
+    texto: Guardaste muita comida quente ou nova de uma vez, ou há alimentos a tapar as saídas de ar?
+    respostas:
+      - texto: Sim
+        ir_para: fim-carga
+      - texto: Não
+        ir_para: local
+  local:
+    tipo: pergunta
+    texto: O aparelho tem espaço à volta e está longe do sol e de fontes de calor?
+    respostas:
+      - texto: Não ou não sei
+        ir_para: fim-local
+      - texto: Sim
+        ir_para: fim-tecnico
+  fim-recente:
+    tipo: guia
+    guias:
+      - fr-instalacao-ventilacao
+    nota: Dá-lhe tempo para chegar à temperatura antes de concluíres que há avaria.
+  fim-regulacao:
+    tipo: guia
+    guias:
+      - fr-regular-temperatura
+  fim-porta:
+    tipo: guia
+    guias:
+      - fr-limpar-vedante
+      - fr-nivelar
+  fim-carga:
+    tipo: guia
+    guias:
+      - fr-arrumar-alimentos
+  fim-local:
+    tipo: guia
+    guias:
+      - fr-instalacao-ventilacao
+  fim-tecnico:
+    tipo: tecnico
+    motivo: Se continua sem arrefecer com tudo isto verificado, contacta a assistência. O circuito de refrigeração tem gás refrigerante inflamável e os fabricantes avisam que só técnicos podem mexer nele; não tentes reparar o aparelho por tua conta.
+sources:
+  - url: https://media3.bsh-group.com/Documents/9000942200_E.pdf
+    titulo: Bosch KGV… — Instruções de serviço, combinação de frigorífico e congelador (secção PT)
+    pagina: 46, 50–51, 53
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=RB34T602EWW&CttFileID=11390423&CDCttType=UM&VPath=UM%2F202604%2F20260424171513199%2FOID34016-07_BMF_RB7300T_EN_260417.pdf
+    titulo: Samsung RB7300T (RB34T602EWW) — Refrigerator user manual (EN)
+    pagina: 22, 54
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7267518_FRIGORIFICO_BECKEN_NF_BDD5394_WH_manual.pdf
+    titulo: Becken BDD5394 NF — Manual de instruções do frigorífico (secção PT)
+    pagina: "106"
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7452604_FRIGORIFICO_COMBINADO_BECKEN_BC4322_manual.pdf
+    titulo: Becken BC4322 — Manual de instruções do combinado No Frost (secção PT; páginas do PDF)
+    pagina: "96"
+    consultado_em: 2026-11-04
+  - url: https://media3.bsh-group.com/Documents/9000942200_E.pdf
+    titulo: Bosch KGV… — Instruções de serviço, combinação de frigorífico e congelador (secção PT)
+    pagina: "30"
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=RB34T602EWW&CttFileID=11390423&CDCttType=UM&VPath=UM%2F202604%2F20260424171513199%2FOID34016-07_BMF_RB7300T_EN_260417.pdf
+    titulo: Samsung RB7300T (RB34T602EWW) — Refrigerator user manual (EN)
+    pagina: 2, 60
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7267518_FRIGORIFICO_BECKEN_NF_BDD5394_WH_manual.pdf
+    titulo: Becken BDD5394 NF — Manual de instruções do frigorífico (secção PT)
+    pagina: 74, 104
+    consultado_em: 2026-11-04

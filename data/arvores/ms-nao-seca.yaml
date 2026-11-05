@@ -1,0 +1,117 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/diagnostic_tree.schema.json
+appliance_type: maquina-secar
+aplicavel_a:
+  - brand: "*"
+id: ms-nao-seca
+ordem: 2
+titulo: A roupa sai húmida ou a secagem demora muito
+sintoma: A roupa não seca bem
+inicio: arrefecer
+nos:
+  arrefecer:
+    tipo: pergunta
+    texto: Desdobraste a roupa e deixaste-a arrefecer antes de avaliar?
+    ajuda: Roupa quente parece mais húmida do que está (Bosch).
+    respostas:
+      - texto: Não
+        ir_para: fim-carga
+      - texto: Sim, continua húmida
+        ir_para: filtro
+  filtro:
+    tipo: pergunta
+    texto: Limpaste o filtro de cotão antes de secar?
+    respostas:
+      - texto: Não ou não sei
+        ir_para: fim-filtro
+      - texto: Sim
+        ir_para: base
+  base:
+    tipo: pergunta
+    texto: Limpaste recentemente a zona do permutador de calor (atrás da tampa de baixo)?
+    respostas:
+      - texto: Não ou não sei
+        ir_para: fim-base
+      - texto: Sim
+        ir_para: carga
+  carga:
+    tipo: pergunta
+    texto: A carga respeitava o máximo do programa, sem peças pesadas misturadas com leves?
+    respostas:
+      - texto: Não ou não sei
+        ir_para: fim-carga
+      - texto: Sim
+        ir_para: deposito
+  deposito:
+    tipo: pergunta
+    texto: O depósito da água estava vazio (ou a mangueira de escoamento a escoar bem)?
+    respostas:
+      - texto: Não ou não sei
+        ir_para: fim-deposito
+      - texto: Sim
+        ir_para: sensor
+  sensor:
+    tipo: pergunta
+    texto: Já limpaste o sensor de humidade do tambor?
+    respostas:
+      - texto: Não
+        ir_para: fim-sensor
+      - texto: Sim
+        ir_para: divisao
+  divisao:
+    tipo: pergunta
+    texto: A divisão está arejada e a entrada de ar da máquina está livre?
+    respostas:
+      - texto: Não ou não sei
+        ir_para: fim-divisao
+      - texto: Sim
+        ir_para: fim-tecnico
+  fim-filtro:
+    tipo: guia
+    guias:
+      - ms-limpar-filtro-cotao
+  fim-base:
+    tipo: guia
+    guias:
+      - ms-limpar-permutador
+  fim-carga:
+    tipo: guia
+    guias:
+      - ms-carga-programa
+  fim-sensor:
+    tipo: guia
+    guias:
+      - ms-limpar-sensor-humidade
+  fim-deposito:
+    tipo: guia
+    guias:
+      - ms-esvaziar-deposito
+      - ms-mangueira-escoamento
+  fim-divisao:
+    tipo: guia
+    guias:
+      - ms-ventilar-divisao
+  fim-tecnico:
+    tipo: tecnico
+    motivo: "Se a roupa continua húmida com tudo limpo e bem regulado, contacta a assistência. Os fabricantes avisam que não deves abrir a máquina: há risco de choque elétrico e as reparações são só para técnicos autorizados."
+sources:
+  - url: https://media3.bsh-group.com/Documents/9001378644_A.pdf
+    titulo: Bosch WTR85V90ES — Instrucciones de uso e instalación, secadora con bomba de calor (ES)
+    pagina: 30, 35–36, 41
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/5864042_MAQ_SECAR_ROUPS_BECKEN_8KG_BDM2741_HP_manual.pdf
+    titulo: Becken BDM2740/BDM2741 HP — Manual de instruções da máquina de secar (secção PT; páginas do PDF)
+    pagina: "26"
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DV90BB5245AW&CttFileID=8724284&CDCttType=UM&VPath=UM%2F202208%2F20220815150115831%2FB-PJT_DV5000B_SimpleUX_WEB_English.pdf
+    titulo: Samsung DV5000B (DV90BB5245AW) — Tumble dryer user manual (EN)
+    pagina: "49"
+    consultado_em: 2026-11-04
+  - url: https://media3.bsh-group.com/Documents/9001378644_A.pdf
+    titulo: Bosch WTR85V90ES — Instrucciones de uso e instalación, secadora con bomba de calor (ES)
+    pagina: "34"
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/5864042_MAQ_SECAR_ROUPS_BECKEN_8KG_BDM2741_HP_manual.pdf
+    titulo: Becken BDM2740/BDM2741 HP — Manual de instruções da máquina de secar (secção PT; páginas do PDF)
+    pagina: 20, 26
+    consultado_em: 2026-11-04

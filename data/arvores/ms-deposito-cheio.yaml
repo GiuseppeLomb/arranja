@@ -1,0 +1,60 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/diagnostic_tree.schema.json
+appliance_type: maquina-secar
+aplicavel_a:
+  - brand: "*"
+id: ms-deposito-cheio
+ordem: 7
+titulo: Aviso de depósito cheio ou a água não escoa
+sintoma: Aviso de depósito cheio
+inicio: esvaziou
+nos:
+  esvaziou:
+    tipo: pergunta
+    texto: Já esvaziaste o depósito e voltaste a encaixá-lo até ao fim?
+    respostas:
+      - texto: Não
+        ir_para: fim-deposito
+      - texto: Sim
+        ir_para: mangueira
+  mangueira:
+    tipo: pergunta
+    texto: A máquina tem uma mangueira de escoamento ligada?
+    respostas:
+      - texto: Sim
+        ir_para: fim-mangueira
+      - texto: Não
+        ir_para: fim-tecnico
+  fim-deposito:
+    tipo: guia
+    guias:
+      - ms-esvaziar-deposito
+  fim-mangueira:
+    tipo: guia
+    guias:
+      - ms-mangueira-escoamento
+    nota: A Becken indica verificar a mangueira de saída da condensação se o aviso continuar depois de esvaziares o depósito.
+  fim-tecnico:
+    tipo: tecnico
+    motivo: "Se o aviso continua com o depósito vazio, contacta a assistência. Os fabricantes avisam que não deves abrir a máquina: há risco de choque elétrico e as reparações são só para técnicos autorizados."
+sources:
+  - url: https://media3.bsh-group.com/Documents/9001378644_A.pdf
+    titulo: Bosch WTR85V90ES — Instrucciones de uso e instalación, secadora con bomba de calor (ES)
+    pagina: 29–30
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/5864042_MAQ_SECAR_ROUPS_BECKEN_8KG_BDM2741_HP_manual.pdf
+    titulo: Becken BDM2740/BDM2741 HP — Manual de instruções da máquina de secar (secção PT; páginas do PDF)
+    pagina: 25–26
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DV90BB5245AW&CttFileID=8724284&CDCttType=UM&VPath=UM%2F202208%2F20220815150115831%2FB-PJT_DV5000B_SimpleUX_WEB_English.pdf
+    titulo: Samsung DV5000B (DV90BB5245AW) — Tumble dryer user manual (EN)
+    pagina: 43, 51
+    consultado_em: 2026-11-04
+  - url: https://media3.bsh-group.com/Documents/9001378644_A.pdf
+    titulo: Bosch WTR85V90ES — Instrucciones de uso e instalación, secadora con bomba de calor (ES)
+    pagina: "34"
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/5864042_MAQ_SECAR_ROUPS_BECKEN_8KG_BDM2741_HP_manual.pdf
+    titulo: Becken BDM2740/BDM2741 HP — Manual de instruções da máquina de secar (secção PT; páginas do PDF)
+    pagina: 20, 26
+    consultado_em: 2026-11-04

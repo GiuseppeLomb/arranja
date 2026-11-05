@@ -1,0 +1,43 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: maquina-secar
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: ms-verificar-energia-porta
+titulo: Verificar tomada, fusíveis, porta e bloqueio para crianças
+resumo: "Antes de pensar em avaria, confirma o mais simples: corrente, porta bem fechada, bloqueio para crianças e início."
+perigos:
+  - eletricidade
+ferramentas: []
+tempo_estimado: 10
+passos:
+  - texto: Confirma que a ficha está bem ligada à tomada.
+    aviso: "Não uses extensões nem tomadas múltiplas (risco de incêndio). Se o cabo estiver danificado, não uses a máquina: a substituição é com a assistência."
+    imagem:
+      src: imagens/guias/secar/energia.svg
+      alt: Ficha e tomada ao lado de um disjuntor do quadro elétrico.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: No quadro elétrico, vê se um fusível ou disjuntor disparou e volta a ligá-lo.
+    aviso: "Se disparar outra vez, não insistas: chama um eletricista ou a assistência técnica."
+  - texto: Volta a ligar a máquina e confirma que a porta está bem fechada.
+  - texto: "Confirma que o bloqueio para crianças não está ativo (como se desativa depende do modelo: vê o manual)."
+  - texto: Escolhe um programa e carrega na tecla de início. Se abriste a porta a meio do programa, tens de carregar outra vez em iniciar.
+  - texto: Se programaste um fim ou início diferido, a máquina só arranca mais tarde (Bosch).
+sources:
+  - url: https://media3.bsh-group.com/Documents/9001378644_A.pdf
+    titulo: Bosch WTR85V90ES — Instrucciones de uso e instalación, secadora con bomba de calor (ES)
+    pagina: 6–7, 34, 40
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/5864042_MAQ_SECAR_ROUPS_BECKEN_8KG_BDM2741_HP_manual.pdf
+    titulo: Becken BDM2740/BDM2741 HP — Manual de instruções da máquina de secar (secção PT; páginas do PDF)
+    pagina: 20, 23, 25–26
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DV90BB5245AW&CttFileID=8724284&CDCttType=UM&VPath=UM%2F202208%2F20220815150115831%2FB-PJT_DV5000B_SimpleUX_WEB_English.pdf
+    titulo: Samsung DV5000B (DV90BB5245AW) — Tumble dryer user manual (EN)
+    pagina: 17, 49
+    consultado_em: 2026-11-04

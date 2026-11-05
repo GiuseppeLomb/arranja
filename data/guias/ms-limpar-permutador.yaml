@@ -1,0 +1,54 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: maquina-secar
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: ms-limpar-permutador
+titulo: Limpar a zona do permutador de calor (em baixo, na frente)
+resumo: Atrás da tampa de manutenção acumula-se cotão no filtro e no permutador de calor. Sujos, a secagem demora mais.
+perigos:
+  - arestas-cortantes
+  - temperatura
+  - agua
+avisos:
+  - "Algumas máquinas com bomba de calor (Bosch, Samsung) usam R290, um gás refrigerante inflamável: mantém chamas e fontes de ignição longe da máquina e não danifiques as lâminas nem os tubos."
+  - Se aparecer um aviso de fuga de refrigerante (na Samsung, o código HCL) ou vires danos, não uses a máquina e chama a assistência.
+  - "As lâminas do permutador de calor são afiadas: não lhes toques com as mãos desprotegidas."
+  - "Segue também o manual da tua máquina: o acesso a esta zona muda de modelo para modelo."
+ferramentas:
+  - luvas
+  - escova
+  - toalhas
+tempo_estimado: 30
+passos:
+  - texto: Limpa primeiro o filtro de cotão (guia «Limpar o filtro de cotão»).
+  - texto: Se a máquina esteve a trabalhar, deixa-a arrefecer cerca de 30 minutos (Bosch).
+  - texto: "Põe um pano por baixo e abre a tampa de manutenção, em baixo, na frente: pode sair alguma água."
+    imagem:
+      src: imagens/guias/secar/permutador.svg
+      alt: Tampa de manutenção aberta em baixo na máquina de secar, com a tampa interior retirada e as lâminas do permutador.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: Solta os fechos e retira a tampa interior (ou a base do filtro). A Samsung indica deixar depois a zona a arejar cerca de 10 minutos antes de limpar, porque pode haver restos de refrigerante à volta do permutador.
+  - texto: Se essa tampa tiver um filtro de esponja, lava-o só com água corrente, sem detergentes, e espreme-o à mão. Volta a pô-lo limpo e seco, sem o deformar nem o montar ao contrário (Bosch). Limpa a tampa e os vedantes.
+  - texto: Se houver cotão nas lâminas do permutador, limpa-o com cuidado, de cima para baixo, com uma escova macia ou um aspirador com bocal de escova, sem dobrar as lâminas.
+    aviso: Usa luvas e não uses ferramentas de metal.
+  - texto: Volta a montar a tampa interior, fecha os fechos e fecha a tampa de manutenção até encaixar.
+  - texto: Algumas máquinas avisam no visor quando esta limpeza é precisa; a Becken sugere fazê-la cerca de uma vez a cada 2 meses.
+sources:
+  - url: https://media3.bsh-group.com/Documents/9001378644_A.pdf
+    titulo: Bosch WTR85V90ES — Instrucciones de uso e instalación, secadora con bomba de calor (ES)
+    pagina: 4, 9, 36–39
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/5864042_MAQ_SECAR_ROUPS_BECKEN_8KG_BDM2741_HP_manual.pdf
+    titulo: Becken BDM2740/BDM2741 HP — Manual de instruções da máquina de secar (secção PT; páginas do PDF)
+    pagina: "25"
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DV90BB5245AW&CttFileID=8724284&CDCttType=UM&VPath=UM%2F202208%2F20220815150115831%2FB-PJT_DV5000B_SimpleUX_WEB_English.pdf
+    titulo: Samsung DV5000B (DV90BB5245AW) — Tumble dryer user manual (EN)
+    pagina: 4, 8, 46–48, 52
+    consultado_em: 2026-11-04

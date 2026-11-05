@@ -1,0 +1,40 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: frigorifico
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: fr-limpar-vedante
+titulo: Limpar e verificar o vedante da porta
+resumo: "Um vedante sujo ou que não assenta bem deixa entrar ar quente: forma-se gelo e o aparelho arrefece pior."
+perigos: []
+ferramentas:
+  - toalhas
+tempo_estimado: 10
+passos:
+  - texto: Lava o vedante com água morna e um pano macio. A Bosch indica só água limpa; a Becken admite um detergente suave. Segue o manual da tua marca.
+    imagem:
+      src: imagens/guias/frigorifico/vedante.svg
+      alt: Porta de frigorífico aberta com o vedante de borracha em destaque e um pano.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: "Tira restos de alimentos e bebidas pegajosas: podem colar o vedante à estrutura e rasgá-lo quando abres a porta. Não deixes óleo nem gordura no vedante: torna-se poroso (Bosch)."
+  - texto: Enxagua e seca bem o vedante antes de voltares a ligar o aparelho.
+    aviso: Não uses produtos abrasivos, lixívia nem solventes no vedante.
+  - texto: Fecha a porta e confirma que o vedante assenta em toda a volta e que nenhum alimento impede a porta de fechar.
+sources:
+  - url: https://media3.bsh-group.com/Documents/9000942200_E.pdf
+    titulo: Bosch KGV… — Instruções de serviço, combinação de frigorífico e congelador (secção PT)
+    pagina: 32, 48
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7267518_FRIGORIFICO_BECKEN_NF_BDD5394_WH_manual.pdf
+    titulo: Becken BDD5394 NF — Manual de instruções do frigorífico (secção PT)
+    pagina: "103"
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=RB34T602EWW&CttFileID=11390423&CDCttType=UM&VPath=UM%2F202604%2F20260424171513199%2FOID34016-07_BMF_RB7300T_EN_260417.pdf
+    titulo: Samsung RB7300T (RB34T602EWW) — Refrigerator user manual (EN)
+    pagina: 13, 55
+    consultado_em: 2026-11-04
