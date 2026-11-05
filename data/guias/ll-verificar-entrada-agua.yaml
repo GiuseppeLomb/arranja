@@ -1,0 +1,45 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: maquina-lavar-loica
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: ll-verificar-entrada-agua
+titulo: Verificar a torneira, a mangueira e o filtro da entrada de água
+resumo: Torneira fechada, mangueira dobrada ou filtro entupido impedem a máquina de encher.
+perigos:
+  - agua
+ferramentas:
+  - toalhas
+tempo_estimado: 15
+passos:
+  - texto: Confirma que a torneira da máquina está totalmente aberta e que há água noutras torneiras da casa.
+    imagem:
+      src: imagens/guias/lavar-loica/entrada-agua.svg
+      alt: Torneira de segurança com a mangueira de admissão ligada e o pequeno filtro de rede à vista.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: Segue a mangueira de admissão e confirma que não está dobrada, esmagada nem entalada atrás da máquina.
+  - texto: A Bosch indica um caudal mínimo de 10 litros por minuto com a torneira aberta. Se a água sai fraca, a torneira pode estar encravada ou com calcário.
+  - texto: "Nas Bosch, o filtro da entrada fica na ligação da mangueira: fecha a torneira, desenrosca a ligação, limpa o pequeno filtro de rede e volta a enroscar. Tem um pano à mão: sai alguma água."
+    aviso: "Se a mangueira tiver Aqua-Stop, a caixa de plástico junto à torneira tem uma peça elétrica: nunca a mergulhes em água nem cortes a mangueira (Bosch, Samsung)."
+  - texto: Abre a torneira e confirma que a ligação não pinga.
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001036344_B.pdf
+    titulo: Bosch — Instruções de serviço, máquina de lavar loiça SB…/SM… (PT)
+    pagina: 7, 41, 52
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7141543_7141540_MAQ_LAVAR_LOICA_BECKEN_BDW1965N_manual.pdf
+    titulo: Becken BDW1965N — Manual de instruções da máquina de lavar loiça (secção PT)
+    pagina: 106, 136
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DW60M9550FS%2FEU&CttFileID=7019887&CDCttType=UM&VPath=UM%2F201804%2F20180409182326092%2FMANUAL_USERS_DD68-00203A-01_EU_EN_20180221.pdf
+    titulo: Samsung DW60M9550FS — Dishwasher user manual DD68-00203A (EN)
+    pagina: 11, 45, 48
+    consultado_em: 2026-11-04
+  - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
+    titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
+    consultado_em: 2026-11-04

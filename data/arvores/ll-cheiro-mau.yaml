@@ -1,0 +1,74 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/diagnostic_tree.schema.json
+appliance_type: maquina-lavar-loica
+aplicavel_a:
+  - brand: "*"
+id: ll-cheiro-mau
+ordem: 9
+titulo: A máquina de lavar loiça cheira mal
+sintoma: Cheiro mau
+inicio: porta
+nos:
+  porta:
+    tipo: pergunta
+    texto: Deixas a porta fechada entre lavagens?
+    respostas:
+      - texto: Sim
+        ir_para: fim-limpeza
+      - texto: Não
+        ir_para: vedante
+  vedante:
+    tipo: pergunta
+    texto: Já limpaste o vedante da porta e fizeste um programa de limpeza com a máquina vazia?
+    ajuda: Restos de comida presos nos vedantes também causam maus cheiros (Becken).
+    respostas:
+      - texto: Não
+        ir_para: fim-limpeza
+      - texto: Sim
+        ir_para: agua
+  agua:
+    tipo: pergunta
+    texto: Fica água suja no fundo depois do programa?
+    respostas:
+      - texto: Sim
+        ir_para: fim-escoa
+      - texto: Não
+        ir_para: fim-tecnico
+  fim-limpeza:
+    tipo: guia
+    guias:
+      - ll-limpeza-cuba-vedante
+  fim-escoa:
+    tipo: guia
+    guias:
+      - ll-limpar-filtros
+      - ll-verificar-mangueira-escoamento
+    nota: Água parada de um programa anterior causa maus cheiros (Samsung); a Bosch indica que, quando fica água no fim, os filtros ou a zona por baixo deles podem estar entupidos.
+  fim-tecnico:
+    tipo: tecnico
+    motivo: "Se o cheiro continua depois destas limpezas, contacta a assistência técnica. Os fabricantes avisam que reparações impróprias são perigosas e que o interior não tem peças que o utilizador possa reparar: as reparações são para técnicos especializados."
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001036344_B.pdf
+    titulo: Bosch — Instruções de serviço, máquina de lavar loiça SB…/SM… (PT)
+    pagina: 37–38, 42
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7141543_7141540_MAQ_LAVAR_LOICA_BECKEN_BDW1965N_manual.pdf
+    titulo: Becken BDW1965N — Manual de instruções da máquina de lavar loiça (secção PT)
+    pagina: 133–134
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DW60M9550FS%2FEU&CttFileID=7019887&CDCttType=UM&VPath=UM%2F201804%2F20180409182326092%2FMANUAL_USERS_DD68-00203A-01_EU_EN_20180221.pdf
+    titulo: Samsung DW60M9550FS — Dishwasher user manual DD68-00203A (EN)
+    pagina: 41, 45
+    consultado_em: 2026-11-04
+  - url: https://media3.bosch-home.com/Documents/9001036344_B.pdf
+    titulo: Bosch — Instruções de serviço, máquina de lavar loiça SB…/SM… (PT)
+    pagina: 39, 42
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7141543_7141540_MAQ_LAVAR_LOICA_BECKEN_BDW1965N_manual.pdf
+    titulo: Becken BDW1965N — Manual de instruções da máquina de lavar loiça (secção PT)
+    pagina: "98"
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DW60M9550FS%2FEU&CttFileID=7019887&CDCttType=UM&VPath=UM%2F201804%2F20180409182326092%2FMANUAL_USERS_DD68-00203A-01_EU_EN_20180221.pdf
+    titulo: Samsung DW60M9550FS — Dishwasher user manual DD68-00203A (EN)
+    pagina: "11"
+    consultado_em: 2026-11-04

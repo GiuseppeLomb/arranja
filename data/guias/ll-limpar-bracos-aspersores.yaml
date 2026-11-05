@@ -1,0 +1,41 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: maquina-lavar-loica
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: ll-limpar-bracos-aspersores
+titulo: Limpar os braços aspersores
+resumo: Calcário e restos de comida entopem os orifícios dos braços que espalham a água, e a loiça deixa de ficar limpa.
+perigos: []
+ferramentas:
+  - escova
+tempo_estimado: 15
+passos:
+  - texto: Puxa os cestos e vê se os orifícios dos braços aspersores estão entupidos.
+    imagem:
+      src: imagens/guias/lavar-loica/bracos.svg
+      alt: Braço aspersor de uma máquina de lavar loiça com os orifícios em destaque e gotas de água a sair.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: Para tirar o braço superior, desenrosca a porca ou a tampa que o prende e retira-o.
+    aviso: "Tem cuidado ao retirar os braços: podem partir-se (Samsung)."
+  - texto: Para tirar o braço inferior, puxa-o para cima (nalguns modelos é preciso soltar primeiro os encaixes).
+  - texto: Lava os braços em água corrente, ou em água morna com um pouco de detergente da loiça, e desentope os orifícios com uma escova macia.
+  - texto: Volta a montá-los, aperta bem o braço superior e roda-os à mão para confirmares que giram livremente.
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001036344_B.pdf
+    titulo: Bosch — Instruções de serviço, máquina de lavar loiça SB…/SM… (PT)
+    pagina: "39"
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7141543_7141540_MAQ_LAVAR_LOICA_BECKEN_BDW1965N_manual.pdf
+    titulo: Becken BDW1965N — Manual de instruções da máquina de lavar loiça (secção PT)
+    pagina: "132"
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DW60M9550FS%2FEU&CttFileID=7019887&CDCttType=UM&VPath=UM%2F201804%2F20180409182326092%2FMANUAL_USERS_DD68-00203A-01_EU_EN_20180221.pdf
+    titulo: Samsung DW60M9550FS — Dishwasher user manual DD68-00203A (EN)
+    pagina: "42"
+    consultado_em: 2026-11-04

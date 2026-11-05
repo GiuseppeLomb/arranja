@@ -1,0 +1,38 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: maquina-lavar-loica
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: ll-eliminar-espuma
+titulo: Tirar a espuma da máquina
+resumo: Detergente da loiça à mão ou abrilhantador entornado fazem espuma que pode transbordar pela porta.
+perigos:
+  - agua
+ferramentas:
+  - toalhas
+tempo_estimado: 20
+passos:
+  - texto: Abre a porta e deixa a espuma baixar (Becken). Limpa com um pano o abrilhantador que tiver entornado (Bosch, Becken).
+    imagem:
+      src: imagens/guias/lavar-loica/espuma.svg
+      alt: Cuba de uma máquina de lavar loiça com espuma no fundo e um pano.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: A Becken indica depois deitar cerca de 1 litro de água fria no fundo da cuba, voltar a ligar a máquina, fechar a porta e correr um programa de pré-lavagem para escoar a água, repetindo se for preciso.
+  - texto: A partir daí, usa só detergente próprio para máquinas de lavar loiça (Becken, Samsung). Nunca ponhas detergente da loiça à mão no depósito do abrilhantador (Bosch).
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001036344_B.pdf
+    titulo: Bosch — Instruções de serviço, máquina de lavar loiça SB…/SM… (PT)
+    pagina: "49"
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7141543_7141540_MAQ_LAVAR_LOICA_BECKEN_BDW1965N_manual.pdf
+    titulo: Becken BDW1965N — Manual de instruções da máquina de lavar loiça (secção PT)
+    pagina: 137, 140
+    consultado_em: 2026-11-04
+  - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
+    titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
+    consultado_em: 2026-11-04

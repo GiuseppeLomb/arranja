@@ -1,0 +1,85 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/diagnostic_tree.schema.json
+appliance_type: maquina-lavar-loica
+aplicavel_a:
+  - brand: "*"
+id: ll-nao-enche-agua
+ordem: 2
+titulo: A máquina de lavar loiça não enche água
+sintoma: Não enche água
+codigos:
+  - becken-ll-e2
+  - samsung-ll-4c
+  - samsung-ll-4c5
+inicio: torneira
+nos:
+  torneira:
+    tipo: pergunta
+    texto: A torneira da máquina está totalmente aberta?
+    respostas:
+      - texto: Sim
+        ir_para: mangueira
+      - texto: Não ou não sei
+        ir_para: fim-entrada
+  mangueira:
+    tipo: pergunta
+    texto: A mangueira de admissão está direita, sem dobras?
+    respostas:
+      - texto: Sim
+        ir_para: rede
+      - texto: Não ou não sei
+        ir_para: fim-entrada
+  rede:
+    tipo: pergunta
+    texto: Noutra torneira da casa a água sai com a pressão normal?
+    respostas:
+      - texto: Sim
+        ir_para: filtro
+      - texto: Não
+        ir_para: fim-rede
+  filtro:
+    tipo: pergunta
+    texto: Já limpaste o filtro da entrada de água, na ligação da mangueira?
+    respostas:
+      - texto: Não
+        ir_para: fim-entrada
+      - texto: Sim
+        ir_para: fim-tecnico
+  fim-entrada:
+    tipo: guia
+    guias:
+      - ll-verificar-entrada-agua
+  fim-rede:
+    tipo: tecnico
+    motivo: Se falta água ou pressão noutras torneiras, o problema está na canalização ou no abastecimento da casa, não na máquina. Fala com um canalizador ou com a entidade que fornece a água.
+  fim-tecnico:
+    tipo: tecnico
+    motivo: "Com a torneira aberta, a mangueira direita e o filtro limpo, contacta a assistência técnica. Os fabricantes avisam que reparações impróprias são perigosas e que o interior não tem peças que o utilizador possa reparar: as reparações são para técnicos especializados. Se aparecer um código no visor, indica-o à assistência."
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001036344_B.pdf
+    titulo: Bosch — Instruções de serviço, máquina de lavar loiça SB…/SM… (PT)
+    pagina: 41, 52
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7141543_7141540_MAQ_LAVAR_LOICA_BECKEN_BDW1965N_manual.pdf
+    titulo: Becken BDW1965N — Manual de instruções da máquina de lavar loiça (secção PT)
+    pagina: 135–136
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DW60M9550FS%2FEU&CttFileID=7019887&CDCttType=UM&VPath=UM%2F201804%2F20180409182326092%2FMANUAL_USERS_DD68-00203A-01_EU_EN_20180221.pdf
+    titulo: Samsung DW60M9550FS — Dishwasher user manual DD68-00203A (EN)
+    pagina: 45, 48
+    consultado_em: 2026-11-04
+  - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
+    titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
+    consultado_em: 2026-11-04
+  - url: https://media3.bosch-home.com/Documents/9001036344_B.pdf
+    titulo: Bosch — Instruções de serviço, máquina de lavar loiça SB…/SM… (PT)
+    pagina: 39, 42
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7141543_7141540_MAQ_LAVAR_LOICA_BECKEN_BDW1965N_manual.pdf
+    titulo: Becken BDW1965N — Manual de instruções da máquina de lavar loiça (secção PT)
+    pagina: "98"
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DW60M9550FS%2FEU&CttFileID=7019887&CDCttType=UM&VPath=UM%2F201804%2F20180409182326092%2FMANUAL_USERS_DD68-00203A-01_EU_EN_20180221.pdf
+    titulo: Samsung DW60M9550FS — Dishwasher user manual DD68-00203A (EN)
+    pagina: "11"
+    consultado_em: 2026-11-04

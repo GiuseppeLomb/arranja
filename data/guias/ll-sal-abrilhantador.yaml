@@ -1,0 +1,45 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: maquina-lavar-loica
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: ll-sal-abrilhantador
+titulo: Repor o sal e o abrilhantador
+resumo: Sem sal, a água dura deixa manchas brancas; sem abrilhantador, a loiça seca pior.
+perigos: []
+ferramentas:
+  - toalhas
+tempo_estimado: 10
+passos:
+  - texto: Quando a luz do sal ou do abrilhantador acender, enche o respetivo depósito.
+    imagem:
+      src: imagens/guias/lavar-loica/sal-abrilhantador.svg
+      alt: Tampa do depósito do sal no fundo da cuba e o depósito do abrilhantador na porta.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: O depósito do sal fica no fundo da cuba, por baixo do cesto inferior. Desenrosca a tampa e enche só com sal próprio para máquinas de lavar loiça.
+    aviso: "Nunca uses sal de cozinha nem deites detergente no depósito do sal: estragam o descalcificador."
+  - texto: Na primeira utilização, enche primeiro o depósito do sal com água; depois junta o sal (Bosch, Becken).
+  - texto: Enche o sal imediatamente antes de um programa, para que os grãos e a água salgada que transbordem saiam com a lavagem. Limpa o sal entornado.
+  - texto: Enrosca bem a tampa do sal. A Bosch avisa que uma tampa mal fechada ou sal entornado podem causar ferrugem nos talheres.
+  - texto: "Enche o depósito do abrilhantador, na porta, só com abrilhantador para máquinas de lavar loiça, sem passar do máximo. Limpa logo qualquer pingo: em excesso faz espuma."
+    aviso: "O abrilhantador e o detergente podem causar queimaduras químicas: guarda-os fora do alcance das crianças (Bosch)."
+  - texto: A luz do sal pode ficar acesa alguns dias depois de encheres o depósito (a Becken indica 2 a 6 dias), até o sal se dissolver.
+  - texto: Confirma no manual o nível de descalcificação certo para a dureza da água da tua zona.
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001036344_B.pdf
+    titulo: Bosch — Instruções de serviço, máquina de lavar loiça SB…/SM… (PT)
+    pagina: 9, 16–18, 38, 42, 45, 48–49
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7141543_7141540_MAQ_LAVAR_LOICA_BECKEN_BDW1965N_manual.pdf
+    titulo: Becken BDW1965N — Manual de instruções da máquina de lavar loiça (secção PT)
+    pagina: 107, 110–114, 137, 140
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DW60M9550FS%2FEU&CttFileID=7019887&CDCttType=UM&VPath=UM%2F201804%2F20180409182326092%2FMANUAL_USERS_DD68-00203A-01_EU_EN_20180221.pdf
+    titulo: Samsung DW60M9550FS — Dishwasher user manual DD68-00203A (EN)
+    pagina: 46–47
+    consultado_em: 2026-11-04

@@ -43,3 +43,86 @@
       titulo: Becken BoostWash BWM3639/BWM3640/BWM3641 — Manual de instruções (secção PT)
       pagina: "124"
       consultado_em: 2026-11-04
+- id: becken-ll-e1
+  brand: becken
+  appliance_type: maquina-lavar-loica
+  code: E1
+  descricao: "Porta aberta: a porta abriu-se com a máquina a trabalhar. Fecha bem a porta. (Código indicado no manual Becken BDW1965N.)"
+  arvore: ll-nao-liga
+  guias:
+    - ll-verificar-energia
+  sources:
+    - url: https://becken.cors.digital/wp-content/uploads/manuais/7141543_7141540_MAQ_LAVAR_LOICA_BECKEN_BDW1965N_manual.pdf
+      titulo: Becken BDW1965N — Manual de instruções da máquina de lavar loiça (secção PT)
+      pagina: "135"
+      consultado_em: 2026-11-04
+- id: becken-ll-e2
+  brand: becken
+  appliance_type: maquina-lavar-loica
+  code: E2
+  descricao: Problema na entrada de água. Verifica se a torneira está aberta e se a mangueira de abastecimento está bem ligada. (Código indicado no manual Becken BDW1965N.)
+  arvore: ll-nao-enche-agua
+  guias:
+    - ll-verificar-entrada-agua
+  sources:
+    - url: https://becken.cors.digital/wp-content/uploads/manuais/7141543_7141540_MAQ_LAVAR_LOICA_BECKEN_BDW1965N_manual.pdf
+      titulo: Becken BDW1965N — Manual de instruções da máquina de lavar loiça (secção PT)
+      pagina: 135–136
+      consultado_em: 2026-11-04
+- id: becken-ll-e3
+  brand: becken
+  appliance_type: maquina-lavar-loica
+  code: E3
+  descricao: Problema no escoamento da água. Verifica os filtros e a mangueira de escoamento. (Código indicado no manual Becken BDW1965N.)
+  arvore: ll-nao-escoa
+  guias:
+    - ll-limpar-filtros
+    - ll-verificar-mangueira-escoamento
+    - ll-limpar-bomba-escoamento
+  sources:
+    - url: https://becken.cors.digital/wp-content/uploads/manuais/7141543_7141540_MAQ_LAVAR_LOICA_BECKEN_BDW1965N_manual.pdf
+      titulo: Becken BDW1965N — Manual de instruções da máquina de lavar loiça (secção PT)
+      pagina: 106, 108, 130–132, 135
+      consultado_em: 2026-11-04
+- id: becken-ll-e4
+  brand: becken
+  appliance_type: maquina-lavar-loica
+  code: E4
+  descricao: Anomalia no sensor de temperatura. Contacta o apoio ao cliente. (Código indicado no manual Becken BDW1965N.)
+  sources:
+    - url: https://becken.cors.digital/wp-content/uploads/manuais/7141543_7141540_MAQ_LAVAR_LOICA_BECKEN_BDW1965N_manual.pdf
+      titulo: Becken BDW1965N — Manual de instruções da máquina de lavar loiça (secção PT)
+      pagina: "135"
+      consultado_em: 2026-11-04
+- id: becken-ll-e5
+  brand: becken
+  appliance_type: maquina-lavar-loica
+  code: E5
+  descricao: Transbordo ou fuga de água. Fecha a torneira antes de contactares o apoio ao cliente e tira a água da base antes de voltares a ligar a máquina. (Código indicado no manual Becken BDW1965N.)
+  arvore: ll-verte-agua
+  sources:
+    - url: https://becken.cors.digital/wp-content/uploads/manuais/7141543_7141540_MAQ_LAVAR_LOICA_BECKEN_BDW1965N_manual.pdf
+      titulo: Becken BDW1965N — Manual de instruções da máquina de lavar loiça (secção PT)
+      pagina: "135"
+      consultado_em: 2026-11-04
+- id: becken-ll-e6
+  brand: becken
+  appliance_type: maquina-lavar-loica
+  code: E6
+  descricao: Fuga de água. Fecha a torneira antes de contactares o apoio ao cliente e tira a água da base antes de voltares a ligar a máquina. (Código indicado no manual Becken BDW1965N.)
+  arvore: ll-verte-agua
+  sources:
+    - url: https://becken.cors.digital/wp-content/uploads/manuais/7141543_7141540_MAQ_LAVAR_LOICA_BECKEN_BDW1965N_manual.pdf
+      titulo: Becken BDW1965N — Manual de instruções da máquina de lavar loiça (secção PT)
+      pagina: "135"
+      consultado_em: 2026-11-04
+- id: becken-ll-e7
+  brand: becken
+  appliance_type: maquina-lavar-loica
+  code: E7
+  descricao: Aquecimento anormal (resistência). Contacta o apoio ao cliente. (Código indicado no manual Becken BDW1965N.)
+  sources:
+    - url: https://becken.cors.digital/wp-content/uploads/manuais/7141543_7141540_MAQ_LAVAR_LOICA_BECKEN_BDW1965N_manual.pdf
+      titulo: Becken BDW1965N — Manual de instruções da máquina de lavar loiça (secção PT)
+      pagina: "135"
+      consultado_em: 2026-11-04

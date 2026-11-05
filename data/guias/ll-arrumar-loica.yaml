@@ -1,0 +1,42 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: maquina-lavar-loica
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: ll-arrumar-loica
+titulo: Arrumar a loiça para lavar e secar bem
+resumo: Cestos demasiado cheios ou peças que travam os braços e o dispensador são a causa mais simples de loiça mal lavada.
+perigos: []
+ferramentas: []
+tempo_estimado: 5
+passos:
+  - texto: "Não sobrecarregues os cestos: deixa espaço para a água chegar a todas as peças. A Bosch avisa que, numa máquina de instalar solta, cestos sobrecarregados podem fazê-la tombar."
+    imagem:
+      src: imagens/guias/lavar-loica/arrumar.svg
+      alt: Cesto de uma máquina de lavar loiça com pratos espaçados e uma seta a mostrar o braço aspersor a rodar.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: "Depois de arrumar, roda os braços aspersores à mão: não podem bater em nenhuma peça."
+  - texto: "Não deixes peças grandes à frente do dispensador de detergente: a tampa tem de abrir livremente."
+  - texto: Prende bem as peças leves, para não se mexerem nem baterem durante a lavagem.
+  - texto: Arruma as facas e utensílios afiados com as pontas para baixo no cesto dos talheres, ou deitados na prateleira das facas.
+    aviso: Pontas viradas para cima podem ferir quem carrega ou descarrega a máquina.
+  - texto: Coloca as peças com cavidades inclinadas, para a água escorrer.
+  - texto: No fim, esvazia primeiro o cesto de baixo, para não pingar água do cesto de cima para a loiça já seca.
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001036344_B.pdf
+    titulo: Bosch — Instruções de serviço, máquina de lavar loiça SB…/SM… (PT)
+    pagina: 8, 20–21, 24, 43–45, 49
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7141543_7141540_MAQ_LAVAR_LOICA_BECKEN_BDW1965N_manual.pdf
+    titulo: Becken BDW1965N — Manual de instruções da máquina de lavar loiça (secção PT)
+    pagina: 101, 120, 125–126, 137–138, 140
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DW60M9550FS%2FEU&CttFileID=7019887&CDCttType=UM&VPath=UM%2F201804%2F20180409182326092%2FMANUAL_USERS_DD68-00203A-01_EU_EN_20180221.pdf
+    titulo: Samsung DW60M9550FS — Dishwasher user manual DD68-00203A (EN)
+    pagina: 46–47
+    consultado_em: 2026-11-04

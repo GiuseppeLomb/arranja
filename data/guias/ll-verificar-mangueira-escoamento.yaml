@@ -1,0 +1,46 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: maquina-lavar-loica
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: ll-verificar-mangueira-escoamento
+titulo: Verificar a mangueira de escoamento
+resumo: Uma mangueira dobrada, entupida ou uma ligação ao sifão fechada deixam a água no fundo da máquina.
+perigos:
+  - agua
+  - peso
+ferramentas:
+  - lanterna
+  - toalhas
+tempo_estimado: 15
+passos:
+  - texto: Segue a mangueira de escoamento até ao sifão ou ao esgoto e confirma que não está dobrada, esmagada nem entupida.
+    imagem:
+      src: imagens/guias/lavar-loica/mangueira-escoamento.svg
+      alt: Máquina de lavar loiça com a mangueira de escoamento a subir até ao sifão do lava-loiça.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: Confirma que a máquina não está pousada em cima da mangueira.
+  - texto: "Se a máquina foi instalada há pouco, confirma que a saída do sifão para a mangueira foi aberta: a Bosch indica que pode ter ficado fechada."
+  - texto: Confirma que a mangueira está bem presa ao sifão. A Becken indica que, mesmo com extensão, não deve passar de 4 metros, e que a ligação ao esgoto deve ficar entre 50 e 100 cm acima da base da máquina.
+  - texto: Se a mangueira estiver dobrada ou entupida, endireita-a e limpa-a. Se estiver desimpedida e a água continuar parada, o problema pode estar no esgoto da casa.
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001036344_B.pdf
+    titulo: Bosch — Instruções de serviço, máquina de lavar loiça SB…/SM… (PT)
+    pagina: 42, 51
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7141543_7141540_MAQ_LAVAR_LOICA_BECKEN_BDW1965N_manual.pdf
+    titulo: Becken BDW1965N — Manual de instruções da máquina de lavar loiça (secção PT)
+    pagina: 106, 108
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DW60M9550FS%2FEU&CttFileID=7019887&CDCttType=UM&VPath=UM%2F201804%2F20180409182326092%2FMANUAL_USERS_DD68-00203A-01_EU_EN_20180221.pdf
+    titulo: Samsung DW60M9550FS — Dishwasher user manual DD68-00203A (EN)
+    pagina: 45, 48
+    consultado_em: 2026-11-04
+  - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
+    titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
+    consultado_em: 2026-11-04

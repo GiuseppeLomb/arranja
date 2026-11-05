@@ -1,0 +1,46 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: maquina-lavar-loica
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: ll-limpar-filtros
+titulo: Limpar os filtros da máquina de lavar loiça
+resumo: Os filtros no fundo da cuba seguram restos de comida. Sujos, a loiça sai mal lavada e a água pode ficar no fundo.
+perigos:
+  - arestas-cortantes
+avisos:
+  - Nunca uses a máquina sem os filtros montados.
+ferramentas:
+  - escova
+  - toalhas
+tempo_estimado: 15
+passos:
+  - texto: Abre a porta e tira o cesto inferior para chegares ao fundo da cuba.
+  - texto: "Roda o filtro cilíndrico no sentido contrário ao dos ponteiros do relógio e levanta-o: sai o conjunto de filtros (filtro grosso, filtro plano e microfiltro, conforme o modelo)."
+    imagem:
+      src: imagens/guias/lavar-loica/filtros.svg
+      alt: Fundo de uma máquina de lavar loiça com o filtro cilíndrico a ser rodado e levantado, e o filtro plano por baixo.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: Tira os restos de comida e passa os filtros por água corrente. A Becken indica usar uma escova de limpeza no filtro grosso e no microfiltro.
+    aviso: "Pode haver pedaços de vidro ou ossos presos: tira-os com cuidado."
+  - texto: "Não deixes os filtros bater noutros objetos: se ficarem deformados, a máquina lava pior."
+  - texto: Volta a montar os filtros pela ordem inversa e roda o filtro cilíndrico até ficar preso. Nas Bosch, as setas devem ficar frente a frente.
+  - texto: "Verifica os filtros com frequência: a Bosch e a Becken recomendam espreitá-los depois de cada lavagem e a Samsung limpá-los uma vez por mês."
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001036344_B.pdf
+    titulo: Bosch — Instruções de serviço, máquina de lavar loiça SB…/SM… (PT)
+    pagina: 38, 40
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7141543_7141540_MAQ_LAVAR_LOICA_BECKEN_BDW1965N_manual.pdf
+    titulo: Becken BDW1965N — Manual de instruções da máquina de lavar loiça (secção PT)
+    pagina: 130–132
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DW60M9550FS%2FEU&CttFileID=7019887&CDCttType=UM&VPath=UM%2F201804%2F20180409182326092%2FMANUAL_USERS_DD68-00203A-01_EU_EN_20180221.pdf
+    titulo: Samsung DW60M9550FS — Dishwasher user manual DD68-00203A (EN)
+    pagina: 43–44
+    consultado_em: 2026-11-04

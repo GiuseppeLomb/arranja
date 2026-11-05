@@ -117,3 +117,252 @@
       titulo: Samsung WW**BB — Washing Machine User manual (EN)
       pagina: "63"
       consultado_em: 2026-11-04
+- id: samsung-ll-1c
+  brand: samsung
+  appliance_type: maquina-lavar-loica
+  code: 1C
+  descricao: A máquina tenta escoar quase sem água e para no início. Verifica se o filtro está entupido, usa detergente para máquinas, distribui bem a loiça e desliga a máquina durante 5 minutos antes de voltar a ligar.
+  guias:
+    - ll-limpar-filtros
+    - ll-programa-detergente
+    - ll-arrumar-loica
+  sources:
+    - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
+      titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
+      consultado_em: 2026-11-04
+- id: samsung-ll-3c
+  brand: samsung
+  appliance_type: maquina-lavar-loica
+  code: 3C
+  descricao: "Verificação da bomba: a máquina enche mas não começa a lavar. Desliga-a durante um minuto e volta a tentar; se o código continuar, contacta a assistência."
+  aliases:
+    - 3E
+  sources:
+    - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DW60M9550FS%2FEU&CttFileID=7019887&CDCttType=UM&VPath=UM%2F201804%2F20180409182326092%2FMANUAL_USERS_DD68-00203A-01_EU_EN_20180221.pdf
+      titulo: Samsung DW60M9550FS — Dishwasher user manual DD68-00203A (EN)
+      pagina: "48"
+      consultado_em: 2026-11-04
+    - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
+      titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
+      consultado_em: 2026-11-04
+- id: samsung-ll-4c
+  brand: samsung
+  appliance_type: maquina-lavar-loica
+  code: 4C
+  descricao: Entra pouca ou nenhuma água. Verifica se a torneira está fechada, se há corte de água ou se a mangueira de entrada está congelada ou entupida.
+  aliases:
+    - 4E
+  arvore: ll-nao-enche-agua
+  guias:
+    - ll-verificar-entrada-agua
+  sources:
+    - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DW60M9550FS%2FEU&CttFileID=7019887&CDCttType=UM&VPath=UM%2F201804%2F20180409182326092%2FMANUAL_USERS_DD68-00203A-01_EU_EN_20180221.pdf
+      titulo: Samsung DW60M9550FS — Dishwasher user manual DD68-00203A (EN)
+      pagina: "48"
+      consultado_em: 2026-11-04
+    - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
+      titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
+      consultado_em: 2026-11-04
+- id: samsung-ll-4c5
+  brand: samsung
+  appliance_type: maquina-lavar-loica
+  code: 4C5
+  descricao: A máquina tenta encher e para com a cuba seca. Confirma a pressão da água, que a torneira está aberta e que a mangueira não está dobrada nem obstruída.
+  aliases:
+    - "4E5"
+  arvore: ll-nao-enche-agua
+  guias:
+    - ll-verificar-entrada-agua
+  sources:
+    - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
+      titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
+      consultado_em: 2026-11-04
+- id: samsung-ll-5c
+  brand: samsung
+  appliance_type: maquina-lavar-loica
+  code: 5C
+  descricao: A água não escoa. Fecha a torneira e verifica se o esgoto fora da máquina está desimpedido, se o filtro do fundo está limpo, se a mangueira de escoamento não está dobrada e se o orifício de escoamento dentro da bomba não está entupido.
+  aliases:
+    - 5E
+  arvore: ll-nao-escoa
+  guias:
+    - ll-limpar-filtros
+    - ll-verificar-mangueira-escoamento
+    - ll-limpar-bomba-escoamento
+  sources:
+    - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DW60M9550FS%2FEU&CttFileID=7019887&CDCttType=UM&VPath=UM%2F201804%2F20180409182326092%2FMANUAL_USERS_DD68-00203A-01_EU_EN_20180221.pdf
+      titulo: Samsung DW60M9550FS — Dishwasher user manual DD68-00203A (EN)
+      pagina: "48"
+      consultado_em: 2026-11-04
+    - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
+      titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
+      consultado_em: 2026-11-04
+- id: samsung-ll-5c2
+  brand: samsung
+  appliance_type: maquina-lavar-loica
+  code: 5C2
+  descricao: A bomba de escoamento não arranca ou para. Com a máquina desligada da corrente, tira o cesto inferior e o filtro e procura restos ou objetos presos no fundo, junto à bomba.
+  arvore: ll-nao-escoa
+  guias:
+    - ll-limpar-bomba-escoamento
+  sources:
+    - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
+      titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
+      consultado_em: 2026-11-04
+- id: samsung-ll-6c1
+  brand: samsung
+  appliance_type: maquina-lavar-loica
+  code: 6C1
+  descricao: Problema no motor do dispensador de detergente. Desliga a máquina da corrente durante 5 minutos e confirma que a pastilha não ficou presa no dispensador.
+  sources:
+    - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
+      titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
+      consultado_em: 2026-11-04
+- id: samsung-ll-7c
+  brand: samsung
+  appliance_type: maquina-lavar-loica
+  code: 7C
+  descricao: A barra de lavagem não se move e a loiça fica mal lavada. A Samsung manda contactar a assistência.
+  sources:
+    - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
+      titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
+      consultado_em: 2026-11-04
+- id: samsung-ll-9c1
+  brand: samsung
+  appliance_type: maquina-lavar-loica
+  code: 9C1
+  descricao: "Tensão anormal: a máquina entrou em modo de proteção. Verifica a tomada, o cabo e a ligação; depois de uma falha de corrente, desliga-a pelo menos 1 minuto. Liga-a a uma tomada própria, sem extensões nem adaptadores."
+  aliases:
+    - "9E1"
+    - UC
+  guias:
+    - ll-verificar-energia
+  sources:
+    - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
+      titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
+      consultado_em: 2026-11-04
+- id: samsung-ll-9c2
+  brand: samsung
+  appliance_type: maquina-lavar-loica
+  code: 9C2
+  descricao: A máquina não arranca ou para depois de problemas de corrente. Desliga-a da tomada 5 minutos e volta a tentar; testa-a numa tomada própria, sem extensões.
+  guias:
+    - ll-verificar-energia
+  sources:
+    - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
+      titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
+      consultado_em: 2026-11-04
+- id: samsung-ll-ac
+  brand: samsung
+  appliance_type: maquina-lavar-loica
+  code: AC
+  descricao: A máquina acende mas não arranca. Desliga-a na tomada ou no disjuntor, espera 1 minuto e volta a tentar.
+  sources:
+    - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
+      titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
+      consultado_em: 2026-11-04
+- id: samsung-ll-ac6
+  brand: samsung
+  appliance_type: maquina-lavar-loica
+  code: AC6
+  descricao: A máquina acende mas a tecla de início não faz nada. Desliga-a no disjuntor ou na tomada durante 10 minutos e volta a tentar.
+  sources:
+    - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
+      titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
+      consultado_em: 2026-11-04
+- id: samsung-ll-dc
+  brand: samsung
+  appliance_type: maquina-lavar-loica
+  code: DC
+  descricao: A máquina para logo depois de carregares em iniciar. Fecha a porta com firmeza, tira utensílios que saiam dos cestos, limpa o fecho e confirma que nada bate na porta; depois desliga-a mais de 30 segundos.
+  arvore: ll-nao-liga
+  guias:
+    - ll-arrumar-loica
+    - ll-verificar-energia
+  sources:
+    - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
+      titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
+      consultado_em: 2026-11-04
+- id: samsung-ll-hc
+  brand: samsung
+  appliance_type: maquina-lavar-loica
+  code: HC
+  descricao: Temperatura alta. Desliga a máquina pelo menos 5 minutos, faz um programa normal vazio com detergente, confirma que a água que entra está dentro dos valores normais de uma casa e limpa os filtros. Se o código continuar, desliga a máquina no disjuntor e contacta a assistência.
+  aliases:
+    - HE
+  guias:
+    - ll-limpar-filtros
+  sources:
+    - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DW60M9550FS%2FEU&CttFileID=7019887&CDCttType=UM&VPath=UM%2F201804%2F20180409182326092%2FMANUAL_USERS_DD68-00203A-01_EU_EN_20180221.pdf
+      titulo: Samsung DW60M9550FS — Dishwasher user manual DD68-00203A (EN)
+      pagina: "48"
+      consultado_em: 2026-11-04
+    - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
+      titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
+      consultado_em: 2026-11-04
+- id: samsung-ll-hc1
+  brand: samsung
+  appliance_type: maquina-lavar-loica
+  code: HC1
+  descricao: A máquina para a meio do programa. Confirma que não está a receber água demasiado quente e limpa os filtros para a água circular bem.
+  guias:
+    - ll-limpar-filtros
+  sources:
+    - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
+      titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
+      consultado_em: 2026-11-04
+- id: samsung-ll-lc
+  brand: samsung
+  appliance_type: maquina-lavar-loica
+  code: LC
+  descricao: Fuga de água. Fecha a torneira, desliga a máquina no disjuntor e contacta o instalador ou a assistência. Usa só detergente para máquinas e tira restos do vedante e do rebordo da porta.
+  aliases:
+    - LE
+  arvore: ll-verte-agua
+  guias:
+    - ll-limpeza-cuba-vedante
+    - ll-eliminar-espuma
+  sources:
+    - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DW60M9550FS%2FEU&CttFileID=7019887&CDCttType=UM&VPath=UM%2F201804%2F20180409182326092%2FMANUAL_USERS_DD68-00203A-01_EU_EN_20180221.pdf
+      titulo: Samsung DW60M9550FS — Dishwasher user manual DD68-00203A (EN)
+      pagina: "48"
+      consultado_em: 2026-11-04
+    - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
+      titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
+      consultado_em: 2026-11-04
+- id: samsung-ll-oc
+  brand: samsung
+  appliance_type: maquina-lavar-loica
+  code: OC
+  descricao: A máquina para, enche sem parar ou verte pela porta, muitas vezes com espuma. Verifica o detergente e a espuma, a limpeza do filtro, se há água acumulada na base da máquina e se a mangueira de escoamento está dobrada ou debaixo da máquina.
+  guias:
+    - ll-eliminar-espuma
+    - ll-limpar-filtros
+    - ll-verificar-mangueira-escoamento
+  sources:
+    - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
+      titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
+      consultado_em: 2026-11-04
+- id: samsung-ll-pc
+  brand: samsung
+  appliance_type: maquina-lavar-loica
+  code: PC
+  descricao: A máquina não arranca com as opções de lavagem por zonas ou meia carga. Desliga-a pelo menos 30 segundos, retira essas opções e faz um programa normal.
+  aliases:
+    - PE
+  sources:
+    - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
+      titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
+      consultado_em: 2026-11-04
+- id: samsung-ll-tc
+  brand: samsung
+  appliance_type: maquina-lavar-loica
+  code: tC
+  descricao: A máquina não arranca ou para logo a seguir. Desliga-a no disjuntor ou na tomada pelo menos 5 minutos e tenta um programa normal.
+  aliases:
+    - tE
+    - tE1
+  sources:
+    - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
+      titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
+      consultado_em: 2026-11-04

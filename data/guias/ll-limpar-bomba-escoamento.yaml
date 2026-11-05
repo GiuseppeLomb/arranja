@@ -1,0 +1,44 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: maquina-lavar-loica
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: ll-limpar-bomba-escoamento
+titulo: Limpar a bomba de escoamento
+resumo: "Restos grandes e objetos que passam os filtros podem bloquear a bomba: a água fica no fundo da cuba."
+perigos:
+  - arestas-cortantes
+  - agua
+avisos:
+  - "Vidros partidos, ossos e objetos pontiagudos podem estar presos na bomba: tira-os com muito cuidado."
+ferramentas:
+  - toalhas
+  - lanterna
+tempo_estimado: 20
+passos:
+  - texto: Tira os cestos (a Bosch indica retirar o superior e o inferior; a Samsung, o inferior) e retira os filtros (guia «Limpar os filtros da máquina de lavar loiça»).
+  - texto: Se houver água no fundo, tira-a com uma esponja ou um pano.
+  - texto: Se a tua máquina tiver uma tampa da bomba no fundo da cuba, levanta-a. Nas Bosch é uma tampa branca que se solta pela patilha, com a ajuda de uma colher.
+    imagem:
+      src: imagens/guias/lavar-loica/bomba.svg
+      alt: Fundo da cuba sem filtros, com a pequena tampa da bomba levantada e a hélice por baixo.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: Com uma lanterna, procura no fundo, junto à bomba, restos de comida, ossos, rótulos ou cacos que possam prender a hélice, e retira-os.
+  - texto: Se tiraste a tampa da bomba, volta a pô-la e carrega até encaixar. Depois monta os filtros e os cestos.
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001036344_B.pdf
+    titulo: Bosch — Instruções de serviço, máquina de lavar loiça SB…/SM… (PT)
+    pagina: 40, 42
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DW60M9550FS%2FEU&CttFileID=7019887&CDCttType=UM&VPath=UM%2F201804%2F20180409182326092%2FMANUAL_USERS_DD68-00203A-01_EU_EN_20180221.pdf
+    titulo: Samsung DW60M9550FS — Dishwasher user manual DD68-00203A (EN)
+    pagina: "48"
+    consultado_em: 2026-11-04
+  - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
+    titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
+    consultado_em: 2026-11-04

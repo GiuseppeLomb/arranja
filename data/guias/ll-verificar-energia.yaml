@@ -1,0 +1,46 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: maquina-lavar-loica
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: ll-verificar-energia
+titulo: Verificar tomada, disjuntor, porta e bloqueio para crianças
+resumo: "Antes de pensar em avaria, confirma o mais simples: corrente, porta bem fechada e bloqueio para crianças."
+perigos:
+  - eletricidade
+ferramentas: []
+tempo_estimado: 10
+passos:
+  - texto: Confirma que a ficha está bem encaixada na tomada. Nas Bosch, confirma também a ligação do cabo na traseira da máquina.
+    aviso: "Se o cabo ou a ficha estiverem danificados, não uses a máquina: a substituição é com a assistência. Não a ligues a extensões nem a tomadas múltiplas."
+    imagem:
+      src: imagens/guias/lavar-loica/energia.svg
+      alt: Ficha e tomada ao lado de um disjuntor do quadro elétrico.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: Testa a tomada com outro aparelho.
+  - texto: No quadro elétrico, vê se o disjuntor disparou e, se sim, volta a ligá-lo. A Becken aconselha não ter outros aparelhos ligados ao mesmo circuito.
+    aviso: "Se o disjuntor voltar a disparar, não insistas: chama um eletricista ou a assistência técnica."
+  - texto: Para reiniciar, deixa a máquina desligada da corrente pelo menos 5 segundos e volta a ligá-la.
+  - texto: Fecha a porta com firmeza, sem a bater, e confirma que nenhuma peça ou cesto a impede de fechar.
+  - texto: Se o painel acende mas não aceita ordens, confirma se o bloqueio para crianças está ativo. A forma de o desativar depende do modelo (vê o manual).
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001036344_B.pdf
+    titulo: Bosch — Instruções de serviço, máquina de lavar loiça SB…/SM… (PT)
+    pagina: 6, 35, 48
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7141543_7141540_MAQ_LAVAR_LOICA_BECKEN_BDW1965N_manual.pdf
+    titulo: Becken BDW1965N — Manual de instruções da máquina de lavar loiça (secção PT)
+    pagina: 99, 104, 107, 136
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DW60M9550FS%2FEU&CttFileID=7019887&CDCttType=UM&VPath=UM%2F201804%2F20180409182326092%2FMANUAL_USERS_DD68-00203A-01_EU_EN_20180221.pdf
+    titulo: Samsung DW60M9550FS — Dishwasher user manual DD68-00203A (EN)
+    pagina: 11, 40, 45
+    consultado_em: 2026-11-04
+  - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
+    titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
+    consultado_em: 2026-11-04

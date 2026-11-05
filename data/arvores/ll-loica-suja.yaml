@@ -1,0 +1,99 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/diagnostic_tree.schema.json
+appliance_type: maquina-lavar-loica
+aplicavel_a:
+  - brand: "*"
+id: ll-loica-suja
+ordem: 4
+titulo: A loiça não fica limpa
+sintoma: A loiça não fica limpa
+inicio: carga
+nos:
+  carga:
+    tipo: pergunta
+    texto: Os cestos iam muito cheios, ou alguma peça grande tapava os braços ou o dispensador?
+    respostas:
+      - texto: Sim ou não sei
+        ir_para: fim-carga
+      - texto: Não
+        ir_para: bracos
+  bracos:
+    tipo: pergunta
+    texto: Os braços aspersores rodam livremente e têm os orifícios desentupidos?
+    respostas:
+      - texto: Não ou não sei
+        ir_para: fim-bracos
+      - texto: Sim
+        ir_para: filtros
+  filtros:
+    tipo: pergunta
+    texto: Os filtros estão limpos e bem encaixados?
+    respostas:
+      - texto: Não ou não sei
+        ir_para: fim-filtros
+      - texto: Sim
+        ir_para: programa
+  programa:
+    tipo: pergunta
+    texto: Escolheste um programa adequado à sujidade e a dose certa de detergente?
+    respostas:
+      - texto: Não ou não sei
+        ir_para: fim-programa
+      - texto: Sim
+        ir_para: sal
+  sal:
+    tipo: pergunta
+    texto: As luzes do sal e do abrilhantador estão apagadas?
+    respostas:
+      - texto: Não
+        ir_para: fim-sal
+      - texto: Sim
+        ir_para: fim-tecnico
+  fim-carga:
+    tipo: guia
+    guias:
+      - ll-arrumar-loica
+  fim-bracos:
+    tipo: guia
+    guias:
+      - ll-limpar-bracos-aspersores
+  fim-filtros:
+    tipo: guia
+    guias:
+      - ll-limpar-filtros
+  fim-programa:
+    tipo: guia
+    guias:
+      - ll-programa-detergente
+  fim-sal:
+    tipo: guia
+    guias:
+      - ll-sal-abrilhantador
+  fim-tecnico:
+    tipo: tecnico
+    motivo: "Se a loiça continua suja depois de tudo isto, contacta a assistência técnica. A Samsung lembra que a pressão da água também conta (entre 0,05 e 0,8 MPa). Os fabricantes avisam que reparações impróprias são perigosas e que o interior não tem peças que o utilizador possa reparar: as reparações são para técnicos especializados."
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001036344_B.pdf
+    titulo: Bosch — Instruções de serviço, máquina de lavar loiça SB…/SM… (PT)
+    pagina: 38–39, 44–46
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7141543_7141540_MAQ_LAVAR_LOICA_BECKEN_BDW1965N_manual.pdf
+    titulo: Becken BDW1965N — Manual de instruções da máquina de lavar loiça (secção PT)
+    pagina: 131–132, 138
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DW60M9550FS%2FEU&CttFileID=7019887&CDCttType=UM&VPath=UM%2F201804%2F20180409182326092%2FMANUAL_USERS_DD68-00203A-01_EU_EN_20180221.pdf
+    titulo: Samsung DW60M9550FS — Dishwasher user manual DD68-00203A (EN)
+    pagina: "46"
+    consultado_em: 2026-11-04
+  - url: https://media3.bosch-home.com/Documents/9001036344_B.pdf
+    titulo: Bosch — Instruções de serviço, máquina de lavar loiça SB…/SM… (PT)
+    pagina: 39, 42
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7141543_7141540_MAQ_LAVAR_LOICA_BECKEN_BDW1965N_manual.pdf
+    titulo: Becken BDW1965N — Manual de instruções da máquina de lavar loiça (secção PT)
+    pagina: "98"
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DW60M9550FS%2FEU&CttFileID=7019887&CDCttType=UM&VPath=UM%2F201804%2F20180409182326092%2FMANUAL_USERS_DD68-00203A-01_EU_EN_20180221.pdf
+    titulo: Samsung DW60M9550FS — Dishwasher user manual DD68-00203A (EN)
+    pagina: "11"
+    consultado_em: 2026-11-04

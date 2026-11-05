@@ -1,0 +1,104 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/diagnostic_tree.schema.json
+appliance_type: maquina-lavar-loica
+aplicavel_a:
+  - brand: "*"
+id: ll-nao-escoa
+ordem: 3
+titulo: A máquina de lavar loiça não escoa a água
+sintoma: Fica água no fundo
+codigos:
+  - becken-ll-e3
+  - bosch-ll-e22
+  - samsung-ll-5c
+  - samsung-ll-5c2
+inicio: filtros
+nos:
+  filtros:
+    tipo: pergunta
+    texto: Os filtros no fundo da cuba estão limpos?
+    ajuda: "Uma pequena quantidade de água limpa no fundo é normal: mantém o vedante lubrificado (Becken)."
+    respostas:
+      - texto: Não ou não sei
+        ir_para: fim-filtros
+      - texto: Sim
+        ir_para: mangueira
+  mangueira:
+    tipo: pergunta
+    texto: A mangueira de escoamento está direita, sem dobras, e a máquina não está pousada em cima dela?
+    respostas:
+      - texto: Sim
+        ir_para: sifao
+      - texto: Não ou não sei
+        ir_para: fim-mangueira
+  sifao:
+    tipo: pergunta
+    texto: A máquina foi instalada há pouco ou mexeste no sifão do lava-loiça?
+    respostas:
+      - texto: Sim
+        ir_para: fim-mangueira
+      - texto: Não
+        ir_para: bomba
+  bomba:
+    tipo: pergunta
+    texto: Já limpaste a bomba de escoamento, por baixo dos filtros?
+    respostas:
+      - texto: Não
+        ir_para: fim-bomba
+      - texto: Sim
+        ir_para: esgoto
+  esgoto:
+    tipo: pergunta
+    texto: O lava-loiça e o resto do esgoto da casa escoam bem?
+    respostas:
+      - texto: Sim
+        ir_para: fim-tecnico
+      - texto: Não
+        ir_para: fim-canalizador
+  fim-filtros:
+    tipo: guia
+    guias:
+      - ll-limpar-filtros
+    nota: A Bosch indica limpar os filtros e a zona por baixo deles.
+  fim-mangueira:
+    tipo: guia
+    guias:
+      - ll-verificar-mangueira-escoamento
+  fim-bomba:
+    tipo: guia
+    guias:
+      - ll-limpar-bomba-escoamento
+  fim-canalizador:
+    tipo: tecnico
+    motivo: Se o esgoto da casa também escoa mal, o entupimento está na canalização. Chama um canalizador.
+  fim-tecnico:
+    tipo: tecnico
+    motivo: "Com os filtros e a bomba limpos, a mangueira desimpedida e o esgoto a funcionar, contacta a assistência técnica. Os fabricantes avisam que reparações impróprias são perigosas e que o interior não tem peças que o utilizador possa reparar: as reparações são para técnicos especializados. Se aparecer um código no visor, indica-o à assistência."
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001036344_B.pdf
+    titulo: Bosch — Instruções de serviço, máquina de lavar loiça SB…/SM… (PT)
+    pagina: 38, 40, 42
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7141543_7141540_MAQ_LAVAR_LOICA_BECKEN_BDW1965N_manual.pdf
+    titulo: Becken BDW1965N — Manual de instruções da máquina de lavar loiça (secção PT)
+    pagina: 135, 140
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DW60M9550FS%2FEU&CttFileID=7019887&CDCttType=UM&VPath=UM%2F201804%2F20180409182326092%2FMANUAL_USERS_DD68-00203A-01_EU_EN_20180221.pdf
+    titulo: Samsung DW60M9550FS — Dishwasher user manual DD68-00203A (EN)
+    pagina: 45, 48
+    consultado_em: 2026-11-04
+  - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
+    titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
+    consultado_em: 2026-11-04
+  - url: https://media3.bosch-home.com/Documents/9001036344_B.pdf
+    titulo: Bosch — Instruções de serviço, máquina de lavar loiça SB…/SM… (PT)
+    pagina: 39, 42
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7141543_7141540_MAQ_LAVAR_LOICA_BECKEN_BDW1965N_manual.pdf
+    titulo: Becken BDW1965N — Manual de instruções da máquina de lavar loiça (secção PT)
+    pagina: "98"
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DW60M9550FS%2FEU&CttFileID=7019887&CDCttType=UM&VPath=UM%2F201804%2F20180409182326092%2FMANUAL_USERS_DD68-00203A-01_EU_EN_20180221.pdf
+    titulo: Samsung DW60M9550FS — Dishwasher user manual DD68-00203A (EN)
+    pagina: "11"
+    consultado_em: 2026-11-04

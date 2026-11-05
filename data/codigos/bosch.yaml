@@ -84,3 +84,17 @@
       titulo: Bosch WAX28EH0ES — Manual do utilizador e instruções de instalação (PT)
       pagina: "51"
       consultado_em: 2026-11-04
+- id: bosch-ll-e22
+  brand: bosch
+  appliance_type: maquina-lavar-loica
+  code: E22
+  aliases:
+    - E:22
+  descricao: "Sistema de filtros sujo: a Bosch indica limpar os filtros."
+  guias:
+    - ll-limpar-filtros
+  sources:
+    - url: https://media3.bosch-home.com/Documents/9001036344_B.pdf
+      titulo: Bosch — Instruções de serviço, máquina de lavar loiça SB…/SM… (PT)
+      pagina: "39"
+      consultado_em: 2026-11-04

@@ -1,0 +1,48 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: maquina-lavar-loica
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: ll-limpeza-cuba-vedante
+titulo: Limpar a cuba e o vedante da porta
+resumo: Restos no vedante e depósitos de gordura ou calcário na cuba causam maus cheiros e pequenas fugas.
+perigos:
+  - temperatura
+avisos:
+  - Depois de um programa, espera que a máquina arrefeça antes de limpares o interior.
+ferramentas:
+  - toalhas
+tempo_estimado: 20
+passos:
+  - texto: Limpa primeiro os filtros (guia «Limpar os filtros da máquina de lavar loiça»).
+  - texto: Passa um pano húmido com um pouco de detergente da loiça no vedante da porta e no rebordo inferior da porta.
+    aviso: "Não uses sprays de limpeza na porta: a água pode entrar na fechadura e nas peças elétricas (Becken). Não deites água diretamente sobre a máquina (Samsung)."
+    imagem:
+      src: imagens/guias/lavar-loica/limpeza-cuba.svg
+      alt: Máquina de lavar loiça aberta e vazia, com o vedante da porta em destaque e setas circulares.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: "Não tires o vedante da porta: é ele que mantém a máquina estanque."
+  - texto: Volta a ligar a máquina. Com ela vazia, põe detergente para máquinas (ou um produto de limpeza próprio) e corre o programa de temperatura mais alta.
+    aviso: Usa só produtos sem cloro.
+  - texto: Depois de cada lavagem, ou se fores ficar muito tempo sem a usar, deixa a porta entreaberta para a humidade e os cheiros saírem.
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001036344_B.pdf
+    titulo: Bosch — Instruções de serviço, máquina de lavar loiça SB…/SM… (PT)
+    pagina: "37"
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7141543_7141540_MAQ_LAVAR_LOICA_BECKEN_BDW1965N_manual.pdf
+    titulo: Becken BDW1965N — Manual de instruções da máquina de lavar loiça (secção PT)
+    pagina: 133–134, 139
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DW60M9550FS%2FEU&CttFileID=7019887&CDCttType=UM&VPath=UM%2F201804%2F20180409182326092%2FMANUAL_USERS_DD68-00203A-01_EU_EN_20180221.pdf
+    titulo: Samsung DW60M9550FS — Dishwasher user manual DD68-00203A (EN)
+    pagina: 41, 45
+    consultado_em: 2026-11-04
+  - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
+    titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
+    consultado_em: 2026-11-04
