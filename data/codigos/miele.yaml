@@ -1,0 +1,60 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/error_code.schema.json
+- id: miele-ll-f78
+  brand: miele
+  appliance_type: maquina-lavar-loica
+  code: F78
+  descricao: Erro na bomba de circulação. Antes de tudo, desliga a máquina. Volta a ligá-la, escolhe o programa e fecha a porta. Se o erro voltar, desliga a máquina, fecha a torneira e contacta a assistência Miele. (Indicado no manual Miele M.-Nr. 11 941 802.)
+  sources:
+    - url: https://media.miele.com/downloads/55/ad/00_F6154D09FD151EEDA89340D6591355AD.pdf
+      titulo: Miele — Instruções de utilização, máquina de lavar louça (pt-PT, M.-Nr. 11 941 802, HG07-W)
+      pagina: "99"
+      consultado_em: 2026-11-05
+- id: miele-ll-f18
+  brand: miele
+  appliance_type: maquina-lavar-loica
+  code: F18
+  descricao: Anomalia técnica na entrada de água. Antes de tudo, desliga a máquina. Fecha a torneira e contacta a assistência Miele. (Indicado no manual Miele M.-Nr. 11 941 802.)
+  sources:
+    - url: https://media.miele.com/downloads/55/ad/00_F6154D09FD151EEDA89340D6591355AD.pdf
+      titulo: Miele — Instruções de utilização, máquina de lavar louça (pt-PT, M.-Nr. 11 941 802, HG07-W)
+      pagina: "101"
+      consultado_em: 2026-11-05
+- id: miele-ll-waterproof
+  brand: miele
+  appliance_type: maquina-lavar-loica
+  code: Waterproof
+  descricao: O sistema de proteção contra fugas (Waterproof) atuou. Desliga a máquina, fecha a torneira e contacta a assistência Miele. (Indicado no manual Miele M.-Nr. 11 941 802.)
+  sources:
+    - url: https://media.miele.com/downloads/55/ad/00_F6154D09FD151EEDA89340D6591355AD.pdf
+      titulo: Miele — Instruções de utilização, máquina de lavar louça (pt-PT, M.-Nr. 11 941 802, HG07-W)
+      pagina: "99"
+      consultado_em: 2026-11-05
+- id: miele-ll-entrada-agua
+  brand: miele
+  appliance_type: maquina-lavar-loica
+  code: Entrada água
+  descricao: Anomalia na entrada de água (se o visor indicar «Abrir torneira água», a torneira está fechada). Antes de tudo, desliga a máquina. Abre a torneira toda e recomeça o programa; limpa o filtro da entrada de água. Se a pressão da água for inferior a 50 kPa, fala com um técnico. A Miele indica ainda que, se a ligação ao esgoto estiver demasiado baixa, o esgoto precisa de ventilação (vê o manual). (Indicado no manual Miele M.-Nr. 11 941 802.)
+  arvore: ll-nao-enche-agua
+  guias:
+    - ll-verificar-entrada-agua
+  sources:
+    - url: https://media.miele.com/downloads/55/ad/00_F6154D09FD151EEDA89340D6591355AD.pdf
+      titulo: Miele — Instruções de utilização, máquina de lavar louça (pt-PT, M.-Nr. 11 941 802, HG07-W)
+      pagina: "101"
+      consultado_em: 2026-11-05
+- id: miele-ll-esgoto-agua
+  brand: miele
+  appliance_type: maquina-lavar-loica
+  code: Esgoto da água
+  descricao: Anomalia no escoamento; pode haver água na cuba. Antes de tudo, desliga a máquina. Limpa os filtros e a bomba de escoamento e, se for preciso, endireita a mangueira de escoamento. (Indicado no manual Miele M.-Nr. 11 941 802.)
+  arvore: ll-nao-escoa
+  guias:
+    - ll-limpar-filtros
+    - ll-limpar-bomba-escoamento
+    - ll-verificar-mangueira-escoamento
+  sources:
+    - url: https://media.miele.com/downloads/55/ad/00_F6154D09FD151EEDA89340D6591355AD.pdf
+      titulo: Miele — Instruções de utilização, máquina de lavar louça (pt-PT, M.-Nr. 11 941 802, HG07-W)
+      pagina: "102"
+      consultado_em: 2026-11-05

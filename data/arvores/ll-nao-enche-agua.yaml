@@ -16,6 +16,7 @@ codigos:
   - zanussi-ll-i10
   - siemens-ll-e14
   - siemens-ll-e18
+  - miele-ll-entrada-agua
 inicio: torneira
 nos:
   torneira:

@@ -58,6 +58,10 @@
   tipo: fabricante
   descricao: Gorenje — manuais oficiais em partners.gorenje.com (grupo Hisense)
   marcas: [gorenje]
+- dominio: miele.com
+  tipo: fabricante
+  descricao: Miele — manuais oficiais em media.miele.com
+  marcas: [miele]
 - dominio: beko.com
   tipo: fabricante
   descricao: Beko — site oficial e manuais em documents.beko.com
