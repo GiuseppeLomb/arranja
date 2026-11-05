@@ -1,0 +1,20 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/error_code.schema.json
+- id: whirlpool-fr-f
+  brand: whirlpool
+  appliance_type: frigorifico
+  code: F
+  descricao: "Mau funcionamento do aparelho: a letra F pisca no visor da temperatura (°C). Contacta o Serviço Pós-Venda. (Indicado no manual Whirlpool ref. 400011319210, que a Macorlux associa ao W9 831D IX H; noutros modelos, confirma no manual.)"
+  sources:
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/73902/73902.pdf
+      titulo: Whirlpool — Manual do utilizador, combinado frigorífico/congelador (PT; páginas do PDF)
+      pagina: "10"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: whirlpool
+        referencia_documento: "400011319210"
+        modelos:
+          - W9 831D IX H
+        modelos_fonte: alojamento
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/73902/73902.pdf
+        alojado_por: Macorlux

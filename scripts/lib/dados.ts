@@ -243,6 +243,8 @@ export function validarSemantica(d: DadosBrutos, hoje = new Date()): Problema[] 
 			if (p.tipo === ALOJAMENTO && !doc) add(onde, `fonte alojada por retalhista sem documento_oficial: ${f.url}`);
 			if (doc) {
 				if (!marcas.has(doc.fabricante)) add(onde, `documento_oficial: fabricante desconhecido ${doc.fabricante}`);
+				if (doc.modelos_fonte === 'alojamento' && !doc.referencia_documento)
+					add(onde, `documento_oficial: modelos indicados pelo retalhista só são aceites com referência impressa no documento: ${f.url}`);
 				if (doc.url_alojamento !== f.url) add(onde, `documento_oficial: url_alojamento tem de ser igual ao url da fonte (${f.url})`);
 				const pa = dominioDe(doc.url_alojamento, exemplo);
 				if (!pa || pa.tipo !== ALOJAMENTO) add(onde, `documento_oficial: url_alojamento tem de estar num domínio de alojamento de documento oficial: ${doc.url_alojamento}`);

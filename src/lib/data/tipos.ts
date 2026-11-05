@@ -18,6 +18,8 @@ export interface DocumentoOficial {
 	/** Marcas de autenticidade quando não há referência impressa. */
 	identificacao?: string;
 	modelos: string[];
+	/** "alojamento": o documento não indica o modelo; os modelos são os que o retalhista associa à cópia. */
+	modelos_fonte?: 'documento' | 'alojamento';
 	url_alojamento: string;
 	alojado_por: string;
 }

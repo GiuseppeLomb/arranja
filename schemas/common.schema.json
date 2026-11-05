@@ -75,7 +75,7 @@
 								"minLength": 2,
 								"maxLength": 40
 							},
-							"description": "Modelos exatos indicados no documento."
+							"description": "Modelos exatos indicados no documento (ou, com modelos_fonte \"alojamento\", os que o retalhista associa ao documento)."
 						},
 						"url_alojamento": {
 							"$ref": "#/$defs/url"
@@ -91,6 +91,13 @@
 							"minLength": 10,
 							"maxLength": 200,
 							"description": "Marcas de autenticidade quando o documento não tem referência impressa (fabricante, site oficial, modelos exatos)."
+						},
+						"modelos_fonte": {
+							"enum": [
+								"documento",
+								"alojamento"
+							],
+							"description": "De onde vêm os modelos: \"documento\" (por omissão) ou \"alojamento\" — o documento tem referência impressa mas não indica o modelo, e os modelos são os que o retalhista associa a essa cópia."
 						}
 					},
 					"anyOf": [
@@ -104,7 +111,22 @@
 								"identificacao"
 							]
 						}
-					]
+					],
+					"if": {
+						"properties": {
+							"modelos_fonte": {
+								"const": "alojamento"
+							}
+						},
+						"required": [
+							"modelos_fonte"
+						]
+					},
+					"then": {
+						"required": [
+							"referencia_documento"
+						]
+					}
 				}
 			}
 		},
