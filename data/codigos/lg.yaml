@@ -1,0 +1,58 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/error_code.schema.json
+- id: lg-lr-ue
+  brand: lg
+  appliance_type: maquina-lavar-roupa
+  code: UE
+  descricao: "A máquina não conseguiu equilibrar a carga e interrompeu o programa. A carga pode ser pequena demais, misturar peças pesadas com leves ou estar emaranhada: junta mais peças, lava peças de peso parecido e redistribui a roupa à mão. (Indicado no manual da LG Mini F8K5XN3, a máquina de pedestal que funciona por baixo de uma máquina LG de carga frontal; ref. MFL68881095. Noutros modelos LG, confirma no manual.)"
+  arvore: lr-nao-centrifuga
+  guias:
+    - lr-equilibrar-carga
+  sources:
+    - url: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dwe3ad2e70/documents/002736577_89c8c892-f0d8-4e67-83f0-dba469fb6eca.pdf
+      titulo: LG Mini F8K5XN3 (pedestal) — Manual do utilizador, máquina de lavar roupa (PT)
+      pagina: "42"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: lg
+        referencia_documento: MFL68881095
+        modelos:
+          - F8K5XN3
+        url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dwe3ad2e70/documents/002736577_89c8c892-f0d8-4e67-83f0-dba469fb6eca.pdf
+        alojado_por: Auchan
+- id: lg-lr-le
+  brand: lg
+  appliance_type: maquina-lavar-roupa
+  code: LE
+  descricao: Erro no motor. Deixa a máquina repousar 30 minutos para o motor arrefecer e recomeça o programa; se o código continuar, contacta a assistência. (Indicado no manual da LG Mini F8K5XN3, a máquina de pedestal que funciona por baixo de uma máquina LG de carga frontal; ref. MFL68881095. Noutros modelos LG, confirma no manual.)
+  sources:
+    - url: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dwe3ad2e70/documents/002736577_89c8c892-f0d8-4e67-83f0-dba469fb6eca.pdf
+      titulo: LG Mini F8K5XN3 (pedestal) — Manual do utilizador, máquina de lavar roupa (PT)
+      pagina: "42"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: lg
+        referencia_documento: MFL68881095
+        modelos:
+          - F8K5XN3
+        url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dwe3ad2e70/documents/002736577_89c8c892-f0d8-4e67-83f0-dba469fb6eca.pdf
+        alojado_por: Auchan
+- id: lg-lr-cl
+  brand: lg
+  appliance_type: maquina-lavar-roupa
+  code: CL
+  descricao: "Não é um erro: é o bloqueio para crianças. No F8K5XN3 desativa-se mantendo premidos ao mesmo tempo os botões de limpeza da cuba e de enxaguamento extra durante três segundos; noutros modelos, vê o manual. (Indicado no manual da LG Mini F8K5XN3, a máquina de pedestal que funciona por baixo de uma máquina LG de carga frontal; ref. MFL68881095. Noutros modelos LG, confirma no manual.)"
+  guias:
+    - lr-verificar-energia-bloqueio
+  sources:
+    - url: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dwe3ad2e70/documents/002736577_89c8c892-f0d8-4e67-83f0-dba469fb6eca.pdf
+      titulo: LG Mini F8K5XN3 (pedestal) — Manual do utilizador, máquina de lavar roupa (PT)
+      pagina: "42"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: lg
+        referencia_documento: MFL68881095
+        modelos:
+          - F8K5XN3
+        url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dwe3ad2e70/documents/002736577_89c8c892-f0d8-4e67-83f0-dba469fb6eca.pdf
+        alojado_por: Auchan

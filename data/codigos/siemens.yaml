@@ -1,0 +1,300 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/error_code.schema.json
+- id: siemens-lr-e00
+  brand: siemens
+  appliance_type: maquina-lavar-roupa
+  code: E00
+  descricao: Desliga a máquina, espera cinco segundos e volta a ligá-la. Se o código voltar, contacta a assistência.
+  aliases:
+    - E10
+    - E:00
+    - E:10
+  sources:
+    - &a1
+      url: https://www.siemens-home.bsh-group.com/pt/apoio-ao-consumidor/apoio/resolucao-de-problemas/mlroupa/codigos-de-erro-e-simbolos
+      titulo: Siemens Portugal — códigos de erro e símbolos das máquinas de lavar roupa (página oficial de apoio)
+      consultado_em: 2026-11-05
+- id: siemens-lr-e16
+  brand: siemens
+  appliance_type: maquina-lavar-roupa
+  code: E16
+  descricao: A porta não fechou bem; pode haver roupa presa na porta. Abre e volta a fechar a porta e carrega em iniciar. Se for preciso, tira algumas peças e volta a fechar.
+  aliases:
+    - F16
+  guias:
+    - lr-verificar-energia-bloqueio
+  sources:
+    - *a1
+- id: siemens-lr-e17
+  brand: siemens
+  appliance_type: maquina-lavar-roupa
+  code: E17
+  descricao: O tempo de entrada de água foi excedido. Mede a pressão na torneira com um balde (cerca de 10 litros por minuto com a torneira toda aberta); se for baixa, fala com um canalizador. Verifica também os filtros na ligação da água e se a mangueira AquaStop está bloqueada.
+  aliases:
+    - F17
+  arvore: lr-nao-enche-agua
+  guias:
+    - lr-limpar-filtro-entrada
+    - lr-apertar-ligacoes-mangueiras
+  sources:
+    - *a1
+- id: siemens-lr-e18
+  brand: siemens
+  appliance_type: maquina-lavar-roupa
+  code: E18
+  descricao: O filtro está bloqueado ou a mangueira de escoamento está entupida ou dobrada.
+  aliases:
+    - F18
+  arvore: lr-nao-escoa
+  guias:
+    - lr-esvaziar-agua
+    - lr-limpar-filtro-bomba
+    - lr-verificar-mangueira-escoamento
+  sources:
+    - *a1
+- id: siemens-lr-e19
+  brand: siemens
+  appliance_type: maquina-lavar-roupa
+  code: E19
+  descricao: "Tempo de aquecimento excedido. Não é reparável pelo utilizador: contacta a assistência Siemens e indica o código."
+  aliases:
+    - F19
+  sources:
+    - *a1
+- id: siemens-lr-e20
+  brand: siemens
+  appliance_type: maquina-lavar-roupa
+  code: E20
+  descricao: Aquecimento inesperado. Desliga e volta a ligar a máquina.
+  aliases:
+    - F20
+  sources:
+    - *a1
+- id: siemens-lr-e23
+  brand: siemens
+  appliance_type: maquina-lavar-roupa
+  code: E23
+  descricao: A máquina está a verter ou há água na base. Se suspeitares de uma fuga, fecha logo a torneira da água.
+  arvore: lr-verte-agua
+  sources:
+    - *a1
+- id: siemens-lr-e25
+  brand: siemens
+  appliance_type: maquina-lavar-roupa
+  code: E25
+  descricao: "Sensor de turvação avariado. Não é reparável pelo utilizador: contacta a assistência Siemens e indica o código."
+  aliases:
+    - F25
+  sources:
+    - *a1
+- id: siemens-lr-e26
+  brand: siemens
+  appliance_type: maquina-lavar-roupa
+  code: E26
+  descricao: "Sensor de pressão analógico avariado. Não é reparável pelo utilizador: contacta a assistência Siemens e indica o código."
+  aliases:
+    - F26
+  sources:
+    - *a1
+- id: siemens-lr-e27
+  brand: siemens
+  appliance_type: maquina-lavar-roupa
+  code: E27
+  descricao: "Sensor de pressão avariado. Não é reparável pelo utilizador: contacta a assistência Siemens e indica o código."
+  aliases:
+    - F27
+  sources:
+    - *a1
+- id: siemens-lr-e29
+  brand: siemens
+  appliance_type: maquina-lavar-roupa
+  code: E29
+  descricao: Problema na entrada de água. Mede a pressão na torneira com um balde (cerca de 10 litros por minuto), verifica os filtros da ligação da água e da mangueira junto à torneira, e se a mangueira AquaStop está bloqueada.
+  arvore: lr-nao-enche-agua
+  guias:
+    - lr-limpar-filtro-entrada
+  sources:
+    - *a1
+- id: siemens-lr-e32
+  brand: siemens
+  appliance_type: maquina-lavar-roupa
+  code: E32
+  descricao: "Não é avaria: a roupa estava mal distribuída e a máquina interrompeu a centrifugação. Distribui peças pequenas e grandes pelo tambor e, se for preciso, centrifuga outra vez."
+  arvore: lr-nao-centrifuga
+  guias:
+    - lr-equilibrar-carga
+  sources:
+    - *a1
+- id: siemens-lr-e33
+  brand: siemens
+  appliance_type: maquina-lavar-roupa
+  code: E33
+  descricao: Espuma a mais. Reduz o detergente, sobretudo com água macia ou roupa pouco suja.
+  guias:
+    - lr-reduzir-detergente-enxaguar
+  sources:
+    - *a1
+- id: siemens-lr-e34
+  brand: siemens
+  appliance_type: maquina-lavar-roupa
+  code: E34
+  descricao: A porta não fechou bem. Fecha-a até ouvires um clique; com a máquina muito cheia pode não fechar. Vê se alguma peça ficou presa entre a porta e a cuba e recomeça o programa.
+  guias:
+    - lr-verificar-energia-bloqueio
+    - lr-limpar-borracha-porta
+  sources:
+    - *a1
+- id: siemens-ll-e01
+  brand: siemens
+  appliance_type: maquina-lavar-loica
+  code: E01
+  descricao: Falha na eletrónica. Desliga a máquina no botão, espera alguns minutos e volta a ligar. Se o código continuar, fecha a torneira, desliga a ficha e contacta a assistência.
+  aliases:
+    - E02
+    - E03
+    - E04
+    - E05
+  guias:
+    - ll-verificar-energia
+  sources:
+    - &a2
+      url: https://www.siemens-home.bsh-group.com/pt/apoio-ao-consumidor/apoio/resolucao-de-problemas/problemas/loica/codigos-erro-loica
+      titulo: Siemens Portugal — códigos de erro das máquinas de lavar loiça (página oficial de apoio)
+      consultado_em: 2026-11-05
+- id: siemens-ll-e06
+  brand: siemens
+  appliance_type: maquina-lavar-loica
+  code: E06
+  descricao: "Sensor da porta avariado ou problema na eletrónica. Não é reparável pelo utilizador: contacta a assistência Siemens e indica o código."
+  sources:
+    - *a2
+- id: siemens-ll-e07
+  brand: siemens
+  appliance_type: maquina-lavar-loica
+  code: E07
+  descricao: "Problema no sistema de secagem. Não é reparável pelo utilizador: contacta a assistência Siemens e indica o código."
+  sources:
+    - *a2
+- id: siemens-ll-e08
+  brand: siemens
+  appliance_type: maquina-lavar-loica
+  code: E08
+  descricao: Pouca água no enxaguamento. Vê se há taças ou panelas viradas ao contrário a reter água e se a loiça tapa a entrada de água dentro da máquina. Se repetir, contacta a assistência.
+  guias:
+    - ll-arrumar-loica
+  sources:
+    - *a2
+- id: siemens-ll-e09
+  brand: siemens
+  appliance_type: maquina-lavar-loica
+  code: E09
+  descricao: "Falha no sistema de aquecimento. Não é reparável pelo utilizador: contacta a assistência Siemens e indica o código."
+  aliases:
+    - E11
+  sources:
+    - *a2
+- id: siemens-ll-e10
+  brand: siemens
+  appliance_type: maquina-lavar-loica
+  code: E10
+  descricao: "Falha no sistema de secagem. Não é reparável pelo utilizador: contacta a assistência Siemens e indica o código."
+  sources:
+    - *a2
+- id: siemens-ll-e12
+  brand: siemens
+  appliance_type: maquina-lavar-loica
+  code: E12
+  descricao: A resistência de aquecimento tem calcário ou sujidade. Descalcifica a máquina como indicam as instruções de descalcificação do manual.
+  sources:
+    - *a2
+- id: siemens-ll-e14
+  brand: siemens
+  appliance_type: maquina-lavar-loica
+  code: E14
+  descricao: O sistema de proteção da água atuou por falha no enchimento ou na alimentação de água. Verifica a entrada de água e se a mangueira de admissão não está dobrada. Se repetir, contacta a assistência.
+  arvore: ll-nao-enche-agua
+  guias:
+    - ll-verificar-entrada-agua
+  sources:
+    - *a2
+- id: siemens-ll-e15
+  brand: siemens
+  appliance_type: maquina-lavar-loica
+  code: E15
+  descricao: Há água na parte de baixo da máquina. Fecha a torneira e contacta a assistência.
+  sources:
+    - *a2
+- id: siemens-ll-e16
+  brand: siemens
+  appliance_type: maquina-lavar-loica
+  code: E16
+  descricao: "Falha no enchimento ou na entrada de água. Fecha a torneira e verifica se a mangueira de admissão não está dobrada. Se acontecer com frequência, é avaria: contacta a assistência."
+  guias:
+    - ll-verificar-entrada-agua
+  sources:
+    - *a2
+- id: siemens-ll-e18
+  brand: siemens
+  appliance_type: maquina-lavar-loica
+  code: E18
+  descricao: "Falha na entrada de água: tubo dobrado, torneira fechada, entupida ou com calcário, ou filtro da entrada entupido. Verifica a entrada de água. Se repetir, contacta a assistência."
+  arvore: ll-nao-enche-agua
+  guias:
+    - ll-verificar-entrada-agua
+  sources:
+    - *a2
+- id: siemens-ll-e19
+  brand: siemens
+  appliance_type: maquina-lavar-loica
+  code: E19
+  descricao: "Normalmente, falha no doseador. Não é reparável pelo utilizador: contacta a assistência Siemens e indica o código."
+  sources:
+    - *a2
+- id: siemens-ll-e20
+  brand: siemens
+  appliance_type: maquina-lavar-loica
+  code: E20
+  descricao: "Erro no circuito de lavagem, que pode vir da bomba de circulação. Não é reparável pelo utilizador: contacta a assistência Siemens e indica o código."
+  aliases:
+    - E21
+  sources:
+    - *a2
+- id: siemens-ll-e22
+  brand: siemens
+  appliance_type: maquina-lavar-loica
+  code: E22
+  descricao: O filtro está sujo ou entupido. Limpa os filtros.
+  guias:
+    - ll-limpar-filtros
+  sources:
+    - *a2
+- id: siemens-ll-e23
+  brand: siemens
+  appliance_type: maquina-lavar-loica
+  code: E23
+  descricao: "Falha na bomba de escoamento. Não é reparável pelo utilizador: contacta a assistência Siemens e indica o código."
+  sources:
+    - *a2
+- id: siemens-ll-e26
+  brand: siemens
+  appliance_type: maquina-lavar-loica
+  code: E26
+  descricao: "Componente avariado no circuito de água. Não é reparável pelo utilizador: contacta a assistência Siemens e indica o código."
+  sources:
+    - *a2
+- id: siemens-ll-e27
+  brand: siemens
+  appliance_type: maquina-lavar-loica
+  code: E27
+  descricao: "Falha na alimentação elétrica ou tensão da rede baixa demais: não é avaria da máquina. Verifica a tensão e a instalação elétrica (com um eletricista). Se repetir, contacta a assistência."
+  guias:
+    - ll-verificar-energia
+  sources:
+    - *a2
+- id: siemens-ll-e31
+  brand: siemens
+  appliance_type: maquina-lavar-loica
+  code: E31
+  descricao: "Problema no sistema de secagem: a água não aquece e a loiça não seca. Não é reparável pelo utilizador: contacta a assistência Siemens e indica o código."
+  sources:
+    - *a2

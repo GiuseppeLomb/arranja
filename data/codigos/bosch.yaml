@@ -98,3 +98,31 @@
       titulo: Bosch — Instruções de serviço, máquina de lavar loiça SB…/SM… (PT)
       pagina: "39"
       consultado_em: 2026-11-04
+- id: bosch-ll-e24
+  brand: bosch
+  appliance_type: maquina-lavar-loica
+  code: E24
+  aliases:
+    - E:24
+  descricao: "Fica água na máquina no fim do programa: a mangueira de escoamento está entupida ou dobrada. Com um código destes, a Bosch indica desligar a máquina da corrente e fechar a torneira antes de verificar."
+  arvore: ll-nao-escoa
+  guias:
+    - ll-verificar-mangueira-escoamento
+  sources:
+    - &a1
+      url: https://media3.bosch-home.com/Documents/9000405528_A.pdf
+      titulo: Bosch — Instruções de serviço, máquina de lavar loiça (PT, 9000405528)
+      pagina: 20–21
+      consultado_em: 2026-11-05
+- id: bosch-ll-e25
+  brand: bosch
+  appliance_type: maquina-lavar-loica
+  code: E25
+  aliases:
+    - E:25
+  descricao: "Fica água na máquina no fim do programa: a bomba de escoamento está bloqueada ou a tampa da bomba não está encaixada. Com um código destes, a Bosch indica desligar a máquina da corrente e fechar a torneira antes de verificar."
+  arvore: ll-nao-escoa
+  guias:
+    - ll-limpar-bomba-escoamento
+  sources:
+    - *a1

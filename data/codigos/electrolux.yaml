@@ -1,0 +1,244 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/error_code.schema.json
+- id: electrolux-lr-e10
+  brand: electrolux
+  appliance_type: maquina-lavar-roupa
+  code: E10
+  aliases:
+    - E11
+  descricao: Não entra água, ou entra pouca. Confirma que a torneira dá água suficiente (um balde de 10 litros em cerca de um minuto), limpa os filtros da mangueira de entrada e confirma que a mangueira de escoamento não entra mais de 10 cm no esgoto e fica entre 60 e 100 cm de altura. Depois, desliga a ficha 30 segundos e volta a ligar. Se continuar, chama a assistência; a marca desaconselha usar a máquina até o problema estar resolvido.
+  arvore: lr-nao-enche-agua
+  guias:
+    - lr-limpar-filtro-entrada
+    - lr-apertar-ligacoes-mangueiras
+    - lr-verificar-mangueira-escoamento
+  sources:
+    - url: https://support.electrolux.pt/support-articles/article/a-maquina-de-lavar-exibe-a-mensagem-de-erro-e10-c1-ou-emite-1-bip-pisca-1-vez
+      titulo: "Electrolux — artigo de apoio oficial: código E10 na máquina de lavar roupa"
+      consultado_em: 2026-11-05
+- id: electrolux-lr-e20
+  brand: electrolux
+  appliance_type: maquina-lavar-roupa
+  code: E20
+  aliases:
+    - E21
+    - C2
+  descricao: "Problema de escoamento: a máquina não escoa, não enxagua nem centrifuga. Confirma a posição e a altura da mangueira de escoamento (60 a 100 cm), que não está dobrada nem entupida, limpa a bomba e o filtro, e usa menos detergente se houver espuma a mais. Se continuar, chama a assistência. A marca desaconselha usar a máquina até o problema estar resolvido."
+  arvore: lr-nao-escoa
+  guias:
+    - lr-verificar-mangueira-escoamento
+    - lr-esvaziar-agua
+    - lr-limpar-filtro-bomba
+    - lr-reduzir-detergente-enxaguar
+  sources:
+    - url: https://support.electrolux.pt/support-articles/article/a-maquina-de-lavar-nao-drena-a-agua-e-exibe-a-mensagem-de-erro-e20-e21-ou-c2
+      titulo: "Electrolux — artigo de apoio oficial: código E20 na máquina de lavar roupa"
+      consultado_em: 2026-11-05
+- id: electrolux-lr-e30
+  brand: electrolux
+  appliance_type: maquina-lavar-roupa
+  code: E30
+  aliases:
+    - C3
+  descricao: Há água na base ou dentro da máquina (fuga). Verifica as ligações da mangueira de entrada, se há roupa presa entre o vedante e o vidro da porta, e se o vedante da porta está rachado ou furado (a substituição é para um técnico). A marca desaconselha usar a máquina até o problema estar resolvido.
+  arvore: lr-verte-agua
+  guias:
+    - lr-apertar-ligacoes-mangueiras
+    - lr-limpar-borracha-porta
+  sources:
+    - url: https://support.electrolux.pt/support-articles/article/a-maquina-de-lavar-exibe-a-mensagem-de-erro-e30-c3-ou-emite-3-bips
+      titulo: "Electrolux — artigo de apoio oficial: código E30 na máquina de lavar roupa"
+      consultado_em: 2026-11-05
+- id: electrolux-lr-e40
+  brand: electrolux
+  appliance_type: maquina-lavar-roupa
+  code: E40
+  descricao: "Problema na porta. Fecha bem a porta, tira roupa presa entre o vedante e o vidro, tira roupa se a máquina estiver sobrecarregada e confirma que o bloqueio mecânico para crianças não está ativo. Se continuar, o fecho da porta pode estar avariado: chama a assistência. A marca desaconselha usar a máquina até o problema estar resolvido."
+  guias:
+    - lr-verificar-energia-bloqueio
+  sources:
+    - url: https://support.electrolux.pt/support-articles/article/a-maquina-de-lavar-e-secar-exibe-a-mensagem-de-erro-e40-ou-emite-4-bipspisca-4-vezes
+      titulo: "Electrolux — artigo de apoio oficial: código E40 na máquina de lavar roupa"
+      consultado_em: 2026-11-05
+- id: electrolux-lr-e50
+  brand: electrolux
+  appliance_type: maquina-lavar-roupa
+  code: E50
+  aliases:
+    - C9
+    - F9
+  descricao: Falha no motor. Contacta a assistência técnica. A marca desaconselha usar a máquina até o problema estar resolvido.
+  sources:
+    - url: https://support.electrolux.pt/support-articles/article/a-maquina-de-lavar-exibe-a-mensagem-de-erro-e50
+      titulo: "Electrolux — artigo de apoio oficial: código E50 na máquina de lavar roupa"
+      consultado_em: 2026-11-05
+- id: electrolux-lr-e60
+  brand: electrolux
+  appliance_type: maquina-lavar-roupa
+  code: E60
+  descricao: Problema de aquecimento (também outros códigos começados por E6). Anota o código e contacta a assistência técnica. A marca desaconselha usar a máquina até o problema estar resolvido.
+  sources:
+    - url: https://support.electrolux.pt/support-articles/article/a-maquina-de-lavar-exibe-a-mensagem-de-erro-e60
+      titulo: "Electrolux — artigo de apoio oficial: código E60 na máquina de lavar roupa"
+      consultado_em: 2026-11-05
+- id: electrolux-lr-ef0
+  brand: electrolux
+  appliance_type: maquina-lavar-roupa
+  code: EF0
+  aliases:
+    - EFo
+    - EF3
+  descricao: "Aviso de fuga de água (EF3), espuma a mais ou carga desequilibrada. Usa menos detergente, limpa a gaveta do detergente, verifica roupa presa na porta, o filtro da bomba (bem apertado e sem danos) e as ligações da mangueira de entrada. Se o vedante da porta estiver danificado, a substituição é para um técnico: fecha a água e não uses a máquina até estar reparada. A marca desaconselha usar a máquina até o problema estar resolvido."
+  arvore: lr-verte-agua
+  guias:
+    - lr-reduzir-detergente-enxaguar
+    - lr-limpar-gaveta-detergente
+    - lr-limpar-filtro-bomba
+    - lr-apertar-ligacoes-mangueiras
+    - lr-limpar-borracha-porta
+    - lr-equilibrar-carga
+  sources:
+    - url: https://support.electrolux.pt/support-articles/article/a-maquina-de-lavar-exibe-a-mensagem-de-erro-ef0-efo-ef3-ou-emite-15-bipspisca-15-vezes
+      titulo: "Electrolux — artigo de apoio oficial: código EF0 na máquina de lavar roupa"
+      consultado_em: 2026-11-05
+- id: electrolux-lr-eh0
+  brand: electrolux
+  appliance_type: maquina-lavar-roupa
+  code: EH0
+  aliases:
+    - EHO
+    - EH1
+    - EH2
+    - EH3
+  descricao: "Problema na alimentação elétrica (EH1: frequência fora do intervalo; EH2: tensão alta demais; EH3: tensão baixa demais). Testa a tomada com outro aparelho, nunca uses extensões, e desliga a ficha 30 segundos antes de voltar a ligar. Problemas na instalação elétrica são para um eletricista. A marca desaconselha usar a máquina até o problema estar resolvido."
+  guias:
+    - lr-verificar-energia-bloqueio
+  sources:
+    - url: https://support.electrolux.pt/support-articles/article/a-maquina-de-lavar-roupa-exibe-a-mensagem-de-erro-ehoeh0
+      titulo: "Electrolux — artigo de apoio oficial: código EH0 na máquina de lavar roupa"
+      consultado_em: 2026-11-05
+- id: electrolux-ll-i10
+  brand: electrolux
+  appliance_type: maquina-lavar-loica
+  code: i10
+  aliases:
+    - i11
+    - AL5
+    - C1
+    - F1
+  descricao: Problema no fornecimento de água. Confirma que há água em casa e que a torneira da máquina está toda aberta, que a pressão chega (um balde de 10 litros num minuto), que a mangueira de entrada não está dobrada (se estiver danificada, desliga logo a máquina, fecha a água e pede a reparação a um técnico) e que o filtro da entrada está limpo. Confirma também os filtros, a altura da mangueira de escoamento e, se a máquina foi instalada há pouco, se o tampão do sifão foi retirado.
+  arvore: ll-nao-enche-agua
+  guias:
+    - ll-verificar-entrada-agua
+    - ll-limpar-filtros
+    - ll-verificar-mangueira-escoamento
+  sources:
+    - url: https://support.electrolux.pt/support-articles/article/a-maquina-de-lavar-loica-exibe-a-mensagem-de-erro-al5-c1-f1-i10-ou-i11-emite-um-aviso-sonoro-ou-a-luz-de-aviso-pisca-uma-vez
+      titulo: "Electrolux — artigo de apoio oficial: código i10 na máquina de lavar loiça"
+      consultado_em: 2026-11-05
+- id: electrolux-ll-i20
+  brand: electrolux
+  appliance_type: maquina-lavar-loica
+  code: i20
+  aliases:
+    - C2
+    - F2
+    - AL6
+  descricao: Problema de escoamento. Confirma que o sifão e os filtros não estão entupidos e, numa instalação nova, que a mangueira de escoamento não passa de 400 cm, entra no esgoto entre 40 e 85 cm de altura, não está dobrada e que o tampão do sifão foi retirado. Se continuar, chama a assistência. A marca desaconselha usar a máquina até o problema estar resolvido.
+  arvore: ll-nao-escoa
+  guias:
+    - ll-limpar-filtros
+    - ll-verificar-mangueira-escoamento
+  sources:
+    - url: https://support.electrolux.pt/support-articles/article/a-maquina-de-lavar-loica-exibe-a-mensagem-de-erro-c2-f2-i20-al6-emite-2-bips-ou-o-led-pisca-2-vezes
+      titulo: "Electrolux — artigo de apoio oficial: código i20 na máquina de lavar loiça"
+      consultado_em: 2026-11-05
+- id: electrolux-ll-i30
+  brand: electrolux
+  appliance_type: maquina-lavar-loica
+  code: i30
+  descricao: "O sistema anti-inundação detetou água na base e a máquina escoa sem parar. Pode ser uma fuga interna: a marca recomenda a visita de um técnico. Fecha a torneira. Enquanto esperas pelo técnico, podes confirmar que a máquina está nivelada, que a loiça não trava os braços, que o vedante da porta está limpo e inteiro e que os filtros e braços estão limpos. A marca desaconselha usar a máquina até o problema estar resolvido."
+  arvore: ll-verte-agua
+  guias:
+    - ll-nivelar
+    - ll-arrumar-loica
+    - ll-limpeza-cuba-vedante
+    - ll-limpar-filtros
+    - ll-limpar-bracos-aspersores
+  sources:
+    - url: https://support.electrolux.pt/support-articles/article/a-maquina-de-lavar-loica-exibe-a-mensagem-de-erro-i30-drena-constantemente
+      titulo: "Electrolux — artigo de apoio oficial: código i30 na máquina de lavar loiça"
+      consultado_em: 2026-11-05
+- id: electrolux-ll-i40
+  brand: electrolux
+  appliance_type: maquina-lavar-loica
+  code: i40
+  aliases:
+    - i43
+    - i44
+  descricao: Avaria no sensor de pressão e no controlo do nível de água. Limpa os filtros e reinicia a máquina (desliga a ficha 1 minuto). Se a puxaste para fora, confirma que as mangueiras não ficaram dobradas e que a torneira está toda aberta. Se continuar, chama a assistência. A marca desaconselha usar a máquina até o problema estar resolvido.
+  guias:
+    - ll-limpar-filtros
+    - ll-verificar-energia
+  sources:
+    - url: https://support.electrolux.pt/support-articles/article/a-maquina-de-lavar-loica-exibe-a-mensagem-de-erro-i40-i43-ou-i44
+      titulo: "Electrolux — artigo de apoio oficial: código i40 na máquina de lavar loiça"
+      consultado_em: 2026-11-05
+- id: electrolux-ll-i50
+  brand: electrolux
+  appliance_type: maquina-lavar-loica
+  code: i50
+  aliases:
+    - i51
+    - i52
+    - i53
+    - i54
+    - i55
+    - i56
+    - i57
+    - i58
+    - i59
+    - i5A
+    - i5B
+    - i5H
+    - i5C
+    - i5D
+    - i5E
+    - i5F
+  descricao: Avaria no motor ou na bomba de lavagem. Reinicia a máquina (desliga a ficha 1 minuto); se o código voltar, chama a assistência. A marca desaconselha usar a máquina até o problema estar resolvido.
+  guias:
+    - ll-verificar-energia
+  sources:
+    - url: https://support.electrolux.pt/support-articles/article/a-maquina-de-lavar-loica-exibe-a-mensagem-de-erro-i50-i51-i52-i53-i54-i55-i56-i57-i58-i59-i5a-i5b-i5h-i5c-i5d-i5e-i5f
+      titulo: "Electrolux — artigo de apoio oficial: código i50 na máquina de lavar loiça"
+      consultado_em: 2026-11-05
+- id: electrolux-ll-i60
+  brand: electrolux
+  appliance_type: maquina-lavar-loica
+  code: i60
+  aliases:
+    - i61
+    - i69
+  descricao: Problema de aquecimento. Confirma que a água que entra não passa de 60 °C e reinicia a máquina (desliga a ficha 1 minuto). Se o código voltar, chama a assistência. A marca desaconselha usar a máquina até o problema estar resolvido.
+  guias:
+    - ll-verificar-energia
+  sources:
+    - url: https://support.electrolux.pt/support-articles/article/a-maquina-de-lavar-loica-exibe-a-mensagem-de-erro-i60
+      titulo: "Electrolux — artigo de apoio oficial: código i60 na máquina de lavar loiça"
+      consultado_em: 2026-11-05
+- id: electrolux-ll-if0
+  brand: electrolux
+  appliance_type: maquina-lavar-loica
+  code: iF0
+  aliases:
+    - iFo
+    - iF1
+  descricao: O artigo de apoio não explica o significado deste código. Indica reiniciar a máquina (desligar a ficha cerca de 1 minuto), limpar os filtros e o depósito e confirmar que a mangueira de escoamento está instalada à altura certa.
+  guias:
+    - ll-limpar-filtros
+    - ll-verificar-mangueira-escoamento
+    - ll-verificar-energia
+  sources:
+    - url: https://support.electrolux.pt/support-articles/article/a-maquina-de-lavar-loica-exibe-a-mensagem-de-erro-if0-ifo-o-if1
+      titulo: "Electrolux — artigo de apoio oficial: código iF0 na máquina de lavar loiça"
+      consultado_em: 2026-11-05

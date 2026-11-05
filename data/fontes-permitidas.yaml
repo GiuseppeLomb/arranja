@@ -34,6 +34,35 @@
   descricao: Hisense Europe (grupo Gorenje)
   marcas: [hisense, gorenje]
 
+- dominio: electrolux.pt
+  tipo: fabricante
+  descricao: Electrolux Portugal (artigos de apoio oficiais em support.electrolux.pt)
+  marcas: [electrolux]
+- dominio: aeg.com.pt
+  tipo: fabricante
+  descricao: AEG Portugal (artigos de apoio oficiais em support.aeg.com.pt; grupo Electrolux)
+  marcas: [aeg]
+- dominio: zanussi.pt
+  tipo: fabricante
+  descricao: Zanussi Portugal (artigos de apoio oficiais em support.zanussi.pt; grupo Electrolux)
+  marcas: [zanussi]
+- dominio: hotpoint.co.uk
+  tipo: fabricante
+  descricao: Hotpoint (Reino Unido) — página oficial de assistência com códigos de erro
+  marcas: [hotpoint]
+- dominio: hoover.co.uk
+  tipo: fabricante
+  descricao: Hoover (Reino Unido) — centro de assistência oficial e manuais em service.hoover.co.uk
+  marcas: [hoover]
+- dominio: gorenje.com
+  tipo: fabricante
+  descricao: Gorenje — manuais oficiais em partners.gorenje.com (grupo Hisense)
+  marcas: [gorenje]
+- dominio: beko.com
+  tipo: fabricante
+  descricao: Beko — site oficial e manuais em documents.beko.com
+  marcas: [beko]
+
 # --- Retalhistas (só para as suas marcas próprias) ---
 - dominio: worten.pt
   tipo: retalhista-marca-propria
@@ -59,3 +88,10 @@
   tipo: retalhista-marca-propria
   descricao: Site oficial da Becken (marca própria Worten)
   marcas: [becken]
+
+# --- Alojamento de documento oficial ---
+# Retalhistas que alojam cópias do manual OFICIAL do fabricante. Só valem como fonte com documento_oficial
+# (fabricante, referência impressa no documento, modelos exatos, url de alojamento e retalhista). O validate exige-o.
+- dominio: auchan.pt
+  tipo: alojamento-documento-oficial
+  descricao: Auchan Portugal — cópias de manuais oficiais nas páginas de produto

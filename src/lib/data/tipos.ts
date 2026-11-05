@@ -8,6 +8,16 @@ export interface Fonte {
 	/** Página(s) do documento onde está a informação. */
 	pagina?: string;
 	consultado_em: string;
+	/** Cópia do manual oficial alojada por um retalhista: autenticidade e onde está alojada. */
+	documento_oficial?: DocumentoOficial;
+}
+
+export interface DocumentoOficial {
+	fabricante: string;
+	referencia_documento: string;
+	modelos: string[];
+	url_alojamento: string;
+	alojado_por: string;
 }
 
 export interface AplicavelA {

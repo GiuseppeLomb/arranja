@@ -1,0 +1,64 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/error_code.schema.json
+- id: hoover-lr-e2
+  brand: hoover
+  appliance_type: maquina-lavar-roupa
+  code: E2
+  descricao: A máquina não consegue encher. Confirma que a torneira está aberta, que a mangueira de entrada não está dobrada nem entalada, que a mangueira de escoamento está à altura certa e que o filtro «anti-areia» da entrada está limpo. (Indicado no manual Hoover HBWMO96TAHC; nos modelos sem visor, o código aparece como número de piscas das luzes.)
+  aliases:
+    - E02
+  arvore: lr-nao-enche-agua
+  guias:
+    - lr-limpar-filtro-entrada
+    - lr-apertar-ligacoes-mangueiras
+    - lr-verificar-mangueira-escoamento
+  sources:
+    - &a1
+      url: https://service.hoover.co.uk/media/cf1fm5fk/hbwmo96tahc.pdf
+      titulo: Hoover HBWMO96TAHC — Instruction manual (EN)
+      pagina: "24"
+      consultado_em: 2026-11-05
+    - url: https://service.hoover.co.uk/advice-centre/error-message-e02-appears-in-the-display-on-the-washing-machine/
+      titulo: "Hoover — Advice Centre: error message E02"
+      consultado_em: 2026-11-05
+- id: hoover-lr-e3
+  brand: hoover
+  appliance_type: maquina-lavar-roupa
+  code: E3
+  descricao: A máquina não escoa. Confirma que o filtro não está entupido, que a mangueira de escoamento não está dobrada nem entalada e que o esgoto da casa não está entupido. (Indicado no manual Hoover HBWMO96TAHC; nos modelos sem visor, o código aparece como número de piscas das luzes.)
+  aliases:
+    - E03
+  arvore: lr-nao-escoa
+  guias:
+    - lr-esvaziar-agua
+    - lr-limpar-filtro-bomba
+    - lr-verificar-mangueira-escoamento
+  sources:
+    - *a1
+    - url: https://service.hoover.co.uk/advice-centre/error-message-e03-appears-in-the-display-of-the-washing-machine/
+      titulo: "Hoover — Advice Centre: error message E03"
+      consultado_em: 2026-11-05
+- id: hoover-lr-e4
+  brand: hoover
+  appliance_type: maquina-lavar-roupa
+  code: E4
+  descricao: Espuma ou água a mais. Usa a quantidade certa de detergente e só detergente para máquinas de lavar roupa. A Hoover sugere uma lavagem de manutenção (algodão a 60 °C, sem roupa); se o código continuar depois disso, chama a assistência. (Indicado no manual Hoover HBWMO96TAHC; nos modelos sem visor, o código aparece como número de piscas das luzes.)
+  aliases:
+    - E04
+  guias:
+    - lr-reduzir-detergente-enxaguar
+  sources:
+    - *a1
+    - url: https://service.hoover.co.uk/advice-centre/error-04-message/
+      titulo: "Hoover — Advice Centre: error message E04"
+      consultado_em: 2026-11-05
+- id: hoover-lr-e7
+  brand: hoover
+  appliance_type: maquina-lavar-roupa
+  code: E7
+  descricao: Problema na porta. Confirma que a porta está bem fechada e que a roupa não a impede de fechar. Se a porta estiver trancada, desliga a máquina e a ficha, espera 2 a 3 minutos e volta a abrir. (Indicado no manual Hoover HBWMO96TAHC; nos modelos sem visor, o código aparece como número de piscas das luzes.)
+  guias:
+    - lr-verificar-energia-bloqueio
+    - lr-desbloquear-porta
+  sources:
+    - *a1

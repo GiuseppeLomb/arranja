@@ -12,6 +12,11 @@ codigos:
   - bosch-ll-e22
   - samsung-ll-5c
   - samsung-ll-5c2
+  - bosch-ll-e24
+  - bosch-ll-e25
+  - electrolux-ll-i20
+  - aeg-ll-i20
+  - zanussi-ll-i20
 inicio: filtros
 nos:
   filtros:

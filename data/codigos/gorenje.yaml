@@ -1,0 +1,137 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/error_code.schema.json
+- id: gorenje-lr-e0
+  brand: gorenje
+  appliance_type: maquina-lavar-roupa
+  code: E0
+  descricao: Regulação incorreta. Recomeça o programa; se o erro voltar, chama a assistência. (Indicado no manual Gorenje WM85.C-P / WMC89XXP.)
+  sources:
+    - url: https://partners.gorenje.com/fts/GetDigitDoc.aspx?sifra=737892&jezik=en&tipVsebine=1&docName=820911en.pdf
+      titulo: Gorenje WM85.C-P / WMC89XXP — User manual, washing machine (EN)
+      consultado_em: 2026-11-05
+      pagina: "43"
+- id: gorenje-lr-e1
+  brand: gorenje
+  appliance_type: maquina-lavar-roupa
+  code: E1
+  descricao: Avaria no sensor de temperatura, ou água de entrada demasiado fria. Repete o programa; se o erro voltar, chama a assistência. (Indicado no manual Gorenje WM85.C-P / WMC89XXP.)
+  sources:
+    - url: https://partners.gorenje.com/fts/GetDigitDoc.aspx?sifra=737892&jezik=en&tipVsebine=1&docName=820911en.pdf
+      titulo: Gorenje WM85.C-P / WMC89XXP — User manual, washing machine (EN)
+      consultado_em: 2026-11-05
+      pagina: "43"
+- id: gorenje-lr-e2
+  brand: gorenje
+  appliance_type: maquina-lavar-roupa
+  code: E2
+  descricao: Erro no fecho da porta. Desliga e volta a ligar a máquina e recomeça o programa; se o erro voltar, chama a assistência. (Indicado no manual Gorenje WM85.C-P / WMC89XXP.)
+  guias:
+    - lr-verificar-energia-bloqueio
+  sources:
+    - url: https://partners.gorenje.com/fts/GetDigitDoc.aspx?sifra=737892&jezik=en&tipVsebine=1&docName=820911en.pdf
+      titulo: Gorenje WM85.C-P / WMC89XXP — User manual, washing machine (EN)
+      consultado_em: 2026-11-05
+      pagina: "43"
+- id: gorenje-lr-e3
+  brand: gorenje
+  appliance_type: maquina-lavar-roupa
+  code: E3
+  descricao: Erro no enchimento de água. Confirma que a torneira está aberta, que o filtro da mangueira de entrada está limpo, que a mangueira não está dobrada nem entupida e que a pressão da rede está entre 0,1 e 1 MPa (1 a 10 bar). Depois, carrega em sair para retomar o programa; se o erro voltar, chama a assistência. (Indicado no manual Gorenje WM85.C-P / WMC89XXP.)
+  arvore: lr-nao-enche-agua
+  guias:
+    - lr-limpar-filtro-entrada
+    - lr-apertar-ligacoes-mangueiras
+  sources:
+    - url: https://partners.gorenje.com/fts/GetDigitDoc.aspx?sifra=737892&jezik=en&tipVsebine=1&docName=820911en.pdf
+      titulo: Gorenje WM85.C-P / WMC89XXP — User manual, washing machine (EN)
+      consultado_em: 2026-11-05
+      pagina: "43"
+- id: gorenje-lr-e6
+  brand: gorenje
+  appliance_type: maquina-lavar-roupa
+  code: E6
+  descricao: Erro no aquecimento da água. Recomeça o programa; se o erro voltar, chama a assistência. (Indicado no manual Gorenje WM85.C-P / WMC89XXP.)
+  sources:
+    - url: https://partners.gorenje.com/fts/GetDigitDoc.aspx?sifra=737892&jezik=en&tipVsebine=1&docName=820911en.pdf
+      titulo: Gorenje WM85.C-P / WMC89XXP — User manual, washing machine (EN)
+      consultado_em: 2026-11-05
+      pagina: "43"
+- id: gorenje-lr-e7
+  brand: gorenje
+  appliance_type: maquina-lavar-roupa
+  code: E7
+  descricao: Erro no escoamento. Confirma que o filtro da bomba está limpo, que a mangueira de escoamento e o esgoto não estão entupidos e que a mangueira está à altura certa. Depois, carrega em sair; se o erro voltar, chama a assistência. (Indicado no manual Gorenje WM85.C-P / WMC89XXP.)
+  arvore: lr-nao-escoa
+  guias:
+    - lr-esvaziar-agua
+    - lr-limpar-filtro-bomba
+    - lr-verificar-mangueira-escoamento
+  sources:
+    - url: https://partners.gorenje.com/fts/GetDigitDoc.aspx?sifra=737892&jezik=en&tipVsebine=1&docName=820911en.pdf
+      titulo: Gorenje WM85.C-P / WMC89XXP — User manual, washing machine (EN)
+      consultado_em: 2026-11-05
+      pagina: "43"
+- id: gorenje-lr-e10
+  brand: gorenje
+  appliance_type: maquina-lavar-roupa
+  code: E10
+  descricao: Erro no sensor do nível de água. Desliga e volta a ligar a máquina e recomeça o programa; se o erro voltar, chama a assistência. (Indicado no manual Gorenje WM85.C-P / WMC89XXP.)
+  sources:
+    - url: https://partners.gorenje.com/fts/GetDigitDoc.aspx?sifra=737892&jezik=en&tipVsebine=1&docName=820911en.pdf
+      titulo: Gorenje WM85.C-P / WMC89XXP — User manual, washing machine (EN)
+      consultado_em: 2026-11-05
+      pagina: "44"
+- id: gorenje-lr-e11
+  brand: gorenje
+  appliance_type: maquina-lavar-roupa
+  code: E11
+  descricao: "Transbordo: há água a mais no tambor. A máquina interrompe o programa e escoa a água; recomeça o programa. Se a máquina continuar a meter água, fecha a torneira e chama a assistência. (Indicado no manual Gorenje WM85.C-P / WMC89XXP.)"
+  sources:
+    - url: https://partners.gorenje.com/fts/GetDigitDoc.aspx?sifra=737892&jezik=en&tipVsebine=1&docName=820911en.pdf
+      titulo: Gorenje WM85.C-P / WMC89XXP — User manual, washing machine (EN)
+      consultado_em: 2026-11-05
+      pagina: "44"
+- id: gorenje-lr-e12
+  brand: gorenje
+  appliance_type: maquina-lavar-roupa
+  code: E12
+  descricao: Erro no motor ou no comando do motor. Recomeça o programa; se o erro voltar, chama a assistência. (Indicado no manual Gorenje WM85.C-P / WMC89XXP.)
+  sources:
+    - url: https://partners.gorenje.com/fts/GetDigitDoc.aspx?sifra=737892&jezik=en&tipVsebine=1&docName=820911en.pdf
+      titulo: Gorenje WM85.C-P / WMC89XXP — User manual, washing machine (EN)
+      consultado_em: 2026-11-05
+      pagina: "44"
+- id: gorenje-lr-e23
+  brand: gorenje
+  appliance_type: maquina-lavar-roupa
+  code: E23
+  descricao: A porta está fechada mas não destranca. Desliga e volta a ligar a máquina; se o erro voltar, chama a assistência. O manual explica como abrir a porta manualmente. (Indicado no manual Gorenje WM85.C-P / WMC89XXP.)
+  guias:
+    - lr-desbloquear-porta
+  sources:
+    - url: https://partners.gorenje.com/fts/GetDigitDoc.aspx?sifra=737892&jezik=en&tipVsebine=1&docName=820911en.pdf
+      titulo: Gorenje WM85.C-P / WMC89XXP — User manual, washing machine (EN)
+      consultado_em: 2026-11-05
+      pagina: "44"
+- id: gorenje-lr-e40
+  brand: gorenje
+  appliance_type: maquina-lavar-roupa
+  code: E40
+  descricao: Tensão elétrica fora do intervalo. Recomeça o programa; se o erro voltar, chama a assistência. (Indicado no manual Gorenje WM85.C-P / WMC89XXP.)
+  guias:
+    - lr-verificar-energia-bloqueio
+  sources:
+    - url: https://partners.gorenje.com/fts/GetDigitDoc.aspx?sifra=737892&jezik=en&tipVsebine=1&docName=820911en.pdf
+      titulo: Gorenje WM85.C-P / WMC89XXP — User manual, washing machine (EN)
+      consultado_em: 2026-11-05
+      pagina: "44"
+- id: gorenje-lr-e41
+  brand: gorenje
+  appliance_type: maquina-lavar-roupa
+  code: E41
+  descricao: Frequência da rede elétrica fora do intervalo. Recomeça o programa; se o erro voltar, chama a assistência. (Indicado no manual Gorenje WM85.C-P / WMC89XXP.)
+  sources:
+    - url: https://partners.gorenje.com/fts/GetDigitDoc.aspx?sifra=737892&jezik=en&tipVsebine=1&docName=820911en.pdf
+      titulo: Gorenje WM85.C-P / WMC89XXP — User manual, washing machine (EN)
+      consultado_em: 2026-11-05
+      pagina: "44"

@@ -45,6 +45,49 @@
 					"minLength": 1,
 					"maxLength": 40,
 					"description": "Página(s) do documento (ex.: 34 ou 34–36)."
+				},
+				"documento_oficial": {
+					"type": "object",
+					"description": "Cópia do manual OFICIAL do fabricante alojada por um retalhista (domínio de tipo alojamento-documento-oficial). Obrigatório nesses domínios.",
+					"required": [
+						"fabricante",
+						"referencia_documento",
+						"modelos",
+						"url_alojamento",
+						"alojado_por"
+					],
+					"additionalProperties": false,
+					"properties": {
+						"fabricante": {
+							"$ref": "#/$defs/id",
+							"description": "id da marca em data/brands.yaml"
+						},
+						"referencia_documento": {
+							"type": "string",
+							"minLength": 2,
+							"maxLength": 60,
+							"description": "Referência impressa no documento (ex.: MFL71766782)."
+						},
+						"modelos": {
+							"type": "array",
+							"minItems": 1,
+							"items": {
+								"type": "string",
+								"minLength": 2,
+								"maxLength": 40
+							},
+							"description": "Modelos exatos indicados no documento."
+						},
+						"url_alojamento": {
+							"$ref": "#/$defs/url"
+						},
+						"alojado_por": {
+							"type": "string",
+							"minLength": 2,
+							"maxLength": 80,
+							"description": "Retalhista que aloja a cópia (ex.: Worten)."
+						}
+					}
 				}
 			}
 		},

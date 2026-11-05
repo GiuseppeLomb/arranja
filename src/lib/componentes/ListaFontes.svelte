@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { Fonte } from '#lib/data/tipos.ts';
+	import { nomeMarca } from '#lib/data/conteudo.ts';
 
 	type Props = {
 		fontes: Fonte[];
@@ -23,8 +24,15 @@
 	<ul>
 		{#each fontes as f (f.url)}
 			<li>
-				<a href={f.url} target="_blank" rel="noopener noreferrer external">{f.titulo ?? host(f.url)}</a>
-				<span class="meta">{f.pagina ? `${/[,–]/.test(f.pagina) ? 'pp.' : 'p.'} ${f.pagina} · ` : ''}{host(f.url)} · consultado a {data(f.consultado_em)}</span>
+				{#if f.documento_oficial}
+					{@const doc = f.documento_oficial}
+					<a href={f.url} target="_blank" rel="noopener noreferrer external">Manual oficial {nomeMarca(doc.fabricante)} (ref. {doc.referencia_documento})</a>
+					<span class="meta">Modelos: {doc.modelos.join(', ')}</span>
+					<span class="meta">{f.pagina ? `${/[,–]/.test(f.pagina) ? 'pp.' : 'p.'} ${f.pagina} · ` : ''}cópia alojada por {doc.alojado_por} ({host(f.url)}) · consultado a {data(f.consultado_em)}</span>
+				{:else}
+					<a href={f.url} target="_blank" rel="noopener noreferrer external">{f.titulo ?? host(f.url)}</a>
+					<span class="meta">{f.pagina ? `${/[,–]/.test(f.pagina) ? 'pp.' : 'p.'} ${f.pagina} · ` : ''}{host(f.url)} · consultado a {data(f.consultado_em)}</span>
+				{/if}
 			</li>
 		{/each}
 	</ul>

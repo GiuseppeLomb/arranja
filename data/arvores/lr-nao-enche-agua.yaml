@@ -10,6 +10,13 @@ sintoma: Não enche água
 codigos:
   - bosch-lr-e30-10
   - becken-lr-e10
+  - electrolux-lr-e10
+  - aeg-lr-e10
+  - zanussi-lr-e10
+  - hoover-lr-e2
+  - siemens-lr-e17
+  - siemens-lr-e29
+  - gorenje-lr-e3
 inicio: torneira
 nos:
   torneira:
@@ -85,4 +92,7 @@ sources:
   - url: https://becken.cors.digital/wp-content/uploads/manuais/7245211_7245212_7245215_7245216_MAQ_LAVAR_ROUPA_BECKEN_BWM5379_BWM5381_manual.pdf
     titulo: Becken BWM5379/BWM5381 — Manual de instruções (secção PT)
     pagina: "126"
+    consultado_em: 2026-11-04
+  - url: https://documents.beko.com/WM/7178544700/pt-PT/8762497191781771.html
+    titulo: Beko — Manual do utilizador da máquina de lavar roupa (produto 7178544700), Resolução de problemas (PT)
     consultado_em: 2026-11-04

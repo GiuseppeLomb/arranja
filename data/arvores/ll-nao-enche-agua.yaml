@@ -11,6 +11,11 @@ codigos:
   - becken-ll-e2
   - samsung-ll-4c
   - samsung-ll-4c5
+  - electrolux-ll-i10
+  - aeg-ll-i10
+  - zanussi-ll-i10
+  - siemens-ll-e14
+  - siemens-ll-e18
 inicio: torneira
 nos:
   torneira:

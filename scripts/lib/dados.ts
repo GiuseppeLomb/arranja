@@ -15,7 +15,8 @@ import type {
 	Ferramenta,
 	Guia,
 	TipoEletrodomestico,
-	AplicavelA
+	AplicavelA,
+	Fonte
 } from '../../src/lib/data/tipos.ts';
 
 // ajv-formats é CJS; o default pode vir embrulhado.
@@ -213,24 +214,39 @@ export function validarSemantica(d: DadosBrutos, hoje = new Date()): Problema[] 
 	};
 
 	// Allowlist de domínios (data/fontes-permitidas.yaml). "exemplo" só serve conteúdo marcado example: true.
-	const permitido = (url: string, exemplo?: boolean) => {
+	const dominioDe = (url: string, exemplo?: boolean): FontePermitida | undefined => {
 		let host: string;
 		try {
 			host = new URL(url).hostname.toLowerCase();
 		} catch {
-			return false;
+			return undefined;
 		}
-		return d.fontesPermitidas.some(
-			(p) => (host === p.dominio || host.endsWith(`.${p.dominio}`)) && (p.tipo !== 'exemplo' || exemplo)
-		);
+		return d.fontesPermitidas.find((p) => (host === p.dominio || host.endsWith(`.${p.dominio}`)) && (p.tipo !== 'exemplo' || exemplo));
 	};
+	// Domínios de retalhistas que alojam cópias de manuais oficiais só valem como fonte com documento_oficial preenchido.
+	const ALOJAMENTO = 'alojamento-documento-oficial';
 	const verUrl = (onde: string, url: string | undefined, exemplo?: boolean, oque = 'URL') => {
-		if (url && !permitido(url, exemplo)) add(onde, `${oque} fora da allowlist de domínios (data/fontes-permitidas.yaml): ${url}`);
+		if (!url) return;
+		const p = dominioDe(url, exemplo);
+		if (!p) add(onde, `${oque} fora da allowlist de domínios (data/fontes-permitidas.yaml): ${url}`);
+		else if (p.tipo === ALOJAMENTO) add(onde, `${oque} num domínio de alojamento de documento oficial só é aceite como fonte com documento_oficial: ${url}`);
 	};
-	const verFontes = (onde: string, fontes: { url: string; consultado_em: string }[], exemplo?: boolean) => {
+	const verFontes = (onde: string, fontes: Fonte[], exemplo?: boolean) => {
 		for (const f of fontes) {
 			if (f.consultado_em > hojeIso) add(onde, `consultado_em no futuro: ${f.consultado_em}`);
-			verUrl(onde, f.url, exemplo, 'fonte');
+			const p = dominioDe(f.url, exemplo);
+			if (!p) {
+				add(onde, `fonte fora da allowlist de domínios (data/fontes-permitidas.yaml): ${f.url}`);
+				continue;
+			}
+			const doc = f.documento_oficial;
+			if (p.tipo === ALOJAMENTO && !doc) add(onde, `fonte alojada por retalhista sem documento_oficial: ${f.url}`);
+			if (doc) {
+				if (!marcas.has(doc.fabricante)) add(onde, `documento_oficial: fabricante desconhecido ${doc.fabricante}`);
+				if (doc.url_alojamento !== f.url) add(onde, `documento_oficial: url_alojamento tem de ser igual ao url da fonte (${f.url})`);
+				const pa = dominioDe(doc.url_alojamento, exemplo);
+				if (!pa || pa.tipo !== ALOJAMENTO) add(onde, `documento_oficial: url_alojamento tem de estar num domínio de alojamento de documento oficial: ${doc.url_alojamento}`);
+			}
 		}
 	};
 
