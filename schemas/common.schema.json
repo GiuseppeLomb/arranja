@@ -48,10 +48,9 @@
 				},
 				"documento_oficial": {
 					"type": "object",
-					"description": "Cópia do manual OFICIAL do fabricante alojada por um retalhista (domínio de tipo alojamento-documento-oficial). Obrigatório nesses domínios.",
+					"description": "Cópia do manual OFICIAL do fabricante alojada por um retalhista. Obrigatório nesses domínios. Leva a referência impressa no documento ou, se não existir, a identificação (marcas de autenticidade).",
 					"required": [
 						"fabricante",
-						"referencia_documento",
 						"modelos",
 						"url_alojamento",
 						"alojado_por"
@@ -86,8 +85,26 @@
 							"minLength": 2,
 							"maxLength": 80,
 							"description": "Retalhista que aloja a cópia (ex.: Worten)."
+						},
+						"identificacao": {
+							"type": "string",
+							"minLength": 10,
+							"maxLength": 200,
+							"description": "Marcas de autenticidade quando o documento não tem referência impressa (fabricante, site oficial, modelos exatos)."
 						}
-					}
+					},
+					"anyOf": [
+						{
+							"required": [
+								"referencia_documento"
+							]
+						},
+						{
+							"required": [
+								"identificacao"
+							]
+						}
+					]
 				}
 			}
 		},

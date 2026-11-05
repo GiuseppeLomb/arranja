@@ -14,7 +14,9 @@ export interface Fonte {
 
 export interface DocumentoOficial {
 	fabricante: string;
-	referencia_documento: string;
+	referencia_documento?: string;
+	/** Marcas de autenticidade quando não há referência impressa. */
+	identificacao?: string;
 	modelos: string[];
 	url_alojamento: string;
 	alojado_por: string;

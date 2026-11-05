@@ -1,0 +1,267 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/error_code.schema.json
+- id: candy-lr-clr-fltr
+  brand: candy
+  appliance_type: maquina-lavar-roupa
+  code: CLR FLTR
+  descricao: "Erro de escoamento: a água não escoou toda em 6 minutos. Limpa o filtro da bomba e verifica a instalação da mangueira de escoamento. (Indicado no manual Candy das máquinas de lavar e secar GWD, baseado no GWD 4106B8-S.)"
+  aliases:
+    - FLTR
+    - CLR
+  arvore: lr-nao-escoa
+  guias: &a2
+    - lr-esvaziar-agua
+    - lr-limpar-filtro-bomba
+    - lr-verificar-mangueira-escoamento
+  sources:
+    - url: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
+      titulo: Candy GWD 4106B8-S — Manual do utilizador, máquina de lavar e secar roupa (PT)
+      pagina: "29"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: candy
+        identificacao: Manual em PT que se apresenta como da Candy, indica ser baseado no modelo GWD 4106B8-S (a tabela técnica cobre a família GWD) e remete para www.haier-europe.com.
+        modelos: &a1
+          - GWD 474SB5-S
+          - GWD 485B6-S
+          - GWD 496B8-S
+          - GWD 4106B8-S
+        url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
+        alojado_por: Auchan
+- id: candy-lr-e2
+  brand: candy
+  appliance_type: maquina-lavar-roupa
+  code: E2
+  descricao: Erro no bloqueio da porta. Fecha bem a porta. (Indicado no manual Candy das máquinas de lavar e secar GWD, baseado no GWD 4106B8-S.)
+  guias:
+    - lr-verificar-energia-bloqueio
+  sources:
+    - url: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
+      titulo: Candy GWD 4106B8-S — Manual do utilizador, máquina de lavar e secar roupa (PT)
+      pagina: "29"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: candy
+        identificacao: Manual em PT que se apresenta como da Candy, indica ser baseado no modelo GWD 4106B8-S (a tabela técnica cobre a família GWD) e remete para www.haier-europe.com.
+        modelos: *a1
+        url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
+        alojado_por: Auchan
+- id: candy-lr-e4
+  brand: candy
+  appliance_type: maquina-lavar-roupa
+  code: E4
+  descricao: O nível da água não foi atingido; a mangueira de escoamento pode estar a fazer sifão. Confirma que a torneira está toda aberta e a pressão é normal, e verifica a instalação da mangueira de entrada. (Indicado no manual Candy das máquinas de lavar e secar GWD, baseado no GWD 4106B8-S.)
+  arvore: lr-nao-enche-agua
+  guias:
+    - lr-apertar-ligacoes-mangueiras
+    - lr-verificar-mangueira-escoamento
+  sources:
+    - url: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
+      titulo: Candy GWD 4106B8-S — Manual do utilizador, máquina de lavar e secar roupa (PT)
+      pagina: "29"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: candy
+        identificacao: Manual em PT que se apresenta como da Candy, indica ser baseado no modelo GWD 4106B8-S (a tabela técnica cobre a família GWD) e remete para www.haier-europe.com.
+        modelos: *a1
+        url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
+        alojado_por: Auchan
+- id: candy-lr-e5
+  brand: candy
+  appliance_type: maquina-lavar-roupa
+  code: E5
+  descricao: "Erro de escoamento: a água não escoou toda em 1 minuto. Limpa o filtro da bomba e verifica a instalação da mangueira de escoamento. (Indicado no manual Candy das máquinas de lavar e secar GWD, baseado no GWD 4106B8-S.)"
+  arvore: lr-nao-escoa
+  guias: *a2
+  sources:
+    - url: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
+      titulo: Candy GWD 4106B8-S — Manual do utilizador, máquina de lavar e secar roupa (PT)
+      pagina: "29"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: candy
+        identificacao: Manual em PT que se apresenta como da Candy, indica ser baseado no modelo GWD 4106B8-S (a tabela técnica cobre a família GWD) e remete para www.haier-europe.com.
+        modelos: *a1
+        url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
+        alojado_por: Auchan
+- id: candy-lr-e8
+  brand: candy
+  appliance_type: maquina-lavar-roupa
+  code: E8
+  descricao: Erro no nível de proteção da água. Contacta a assistência pós-venda. (Indicado no manual Candy das máquinas de lavar e secar GWD, baseado no GWD 4106B8-S.)
+  sources:
+    - url: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
+      titulo: Candy GWD 4106B8-S — Manual do utilizador, máquina de lavar e secar roupa (PT)
+      pagina: "29"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: candy
+        identificacao: Manual em PT que se apresenta como da Candy, indica ser baseado no modelo GWD 4106B8-S (a tabela técnica cobre a família GWD) e remete para www.haier-europe.com.
+        modelos: *a1
+        url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
+        alojado_por: Auchan
+- id: candy-lr-e9
+  brand: candy
+  appliance_type: maquina-lavar-roupa
+  code: E9
+  descricao: A roupa ficou colada à parede do tambor. Abre a porta, sacode a roupa, volta a pô-la no tambor e liga a máquina. (Indicado no manual Candy das máquinas de lavar e secar GWD, baseado no GWD 4106B8-S.)
+  guias:
+    - lr-equilibrar-carga
+  sources:
+    - url: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
+      titulo: Candy GWD 4106B8-S — Manual do utilizador, máquina de lavar e secar roupa (PT)
+      pagina: "29"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: candy
+        identificacao: Manual em PT que se apresenta como da Candy, indica ser baseado no modelo GWD 4106B8-S (a tabela técnica cobre a família GWD) e remete para www.haier-europe.com.
+        modelos: *a1
+        url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
+        alojado_por: Auchan
+- id: candy-lr-eb
+  brand: candy
+  appliance_type: maquina-lavar-roupa
+  code: Eb
+  descricao: Alarme de roupa encravada. Põe o programa em pausa, abre a porta e volta a arrumar a roupa antes de recomeçar. (Indicado no manual Candy das máquinas de lavar e secar GWD, baseado no GWD 4106B8-S.)
+  sources:
+    - url: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
+      titulo: Candy GWD 4106B8-S — Manual do utilizador, máquina de lavar e secar roupa (PT)
+      pagina: "30"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: candy
+        identificacao: Manual em PT que se apresenta como da Candy, indica ser baseado no modelo GWD 4106B8-S (a tabela técnica cobre a família GWD) e remete para www.haier-europe.com.
+        modelos: *a1
+        url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
+        alojado_por: Auchan
+- id: candy-lr-f9
+  brand: candy
+  appliance_type: maquina-lavar-roupa
+  code: F9
+  descricao: "Falha no sensor de temperatura da secagem. O manual indica verificar os fios, o terminal e a resistência do sensor, mas também avisa que a manutenção do equipamento elétrico é só para eletricistas qualificados: pede essas verificações à assistência pós-venda. (Indicado no manual Candy das máquinas de lavar e secar GWD, baseado no GWD 4106B8-S.)"
+  sources:
+    - url: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
+      titulo: Candy GWD 4106B8-S — Manual do utilizador, máquina de lavar e secar roupa (PT)
+      pagina: "29"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: candy
+        identificacao: Manual em PT que se apresenta como da Candy, indica ser baseado no modelo GWD 4106B8-S (a tabela técnica cobre a família GWD) e remete para www.haier-europe.com.
+        modelos: *a1
+        url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
+        alojado_por: Auchan
+- id: candy-lr-fd
+  brand: candy
+  appliance_type: maquina-lavar-roupa
+  code: Fd
+  descricao: Erro de comunicação do aquecimento da secagem. Contacta a assistência pós-venda. (Indicado no manual Candy das máquinas de lavar e secar GWD, baseado no GWD 4106B8-S.)
+  sources:
+    - url: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
+      titulo: Candy GWD 4106B8-S — Manual do utilizador, máquina de lavar e secar roupa (PT)
+      pagina: "30"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: candy
+        identificacao: Manual em PT que se apresenta como da Candy, indica ser baseado no modelo GWD 4106B8-S (a tabela técnica cobre a família GWD) e remete para www.haier-europe.com.
+        modelos: *a1
+        url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
+        alojado_por: Auchan
+- id: candy-lr-fb
+  brand: candy
+  appliance_type: maquina-lavar-roupa
+  code: Fb
+  descricao: A água transbordou de forma anormal. Contacta a assistência pós-venda. (Indicado no manual Candy das máquinas de lavar e secar GWD, baseado no GWD 4106B8-S.)
+  sources:
+    - url: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
+      titulo: Candy GWD 4106B8-S — Manual do utilizador, máquina de lavar e secar roupa (PT)
+      pagina: "30"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: candy
+        identificacao: Manual em PT que se apresenta como da Candy, indica ser baseado no modelo GWD 4106B8-S (a tabela técnica cobre a família GWD) e remete para www.haier-europe.com.
+        modelos: *a1
+        url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
+        alojado_por: Auchan
+- id: candy-lr-f3
+  brand: candy
+  appliance_type: maquina-lavar-roupa
+  code: F3
+  descricao: Erro no sensor de temperatura. Contacta a assistência pós-venda. (Indicado no manual Candy das máquinas de lavar e secar GWD, baseado no GWD 4106B8-S.)
+  sources:
+    - url: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
+      titulo: Candy GWD 4106B8-S — Manual do utilizador, máquina de lavar e secar roupa (PT)
+      pagina: "30"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: candy
+        identificacao: Manual em PT que se apresenta como da Candy, indica ser baseado no modelo GWD 4106B8-S (a tabela técnica cobre a família GWD) e remete para www.haier-europe.com.
+        modelos: *a1
+        url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
+        alojado_por: Auchan
+- id: candy-lr-f4
+  brand: candy
+  appliance_type: maquina-lavar-roupa
+  code: F4
+  descricao: Erro de aquecimento. Contacta a assistência pós-venda. (Indicado no manual Candy das máquinas de lavar e secar GWD, baseado no GWD 4106B8-S.)
+  sources:
+    - url: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
+      titulo: Candy GWD 4106B8-S — Manual do utilizador, máquina de lavar e secar roupa (PT)
+      pagina: "30"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: candy
+        identificacao: Manual em PT que se apresenta como da Candy, indica ser baseado no modelo GWD 4106B8-S (a tabela técnica cobre a família GWD) e remete para www.haier-europe.com.
+        modelos: *a1
+        url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
+        alojado_por: Auchan
+- id: candy-lr-f7
+  brand: candy
+  appliance_type: maquina-lavar-roupa
+  code: F7
+  descricao: Erro do motor. Contacta a assistência pós-venda. (Indicado no manual Candy das máquinas de lavar e secar GWD, baseado no GWD 4106B8-S.)
+  sources:
+    - url: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
+      titulo: Candy GWD 4106B8-S — Manual do utilizador, máquina de lavar e secar roupa (PT)
+      pagina: "30"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: candy
+        identificacao: Manual em PT que se apresenta como da Candy, indica ser baseado no modelo GWD 4106B8-S (a tabela técnica cobre a família GWD) e remete para www.haier-europe.com.
+        modelos: *a1
+        url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
+        alojado_por: Auchan
+- id: candy-lr-fa
+  brand: candy
+  appliance_type: maquina-lavar-roupa
+  code: FA
+  descricao: Erro no sensor do nível de água. Contacta a assistência pós-venda. (Indicado no manual Candy das máquinas de lavar e secar GWD, baseado no GWD 4106B8-S.)
+  sources:
+    - url: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
+      titulo: Candy GWD 4106B8-S — Manual do utilizador, máquina de lavar e secar roupa (PT)
+      pagina: "30"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: candy
+        identificacao: Manual em PT que se apresenta como da Candy, indica ser baseado no modelo GWD 4106B8-S (a tabela técnica cobre a família GWD) e remete para www.haier-europe.com.
+        modelos: *a1
+        url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
+        alojado_por: Auchan
+- id: candy-lr-fc0
+  brand: candy
+  appliance_type: maquina-lavar-roupa
+  code: FC0
+  descricao: Erro de comunicação. Contacta a assistência pós-venda. (Indicado no manual Candy das máquinas de lavar e secar GWD, baseado no GWD 4106B8-S.)
+  aliases:
+    - FC1
+    - FC2
+  sources:
+    - url: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
+      titulo: Candy GWD 4106B8-S — Manual do utilizador, máquina de lavar e secar roupa (PT)
+      pagina: "30"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: candy
+        identificacao: Manual em PT que se apresenta como da Candy, indica ser baseado no modelo GWD 4106B8-S (a tabela técnica cobre a família GWD) e remete para www.haier-europe.com.
+        modelos: *a1
+        url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
+        alojado_por: Auchan

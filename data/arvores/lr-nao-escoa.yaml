@@ -18,6 +18,10 @@ codigos:
   - hoover-lr-e3
   - siemens-lr-e18
   - gorenje-lr-e7
+  - haier-lr-clr-fltr
+  - candy-lr-clr-fltr
+  - candy-lr-e5
+  - teka-lr-e21
 inicio: opcao
 nos:
   opcao:

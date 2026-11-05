@@ -17,6 +17,9 @@ codigos:
   - siemens-lr-e17
   - siemens-lr-e29
   - gorenje-lr-e3
+  - haier-lr-e4
+  - candy-lr-e4
+  - teka-lr-e10
 inicio: torneira
 nos:
   torneira:

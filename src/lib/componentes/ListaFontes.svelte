@@ -26,7 +26,8 @@
 			<li>
 				{#if f.documento_oficial}
 					{@const doc = f.documento_oficial}
-					<a href={f.url} target="_blank" rel="noopener noreferrer external">Manual oficial {nomeMarca(doc.fabricante)} (ref. {doc.referencia_documento})</a>
+					<a href={f.url} target="_blank" rel="noopener noreferrer external">Manual oficial {nomeMarca(doc.fabricante)}{doc.referencia_documento ? ` (ref. ${doc.referencia_documento})` : ''}</a>
+					{#if !doc.referencia_documento && doc.identificacao}<span class="meta">Sem referência impressa no documento. {doc.identificacao}</span>{/if}
 					<span class="meta">Modelos: {doc.modelos.join(', ')}</span>
 					<span class="meta">{f.pagina ? `${/[,–]/.test(f.pagina) ? 'pp.' : 'p.'} ${f.pagina} · ` : ''}cópia alojada por {doc.alojado_por} ({host(f.url)}) · consultado a {data(f.consultado_em)}</span>
 				{:else}

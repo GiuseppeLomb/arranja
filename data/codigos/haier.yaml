@@ -1,0 +1,164 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/error_code.schema.json
+- id: haier-lr-clr-fltr
+  brand: haier
+  appliance_type: maquina-lavar-roupa
+  code: CLr FLtr
+  descricao: "Erro de escoamento: a água não escoou toda em 6 minutos. Limpa o filtro da bomba e verifica a instalação da mangueira de escoamento. (Indicado no manual Haier HW80/HW90-B14959EU1.)"
+  aliases:
+    - FLtr
+    - CLr
+  arvore: lr-nao-escoa
+  guias:
+    - lr-esvaziar-agua
+    - lr-limpar-filtro-bomba
+    - lr-verificar-mangueira-escoamento
+  sources:
+    - url: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw1b5afd23/documents/003941875_15bf0e11-bf75-490e-954c-3f17f7bafd1b.pdf
+      titulo: Haier HW80-B14959EU1 / HW90-B14959EU1 — Manual do utilizador, máquina de lavar (PT)
+      pagina: "26"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: haier
+        identificacao: Manual em PT com as moradas da Haier Europe e o site www.haier.com; modelos indicados na capa e na contracapa.
+        modelos: &a1
+          - HW80-B14959EU1
+          - HW90-B14959EU1
+        url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw1b5afd23/documents/003941875_15bf0e11-bf75-490e-954c-3f17f7bafd1b.pdf
+        alojado_por: Auchan
+- id: haier-lr-e2
+  brand: haier
+  appliance_type: maquina-lavar-roupa
+  code: E2
+  descricao: Erro no bloqueio da porta. Fecha bem a porta. (Indicado no manual Haier HW80/HW90-B14959EU1.)
+  guias:
+    - lr-verificar-energia-bloqueio
+  sources:
+    - url: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw1b5afd23/documents/003941875_15bf0e11-bf75-490e-954c-3f17f7bafd1b.pdf
+      titulo: Haier HW80-B14959EU1 / HW90-B14959EU1 — Manual do utilizador, máquina de lavar (PT)
+      pagina: "26"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: haier
+        identificacao: Manual em PT com as moradas da Haier Europe e o site www.haier.com; modelos indicados na capa e na contracapa.
+        modelos: *a1
+        url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw1b5afd23/documents/003941875_15bf0e11-bf75-490e-954c-3f17f7bafd1b.pdf
+        alojado_por: Auchan
+- id: haier-lr-e4
+  brand: haier
+  appliance_type: maquina-lavar-roupa
+  code: E4
+  descricao: O nível da água não foi atingido em 8 minutos; a mangueira de escoamento pode estar a fazer sifão. Confirma que a torneira está toda aberta e a pressão é normal, e verifica a instalação da mangueira de escoamento. (Indicado no manual Haier HW80/HW90-B14959EU1.)
+  arvore: lr-nao-enche-agua
+  guias:
+    - lr-verificar-mangueira-escoamento
+  sources:
+    - url: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw1b5afd23/documents/003941875_15bf0e11-bf75-490e-954c-3f17f7bafd1b.pdf
+      titulo: Haier HW80-B14959EU1 / HW90-B14959EU1 — Manual do utilizador, máquina de lavar (PT)
+      pagina: "26"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: haier
+        identificacao: Manual em PT com as moradas da Haier Europe e o site www.haier.com; modelos indicados na capa e na contracapa.
+        modelos: *a1
+        url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw1b5afd23/documents/003941875_15bf0e11-bf75-490e-954c-3f17f7bafd1b.pdf
+        alojado_por: Auchan
+- id: haier-lr-e8
+  brand: haier
+  appliance_type: maquina-lavar-roupa
+  code: E8
+  descricao: Erro no nível de proteção da água. Contacta a assistência pós-venda. (Indicado no manual Haier HW80/HW90-B14959EU1.)
+  sources:
+    - url: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw1b5afd23/documents/003941875_15bf0e11-bf75-490e-954c-3f17f7bafd1b.pdf
+      titulo: Haier HW80-B14959EU1 / HW90-B14959EU1 — Manual do utilizador, máquina de lavar (PT)
+      pagina: "26"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: haier
+        identificacao: Manual em PT com as moradas da Haier Europe e o site www.haier.com; modelos indicados na capa e na contracapa.
+        modelos: *a1
+        url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw1b5afd23/documents/003941875_15bf0e11-bf75-490e-954c-3f17f7bafd1b.pdf
+        alojado_por: Auchan
+- id: haier-lr-f3
+  brand: haier
+  appliance_type: maquina-lavar-roupa
+  code: F3
+  descricao: Erro no sensor de temperatura. Contacta a assistência pós-venda. (Indicado no manual Haier HW80/HW90-B14959EU1.)
+  sources:
+    - url: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw1b5afd23/documents/003941875_15bf0e11-bf75-490e-954c-3f17f7bafd1b.pdf
+      titulo: Haier HW80-B14959EU1 / HW90-B14959EU1 — Manual do utilizador, máquina de lavar (PT)
+      pagina: "27"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: haier
+        identificacao: Manual em PT com as moradas da Haier Europe e o site www.haier.com; modelos indicados na capa e na contracapa.
+        modelos: *a1
+        url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw1b5afd23/documents/003941875_15bf0e11-bf75-490e-954c-3f17f7bafd1b.pdf
+        alojado_por: Auchan
+- id: haier-lr-f4
+  brand: haier
+  appliance_type: maquina-lavar-roupa
+  code: F4
+  descricao: Erro de aquecimento. Contacta a assistência pós-venda. (Indicado no manual Haier HW80/HW90-B14959EU1.)
+  sources:
+    - url: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw1b5afd23/documents/003941875_15bf0e11-bf75-490e-954c-3f17f7bafd1b.pdf
+      titulo: Haier HW80-B14959EU1 / HW90-B14959EU1 — Manual do utilizador, máquina de lavar (PT)
+      pagina: "27"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: haier
+        identificacao: Manual em PT com as moradas da Haier Europe e o site www.haier.com; modelos indicados na capa e na contracapa.
+        modelos: *a1
+        url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw1b5afd23/documents/003941875_15bf0e11-bf75-490e-954c-3f17f7bafd1b.pdf
+        alojado_por: Auchan
+- id: haier-lr-f7
+  brand: haier
+  appliance_type: maquina-lavar-roupa
+  code: F7
+  descricao: Erro do motor. Contacta a assistência pós-venda. (Indicado no manual Haier HW80/HW90-B14959EU1.)
+  sources:
+    - url: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw1b5afd23/documents/003941875_15bf0e11-bf75-490e-954c-3f17f7bafd1b.pdf
+      titulo: Haier HW80-B14959EU1 / HW90-B14959EU1 — Manual do utilizador, máquina de lavar (PT)
+      pagina: "27"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: haier
+        identificacao: Manual em PT com as moradas da Haier Europe e o site www.haier.com; modelos indicados na capa e na contracapa.
+        modelos: *a1
+        url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw1b5afd23/documents/003941875_15bf0e11-bf75-490e-954c-3f17f7bafd1b.pdf
+        alojado_por: Auchan
+- id: haier-lr-fa
+  brand: haier
+  appliance_type: maquina-lavar-roupa
+  code: FA
+  descricao: Erro no sensor do nível de água. Contacta a assistência pós-venda. (Indicado no manual Haier HW80/HW90-B14959EU1.)
+  sources:
+    - url: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw1b5afd23/documents/003941875_15bf0e11-bf75-490e-954c-3f17f7bafd1b.pdf
+      titulo: Haier HW80-B14959EU1 / HW90-B14959EU1 — Manual do utilizador, máquina de lavar (PT)
+      pagina: "27"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: haier
+        identificacao: Manual em PT com as moradas da Haier Europe e o site www.haier.com; modelos indicados na capa e na contracapa.
+        modelos: *a1
+        url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw1b5afd23/documents/003941875_15bf0e11-bf75-490e-954c-3f17f7bafd1b.pdf
+        alojado_por: Auchan
+- id: haier-lr-fc1
+  brand: haier
+  appliance_type: maquina-lavar-roupa
+  code: FC1
+  descricao: Erro de comunicação. Contacta a assistência pós-venda. (Indicado no manual Haier HW80/HW90-B14959EU1.)
+  aliases:
+    - FC2
+    - FC3
+  sources:
+    - url: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw1b5afd23/documents/003941875_15bf0e11-bf75-490e-954c-3f17f7bafd1b.pdf
+      titulo: Haier HW80-B14959EU1 / HW90-B14959EU1 — Manual do utilizador, máquina de lavar (PT)
+      pagina: "27"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: haier
+        identificacao: Manual em PT com as moradas da Haier Europe e o site www.haier.com; modelos indicados na capa e na contracapa.
+        modelos: *a1
+        url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw1b5afd23/documents/003941875_15bf0e11-bf75-490e-954c-3f17f7bafd1b.pdf
+        alojado_por: Auchan

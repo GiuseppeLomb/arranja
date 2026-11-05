@@ -99,3 +99,6 @@
 - dominio: auchan.pt
   tipo: alojamento-documento-oficial
   descricao: Auchan Portugal — cópias de manuais oficiais nas páginas de produto
+- dominio: macorlux.pt
+  tipo: alojamento-documento-oficial
+  descricao: Macorlux — cópias de manuais oficiais (bizizi1/img_upload/Manuais)
