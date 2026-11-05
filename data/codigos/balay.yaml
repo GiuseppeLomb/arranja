@@ -1,0 +1,221 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/error_code.schema.json
+- id: balay-lr-e02
+  brand: balay
+  appliance_type: maquina-lavar-roupa
+  code: E02
+  descricao: Falha no motor. Contacta o Serviço Técnico Oficial da Balay. (Página oficial de apoio da Balay.)
+  sources:
+    - &a1
+      url: https://www.balay.es/servicio-al-cliente/preguntas-frecuentes/faqs-lavadoras/averias/errores-lavadoras
+      titulo: Balay — Errores y códigos de error de lavadoras (página oficial de apoio, ES)
+      consultado_em: 2026-11-05
+- id: balay-lr-f04
+  brand: balay
+  appliance_type: maquina-lavar-roupa
+  code: F04
+  descricao: Problema no escoamento da água. Antes de chamar um técnico, limpa o filtro de escoamento, confirma que as mangueiras não estão dobradas e que a bomba não está obstruída. (Página oficial de apoio da Balay.)
+  arvore: lr-nao-escoa
+  guias: &a2
+    - lr-limpar-filtro-bomba
+    - lr-verificar-mangueira-escoamento
+  sources:
+    - *a1
+- id: balay-lr-e06
+  brand: balay
+  appliance_type: maquina-lavar-roupa
+  code: E06
+  descricao: Também é um problema no escoamento da água. Antes de chamar um técnico, limpa o filtro de escoamento, confirma que as mangueiras não estão dobradas e que a bomba não está obstruída. (Página oficial de apoio da Balay.)
+  arvore: lr-nao-escoa
+  guias: *a2
+  sources:
+    - *a1
+- id: balay-lr-e10
+  brand: balay
+  appliance_type: maquina-lavar-roupa
+  code: E10
+  descricao: A bomba do sistema de dosagem automática (AutoDosificación) bloqueou. Desliga a máquina e limpa a unidade da bomba como indica o manual do teu modelo; se não resolver, contacta o Serviço Técnico Oficial. (Página oficial de apoio da Balay.)
+  aliases:
+    - E10-00
+    - E10-10
+    - E10-20
+  sources:
+    - *a1
+- id: balay-lr-e16
+  brand: balay
+  appliance_type: maquina-lavar-roupa
+  code: E16
+  descricao: Problema no fecho da porta; muitas vezes é só uma peça de roupa presa na porta. Se não for isso, contacta o Serviço Técnico Oficial. (Página oficial de apoio da Balay.)
+  guias:
+    - lr-verificar-energia-bloqueio
+  sources:
+    - *a1
+- id: balay-lr-e17
+  brand: balay
+  appliance_type: maquina-lavar-roupa
+  code: E17
+  descricao: O abastecimento de água não está a ser o correto. Desliga a máquina, fecha a torneira e confirma que os tubos e as mangueiras estão limpos, sem obstruções e sem dobras. (Página oficial de apoio da Balay.)
+  arvore: lr-nao-enche-agua
+  sources:
+    - *a1
+- id: balay-lr-f17
+  brand: balay
+  appliance_type: maquina-lavar-roupa
+  code: F17
+  descricao: Problema no abastecimento de água. Verifica o estado da mangueira e da torneira e limpa o filtro de entrada de água. Se não resolver, um técnico tem de verificar a eletroválvula, o pressóstato ou o medidor de caudal. (Página oficial de apoio da Balay.)
+  arvore: lr-nao-enche-agua
+  guias:
+    - lr-limpar-filtro-entrada
+  sources:
+    - *a1
+- id: balay-lr-e18
+  brand: balay
+  appliance_type: maquina-lavar-roupa
+  code: E18
+  descricao: A máquina não consegue escoar a água. Primeiro esvazia a água e depois confirma que as mangueiras não estão dobradas nem entupidas. (Página oficial de apoio da Balay.)
+  aliases:
+    - F18
+  arvore: lr-nao-escoa
+  guias:
+    - lr-esvaziar-agua
+    - lr-verificar-mangueira-escoamento
+  sources:
+    - *a1
+- id: balay-lr-e29
+  brand: balay
+  appliance_type: maquina-lavar-roupa
+  code: E29
+  descricao: A água não está a entrar bem. Verifica se a torneira está aberta e se a mangueira da água não está obstruída nem dobrada; se não for isso, contacta o Serviço Técnico Oficial. (Página oficial de apoio da Balay.)
+  arvore: lr-nao-enche-agua
+  sources:
+    - *a1
+- id: balay-lr-e36
+  brand: balay
+  appliance_type: maquina-lavar-roupa
+  code: E36
+  descricao: "Pode ser: mangueira de escoamento entupida ou dobrada (limpa-a ou coloca-a bem), bomba obstruída (limpa-a como indica o manual), ligação da mangueira de escoamento demasiado alta (no máximo a 1 metro), detergente a mais (com a dosagem automática ativa, reduz a dosagem base) ou uma extensão da mangueira de escoamento não adequada (retira-a). (Página oficial de apoio da Balay.)"
+  aliases:
+    - E36-10
+  arvore: lr-nao-escoa
+  guias: *a2
+  sources:
+    - *a1
+- id: balay-lr-f43
+  brand: balay
+  appliance_type: maquina-lavar-roupa
+  code: F43
+  descricao: Problema no motor. Desliga a máquina da corrente e contacta o Serviço Técnico Oficial. (Página oficial de apoio da Balay.)
+  sources:
+    - *a1
+- id: balay-lr-e61
+  brand: balay
+  appliance_type: maquina-lavar-roupa
+  code: E61
+  descricao: Erro na eletrónica. Desliga a máquina da corrente e contacta o Serviço Técnico Oficial. (Página oficial de apoio da Balay.)
+  sources:
+    - *a1
+- id: balay-ll-e04
+  brand: balay
+  appliance_type: maquina-lavar-loica
+  code: E04
+  descricao: Falha eletrónica. Antes de chamar a assistência, reinicia a máquina; se continuar, provavelmente precisa de uma revisão técnica. (Página oficial de apoio da Balay.)
+  sources:
+    - &a3
+      url: https://www.balay.es/servicio-al-cliente/preguntas-frecuentes/faqs-lavavajillas/averias/errores-lavavajillas
+      titulo: Balay — Errores y códigos de error del lavavajillas (página oficial de apoio, ES)
+      consultado_em: 2026-11-05
+- id: balay-ll-e09
+  brand: balay
+  appliance_type: maquina-lavar-loica
+  code: E09
+  descricao: Falha no sistema que aquece a água. Contacta o Serviço Técnico Oficial da Balay. (Página oficial de apoio da Balay.)
+  sources:
+    - *a3
+- id: balay-ll-e12
+  brand: balay
+  appliance_type: maquina-lavar-loica
+  code: E12
+  descricao: A resistência que aquece a água está calcificada. Em princípio resolve-se descalcificando a máquina. (Página oficial de apoio da Balay.)
+  sources:
+    - *a3
+- id: balay-ll-e14
+  brand: balay
+  appliance_type: maquina-lavar-loica
+  code: E14
+  descricao: Problema no sistema de proteção contra a água. Fecha a torneira da máquina e contacta o Serviço Técnico Oficial. (Página oficial de apoio da Balay.)
+  sources:
+    - *a3
+- id: balay-ll-e15
+  brand: balay
+  appliance_type: maquina-lavar-loica
+  code: E15
+  descricao: Problema no sistema de proteção contra a água. Fecha a torneira da máquina e contacta o Serviço Técnico Oficial. (Página oficial de apoio da Balay.)
+  sources:
+    - *a3
+- id: balay-ll-e16
+  brand: balay
+  appliance_type: maquina-lavar-loica
+  code: E16
+  descricao: A máquina detetou que está a entrar água de forma contínua. Fecha primeiro a torneira de entrada da água e contacta o Serviço Técnico Oficial. (Página oficial de apoio da Balay.)
+  sources:
+    - *a3
+- id: balay-ll-e18
+  brand: balay
+  appliance_type: maquina-lavar-loica
+  code: E18
+  descricao: "Pode ser: mangueira da água dobrada (coloca-a bem), torneira fechada (abre-a), torneira calcificada (confirma que dá cerca de 10 litros por minuto) ou filtro de entrada da água obstruído (limpa-o como indica o manual). (Página oficial de apoio da Balay.)"
+  arvore: ll-nao-enche-agua
+  guias:
+    - ll-verificar-entrada-agua
+  sources:
+    - *a3
+- id: balay-ll-e19
+  brand: balay
+  appliance_type: maquina-lavar-loica
+  code: E19
+  descricao: Normalmente é uma avaria no doseador. Contacta o Serviço Técnico Oficial da Balay. (Página oficial de apoio da Balay.)
+  sources:
+    - *a3
+- id: balay-ll-e22
+  brand: balay
+  appliance_type: maquina-lavar-loica
+  code: E22
+  descricao: O filtro está obstruído ou sujo. Limpa-o como indica o manual. (Página oficial de apoio da Balay.)
+  guias:
+    - ll-limpar-filtros
+  sources:
+    - *a3
+- id: balay-ll-e23
+  brand: balay
+  appliance_type: maquina-lavar-loica
+  code: E23
+  descricao: Falha na bomba de escoamento. Contacta o Serviço Técnico Oficial da Balay. (Página oficial de apoio da Balay.)
+  sources:
+    - *a3
+- id: balay-ll-e24
+  brand: balay
+  appliance_type: maquina-lavar-loica
+  code: E24
+  descricao: "Pode ser: tubo de escoamento obstruído ou dobrado (coloca-o sem dobras), ligação ao sifão ainda fechada (abre-a se for preciso) ou tampa da bomba de escoamento solta (encaixa-a bem). (Página oficial de apoio da Balay.)"
+  arvore: ll-nao-escoa
+  guias:
+    - ll-verificar-mangueira-escoamento
+  sources:
+    - *a3
+- id: balay-ll-e25
+  brand: balay
+  appliance_type: maquina-lavar-loica
+  code: E25
+  descricao: A bomba de escoamento está bloqueada (limpa-a como indica o manual) ou a tampa da bomba está solta (encaixa-a no sítio certo). (Página oficial de apoio da Balay.)
+  arvore: ll-nao-escoa
+  guias:
+    - ll-limpar-bomba-escoamento
+  sources:
+    - *a3
+- id: balay-ll-e27
+  brand: balay
+  appliance_type: maquina-lavar-loica
+  code: E27
+  descricao: "A tensão da rede elétrica é insuficiente. Não é avaria da máquina: um eletricista tem de verificar a instalação elétrica. (Página oficial de apoio da Balay.)"
+  sources:
+    - *a3

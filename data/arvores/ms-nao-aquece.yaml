@@ -4,7 +4,7 @@ appliance_type: maquina-secar
 aplicavel_a:
   - brand: "*"
 id: ms-nao-aquece
-ordem: 3
+ordem: 4
 titulo: A máquina de secar não aquece
 sintoma: Não aquece
 codigos:

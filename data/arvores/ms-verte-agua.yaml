@@ -4,7 +4,7 @@ appliance_type: maquina-secar
 aplicavel_a:
   - brand: "*"
 id: ms-verte-agua
-ordem: 4
+ordem: 5
 titulo: A máquina de secar verte água
 sintoma: Verte água
 inicio: onde

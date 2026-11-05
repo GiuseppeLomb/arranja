@@ -4,7 +4,7 @@ appliance_type: maquina-secar
 aplicavel_a:
   - brand: "*"
 id: ms-para-a-meio
-ordem: 8
+ordem: 9
 titulo: A máquina de secar para antes de a roupa estar seca
 sintoma: Para a meio do programa
 inicio: deposito

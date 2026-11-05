@@ -1,0 +1,115 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/error_code.schema.json
+- id: neff-lr-e16
+  brand: neff
+  appliance_type: maquina-lavar-roupa
+  code: E16
+  aliases:
+    - F16
+  descricao: A porta está aberta. Fecha a porta; se o código continuar, contacta a assistência Neff. (Página oficial de apoio da Neff Reino Unido.)
+  guias:
+    - lr-verificar-energia-bloqueio
+  sources:
+    - url: https://www.neff-home.com/uk/service/support/121_washers_dryers/errors/e16-or-f16
+      titulo: Neff Reino Unido — código de erro E16 / F16 das máquinas de lavar roupa (página oficial de apoio, EN)
+      consultado_em: 2026-11-05
+- id: neff-lr-e17
+  brand: neff
+  appliance_type: maquina-lavar-roupa
+  code: E17
+  aliases:
+    - F17
+  descricao: O tempo de entrada de água foi excedido. Abre a torneira; se o código continuar, contacta a assistência Neff. (Página oficial de apoio da Neff Reino Unido.)
+  arvore: lr-nao-enche-agua
+  sources:
+    - url: https://www.neff-home.com/uk/service/support/121_washers_dryers/errors/e17-or-f17
+      titulo: Neff Reino Unido — código de erro E17 / F17 das máquinas de lavar roupa (página oficial de apoio, EN)
+      consultado_em: 2026-11-05
+- id: neff-lr-e18
+  brand: neff
+  appliance_type: maquina-lavar-roupa
+  code: E18
+  aliases:
+    - F18
+  descricao: O tempo da bomba foi excedido. Desliga a máquina e volta a ligá-la; se o código continuar, contacta a assistência Neff. (Página oficial de apoio da Neff Reino Unido.)
+  sources:
+    - url: https://www.neff-home.com/uk/service/support/121_washers_dryers/errors/e18-or-f18
+      titulo: Neff Reino Unido — código de erro E18 / F18 das máquinas de lavar roupa (página oficial de apoio, EN)
+      consultado_em: 2026-11-05
+- id: neff-lr-e19
+  brand: neff
+  appliance_type: maquina-lavar-roupa
+  code: E19
+  aliases:
+    - F19
+  descricao: "O tempo de aquecimento foi excedido. Não é reparável pelo utilizador: contacta a assistência Neff. (Página oficial de apoio da Neff Reino Unido.)"
+  sources:
+    - url: https://www.neff-home.com/uk/service/support/121_washers_dryers/errors/e19-or-f19
+      titulo: Neff Reino Unido — código de erro E19 / F19 das máquinas de lavar roupa (página oficial de apoio, EN)
+      consultado_em: 2026-11-05
+- id: neff-lr-e20
+  brand: neff
+  appliance_type: maquina-lavar-roupa
+  code: E20
+  aliases:
+    - F20
+  descricao: Aquecimento inesperado. Desliga a máquina e volta a ligá-la; se o código continuar, contacta a assistência Neff. (Página oficial de apoio da Neff Reino Unido.)
+  sources:
+    - url: https://www.neff-home.com/uk/service/support/121_washers_dryers/errors/e20-or-f20
+      titulo: Neff Reino Unido — código de erro E20 / F20 das máquinas de lavar roupa (página oficial de apoio, EN)
+      consultado_em: 2026-11-05
+- id: neff-lr-e23
+  brand: neff
+  appliance_type: maquina-lavar-roupa
+  code: E23
+  aliases:
+    - F23
+  descricao: "O AquaStop foi ativado. Não é reparável pelo utilizador: contacta a assistência Neff. (Página oficial de apoio da Neff Reino Unido.)"
+  sources:
+    - url: https://www.neff-home.com/uk/service/support/121_washers_dryers/errors/e23-or-f23
+      titulo: Neff Reino Unido — código de erro E23 / F23 das máquinas de lavar roupa (página oficial de apoio, EN)
+      consultado_em: 2026-11-05
+- id: neff-lr-e25
+  brand: neff
+  appliance_type: maquina-lavar-roupa
+  code: E25
+  aliases:
+    - F25
+  descricao: "O sensor de turvação está avariado. Não é reparável pelo utilizador: contacta a assistência Neff. (Página oficial de apoio da Neff Reino Unido.)"
+  sources:
+    - url: https://www.neff-home.com/uk/service/support/121_washers_dryers/errors/e25-or-f25
+      titulo: Neff Reino Unido — código de erro E25 / F25 das máquinas de lavar roupa (página oficial de apoio, EN)
+      consultado_em: 2026-11-05
+- id: neff-lr-e26
+  brand: neff
+  appliance_type: maquina-lavar-roupa
+  code: E26
+  aliases:
+    - F26
+  descricao: "O sensor de pressão analógico está avariado. Não é reparável pelo utilizador: contacta a assistência Neff. (Página oficial de apoio da Neff Reino Unido.)"
+  sources:
+    - url: https://www.neff-home.com/uk/service/support/121_washers_dryers/errors/e26-or-f26
+      titulo: Neff Reino Unido — código de erro E26 / F26 das máquinas de lavar roupa (página oficial de apoio, EN)
+      consultado_em: 2026-11-05
+- id: neff-lr-e27
+  brand: neff
+  appliance_type: maquina-lavar-roupa
+  code: E27
+  aliases:
+    - F27
+  descricao: "O sensor de pressão está avariado. Não é reparável pelo utilizador: contacta a assistência Neff. (Página oficial de apoio da Neff Reino Unido.)"
+  sources:
+    - url: https://www.neff-home.com/uk/service/support/121_washers_dryers/errors/f27
+      titulo: Neff Reino Unido — código de erro E27 / F27 das máquinas de lavar roupa (página oficial de apoio, EN)
+      consultado_em: 2026-11-05
+- id: neff-lr-e28
+  brand: neff
+  appliance_type: maquina-lavar-roupa
+  code: E28
+  aliases:
+    - F28
+  descricao: "O sensor de caudal está avariado. Não é reparável pelo utilizador: contacta a assistência Neff. (Página oficial de apoio da Neff Reino Unido.)"
+  sources:
+    - url: https://www.neff-home.com/uk/service/support/121_washers_dryers/errors/e28-or-f28
+      titulo: Neff Reino Unido — código de erro E28 / F28 das máquinas de lavar roupa (página oficial de apoio, EN)
+      consultado_em: 2026-11-05

@@ -1,14 +1,71 @@
 # Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
 # Esquema: schemas/error_code.schema.json
+- id: lg-lr-ie
+  brand: lg
+  appliance_type: maquina-lavar-roupa
+  code: IE
+  descricao: "Erro de entrada de água: a água não entra ou entra devagar. Vê se há água noutra torneira da casa, abre a torneira toda, endireita a mangueira de entrada e limpa o filtro da válvula de entrada (fecha as torneiras e solta a mangueira antes). (Indicado nos manuais LG F4WR5013A6W, ref. MFL71766782, e F4WR35…, ref. MFL72012058.)"
+  aliases:
+    - 1E
+  arvore: lr-nao-enche-agua
+  guias:
+    - lr-limpar-filtro-entrada
+    - lr-apertar-ligacoes-mangueiras
+  sources:
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81911/81911.pdf
+      titulo: LG F4WR5013A6W — Manual do utilizador, máquina de lavar roupa (PT)
+      pagina: "42"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: lg
+        referencia_documento: MFL71766782
+        modelos: &a1
+          - F4WR5013A6W
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81911/81911.pdf
+        alojado_por: Macorlux
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
+      titulo: LG F4WR359S6M / F4WR3509A*W / F4WR3510A*W / F4WR3511A*W — Manual do utilizador, máquina de lavar roupa (PT)
+      pagina: "52"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: lg
+        referencia_documento: MFL72012058
+        modelos: &a2
+          - F4WR359S6M
+          - F4WR3509A*W
+          - F4WR3510A*W
+          - F4WR3511A*W
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
+        alojado_por: Macorlux
 - id: lg-lr-ue
   brand: lg
   appliance_type: maquina-lavar-roupa
   code: UE
-  descricao: "A máquina não conseguiu equilibrar a carga e interrompeu o programa. A carga pode ser pequena demais, misturar peças pesadas com leves ou estar emaranhada: junta mais peças, lava peças de peso parecido e redistribui a roupa à mão. (Indicado no manual da LG Mini F8K5XN3, a máquina de pedestal que funciona por baixo de uma máquina LG de carga frontal; ref. MFL68881095. Noutros modelos LG, confirma no manual.)"
+  descricao: "Desequilíbrio: a máquina não conseguiu equilibrar a carga e pode parar ou cancelar a centrifugação. Redistribui a roupa; se a carga for uma peça pesada sozinha (como um tapete de casa de banho ou um roupão), junta-lhe 1 ou 2 peças parecidas ou mais pequenas. Fecha a porta e carrega em Início/Pausa. (Indicado nos manuais LG F4WR5013A6W, ref. MFL71766782, F4WR35…, ref. MFL72012058, e LG Mini F8K5XN3, ref. MFL68881095.)"
   arvore: lr-nao-centrifuga
   guias:
     - lr-equilibrar-carga
   sources:
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81911/81911.pdf
+      titulo: LG F4WR5013A6W — Manual do utilizador, máquina de lavar roupa (PT)
+      pagina: "42"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: lg
+        referencia_documento: MFL71766782
+        modelos: *a1
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81911/81911.pdf
+        alojado_por: Macorlux
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
+      titulo: LG F4WR359S6M / F4WR3509A*W / F4WR3510A*W / F4WR3511A*W — Manual do utilizador, máquina de lavar roupa (PT)
+      pagina: "52"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: lg
+        referencia_documento: MFL72012058
+        modelos: *a2
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
+        alojado_por: Macorlux
     - url: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dwe3ad2e70/documents/002736577_89c8c892-f0d8-4e67-83f0-dba469fb6eca.pdf
       titulo: LG Mini F8K5XN3 (pedestal) — Manual do utilizador, máquina de lavar roupa (PT)
       pagina: "42"
@@ -20,12 +77,119 @@
           - F8K5XN3
         url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dwe3ad2e70/documents/002736577_89c8c892-f0d8-4e67-83f0-dba469fb6eca.pdf
         alojado_por: Auchan
+- id: lg-lr-oe
+  brand: lg
+  appliance_type: maquina-lavar-roupa
+  code: OE
+  descricao: "Erro de escoamento: a água não escoa ou escoa devagar. Limpa e endireita a mangueira de escoamento e limpa o filtro de drenagem. (Indicado nos manuais LG F4WR5013A6W, ref. MFL71766782, e F4WR35…, ref. MFL72012058.)"
+  arvore: lr-nao-escoa
+  guias:
+    - lr-esvaziar-agua
+    - lr-limpar-filtro-bomba
+    - lr-verificar-mangueira-escoamento
+  sources:
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81911/81911.pdf
+      titulo: LG F4WR5013A6W — Manual do utilizador, máquina de lavar roupa (PT)
+      pagina: "43"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: lg
+        referencia_documento: MFL71766782
+        modelos: *a1
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81911/81911.pdf
+        alojado_por: Macorlux
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
+      titulo: LG F4WR359S6M / F4WR3509A*W / F4WR3510A*W / F4WR3511A*W — Manual do utilizador, máquina de lavar roupa (PT)
+      pagina: "53"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: lg
+        referencia_documento: MFL72012058
+        modelos: *a2
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
+        alojado_por: Macorlux
+- id: lg-lr-de
+  brand: lg
+  appliance_type: maquina-lavar-roupa
+  code: dE
+  descricao: O sensor da porta não está a funcionar bem. Contacta a assistência LG. (Indicado nos manuais LG F4WR5013A6W, ref. MFL71766782, e F4WR35…, ref. MFL72012058.)
+  aliases:
+    - dE1
+    - dE2
+    - dE4
+  sources:
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81911/81911.pdf
+      titulo: LG F4WR5013A6W — Manual do utilizador, máquina de lavar roupa (PT)
+      pagina: "43"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: lg
+        referencia_documento: MFL71766782
+        modelos: *a1
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81911/81911.pdf
+        alojado_por: Macorlux
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
+      titulo: LG F4WR359S6M / F4WR3509A*W / F4WR3510A*W / F4WR3511A*W — Manual do utilizador, máquina de lavar roupa (PT)
+      pagina: "53"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: lg
+        referencia_documento: MFL72012058
+        modelos: *a2
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
+        alojado_por: Macorlux
+- id: lg-lr-te
+  brand: lg
+  appliance_type: maquina-lavar-roupa
+  code: tE
+  descricao: Erro de controlo. Desliga a máquina da corrente e contacta a assistência LG. (Indicado nos manuais LG F4WR5013A6W, ref. MFL71766782, e F4WR35…, ref. MFL72012058.)
+  sources:
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81911/81911.pdf
+      titulo: LG F4WR5013A6W — Manual do utilizador, máquina de lavar roupa (PT)
+      pagina: "43"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: lg
+        referencia_documento: MFL71766782
+        modelos: *a1
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81911/81911.pdf
+        alojado_por: Macorlux
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
+      titulo: LG F4WR359S6M / F4WR3509A*W / F4WR3510A*W / F4WR3511A*W — Manual do utilizador, máquina de lavar roupa (PT)
+      pagina: "53"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: lg
+        referencia_documento: MFL72012058
+        modelos: *a2
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
+        alojado_por: Macorlux
 - id: lg-lr-le
   brand: lg
   appliance_type: maquina-lavar-roupa
   code: LE
-  descricao: Erro no motor. Deixa a máquina repousar 30 minutos para o motor arrefecer e recomeça o programa; se o código continuar, contacta a assistência. (Indicado no manual da LG Mini F8K5XN3, a máquina de pedestal que funciona por baixo de uma máquina LG de carga frontal; ref. MFL68881095. Noutros modelos LG, confirma no manual.)
+  descricao: Sobrecarga no motor. Deixa a máquina repousar 30 minutos para o motor arrefecer e recomeça o programa; se o código continuar, contacta a assistência. (Indicado nos manuais LG F4WR5013A6W, ref. MFL71766782, F4WR35…, ref. MFL72012058, e LG Mini F8K5XN3, ref. MFL68881095.)
   sources:
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81911/81911.pdf
+      titulo: LG F4WR5013A6W — Manual do utilizador, máquina de lavar roupa (PT)
+      pagina: "43"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: lg
+        referencia_documento: MFL71766782
+        modelos: *a1
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81911/81911.pdf
+        alojado_por: Macorlux
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
+      titulo: LG F4WR359S6M / F4WR3509A*W / F4WR3510A*W / F4WR3511A*W — Manual do utilizador, máquina de lavar roupa (PT)
+      pagina: "53"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: lg
+        referencia_documento: MFL72012058
+        modelos: *a2
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
+        alojado_por: Macorlux
     - url: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dwe3ad2e70/documents/002736577_89c8c892-f0d8-4e67-83f0-dba469fb6eca.pdf
       titulo: LG Mini F8K5XN3 (pedestal) — Manual do utilizador, máquina de lavar roupa (PT)
       pagina: "42"
@@ -37,11 +201,167 @@
           - F8K5XN3
         url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dwe3ad2e70/documents/002736577_89c8c892-f0d8-4e67-83f0-dba469fb6eca.pdf
         alojado_por: Auchan
+- id: lg-lr-fe
+  brand: lg
+  appliance_type: maquina-lavar-roupa
+  code: FE
+  descricao: Água a mais, por uma possível avaria na válvula de entrada. Fecha a torneira, desliga a ficha e contacta a assistência LG. (Indicado nos manuais LG F4WR5013A6W, ref. MFL71766782, e F4WR35…, ref. MFL72012058.)
+  sources:
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81911/81911.pdf
+      titulo: LG F4WR5013A6W — Manual do utilizador, máquina de lavar roupa (PT)
+      pagina: "43"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: lg
+        referencia_documento: MFL71766782
+        modelos: *a1
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81911/81911.pdf
+        alojado_por: Macorlux
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
+      titulo: LG F4WR359S6M / F4WR3509A*W / F4WR3510A*W / F4WR3511A*W — Manual do utilizador, máquina de lavar roupa (PT)
+      pagina: "53"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: lg
+        referencia_documento: MFL72012058
+        modelos: *a2
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
+        alojado_por: Macorlux
+- id: lg-lr-pe
+  brand: lg
+  appliance_type: maquina-lavar-roupa
+  code: PE
+  descricao: O sensor do nível de água não está a funcionar bem. Fecha a torneira, desliga a ficha e contacta a assistência LG. (Indicado nos manuais LG F4WR5013A6W, ref. MFL71766782, e F4WR35…, ref. MFL72012058.)
+  sources:
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81911/81911.pdf
+      titulo: LG F4WR5013A6W — Manual do utilizador, máquina de lavar roupa (PT)
+      pagina: "43"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: lg
+        referencia_documento: MFL71766782
+        modelos: *a1
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81911/81911.pdf
+        alojado_por: Macorlux
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
+      titulo: LG F4WR359S6M / F4WR3509A*W / F4WR3510A*W / F4WR3511A*W — Manual do utilizador, máquina de lavar roupa (PT)
+      pagina: "53"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: lg
+        referencia_documento: MFL72012058
+        modelos: *a2
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
+        alojado_por: Macorlux
+- id: lg-lr-vs
+  brand: lg
+  appliance_type: maquina-lavar-roupa
+  code: vS
+  descricao: O sensor de vibração não está a funcionar bem. Contacta a assistência LG. (Indicado nos manuais LG F4WR5013A6W, ref. MFL71766782, e F4WR35…, ref. MFL72012058.)
+  sources:
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81911/81911.pdf
+      titulo: LG F4WR5013A6W — Manual do utilizador, máquina de lavar roupa (PT)
+      pagina: "43"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: lg
+        referencia_documento: MFL71766782
+        modelos: *a1
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81911/81911.pdf
+        alojado_por: Macorlux
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
+      titulo: LG F4WR359S6M / F4WR3509A*W / F4WR3510A*W / F4WR3511A*W — Manual do utilizador, máquina de lavar roupa (PT)
+      pagina: "53"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: lg
+        referencia_documento: MFL72012058
+        modelos: *a2
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
+        alojado_por: Macorlux
+- id: lg-lr-ff
+  brand: lg
+  appliance_type: maquina-lavar-roupa
+  code: FF
+  descricao: Mangueiras ou bomba de escoamento congeladas. Põe água quente no tambor para descongelar a mangueira de escoamento e a bomba, e cobre a mangueira de entrada com uma toalha quente e húmida. (Indicado nos manuais LG F4WR5013A6W, ref. MFL71766782, e F4WR35…, ref. MFL72012058.)
+  sources:
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81911/81911.pdf
+      titulo: LG F4WR5013A6W — Manual do utilizador, máquina de lavar roupa (PT)
+      pagina: "43"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: lg
+        referencia_documento: MFL71766782
+        modelos: *a1
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81911/81911.pdf
+        alojado_por: Macorlux
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
+      titulo: LG F4WR359S6M / F4WR3509A*W / F4WR3510A*W / F4WR3511A*W — Manual do utilizador, máquina de lavar roupa (PT)
+      pagina: "53"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: lg
+        referencia_documento: MFL72012058
+        modelos: *a2
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
+        alojado_por: Macorlux
+- id: lg-lr-ae
+  brand: lg
+  appliance_type: maquina-lavar-roupa
+  code: AE
+  descricao: Fuga de água. Contacta a assistência LG. (Indicado nos manuais LG F4WR5013A6W, ref. MFL71766782, e F4WR35…, ref. MFL72012058.)
+  sources:
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81911/81911.pdf
+      titulo: LG F4WR5013A6W — Manual do utilizador, máquina de lavar roupa (PT)
+      pagina: "43"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: lg
+        referencia_documento: MFL71766782
+        modelos: *a1
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81911/81911.pdf
+        alojado_por: Macorlux
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
+      titulo: LG F4WR359S6M / F4WR3509A*W / F4WR3510A*W / F4WR3511A*W — Manual do utilizador, máquina de lavar roupa (PT)
+      pagina: "53"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: lg
+        referencia_documento: MFL72012058
+        modelos: *a2
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
+        alojado_por: Macorlux
+- id: lg-lr-pf
+  brand: lg
+  appliance_type: maquina-lavar-roupa
+  code: PF
+  descricao: Houve uma falha de energia ou alimentação elétrica inadequada durante o programa. Carrega em Início/Pausa para retomar. (Indicado nos manuais LG F4WR5013A6W, ref. MFL71766782, e F4WR35…, ref. MFL72012058.)
+  sources:
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81911/81911.pdf
+      titulo: LG F4WR5013A6W — Manual do utilizador, máquina de lavar roupa (PT)
+      pagina: "43"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: lg
+        referencia_documento: MFL71766782
+        modelos: *a1
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81911/81911.pdf
+        alojado_por: Macorlux
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
+      titulo: LG F4WR359S6M / F4WR3509A*W / F4WR3510A*W / F4WR3511A*W — Manual do utilizador, máquina de lavar roupa (PT)
+      pagina: "53"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: lg
+        referencia_documento: MFL72012058
+        modelos: *a2
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
+        alojado_por: Macorlux
 - id: lg-lr-cl
   brand: lg
   appliance_type: maquina-lavar-roupa
   code: CL
-  descricao: "Não é um erro: é o bloqueio para crianças. No F8K5XN3 desativa-se mantendo premidos ao mesmo tempo os botões de limpeza da cuba e de enxaguamento extra durante três segundos; noutros modelos, vê o manual. (Indicado no manual da LG Mini F8K5XN3, a máquina de pedestal que funciona por baixo de uma máquina LG de carga frontal; ref. MFL68881095. Noutros modelos LG, confirma no manual.)"
+  descricao: "Não é um erro: é o bloqueio para crianças. No F8K5XN3 desativa-se mantendo premidos ao mesmo tempo os botões de limpeza da cuba e de enxaguamento extra durante três segundos; noutros modelos, vê o manual. (Indicado no manual da LG Mini F8K5XN3, ref. MFL68881095.)"
   guias:
     - lr-verificar-energia-bloqueio
   sources:
@@ -56,3 +376,111 @@
           - F8K5XN3
         url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dwe3ad2e70/documents/002736577_89c8c892-f0d8-4e67-83f0-dba469fb6eca.pdf
         alojado_por: Auchan
+- id: lg-lr-ed1
+  brand: lg
+  appliance_type: maquina-lavar-roupa
+  code: Ed1
+  aliases:
+    - E d1
+  descricao: O detergente líquido no compartimento do ezDispense não diminuiu; pode ter endurecido por ter ficado lá muito tempo. Limpa bem o compartimento, volta a enchê-lo com detergente líquido, coloca-o na gaveta e faz um ciclo de lavagem. Se o Ed1 continuar, contacta a assistência. (Indicado no manual LG F4WR35…, ref. MFL72012058, para os modelos com ezDispense.)
+  sources:
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
+      titulo: LG F4WR359S6M / F4WR3509A*W / F4WR3510A*W / F4WR3511A*W — Manual do utilizador, máquina de lavar roupa (PT)
+      pagina: "54"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: lg
+        referencia_documento: MFL72012058
+        modelos: *a2
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
+        alojado_por: Macorlux
+- id: lg-lr-ed2
+  brand: lg
+  appliance_type: maquina-lavar-roupa
+  code: Ed2
+  aliases:
+    - E d2
+  descricao: O detergente líquido no compartimento do ezDispense não diminuiu. Contacta a assistência LG. (Indicado no manual LG F4WR35…, ref. MFL72012058, para os modelos com ezDispense.)
+  sources:
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
+      titulo: LG F4WR359S6M / F4WR3509A*W / F4WR3510A*W / F4WR3511A*W — Manual do utilizador, máquina de lavar roupa (PT)
+      pagina: "54"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: lg
+        referencia_documento: MFL72012058
+        modelos: *a2
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
+        alojado_por: Macorlux
+- id: lg-lr-ed3
+  brand: lg
+  appliance_type: maquina-lavar-roupa
+  code: Ed3
+  aliases:
+    - E d3
+  descricao: O amaciador no compartimento do ezDispense não diminuiu; pode ter endurecido por ter ficado lá muito tempo. Limpa bem o compartimento, volta a enchê-lo com amaciador líquido, coloca-o na gaveta e faz um ciclo de lavagem. Se o Ed3 continuar, contacta a assistência. (Indicado no manual LG F4WR35…, ref. MFL72012058, para os modelos com ezDispense.)
+  sources:
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
+      titulo: LG F4WR359S6M / F4WR3509A*W / F4WR3510A*W / F4WR3511A*W — Manual do utilizador, máquina de lavar roupa (PT)
+      pagina: "54"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: lg
+        referencia_documento: MFL72012058
+        modelos: *a2
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
+        alojado_por: Macorlux
+- id: lg-lr-ed4
+  brand: lg
+  appliance_type: maquina-lavar-roupa
+  code: Ed4
+  aliases:
+    - E d4
+  descricao: O amaciador líquido no compartimento do ezDispense não diminuiu. Contacta a assistência LG. (Indicado no manual LG F4WR35…, ref. MFL72012058, para os modelos com ezDispense.)
+  sources:
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
+      titulo: LG F4WR359S6M / F4WR3509A*W / F4WR3510A*W / F4WR3511A*W — Manual do utilizador, máquina de lavar roupa (PT)
+      pagina: "54"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: lg
+        referencia_documento: MFL72012058
+        modelos: *a2
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
+        alojado_por: Macorlux
+- id: lg-lr-ed5
+  brand: lg
+  appliance_type: maquina-lavar-roupa
+  code: Ed5
+  aliases:
+    - E d5
+  descricao: O detergente líquido ou o amaciador no compartimento do ezDispense não diminuiu. Contacta a assistência LG. (Indicado no manual LG F4WR35…, ref. MFL72012058, para os modelos com ezDispense.)
+  sources:
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
+      titulo: LG F4WR359S6M / F4WR3509A*W / F4WR3510A*W / F4WR3511A*W — Manual do utilizador, máquina de lavar roupa (PT)
+      pagina: "54"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: lg
+        referencia_documento: MFL72012058
+        modelos: *a2
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
+        alojado_por: Macorlux
+- id: lg-lr-opn
+  brand: lg
+  appliance_type: maquina-lavar-roupa
+  code: OPN
+  aliases:
+    - O PN
+  descricao: A gaveta do ezDispense não estava bem fechada ou foi aberta durante o funcionamento. Empurra a gaveta até fechar por completo. Se o código continuar, contacta a assistência. (Indicado no manual LG F4WR35…, ref. MFL72012058, para os modelos com ezDispense.)
+  sources:
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
+      titulo: LG F4WR359S6M / F4WR3509A*W / F4WR3510A*W / F4WR3511A*W — Manual do utilizador, máquina de lavar roupa (PT)
+      pagina: "54"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: lg
+        referencia_documento: MFL72012058
+        modelos: *a2
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
+        alojado_por: Macorlux

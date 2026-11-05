@@ -4,7 +4,7 @@ appliance_type: maquina-secar
 aplicavel_a:
   - brand: "*"
 id: ms-deposito-cheio
-ordem: 7
+ordem: 8
 titulo: Aviso de depósito cheio ou a água não escoa
 sintoma: Aviso de depósito cheio
 inicio: esvaziou

@@ -17,6 +17,7 @@ codigos:
   - siemens-ll-e14
   - siemens-ll-e18
   - miele-ll-entrada-agua
+  - balay-ll-e18
 inicio: torneira
 nos:
   torneira:

@@ -1,0 +1,39 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/error_code.schema.json
+- id: hisense-lr-f13
+  brand: hisense
+  appliance_type: maquina-lavar-roupa
+  code: F13
+  descricao: "O bloqueio da porta não está normal. Confirma que a porta está fechada: abre-a e volta a fechá-la e carrega em Iniciar/Pausa. Se o código voltar, desliga a máquina da corrente e contacta o serviço pós-venda. (Indicado no manual Hisense WFQY1014EVJM.)"
+  guias:
+    - lr-verificar-energia-bloqueio
+  sources:
+    - &a1
+      url: https://www.hisense.pt/wp-content/uploads/2022/03/WFQY1014EVJM-User-Manual-PT.pdf
+      titulo: Hisense WFQY1014EVJM — Manual de utilização, máquina de lavar roupa (PT)
+      pagina: "21"
+      consultado_em: 2026-11-05
+- id: hisense-lr-f14
+  brand: hisense
+  appliance_type: maquina-lavar-roupa
+  code: F14
+  descricao: Falha na abertura da porta. Carrega em Iniciar/Pausa e a máquina tenta destrancar a porta; em alternativa, roda o seletor para desligado durante 3 segundos e escolhe de novo o programa. Se o código voltar, desliga a máquina da corrente e contacta o serviço pós-venda. (Indicado no manual Hisense WFQY1014EVJM.)
+  sources:
+    - *a1
+- id: hisense-lr-f24
+  brand: hisense
+  appliance_type: maquina-lavar-roupa
+  code: F24
+  descricao: A água chegou ao nível de transbordo. Se o código voltar, desliga a máquina da corrente e contacta o serviço pós-venda. (Indicado no manual Hisense WFQY1014EVJM.)
+  sources:
+    - *a1
+- id: hisense-lr-unb
+  brand: hisense
+  appliance_type: maquina-lavar-roupa
+  code: Unb
+  descricao: Desequilíbrio. Roda o seletor para desligado durante 3 segundos, abre a porta, distribui a roupa por igual e escolhe o programa de centrifugação. Se a carga for pequena demais, junta uma ou duas toalhas. (Indicado no manual Hisense WFQY1014EVJM.)
+  arvore: lr-nao-centrifuga
+  guias:
+    - lr-equilibrar-carga
+  sources:
+    - *a1

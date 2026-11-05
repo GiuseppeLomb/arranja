@@ -4,7 +4,7 @@ appliance_type: maquina-secar
 aplicavel_a:
   - brand: "*"
 id: ms-barulho
-ordem: 5
+ordem: 6
 titulo: A máquina de secar faz barulho
 sintoma: Barulho
 inicio: objetos

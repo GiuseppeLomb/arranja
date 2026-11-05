@@ -242,3 +242,56 @@
     - url: https://support.electrolux.pt/support-articles/article/a-maquina-de-lavar-loica-exibe-a-mensagem-de-erro-if0-ifo-o-if1
       titulo: "Electrolux — artigo de apoio oficial: código iF0 na máquina de lavar loiça"
       consultado_em: 2026-11-05
+- id: electrolux-ms-e50
+  brand: electrolux
+  appliance_type: maquina-secar
+  code: E50
+  descricao: "O motor está sobrecarregado: roupa a mais ou roupa presa no tambor, e o programa não terminou. Tira roupa do tambor, escolhe o programa e recomeça o ciclo. (Indicado no manual Electrolux EDI618A5BO, ref. 136205020-A-122024.)"
+  guias:
+    - ms-carga-programa
+  sources:
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/83672/83672.pdf
+      titulo: Electrolux EDI618A5BO — Manual de instruções, secador de roupa (PT)
+      pagina: "23"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: electrolux
+        referencia_documento: 136205020-A-122024
+        modelos: &a1
+          - EDI618A5BO
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/83672/83672.pdf
+        alojado_por: Macorlux
+- id: electrolux-ms-e90
+  brand: electrolux
+  appliance_type: maquina-secar
+  code: E90
+  aliases:
+    - E91
+  descricao: "Avaria interna: não há comunicação entre os componentes eletrónicos e o programa parou antes do tempo. Desliga e volta a ligar a máquina; se o código voltar, contacta um centro de assistência autorizado. (Indicado no manual Electrolux EDI618A5BO, ref. 136205020-A-122024.)"
+  sources:
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/83672/83672.pdf
+      titulo: Electrolux EDI618A5BO — Manual de instruções, secador de roupa (PT)
+      pagina: "24"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: electrolux
+        referencia_documento: 136205020-A-122024
+        modelos: *a1
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/83672/83672.pdf
+        alojado_por: Macorlux
+- id: electrolux-ms-eh0
+  brand: electrolux
+  appliance_type: maquina-secar
+  code: EH0
+  descricao: A alimentação elétrica está instável. Espera até estabilizar e carrega em Início/Pausa; se a máquina parar o ciclo sem nenhuma indicação, volta a carregar em início. Se o aviso se repetir, verifica o estado do cabo, da tomada ou da alimentação elétrica. (Indicado no manual Electrolux EDI618A5BO, ref. 136205020-A-122024.)
+  sources:
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/83672/83672.pdf
+      titulo: Electrolux EDI618A5BO — Manual de instruções, secador de roupa (PT)
+      pagina: "24"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: electrolux
+        referencia_documento: 136205020-A-122024
+        modelos: *a1
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/83672/83672.pdf
+        alojado_por: Macorlux

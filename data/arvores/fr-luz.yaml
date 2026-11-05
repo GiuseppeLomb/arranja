@@ -1,0 +1,41 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/diagnostic_tree.schema.json
+appliance_type: frigorifico
+aplicavel_a:
+  - brand: "*"
+id: fr-luz
+ordem: 12
+titulo: A luz do frigorífico não acende
+sintoma: A luz não acende
+inicio: painel
+nos:
+  painel:
+    tipo: pergunta
+    texto: O aparelho está a arrefecer e o painel ou as indicações acendem?
+    ajuda: A luz interior acende quando abres a porta (Bosch).
+    respostas:
+      - texto: Não
+        ir_para: fim-energia
+      - texto: Sim
+        ir_para: fim-tecnico
+  fim-energia:
+    tipo: guia
+    guias:
+      - fr-verificar-energia
+    nota: Se nenhuma indicação acende, o problema pode ser a corrente (Bosch).
+  fim-tecnico:
+    tipo: tecnico
+    motivo: "Com o aparelho a funcionar, a luz é a avaria: a iluminação é LED e os fabricantes indicam que não é substituível pelo utilizador. Contacta a assistência para a substituir (Bosch, Samsung, Becken)."
+sources:
+  - url: https://media3.bsh-group.com/Documents/9000942200_E.pdf
+    titulo: Bosch KGV… — Instruções de serviço, combinação de frigorífico e congelador (secção PT)
+    pagina: 39, 49, 51
+    consultado_em: 2026-11-04
+  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=RB34T602EWW&CttFileID=11390423&CDCttType=UM&VPath=UM%2F202604%2F20260424171513199%2FOID34016-07_BMF_RB7300T_EN_260417.pdf
+    titulo: Samsung RB7300T (RB34T602EWW) — Refrigerator user manual (EN)
+    pagina: "53"
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7452604_FRIGORIFICO_COMBINADO_BECKEN_BC4322_manual.pdf
+    titulo: Becken BC4322 — Manual de instruções do combinado No Frost (secção PT; páginas do PDF)
+    pagina: "95"
+    consultado_em: 2026-11-04

@@ -4,7 +4,7 @@ appliance_type: maquina-secar
 aplicavel_a:
   - brand: "*"
 id: ms-humidade-divisao
-ordem: 9
+ordem: 10
 titulo: A divisão fica húmida ou quente quando a máquina seca
 sintoma: A divisão fica húmida
 inicio: arejada

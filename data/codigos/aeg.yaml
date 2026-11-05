@@ -242,3 +242,57 @@
     - url: https://support.aeg.com.pt/support-articles/article/a-maquina-de-lavar-loica-exibe-a-mensagem-de-erro-if0-ifo-o-if1
       titulo: "AEG — artigo de apoio oficial: código iF0 na máquina de lavar loiça"
       consultado_em: 2026-11-05
+- id: aeg-ms-e50
+  brand: aeg
+  appliance_type: maquina-secar
+  code: E50
+  descricao: "O motor está sobrecarregado: roupa a mais ou roupa presa no tambor, e o programa não terminou. Tira roupa do tambor, escolhe o programa e recomeça o ciclo. (Indicado no manual AEG TR739M4OB/TR749M4OB, ref. 136202450-A-322023.)"
+  guias:
+    - ms-carga-programa
+  sources:
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/84521/84521.pdf
+      titulo: AEG TR739M4OB / TR749M4OB — Manual de instruções, secador de roupa (PT)
+      pagina: "25"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: aeg
+        referencia_documento: 136202450-A-322023
+        modelos: &a1
+          - TR739M4OB
+          - TR749M4OB
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/84521/84521.pdf
+        alojado_por: Macorlux
+- id: aeg-ms-e90
+  brand: aeg
+  appliance_type: maquina-secar
+  code: E90
+  aliases:
+    - E91
+  descricao: "Avaria interna: não há comunicação entre os componentes eletrónicos e o programa parou antes do tempo. Desliga e volta a ligar a máquina; se o código voltar, contacta um centro de assistência autorizado. (Indicado no manual AEG TR739M4OB/TR749M4OB, ref. 136202450-A-322023.)"
+  sources:
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/84521/84521.pdf
+      titulo: AEG TR739M4OB / TR749M4OB — Manual de instruções, secador de roupa (PT)
+      pagina: "25"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: aeg
+        referencia_documento: 136202450-A-322023
+        modelos: *a1
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/84521/84521.pdf
+        alojado_por: Macorlux
+- id: aeg-ms-eh0
+  brand: aeg
+  appliance_type: maquina-secar
+  code: EH0
+  descricao: A alimentação elétrica está instável. Espera até estabilizar e carrega em Início/Pausa; se a máquina parar o ciclo sem nenhuma indicação, volta a carregar em início. Se o aviso se repetir, verifica o estado do cabo, da tomada ou da alimentação elétrica. (Indicado no manual AEG TR739M4OB/TR749M4OB, ref. 136202450-A-322023.)
+  sources:
+    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/84521/84521.pdf
+      titulo: AEG TR739M4OB / TR749M4OB — Manual de instruções, secador de roupa (PT)
+      pagina: "25"
+      consultado_em: 2026-11-05
+      documento_oficial:
+        fabricante: aeg
+        referencia_documento: 136202450-A-322023
+        modelos: *a1
+        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/84521/84521.pdf
+        alojado_por: Macorlux

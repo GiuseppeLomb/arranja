@@ -10,6 +10,7 @@ sintoma: Não enche água
 codigos:
   - bosch-lr-e30-10
   - becken-lr-e10
+  - bosch-lr-e17
   - electrolux-lr-e10
   - aeg-lr-e10
   - zanussi-lr-e10
@@ -20,6 +21,12 @@ codigos:
   - haier-lr-e4
   - candy-lr-e4
   - teka-lr-e10
+  - lg-lr-ie
+  - balay-lr-e17
+  - balay-lr-f17
+  - balay-lr-e29
+  - neff-lr-e17
+  - smeg-lr-e02
 inicio: torneira
 nos:
   torneira:

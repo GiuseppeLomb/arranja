@@ -5,7 +5,7 @@ aplicavel_a:
   - brand: "*"
 id: ms-nao-seca
 ordem: 2
-titulo: A roupa sai húmida ou a secagem demora muito
+titulo: A roupa sai húmida no fim do programa
 sintoma: A roupa não seca bem
 inicio: arrefecer
 nos:

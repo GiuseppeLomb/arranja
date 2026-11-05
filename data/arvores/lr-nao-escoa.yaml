@@ -22,6 +22,12 @@ codigos:
   - candy-lr-clr-fltr
   - candy-lr-e5
   - teka-lr-e21
+  - lg-lr-oe
+  - balay-lr-f04
+  - balay-lr-e06
+  - balay-lr-e18
+  - balay-lr-e36
+  - smeg-lr-e03
 inicio: opcao
 nos:
   opcao:

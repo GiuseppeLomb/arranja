@@ -4,7 +4,7 @@ appliance_type: maquina-secar
 aplicavel_a:
   - brand: "*"
 id: ms-cotao-na-roupa
-ordem: 10
+ordem: 11
 titulo: A roupa sai com cotão
 sintoma: Roupa com cotão
 inicio: filtro

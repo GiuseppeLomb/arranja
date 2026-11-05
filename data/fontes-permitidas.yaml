@@ -76,6 +76,22 @@
   tipo: fabricante
   descricao: Bosch (BSH) — manuais oficiais em media3.bosch-home.com
   marcas: [bosch]
+- dominio: bosch-home.ie
+  tipo: fabricante
+  descricao: Bosch Irlanda (BSH Home Appliances Ltd, Dublin) — páginas oficiais de apoio e códigos de erro
+  marcas: [bosch]
+- dominio: balay.es
+  tipo: fabricante
+  descricao: Balay (BSH Electrodomésticos España) — páginas oficiais de apoio e códigos de erro
+  marcas: [balay]
+- dominio: hisense.pt
+  tipo: fabricante
+  descricao: Hisense Portugal — site oficial com manuais de utilização em PT
+  marcas: [hisense]
+- dominio: smeg.it
+  tipo: fabricante
+  descricao: Smeg — repositório oficial de documentos de produto (productdocs.smeg.it)
+  marcas: [smeg]
 - dominio: samsung.com
   tipo: fabricante
   descricao: Samsung — manuais oficiais em downloadcenter.samsung.com

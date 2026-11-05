@@ -18,6 +18,8 @@ codigos:
   - aeg-ll-i20
   - zanussi-ll-i20
   - miele-ll-esgoto-agua
+  - balay-ll-e24
+  - balay-ll-e25
 inicio: filtros
 nos:
   filtros:

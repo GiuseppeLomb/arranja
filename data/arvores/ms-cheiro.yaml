@@ -4,7 +4,7 @@ appliance_type: maquina-secar
 aplicavel_a:
   - brand: "*"
 id: ms-cheiro
-ordem: 6
+ordem: 7
 titulo: A máquina de secar ou a roupa cheiram mal
 sintoma: Cheiro mau
 inicio: filtro
