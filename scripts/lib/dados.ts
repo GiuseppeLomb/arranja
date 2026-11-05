@@ -232,6 +232,8 @@ export function validarSemantica(d: DadosBrutos, hoje = new Date()): Problema[] 
 		else if (p.tipo === ALOJAMENTO) add(onde, `${oque} num domínio de alojamento de documento oficial só é aceite como fonte com documento_oficial: ${url}`);
 	};
 	const verFontes = (onde: string, fontes: Fonte[], exemplo?: boolean) => {
+		const urls = fontes.map((f) => f.url);
+		for (const u of new Set(urls.filter((u, i) => urls.indexOf(u) !== i))) add(onde, `fonte repetida (junta as páginas numa só entrada): ${u}`);
 		for (const f of fontes) {
 			if (f.consultado_em > hojeIso) add(onde, `consultado_em no futuro: ${f.consultado_em}`);
 			const p = dominioDe(f.url, exemplo);

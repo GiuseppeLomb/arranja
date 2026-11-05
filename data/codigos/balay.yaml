@@ -6,8 +6,7 @@
   code: E02
   descricao: Falha no motor. Contacta o Serviço Técnico Oficial da Balay. (Página oficial de apoio da Balay.)
   sources:
-    - &a1
-      url: https://www.balay.es/servicio-al-cliente/preguntas-frecuentes/faqs-lavadoras/averias/errores-lavadoras
+    - url: https://www.balay.es/servicio-al-cliente/preguntas-frecuentes/faqs-lavadoras/averias/errores-lavadoras
       titulo: Balay — Errores y códigos de error de lavadoras (página oficial de apoio, ES)
       consultado_em: 2026-11-05
 - id: balay-lr-f04
@@ -16,20 +15,24 @@
   code: F04
   descricao: Problema no escoamento da água. Antes de chamar um técnico, limpa o filtro de escoamento, confirma que as mangueiras não estão dobradas e que a bomba não está obstruída. (Página oficial de apoio da Balay.)
   arvore: lr-nao-escoa
-  guias: &a2
+  guias: &a1
     - lr-limpar-filtro-bomba
     - lr-verificar-mangueira-escoamento
   sources:
-    - *a1
+    - url: https://www.balay.es/servicio-al-cliente/preguntas-frecuentes/faqs-lavadoras/averias/errores-lavadoras
+      titulo: Balay — Errores y códigos de error de lavadoras (página oficial de apoio, ES)
+      consultado_em: 2026-11-05
 - id: balay-lr-e06
   brand: balay
   appliance_type: maquina-lavar-roupa
   code: E06
   descricao: Também é um problema no escoamento da água. Antes de chamar um técnico, limpa o filtro de escoamento, confirma que as mangueiras não estão dobradas e que a bomba não está obstruída. (Página oficial de apoio da Balay.)
   arvore: lr-nao-escoa
-  guias: *a2
+  guias: *a1
   sources:
-    - *a1
+    - url: https://www.balay.es/servicio-al-cliente/preguntas-frecuentes/faqs-lavadoras/averias/errores-lavadoras
+      titulo: Balay — Errores y códigos de error de lavadoras (página oficial de apoio, ES)
+      consultado_em: 2026-11-05
 - id: balay-lr-e10
   brand: balay
   appliance_type: maquina-lavar-roupa
@@ -40,7 +43,9 @@
     - E10-10
     - E10-20
   sources:
-    - *a1
+    - url: https://www.balay.es/servicio-al-cliente/preguntas-frecuentes/faqs-lavadoras/averias/errores-lavadoras
+      titulo: Balay — Errores y códigos de error de lavadoras (página oficial de apoio, ES)
+      consultado_em: 2026-11-05
 - id: balay-lr-e16
   brand: balay
   appliance_type: maquina-lavar-roupa
@@ -49,7 +54,9 @@
   guias:
     - lr-verificar-energia-bloqueio
   sources:
-    - *a1
+    - url: https://www.balay.es/servicio-al-cliente/preguntas-frecuentes/faqs-lavadoras/averias/errores-lavadoras
+      titulo: Balay — Errores y códigos de error de lavadoras (página oficial de apoio, ES)
+      consultado_em: 2026-11-05
 - id: balay-lr-e17
   brand: balay
   appliance_type: maquina-lavar-roupa
@@ -57,7 +64,9 @@
   descricao: O abastecimento de água não está a ser o correto. Desliga a máquina, fecha a torneira e confirma que os tubos e as mangueiras estão limpos, sem obstruções e sem dobras. (Página oficial de apoio da Balay.)
   arvore: lr-nao-enche-agua
   sources:
-    - *a1
+    - url: https://www.balay.es/servicio-al-cliente/preguntas-frecuentes/faqs-lavadoras/averias/errores-lavadoras
+      titulo: Balay — Errores y códigos de error de lavadoras (página oficial de apoio, ES)
+      consultado_em: 2026-11-05
 - id: balay-lr-f17
   brand: balay
   appliance_type: maquina-lavar-roupa
@@ -67,7 +76,9 @@
   guias:
     - lr-limpar-filtro-entrada
   sources:
-    - *a1
+    - url: https://www.balay.es/servicio-al-cliente/preguntas-frecuentes/faqs-lavadoras/averias/errores-lavadoras
+      titulo: Balay — Errores y códigos de error de lavadoras (página oficial de apoio, ES)
+      consultado_em: 2026-11-05
 - id: balay-lr-e18
   brand: balay
   appliance_type: maquina-lavar-roupa
@@ -80,7 +91,9 @@
     - lr-esvaziar-agua
     - lr-verificar-mangueira-escoamento
   sources:
-    - *a1
+    - url: https://www.balay.es/servicio-al-cliente/preguntas-frecuentes/faqs-lavadoras/averias/errores-lavadoras
+      titulo: Balay — Errores y códigos de error de lavadoras (página oficial de apoio, ES)
+      consultado_em: 2026-11-05
 - id: balay-lr-e29
   brand: balay
   appliance_type: maquina-lavar-roupa
@@ -88,7 +101,9 @@
   descricao: A água não está a entrar bem. Verifica se a torneira está aberta e se a mangueira da água não está obstruída nem dobrada; se não for isso, contacta o Serviço Técnico Oficial. (Página oficial de apoio da Balay.)
   arvore: lr-nao-enche-agua
   sources:
-    - *a1
+    - url: https://www.balay.es/servicio-al-cliente/preguntas-frecuentes/faqs-lavadoras/averias/errores-lavadoras
+      titulo: Balay — Errores y códigos de error de lavadoras (página oficial de apoio, ES)
+      consultado_em: 2026-11-05
 - id: balay-lr-e36
   brand: balay
   appliance_type: maquina-lavar-roupa
@@ -97,31 +112,36 @@
   aliases:
     - E36-10
   arvore: lr-nao-escoa
-  guias: *a2
+  guias: *a1
   sources:
-    - *a1
+    - url: https://www.balay.es/servicio-al-cliente/preguntas-frecuentes/faqs-lavadoras/averias/errores-lavadoras
+      titulo: Balay — Errores y códigos de error de lavadoras (página oficial de apoio, ES)
+      consultado_em: 2026-11-05
 - id: balay-lr-f43
   brand: balay
   appliance_type: maquina-lavar-roupa
   code: F43
   descricao: Problema no motor. Desliga a máquina da corrente e contacta o Serviço Técnico Oficial. (Página oficial de apoio da Balay.)
   sources:
-    - *a1
+    - url: https://www.balay.es/servicio-al-cliente/preguntas-frecuentes/faqs-lavadoras/averias/errores-lavadoras
+      titulo: Balay — Errores y códigos de error de lavadoras (página oficial de apoio, ES)
+      consultado_em: 2026-11-05
 - id: balay-lr-e61
   brand: balay
   appliance_type: maquina-lavar-roupa
   code: E61
   descricao: Erro na eletrónica. Desliga a máquina da corrente e contacta o Serviço Técnico Oficial. (Página oficial de apoio da Balay.)
   sources:
-    - *a1
+    - url: https://www.balay.es/servicio-al-cliente/preguntas-frecuentes/faqs-lavadoras/averias/errores-lavadoras
+      titulo: Balay — Errores y códigos de error de lavadoras (página oficial de apoio, ES)
+      consultado_em: 2026-11-05
 - id: balay-ll-e04
   brand: balay
   appliance_type: maquina-lavar-loica
   code: E04
   descricao: Falha eletrónica. Antes de chamar a assistência, reinicia a máquina; se continuar, provavelmente precisa de uma revisão técnica. (Página oficial de apoio da Balay.)
   sources:
-    - &a3
-      url: https://www.balay.es/servicio-al-cliente/preguntas-frecuentes/faqs-lavavajillas/averias/errores-lavavajillas
+    - url: https://www.balay.es/servicio-al-cliente/preguntas-frecuentes/faqs-lavavajillas/averias/errores-lavavajillas
       titulo: Balay — Errores y códigos de error del lavavajillas (página oficial de apoio, ES)
       consultado_em: 2026-11-05
 - id: balay-ll-e09
@@ -130,35 +150,45 @@
   code: E09
   descricao: Falha no sistema que aquece a água. Contacta o Serviço Técnico Oficial da Balay. (Página oficial de apoio da Balay.)
   sources:
-    - *a3
+    - url: https://www.balay.es/servicio-al-cliente/preguntas-frecuentes/faqs-lavavajillas/averias/errores-lavavajillas
+      titulo: Balay — Errores y códigos de error del lavavajillas (página oficial de apoio, ES)
+      consultado_em: 2026-11-05
 - id: balay-ll-e12
   brand: balay
   appliance_type: maquina-lavar-loica
   code: E12
   descricao: A resistência que aquece a água está calcificada. Em princípio resolve-se descalcificando a máquina. (Página oficial de apoio da Balay.)
   sources:
-    - *a3
+    - url: https://www.balay.es/servicio-al-cliente/preguntas-frecuentes/faqs-lavavajillas/averias/errores-lavavajillas
+      titulo: Balay — Errores y códigos de error del lavavajillas (página oficial de apoio, ES)
+      consultado_em: 2026-11-05
 - id: balay-ll-e14
   brand: balay
   appliance_type: maquina-lavar-loica
   code: E14
   descricao: Problema no sistema de proteção contra a água. Fecha a torneira da máquina e contacta o Serviço Técnico Oficial. (Página oficial de apoio da Balay.)
   sources:
-    - *a3
+    - url: https://www.balay.es/servicio-al-cliente/preguntas-frecuentes/faqs-lavavajillas/averias/errores-lavavajillas
+      titulo: Balay — Errores y códigos de error del lavavajillas (página oficial de apoio, ES)
+      consultado_em: 2026-11-05
 - id: balay-ll-e15
   brand: balay
   appliance_type: maquina-lavar-loica
   code: E15
   descricao: Problema no sistema de proteção contra a água. Fecha a torneira da máquina e contacta o Serviço Técnico Oficial. (Página oficial de apoio da Balay.)
   sources:
-    - *a3
+    - url: https://www.balay.es/servicio-al-cliente/preguntas-frecuentes/faqs-lavavajillas/averias/errores-lavavajillas
+      titulo: Balay — Errores y códigos de error del lavavajillas (página oficial de apoio, ES)
+      consultado_em: 2026-11-05
 - id: balay-ll-e16
   brand: balay
   appliance_type: maquina-lavar-loica
   code: E16
   descricao: A máquina detetou que está a entrar água de forma contínua. Fecha primeiro a torneira de entrada da água e contacta o Serviço Técnico Oficial. (Página oficial de apoio da Balay.)
   sources:
-    - *a3
+    - url: https://www.balay.es/servicio-al-cliente/preguntas-frecuentes/faqs-lavavajillas/averias/errores-lavavajillas
+      titulo: Balay — Errores y códigos de error del lavavajillas (página oficial de apoio, ES)
+      consultado_em: 2026-11-05
 - id: balay-ll-e18
   brand: balay
   appliance_type: maquina-lavar-loica
@@ -168,14 +198,18 @@
   guias:
     - ll-verificar-entrada-agua
   sources:
-    - *a3
+    - url: https://www.balay.es/servicio-al-cliente/preguntas-frecuentes/faqs-lavavajillas/averias/errores-lavavajillas
+      titulo: Balay — Errores y códigos de error del lavavajillas (página oficial de apoio, ES)
+      consultado_em: 2026-11-05
 - id: balay-ll-e19
   brand: balay
   appliance_type: maquina-lavar-loica
   code: E19
   descricao: Normalmente é uma avaria no doseador. Contacta o Serviço Técnico Oficial da Balay. (Página oficial de apoio da Balay.)
   sources:
-    - *a3
+    - url: https://www.balay.es/servicio-al-cliente/preguntas-frecuentes/faqs-lavavajillas/averias/errores-lavavajillas
+      titulo: Balay — Errores y códigos de error del lavavajillas (página oficial de apoio, ES)
+      consultado_em: 2026-11-05
 - id: balay-ll-e22
   brand: balay
   appliance_type: maquina-lavar-loica
@@ -184,14 +218,18 @@
   guias:
     - ll-limpar-filtros
   sources:
-    - *a3
+    - url: https://www.balay.es/servicio-al-cliente/preguntas-frecuentes/faqs-lavavajillas/averias/errores-lavavajillas
+      titulo: Balay — Errores y códigos de error del lavavajillas (página oficial de apoio, ES)
+      consultado_em: 2026-11-05
 - id: balay-ll-e23
   brand: balay
   appliance_type: maquina-lavar-loica
   code: E23
   descricao: Falha na bomba de escoamento. Contacta o Serviço Técnico Oficial da Balay. (Página oficial de apoio da Balay.)
   sources:
-    - *a3
+    - url: https://www.balay.es/servicio-al-cliente/preguntas-frecuentes/faqs-lavavajillas/averias/errores-lavavajillas
+      titulo: Balay — Errores y códigos de error del lavavajillas (página oficial de apoio, ES)
+      consultado_em: 2026-11-05
 - id: balay-ll-e24
   brand: balay
   appliance_type: maquina-lavar-loica
@@ -201,7 +239,9 @@
   guias:
     - ll-verificar-mangueira-escoamento
   sources:
-    - *a3
+    - url: https://www.balay.es/servicio-al-cliente/preguntas-frecuentes/faqs-lavavajillas/averias/errores-lavavajillas
+      titulo: Balay — Errores y códigos de error del lavavajillas (página oficial de apoio, ES)
+      consultado_em: 2026-11-05
 - id: balay-ll-e25
   brand: balay
   appliance_type: maquina-lavar-loica
@@ -211,11 +251,15 @@
   guias:
     - ll-limpar-bomba-escoamento
   sources:
-    - *a3
+    - url: https://www.balay.es/servicio-al-cliente/preguntas-frecuentes/faqs-lavavajillas/averias/errores-lavavajillas
+      titulo: Balay — Errores y códigos de error del lavavajillas (página oficial de apoio, ES)
+      consultado_em: 2026-11-05
 - id: balay-ll-e27
   brand: balay
   appliance_type: maquina-lavar-loica
   code: E27
   descricao: "A tensão da rede elétrica é insuficiente. Não é avaria da máquina: um eletricista tem de verificar a instalação elétrica. (Página oficial de apoio da Balay.)"
   sources:
-    - *a3
+    - url: https://www.balay.es/servicio-al-cliente/preguntas-frecuentes/faqs-lavavajillas/averias/errores-lavavajillas
+      titulo: Balay — Errores y códigos de error del lavavajillas (página oficial de apoio, ES)
+      consultado_em: 2026-11-05

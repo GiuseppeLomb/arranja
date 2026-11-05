@@ -8,8 +8,7 @@
   guias:
     - lr-verificar-energia-bloqueio
   sources:
-    - &a1
-      url: https://productdocs.smeg.it/st/LB1T60ES/userManual/ES
+    - url: https://productdocs.smeg.it/st/LB1T60ES/userManual/ES
       titulo: Smeg LB1T60ES — Manual de usuario de la lavadora (ES; página do PDF)
       pagina: "32"
       consultado_em: 2026-11-05
@@ -20,7 +19,10 @@
   descricao: "A pressão ou o nível da água dentro da máquina podem estar baixos. Confirma que a torneira está toda aberta; pode ter havido um corte no abastecimento. Se continuar, a máquina para sozinha passado algum tempo: tira a ficha da tomada, fecha a torneira e contacta a assistência autorizada. (Indicado no manual Smeg LB1T60ES, onde o código aparece como uma combinação de luzes de fase a piscar; noutros modelos, confirma no manual.)"
   arvore: lr-nao-enche-agua
   sources:
-    - *a1
+    - url: https://productdocs.smeg.it/st/LB1T60ES/userManual/ES
+      titulo: Smeg LB1T60ES — Manual de usuario de la lavadora (ES; página do PDF)
+      pagina: "32"
+      consultado_em: 2026-11-05
 - id: smeg-lr-e03
   brand: smeg
   appliance_type: maquina-lavar-roupa
@@ -30,11 +32,17 @@
   guias:
     - lr-limpar-filtro-bomba
   sources:
-    - *a1
+    - url: https://productdocs.smeg.it/st/LB1T60ES/userManual/ES
+      titulo: Smeg LB1T60ES — Manual de usuario de la lavadora (ES; página do PDF)
+      pagina: "32"
+      consultado_em: 2026-11-05
 - id: smeg-lr-e04
   brand: smeg
   appliance_type: maquina-lavar-roupa
   code: E04
   descricao: Há água a mais na máquina. A máquina escoa a água sozinha; depois, desliga-a, tira a ficha da tomada, fecha a torneira e contacta a assistência autorizada. (Indicado no manual Smeg LB1T60ES, onde o código aparece como uma combinação de luzes de fase a piscar; noutros modelos, confirma no manual.)
   sources:
-    - *a1
+    - url: https://productdocs.smeg.it/st/LB1T60ES/userManual/ES
+      titulo: Smeg LB1T60ES — Manual de usuario de la lavadora (ES; página do PDF)
+      pagina: "32"
+      consultado_em: 2026-11-05

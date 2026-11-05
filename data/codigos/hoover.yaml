@@ -13,8 +13,7 @@
     - lr-apertar-ligacoes-mangueiras
     - lr-verificar-mangueira-escoamento
   sources:
-    - &a1
-      url: https://service.hoover.co.uk/media/cf1fm5fk/hbwmo96tahc.pdf
+    - url: https://service.hoover.co.uk/media/cf1fm5fk/hbwmo96tahc.pdf
       titulo: Hoover HBWMO96TAHC — Instruction manual (EN)
       pagina: "24"
       consultado_em: 2026-11-05
@@ -34,7 +33,10 @@
     - lr-limpar-filtro-bomba
     - lr-verificar-mangueira-escoamento
   sources:
-    - *a1
+    - url: https://service.hoover.co.uk/media/cf1fm5fk/hbwmo96tahc.pdf
+      titulo: Hoover HBWMO96TAHC — Instruction manual (EN)
+      pagina: "24"
+      consultado_em: 2026-11-05
     - url: https://service.hoover.co.uk/advice-centre/error-message-e03-appears-in-the-display-of-the-washing-machine/
       titulo: "Hoover — Advice Centre: error message E03"
       consultado_em: 2026-11-05
@@ -48,7 +50,10 @@
   guias:
     - lr-reduzir-detergente-enxaguar
   sources:
-    - *a1
+    - url: https://service.hoover.co.uk/media/cf1fm5fk/hbwmo96tahc.pdf
+      titulo: Hoover HBWMO96TAHC — Instruction manual (EN)
+      pagina: "24"
+      consultado_em: 2026-11-05
     - url: https://service.hoover.co.uk/advice-centre/error-04-message/
       titulo: "Hoover — Advice Centre: error message E04"
       consultado_em: 2026-11-05
@@ -61,4 +66,7 @@
     - lr-verificar-energia-bloqueio
     - lr-desbloquear-porta
   sources:
-    - *a1
+    - url: https://service.hoover.co.uk/media/cf1fm5fk/hbwmo96tahc.pdf
+      titulo: Hoover HBWMO96TAHC — Instruction manual (EN)
+      pagina: "24"
+      consultado_em: 2026-11-05

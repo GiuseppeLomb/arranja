@@ -1,0 +1,74 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/diagnostic_tree.schema.json
+appliance_type: maquina-secar
+aplicavel_a:
+  - brand: "*"
+id: ms-tambor
+ordem: 4
+titulo: O tambor da máquina de secar não roda
+sintoma: O tambor não roda
+inicio: arranque
+nos:
+  arranque:
+    tipo: pergunta
+    texto: Com a porta fechada e o programa iniciado, o tambor está parado há mais de um minuto?
+    ajuda: O tambor pode parar cerca de 40 segundos a meio da secagem e depois continua sozinho (Becken). No fim do programa o tambor para (Becken); na fase antirrugas só se mexe de tempos a tempos (Bosch). Com início diferido, o programa só arranca quando acabar a contagem (Bosch, Becken).
+    respostas:
+      - texto: Sim
+        ir_para: carga
+      - texto: Não arrancou ou não sei
+        ir_para: fim-arranque
+  carga:
+    tipo: pergunta
+    texto: A carga respeita o máximo indicado para o programa?
+    respostas:
+      - texto: Não ou não sei
+        ir_para: fim-carga
+      - texto: Sim
+        ir_para: filtro
+  filtro:
+    tipo: pergunta
+    texto: O filtro de cotão está limpo e bem encaixado?
+    ajuda: Não uses a máquina sem o filtro (Bosch, Becken).
+    respostas:
+      - texto: Não ou não sei
+        ir_para: fim-filtro
+      - texto: Sim
+        ir_para: reiniciar
+  reiniciar:
+    tipo: pergunta
+    texto: Já desligaste a máquina e voltaste a ligá-la?
+    ajuda: "Se a desligares a meio do programa, tira logo toda a roupa e estende-a para o calor sair: a roupa quente pode incendiar-se (Bosch, Becken)."
+    respostas:
+      - texto: Não
+        ir_para: fim-reiniciar
+      - texto: Sim
+        ir_para: fim-tecnico
+  fim-arranque:
+    tipo: guia
+    guias:
+      - ms-verificar-energia-porta
+  fim-carga:
+    tipo: guia
+    guias:
+      - ms-carga-programa
+    nota: Tira alguma roupa até ficares dentro da carga máxima do programa (vê a tabela de programas do manual) e volta a iniciar.
+  fim-filtro:
+    tipo: guia
+    guias:
+      - ms-limpar-filtro-cotao
+  fim-reiniciar:
+    tipo: tecnico
+    motivo: "Desliga a máquina e volta a ligá-la (a meio da secagem, tira logo a roupa e estende-a). Se a avaria não se resolver, a Bosch e a Becken indicam contactar a assistência: chama um técnico. Os fabricantes avisam que não deves abrir a máquina: há risco de choque elétrico e as reparações são só para técnicos autorizados."
+  fim-tecnico:
+    tipo: tecnico
+    motivo: "Com a porta fechada, o programa iniciado, a carga certa, o filtro limpo e a máquina já reiniciada, o tambor continua parado: chama um técnico. Peças internas como a correia ou o motor só podem ser verificadas por ele. Os fabricantes avisam que não deves abrir a máquina: há risco de choque elétrico e as reparações são só para técnicos autorizados."
+sources:
+  - url: https://media3.bsh-group.com/Documents/9001378644_A.pdf
+    titulo: Bosch WTR85V90ES — Instrucciones de uso e instalación, secadora con bomba de calor (ES)
+    pagina: 9, 25, 29, 30–31, 34, 40, 41
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/5864042_MAQ_SECAR_ROUPS_BECKEN_8KG_BDM2741_HP_manual.pdf
+    titulo: Becken BDM2740/BDM2741 HP — Manual de instruções da máquina de secar (secção PT; páginas do PDF)
+    pagina: 20, 21, 22, 24, 25, 26
+    consultado_em: 2026-11-04

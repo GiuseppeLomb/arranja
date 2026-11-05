@@ -50,25 +50,13 @@ nos:
 sources:
   - url: https://media3.bosch-home.com/Documents/9001036344_B.pdf
     titulo: Bosch — Instruções de serviço, máquina de lavar loiça SB…/SM… (PT)
-    pagina: 37–38, 42
+    pagina: 37–38, 39, 42
     consultado_em: 2026-11-04
   - url: https://becken.cors.digital/wp-content/uploads/manuais/7141543_7141540_MAQ_LAVAR_LOICA_BECKEN_BDW1965N_manual.pdf
     titulo: Becken BDW1965N — Manual de instruções da máquina de lavar loiça (secção PT)
-    pagina: 133–134
+    pagina: 98, 133–134
     consultado_em: 2026-11-04
   - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DW60M9550FS%2FEU&CttFileID=7019887&CDCttType=UM&VPath=UM%2F201804%2F20180409182326092%2FMANUAL_USERS_DD68-00203A-01_EU_EN_20180221.pdf
     titulo: Samsung DW60M9550FS — Dishwasher user manual DD68-00203A (EN)
-    pagina: 41, 45
-    consultado_em: 2026-11-04
-  - url: https://media3.bosch-home.com/Documents/9001036344_B.pdf
-    titulo: Bosch — Instruções de serviço, máquina de lavar loiça SB…/SM… (PT)
-    pagina: 39, 42
-    consultado_em: 2026-11-04
-  - url: https://becken.cors.digital/wp-content/uploads/manuais/7141543_7141540_MAQ_LAVAR_LOICA_BECKEN_BDW1965N_manual.pdf
-    titulo: Becken BDW1965N — Manual de instruções da máquina de lavar loiça (secção PT)
-    pagina: "98"
-    consultado_em: 2026-11-04
-  - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DW60M9550FS%2FEU&CttFileID=7019887&CDCttType=UM&VPath=UM%2F201804%2F20180409182326092%2FMANUAL_USERS_DD68-00203A-01_EU_EN_20180221.pdf
-    titulo: Samsung DW60M9550FS — Dishwasher user manual DD68-00203A (EN)
-    pagina: "11"
+    pagina: 11, 41, 45
     consultado_em: 2026-11-04

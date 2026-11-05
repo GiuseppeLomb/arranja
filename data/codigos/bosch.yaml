@@ -109,8 +109,7 @@
   guias:
     - ll-verificar-mangueira-escoamento
   sources:
-    - &a1
-      url: https://media3.bosch-home.com/Documents/9000405528_A.pdf
+    - url: https://media3.bosch-home.com/Documents/9000405528_A.pdf
       titulo: Bosch — Instruções de serviço, máquina de lavar loiça (PT, 9000405528)
       pagina: 20–21
       consultado_em: 2026-11-05
@@ -125,7 +124,10 @@
   guias:
     - ll-limpar-bomba-escoamento
   sources:
-    - *a1
+    - url: https://media3.bosch-home.com/Documents/9000405528_A.pdf
+      titulo: Bosch — Instruções de serviço, máquina de lavar loiça (PT, 9000405528)
+      pagina: 20–21
+      consultado_em: 2026-11-05
 - id: bosch-lr-e16
   brand: bosch
   appliance_type: maquina-lavar-roupa

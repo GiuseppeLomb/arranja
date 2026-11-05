@@ -8,8 +8,7 @@
   guias:
     - lr-verificar-energia-bloqueio
   sources:
-    - &a1
-      url: https://www.hisense.pt/wp-content/uploads/2022/03/WFQY1014EVJM-User-Manual-PT.pdf
+    - url: https://www.hisense.pt/wp-content/uploads/2022/03/WFQY1014EVJM-User-Manual-PT.pdf
       titulo: Hisense WFQY1014EVJM — Manual de utilização, máquina de lavar roupa (PT)
       pagina: "21"
       consultado_em: 2026-11-05
@@ -19,14 +18,20 @@
   code: F14
   descricao: Falha na abertura da porta. Carrega em Iniciar/Pausa e a máquina tenta destrancar a porta; em alternativa, roda o seletor para desligado durante 3 segundos e escolhe de novo o programa. Se o código voltar, desliga a máquina da corrente e contacta o serviço pós-venda. (Indicado no manual Hisense WFQY1014EVJM.)
   sources:
-    - *a1
+    - url: https://www.hisense.pt/wp-content/uploads/2022/03/WFQY1014EVJM-User-Manual-PT.pdf
+      titulo: Hisense WFQY1014EVJM — Manual de utilização, máquina de lavar roupa (PT)
+      pagina: "21"
+      consultado_em: 2026-11-05
 - id: hisense-lr-f24
   brand: hisense
   appliance_type: maquina-lavar-roupa
   code: F24
   descricao: A água chegou ao nível de transbordo. Se o código voltar, desliga a máquina da corrente e contacta o serviço pós-venda. (Indicado no manual Hisense WFQY1014EVJM.)
   sources:
-    - *a1
+    - url: https://www.hisense.pt/wp-content/uploads/2022/03/WFQY1014EVJM-User-Manual-PT.pdf
+      titulo: Hisense WFQY1014EVJM — Manual de utilização, máquina de lavar roupa (PT)
+      pagina: "21"
+      consultado_em: 2026-11-05
 - id: hisense-lr-unb
   brand: hisense
   appliance_type: maquina-lavar-roupa
@@ -36,4 +41,7 @@
   guias:
     - lr-equilibrar-carga
   sources:
-    - *a1
+    - url: https://www.hisense.pt/wp-content/uploads/2022/03/WFQY1014EVJM-User-Manual-PT.pdf
+      titulo: Hisense WFQY1014EVJM — Manual de utilização, máquina de lavar roupa (PT)
+      pagina: "21"
+      consultado_em: 2026-11-05

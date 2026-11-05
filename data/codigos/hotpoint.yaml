@@ -8,8 +8,7 @@
   guias:
     - lr-verificar-energia-bloqueio
   sources:
-    - &a1
-      url: https://www.hotpoint.co.uk/service/washing-machine-repair/error-codes
+    - url: https://www.hotpoint.co.uk/service/washing-machine-repair/error-codes
       titulo: Hotpoint UK — códigos de erro da máquina de lavar roupa (página oficial de assistência)
       consultado_em: 2026-11-05
 - id: hotpoint-lr-f02
@@ -18,7 +17,9 @@
   code: F02
   descricao: "Avaria no circuito do motor: o tambor roda com falhas ou não roda. Chama a assistência. (Indicado pela Hotpoint UK.)"
   sources:
-    - *a1
+    - url: https://www.hotpoint.co.uk/service/washing-machine-repair/error-codes
+      titulo: Hotpoint UK — códigos de erro da máquina de lavar roupa (página oficial de assistência)
+      consultado_em: 2026-11-05
 - id: hotpoint-lr-f03
   brand: hotpoint
   appliance_type: maquina-lavar-roupa
@@ -26,7 +27,9 @@
   descricao: "Avaria na deteção de temperatura: a máquina não aquece. Chama a assistência. (Indicado pela Hotpoint UK.)"
   arvore: lr-nao-aquece
   sources:
-    - *a1
+    - url: https://www.hotpoint.co.uk/service/washing-machine-repair/error-codes
+      titulo: Hotpoint UK — códigos de erro da máquina de lavar roupa (página oficial de assistência)
+      consultado_em: 2026-11-05
 - id: hotpoint-lr-f05
   brand: hotpoint
   appliance_type: maquina-lavar-roupa
@@ -38,70 +41,90 @@
     - lr-limpar-filtro-bomba
     - lr-verificar-mangueira-escoamento
   sources:
-    - *a1
+    - url: https://www.hotpoint.co.uk/service/washing-machine-repair/error-codes
+      titulo: Hotpoint UK — códigos de erro da máquina de lavar roupa (página oficial de assistência)
+      consultado_em: 2026-11-05
 - id: hotpoint-lr-f06
   brand: hotpoint
   appliance_type: maquina-lavar-roupa
   code: F06
   descricao: "Avaria no fecho da porta: a porta não abre ou não fecha, ou a máquina não arranca com a porta fechada. Vê se há algo a impedir o fecho; se continuar, chama a assistência. A Hotpoint tem uma campanha de recolha do fecho da porta de certas máquinas Hotpoint e Indesit: confirma no site oficial se a tua está incluída. (Indicado pela Hotpoint UK.)"
   sources:
-    - *a1
+    - url: https://www.hotpoint.co.uk/service/washing-machine-repair/error-codes
+      titulo: Hotpoint UK — códigos de erro da máquina de lavar roupa (página oficial de assistência)
+      consultado_em: 2026-11-05
 - id: hotpoint-lr-f07
   brand: hotpoint
   appliance_type: maquina-lavar-roupa
   code: F07
   descricao: "Avaria na placa eletrónica ou no circuito de aquecimento: o programa para a meio, não aquece e a bomba trabalha sem parar. Chama a assistência. (Indicado pela Hotpoint UK.)"
   sources:
-    - *a1
+    - url: https://www.hotpoint.co.uk/service/washing-machine-repair/error-codes
+      titulo: Hotpoint UK — códigos de erro da máquina de lavar roupa (página oficial de assistência)
+      consultado_em: 2026-11-05
 - id: hotpoint-lr-f08
   brand: hotpoint
   appliance_type: maquina-lavar-roupa
   code: F08
   descricao: "Avaria na resistência de aquecimento: o programa para a meio. Chama a assistência. (Indicado pela Hotpoint UK.)"
   sources:
-    - *a1
+    - url: https://www.hotpoint.co.uk/service/washing-machine-repair/error-codes
+      titulo: Hotpoint UK — códigos de erro da máquina de lavar roupa (página oficial de assistência)
+      consultado_em: 2026-11-05
 - id: hotpoint-lr-f09
   brand: hotpoint
   appliance_type: maquina-lavar-roupa
   code: F09
   descricao: "Avaria de software: a máquina não funciona, com várias luzes a piscar, e não deixa escolher programa. Chama a assistência. (Indicado pela Hotpoint UK.)"
   sources:
-    - *a1
+    - url: https://www.hotpoint.co.uk/service/washing-machine-repair/error-codes
+      titulo: Hotpoint UK — códigos de erro da máquina de lavar roupa (página oficial de assistência)
+      consultado_em: 2026-11-05
 - id: hotpoint-lr-f11
   brand: hotpoint
   appliance_type: maquina-lavar-roupa
   code: F11
   descricao: "Avaria no circuito da bomba: fica água na máquina, que não escoa. Chama a assistência. (Indicado pela Hotpoint UK.)"
   sources:
-    - *a1
+    - url: https://www.hotpoint.co.uk/service/washing-machine-repair/error-codes
+      titulo: Hotpoint UK — códigos de erro da máquina de lavar roupa (página oficial de assistência)
+      consultado_em: 2026-11-05
 - id: hotpoint-lr-f12
   brand: hotpoint
   appliance_type: maquina-lavar-roupa
   code: F12
   descricao: "Avaria no comando eletrónico: a máquina não liga. Chama a assistência. (Indicado pela Hotpoint UK.)"
   sources:
-    - *a1
+    - url: https://www.hotpoint.co.uk/service/washing-machine-repair/error-codes
+      titulo: Hotpoint UK — códigos de erro da máquina de lavar roupa (página oficial de assistência)
+      consultado_em: 2026-11-05
 - id: hotpoint-lr-f13
   brand: hotpoint
   appliance_type: maquina-lavar-roupa
   code: F13
   descricao: "Avaria na deteção de temperatura da secagem (só máquinas de lavar e secar): a roupa não seca. Chama a assistência. (Indicado pela Hotpoint UK.)"
   sources:
-    - *a1
+    - url: https://www.hotpoint.co.uk/service/washing-machine-repair/error-codes
+      titulo: Hotpoint UK — códigos de erro da máquina de lavar roupa (página oficial de assistência)
+      consultado_em: 2026-11-05
 - id: hotpoint-lr-f15
   brand: hotpoint
   appliance_type: maquina-lavar-roupa
   code: F15
   descricao: "Avaria no controlo do aquecimento: não aquece a água ou para durante a lavagem ou a secagem. Chama a assistência. (Indicado pela Hotpoint UK.)"
   sources:
-    - *a1
+    - url: https://www.hotpoint.co.uk/service/washing-machine-repair/error-codes
+      titulo: Hotpoint UK — códigos de erro da máquina de lavar roupa (página oficial de assistência)
+      consultado_em: 2026-11-05
 - id: hotpoint-lr-f16
   brand: hotpoint
   appliance_type: maquina-lavar-roupa
   code: F16
   descricao: "Avaria no sensor de posição do tambor (só máquinas de carga por cima): o tambor para na posição errada. Chama a assistência. (Indicado pela Hotpoint UK.)"
   sources:
-    - *a1
+    - url: https://www.hotpoint.co.uk/service/washing-machine-repair/error-codes
+      titulo: Hotpoint UK — códigos de erro da máquina de lavar roupa (página oficial de assistência)
+      consultado_em: 2026-11-05
 - id: hotpoint-lr-f18
   brand: hotpoint
   appliance_type: maquina-lavar-roupa
@@ -110,4 +133,6 @@
   guias:
     - lr-verificar-energia-bloqueio
   sources:
-    - *a1
+    - url: https://www.hotpoint.co.uk/service/washing-machine-repair/error-codes
+      titulo: Hotpoint UK — códigos de erro da máquina de lavar roupa (página oficial de assistência)
+      consultado_em: 2026-11-05

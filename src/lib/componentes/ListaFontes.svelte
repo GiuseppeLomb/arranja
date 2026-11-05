@@ -22,7 +22,7 @@
 <section class="fontes" aria-labelledby="fontes-titulo">
 	<h2 id="fontes-titulo" class="secao-titulo">Fontes</h2>
 	<ul>
-		{#each fontes as f (f.url)}
+		{#each fontes as f}
 			<li>
 				{#if f.documento_oficial}
 					{@const doc = f.documento_oficial}
