@@ -1,0 +1,50 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: maquina-lavar-roupa
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: lr-verificar-mangueira-escoamento
+titulo: Verificar a mangueira de escoamento
+resumo: Uma mangueira dobrada, esmagada ou mal ligada impede a máquina de escoar e pode causar fugas.
+perigos:
+  - agua
+  - peso
+  - eletricidade
+ferramentas:
+  - lanterna
+  - balde
+  - toalhas
+tempo_estimado: 15
+passos:
+  - texto: "Se precisares de afastar a máquina da parede, fá-lo devagar, só o necessário, e com ajuda: é pesada."
+  - texto: Segue a mangueira de escoamento desde a máquina até ao esgoto e confirma que não está dobrada, esmagada nem entalada entre a máquina e a parede.
+    imagem:
+      src: imagens/guias/lavar-roupa/mangueira-escoamento.svg
+      alt: Mangueira de escoamento a subir da máquina até ao tubo de esgoto, com uma dobra assinalada.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: Confirma que a ponta não está pousada no chão e que está bem presa ao sifão ou ao tubo de esgoto.
+  - texto: Vê no manual da tua máquina a altura máxima a que a mangueira pode subir (a Bosch, por exemplo, indica 1 metro no máximo).
+  - texto: Se a mangueira estiver dobrada ou entupida, endireita-a e limpa-a. Se estiver desimpedida e a máquina continuar sem escoar, o problema pode estar no esgoto da casa.
+  - texto: Volta a ligar e fixar a mangueira e encosta a máquina com cuidado, sem a entalar.
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001742533_A.pdf
+    titulo: Bosch WAX28EH0ES — Manual do utilizador e instruções de instalação (PT)
+    pagina: 6–7, 13, 16, 49, 53
+    consultado_em: 2026-11-04
+  - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
+    titulo: Samsung WW**BB — Washing Machine User manual (EN)
+    pagina: 20, 59, 61
+    consultado_em: 2026-11-04
+  - url: https://gscs-b2c.lge.com/open/downloadFile?fileId=JejH72VThF8Jn38SlMQ9eQ
+    titulo: LG — Owner's manual, washing machine (EN)
+    pagina: 35–36
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7245211_7245212_7245215_7245216_MAQ_LAVAR_ROUPA_BECKEN_BWM5379_BWM5381_manual.pdf
+    titulo: Becken BWM5379/BWM5381 — Manual de instruções (secção PT)
+    pagina: 98, 126
+    consultado_em: 2026-11-04

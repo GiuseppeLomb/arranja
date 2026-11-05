@@ -59,6 +59,9 @@ const obterMarca = (id: string, nome: string) => {
 };
 for (const m of marcasYaml) {
 	const x = obterMarca(m.id, m.nome);
+	x.curada = true;
+	if (m.grupo) x.grupo = m.grupo;
+	if (m.distribuidor) x.distribuidor = m.distribuidor;
 	if (m.pagina_pecas) x.pagina_pecas = m.pagina_pecas;
 	if (m.example) x.example = true;
 }

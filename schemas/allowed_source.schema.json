@@ -1,0 +1,38 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://github.com/GiuseppeLomb/arranja/schemas/allowed_source.schema.json",
+	"title": "Domínio permitido como fonte",
+	"type": "object",
+	"required": [
+		"dominio",
+		"tipo",
+		"descricao"
+	],
+	"additionalProperties": false,
+	"properties": {
+		"dominio": {
+			"type": "string",
+			"pattern": "^[a-z0-9.-]+.[a-z]{2,}$"
+		},
+		"tipo": {
+			"enum": [
+				"fabricante",
+				"grupo",
+				"retalhista-marca-propria",
+				"ifixit",
+				"exemplo"
+			]
+		},
+		"descricao": {
+			"type": "string",
+			"minLength": 3,
+			"maxLength": 200
+		},
+		"marcas": {
+			"type": "array",
+			"items": {
+				"$ref": "common.schema.json#/$defs/id"
+			}
+		}
+	}
+}

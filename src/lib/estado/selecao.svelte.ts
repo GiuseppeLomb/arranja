@@ -49,6 +49,13 @@ export function escolherMarca(marca: { id: string; nome: string }) {
 	guardar();
 }
 
+/** Remove a marca e o modelo (refinação opcional). */
+export function limparMarca() {
+	selecao.marca = null;
+	selecao.modelo = undefined;
+	guardar();
+}
+
 export function escolherModelo(modelo: ModeloSelecionado | null) {
 	selecao.modelo = modelo;
 	guardar();

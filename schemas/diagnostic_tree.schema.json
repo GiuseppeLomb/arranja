@@ -4,53 +4,132 @@
 	"title": "Árvore de diagnóstico",
 	"description": "Determinística: uma pergunta de cada vez; termina em guia(s), técnico ou dados insuficientes. Sem ciclos.",
 	"type": "object",
-	"required": ["id", "titulo", "sintoma", "appliance_type", "aplicavel_a", "inicio", "nos", "sources"],
+	"required": [
+		"id",
+		"titulo",
+		"sintoma",
+		"appliance_type",
+		"aplicavel_a",
+		"inicio",
+		"nos",
+		"sources"
+	],
 	"additionalProperties": false,
 	"properties": {
-		"id": { "$ref": "common.schema.json#/$defs/id" },
-		"titulo": { "type": "string", "minLength": 5, "maxLength": 120 },
-		"sintoma": { "type": "string", "minLength": 3, "maxLength": 80, "description": "Texto curto mostrado no passo Problema." },
-		"appliance_type": { "$ref": "common.schema.json#/$defs/id" },
-		"aplicavel_a": { "$ref": "common.schema.json#/$defs/aplicavelA" },
-		"codigos": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/id" } },
-		"inicio": { "$ref": "common.schema.json#/$defs/id" },
+		"id": {
+			"$ref": "common.schema.json#/$defs/id"
+		},
+		"titulo": {
+			"type": "string",
+			"minLength": 5,
+			"maxLength": 120
+		},
+		"sintoma": {
+			"type": "string",
+			"minLength": 3,
+			"maxLength": 80,
+			"description": "Texto curto mostrado no passo Problema."
+		},
+		"appliance_type": {
+			"$ref": "common.schema.json#/$defs/id"
+		},
+		"aplicavel_a": {
+			"$ref": "common.schema.json#/$defs/aplicavelA"
+		},
+		"codigos": {
+			"type": "array",
+			"items": {
+				"$ref": "common.schema.json#/$defs/id"
+			}
+		},
+		"inicio": {
+			"$ref": "common.schema.json#/$defs/id"
+		},
 		"nos": {
 			"type": "object",
 			"minProperties": 2,
-			"propertyNames": { "$ref": "common.schema.json#/$defs/id" },
-			"additionalProperties": { "$ref": "#/$defs/no" }
+			"propertyNames": {
+				"$ref": "common.schema.json#/$defs/id"
+			},
+			"additionalProperties": {
+				"$ref": "#/$defs/no"
+			}
 		},
-		"sources": { "$ref": "common.schema.json#/$defs/sources" },
-		"example": { "$ref": "common.schema.json#/$defs/example" }
+		"sources": {
+			"$ref": "common.schema.json#/$defs/sources"
+		},
+		"example": {
+			"$ref": "common.schema.json#/$defs/example"
+		},
+		"ordem": {
+			"type": "integer",
+			"minimum": 1,
+			"maximum": 999,
+			"description": "Posição na lista de sintomas (os mais comuns primeiro)."
+		}
 	},
 	"$defs": {
 		"no": {
 			"type": "object",
-			"required": ["tipo"],
+			"required": [
+				"tipo"
+			],
 			"properties": {
-				"tipo": { "enum": ["pergunta", "guia", "tecnico", "dados_insuficientes"] }
+				"tipo": {
+					"enum": [
+						"pergunta",
+						"guia",
+						"tecnico",
+						"dados_insuficientes"
+					]
+				}
 			},
 			"allOf": [
 				{
-					"if": { "properties": { "tipo": { "const": "pergunta" } } },
+					"if": {
+						"properties": {
+							"tipo": {
+								"const": "pergunta"
+							}
+						}
+					},
 					"then": {
-						"required": ["texto", "respostas"],
+						"required": [
+							"texto",
+							"respostas"
+						],
 						"additionalProperties": false,
 						"properties": {
 							"tipo": true,
-							"texto": { "type": "string", "minLength": 5, "maxLength": 200 },
-							"ajuda": { "type": "string", "maxLength": 400 },
+							"texto": {
+								"type": "string",
+								"minLength": 5,
+								"maxLength": 200
+							},
+							"ajuda": {
+								"type": "string",
+								"maxLength": 400
+							},
 							"respostas": {
 								"type": "array",
 								"minItems": 2,
 								"maxItems": 6,
 								"items": {
 									"type": "object",
-									"required": ["texto", "ir_para"],
+									"required": [
+										"texto",
+										"ir_para"
+									],
 									"additionalProperties": false,
 									"properties": {
-										"texto": { "type": "string", "minLength": 1, "maxLength": 80 },
-										"ir_para": { "$ref": "common.schema.json#/$defs/id" }
+										"texto": {
+											"type": "string",
+											"minLength": 1,
+											"maxLength": 80
+										},
+										"ir_para": {
+											"$ref": "common.schema.json#/$defs/id"
+										}
 									}
 								}
 							}
@@ -58,35 +137,73 @@
 					}
 				},
 				{
-					"if": { "properties": { "tipo": { "const": "guia" } } },
+					"if": {
+						"properties": {
+							"tipo": {
+								"const": "guia"
+							}
+						}
+					},
 					"then": {
-						"required": ["guias"],
+						"required": [
+							"guias"
+						],
 						"additionalProperties": false,
 						"properties": {
 							"tipo": true,
-							"guias": { "type": "array", "minItems": 1, "items": { "$ref": "common.schema.json#/$defs/id" } },
-							"nota": { "type": "string", "maxLength": 400 }
+							"guias": {
+								"type": "array",
+								"minItems": 1,
+								"items": {
+									"$ref": "common.schema.json#/$defs/id"
+								}
+							},
+							"nota": {
+								"type": "string",
+								"maxLength": 400
+							}
 						}
 					}
 				},
 				{
-					"if": { "properties": { "tipo": { "const": "tecnico" } } },
+					"if": {
+						"properties": {
+							"tipo": {
+								"const": "tecnico"
+							}
+						}
+					},
 					"then": {
-						"required": ["motivo"],
+						"required": [
+							"motivo"
+						],
 						"additionalProperties": false,
 						"properties": {
 							"tipo": true,
-							"motivo": { "type": "string", "minLength": 10, "maxLength": 400 }
+							"motivo": {
+								"type": "string",
+								"minLength": 10,
+								"maxLength": 400
+							}
 						}
 					}
 				},
 				{
-					"if": { "properties": { "tipo": { "const": "dados_insuficientes" } } },
+					"if": {
+						"properties": {
+							"tipo": {
+								"const": "dados_insuficientes"
+							}
+						}
+					},
 					"then": {
 						"additionalProperties": false,
 						"properties": {
 							"tipo": true,
-							"nota": { "type": "string", "maxLength": 400 }
+							"nota": {
+								"type": "string",
+								"maxLength": 400
+							}
 						}
 					}
 				}

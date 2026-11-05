@@ -1,0 +1,45 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/error_code.schema.json
+- id: becken-lr-e30
+  brand: becken
+  appliance_type: maquina-lavar-roupa
+  code: E30
+  descricao: "Problema no fecho da porta: a porta não está bem fechada. Fecha bem a porta e reinicia; se continuar, contacta o apoio ao cliente. (Código indicado no manual Becken BoostWash BWM3639/BWM3640/BWM3641.)"
+  arvore: lr-nao-liga
+  guias:
+    - lr-verificar-energia-bloqueio
+  sources:
+    - url: https://becken.cors.digital/wp-content/uploads/manuais/6383395_MAQ_LAVAR_ROUPA_BECKEN_BoostWash_BWM3641_manual.pdf
+      titulo: Becken BoostWash BWM3639/BWM3640/BWM3641 — Manual de instruções (secção PT)
+      pagina: "124"
+      consultado_em: 2026-11-04
+- id: becken-lr-e10
+  brand: becken
+  appliance_type: maquina-lavar-roupa
+  code: E10
+  descricao: "Problema na entrada de água: torneira fechada ou com pouco caudal, filtro da válvula de entrada obstruído, mangueira torcida ou falta de água na rede. Se continuar, contacta o apoio ao cliente. (Código indicado no manual Becken BoostWash BWM3639/BWM3640/BWM3641.)"
+  arvore: lr-nao-enche-agua
+  guias:
+    - lr-limpar-filtro-entrada
+    - lr-apertar-ligacoes-mangueiras
+    - lr-verificar-energia-bloqueio
+  sources:
+    - url: https://becken.cors.digital/wp-content/uploads/manuais/6383395_MAQ_LAVAR_ROUPA_BECKEN_BoostWash_BWM3641_manual.pdf
+      titulo: Becken BoostWash BWM3639/BWM3640/BWM3641 — Manual de instruções (secção PT)
+      pagina: "124"
+      consultado_em: 2026-11-04
+- id: becken-lr-e21
+  brand: becken
+  appliance_type: maquina-lavar-roupa
+  code: E21
+  descricao: "Problema de escoamento: mangueira de descarga obstruída ou torcida, ou bomba de escoamento obstruída. Lava e endireita a mangueira e limpa o filtro da bomba; se continuar, contacta o apoio ao cliente. (Código indicado no manual Becken BoostWash BWM3639/BWM3640/BWM3641.)"
+  arvore: lr-nao-escoa
+  guias:
+    - lr-verificar-mangueira-escoamento
+    - lr-esvaziar-agua
+    - lr-limpar-filtro-bomba
+  sources:
+    - url: https://becken.cors.digital/wp-content/uploads/manuais/6383395_MAQ_LAVAR_ROUPA_BECKEN_BoostWash_BWM3641_manual.pdf
+      titulo: Becken BoostWash BWM3639/BWM3640/BWM3641 — Manual de instruções (secção PT)
+      pagina: "124"
+      consultado_em: 2026-11-04

@@ -1,8 +1,0 @@
-# Marcas referidas pelo conteúdo (guias, árvores, códigos, famílias).
-# Só o nome em texto — nunca logótipos. Esquema: schemas/brand.schema.json
-# As marcas dos modelos EPREL são acrescentadas automaticamente no build.
-
-- id: exemplo
-  nome: Marca Exemplo
-  pagina_pecas: https://example.com/pecas
-  example: true

@@ -8,7 +8,7 @@
 	const REPO = 'https://github.com/GiuseppeLomb/arranja';
 	const exemploFamilia = `# data/familias/<marca>.yaml
 - id: marca-serie-abc
-  brand: marca                  # id da marca (data/marcas.yaml)
+  brand: marca                  # id da marca (data/brands.yaml)
   appliance_type: maquina-lavar-roupa
   nome: "Marca Série ABC"
   prefixos: [ABC]               # modelos começados por ABC…

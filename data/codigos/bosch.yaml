@@ -1,0 +1,86 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/error_code.schema.json
+- id: bosch-lr-e30-80
+  brand: bosch
+  appliance_type: maquina-lavar-roupa
+  code: E:30/-80
+  aliases:
+    - E30-80
+    - E:30 -80
+  descricao: "A água não está a escoar. Causas indicadas pela Bosch: mangueira ou tubo de descarga dobrado, entalado ou entupido, bomba de escoamento obstruída, tampa da bomba mal montada, mangueira demasiado alta ou detergente a mais."
+  arvore: lr-nao-escoa
+  guias:
+    - lr-verificar-mangueira-escoamento
+    - lr-limpar-filtro-bomba
+  sources:
+    - url: https://media3.bosch-home.com/Documents/9001742533_A.pdf
+      titulo: Bosch WAX28EH0ES — Manual do utilizador e instruções de instalação (PT)
+      pagina: 49–50
+      consultado_em: 2026-11-04
+- id: bosch-lr-e36
+  brand: bosch
+  appliance_type: maquina-lavar-roupa
+  code: E:36
+  aliases:
+    - E:36/-25
+    - E:36/-26
+    - E36
+  descricao: A bomba de escoamento está obstruída. A Bosch indica limpar a bomba de escoamento.
+  arvore: lr-nao-escoa
+  guias:
+    - lr-esvaziar-agua
+    - lr-limpar-filtro-bomba
+  sources:
+    - url: https://media3.bosch-home.com/Documents/9001742533_A.pdf
+      titulo: Bosch WAX28EH0ES — Manual do utilizador e instruções de instalação (PT)
+      pagina: "50"
+      consultado_em: 2026-11-04
+- id: bosch-lr-e38
+  brand: bosch
+  appliance_type: maquina-lavar-roupa
+  code: E:38
+  aliases:
+    - E:38/-25
+    - E:38/-26
+    - E38
+  descricao: "A Bosch associa este código à bomba de escoamento obstruída: indica primeiro limpar o tambor e, se o erro voltar, limpar a bomba de escoamento. Também pode estar entupida a abertura de entrada na borracha da porta."
+  guias:
+    - lr-ciclo-limpeza-tambor
+    - lr-limpar-filtro-bomba
+    - lr-limpar-borracha-porta
+  sources:
+    - url: https://media3.bosch-home.com/Documents/9001742533_A.pdf
+      titulo: Bosch WAX28EH0ES — Manual do utilizador e instruções de instalação (PT)
+      pagina: "50"
+      consultado_em: 2026-11-04
+- id: bosch-lr-e30-10
+  brand: bosch
+  appliance_type: maquina-lavar-roupa
+  code: E:30/-10
+  aliases:
+    - E30-10
+    - E:30 -10
+  descricao: A água não está a entrar. A Bosch indica verificar se a torneira está aberta, se a mangueira de admissão está dobrada ou entalada e se o filtro de rede da entrada de água está entupido.
+  arvore: lr-nao-enche-agua
+  guias:
+    - lr-limpar-filtro-entrada
+    - lr-apertar-ligacoes-mangueiras
+    - lr-verificar-energia-bloqueio
+  sources:
+    - url: https://media3.bosch-home.com/Documents/9001742533_A.pdf
+      titulo: Bosch WAX28EH0ES — Manual do utilizador e instruções de instalação (PT)
+      pagina: 50–51
+      consultado_em: 2026-11-04
+- id: bosch-lr-e30-20
+  brand: bosch
+  appliance_type: maquina-lavar-roupa
+  code: E:30/-20
+  aliases:
+    - E30-20
+    - E:30 -20
+  descricao: A Bosch indica «válvula magnética avariada» e manda contactar a assistência técnica. Também pode surgir com detergente a mais ou se for acrescentada água durante o funcionamento.
+  sources:
+    - url: https://media3.bosch-home.com/Documents/9001742533_A.pdf
+      titulo: Bosch WAX28EH0ES — Manual do utilizador e instruções de instalação (PT)
+      pagina: "51"
+      consultado_em: 2026-11-04

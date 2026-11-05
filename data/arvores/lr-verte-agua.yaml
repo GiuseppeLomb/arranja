@@ -1,0 +1,75 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/diagnostic_tree.schema.json
+appliance_type: maquina-lavar-roupa
+aplicavel_a:
+  - brand: "*"
+id: lr-verte-agua
+ordem: 5
+titulo: A máquina de lavar roupa verte água
+sintoma: Verte água
+inicio: onde
+nos:
+  onde:
+    tipo: pergunta
+    texto: De onde parece vir a água?
+    ajuda: "Se a água continuar a sair, para a máquina e desliga-a da corrente: com fugas há risco de choque elétrico (Samsung). Fecha também a torneira (Bosch) e seca o chão antes de procurares a origem."
+    respostas:
+      - texto: Das ligações das mangueiras, atrás
+        ir_para: fim-ligacoes
+      - texto: Da frente, em baixo (zona do filtro)
+        ir_para: fim-filtro
+      - texto: Da porta
+        ir_para: fim-porta
+      - texto: Da gaveta do detergente ou com muita espuma
+        ir_para: fim-espuma
+      - texto: De onde a mangueira de escoamento descarrega
+        ir_para: fim-escoamento
+      - texto: Não consigo ver
+        ir_para: fim-tecnico
+  fim-ligacoes:
+    tipo: guia
+    guias:
+      - lr-apertar-ligacoes-mangueiras
+  fim-filtro:
+    tipo: guia
+    guias:
+      - lr-limpar-filtro-bomba
+    nota: Um filtro mal fechado pode deixar sair água pela frente.
+  fim-porta:
+    tipo: guia
+    guias:
+      - lr-limpar-borracha-porta
+  fim-espuma:
+    tipo: guia
+    guias:
+      - lr-reduzir-detergente-enxaguar
+      - lr-limpar-gaveta-detergente
+  fim-escoamento:
+    tipo: guia
+    guias:
+      - lr-verificar-mangueira-escoamento
+    nota: "Se o esgoto da casa estiver entupido, a água pode transbordar aí (LG): nesse caso chama um canalizador."
+  fim-tecnico:
+    tipo: tecnico
+    motivo: "Se não encontras a origem, ou se a água sai da própria mangueira de entrada, não voltes a usar a máquina: desliga-a da corrente, fecha a torneira e contacta a assistência (ou um canalizador, se a fuga for da torneira). A Samsung avisa que continuar a usá-la pode causar choque elétrico."
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001742533_A.pdf
+    titulo: Bosch WAX28EH0ES — Manual do utilizador e instruções de instalação (PT)
+    pagina: "60"
+    consultado_em: 2026-11-04
+  - url: https://media3.bosch-home.com/Documents/9001079646_B.pdf
+    titulo: Bosch — Manual de utilização e de instalação, máquina de lavar roupa (PT)
+    pagina: 19, 22
+    consultado_em: 2026-11-04
+  - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
+    titulo: Samsung WW**BB — Washing Machine User manual (EN)
+    pagina: 10, 12, 22, 54, 61
+    consultado_em: 2026-11-04
+  - url: https://gscs-b2c.lge.com/open/downloadFile?fileId=JejH72VThF8Jn38SlMQ9eQ
+    titulo: LG — Owner's manual, washing machine (EN)
+    pagina: 6, 35
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7245211_7245212_7245215_7245216_MAQ_LAVAR_ROUPA_BECKEN_BWM5379_BWM5381_manual.pdf
+    titulo: Becken BWM5379/BWM5381 — Manual de instruções (secção PT)
+    pagina: 111, 121, 124–125
+    consultado_em: 2026-11-04

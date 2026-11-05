@@ -22,7 +22,8 @@ Obrigado! O Arranja só é útil se for **fiável**. Por isso, as regras de veri
 5. **Sem alojar manuais/PDFs de fabricantes** — só links para as páginas oficiais.
 6. **Sem logótipos de marcas** (só o nome em texto) e **sem links de afiliados**.
 7. **iFixit:** conteúdo derivado leva `attribution` com o link para a página original (o `validate` exige-o).
-8. **Revisão antes do merge.** Todo o conteúdo é revisto por outra pessoa. O CI corre `npm run validate`.
+8. **Só domínios permitidos.** Todas as URLs (fontes, links de peças, atribuições) têm de pertencer a um domínio de `data/fontes-permitidas.yaml`: sites e repositórios oficiais dos fabricantes, retalhistas para as suas marcas próprias, e iFixit. Blogs, fóruns, sites de SEO e conteúdo gerado por IA não são fontes. Para acrescentar um domínio, mostra no PR que é oficial.
+9. **Revisão antes do merge.** Todo o conteúdo é revisto por outra pessoa. O CI corre `npm run validate`.
 
 ## Segurança
 
@@ -37,7 +38,7 @@ Obrigado! O Arranja só é útil se for **fiável**. Por isso, as regras de veri
 
 Os esquemas estão em `/schemas`. Um ficheiro por guia (`data/guias/<id>.yaml`) e por árvore
 (`data/arvores/<id>.yaml`), com o `id` igual ao nome do ficheiro. Códigos de erro e famílias são listas por
-marca (`data/codigos/<marca>.yaml`, `data/familias/<marca>.yaml`). Marcas novas entram em `data/marcas.yaml`.
+marca (`data/codigos/<marca>.yaml`, `data/familias/<marca>.yaml`). Marcas novas entram em `data/brands.yaml`.
 
 ### Ligação a marcas, famílias e modelos (`aplicavel_a`)
 
@@ -117,6 +118,8 @@ npm run dev        # testa no browser
 npm run validate   # tem de passar
 npm run check      # tem de passar
 ```
+
+As marcas estão em `data/brands.yaml` (lista curada). O grupo ou o distribuidor de uma marca só entram com fonte oficial.
 
 Ao contribuir, aceitas que o código seja publicado sob MIT e o conteúdo sob CC BY-NC-SA 4.0.
 Os dados em `data/eprel/` são gerados automaticamente — não os edites à mão.

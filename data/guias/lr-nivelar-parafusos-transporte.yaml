@@ -1,0 +1,48 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: maquina-lavar-roupa
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: lr-nivelar-parafusos-transporte
+titulo: Nivelar a máquina e retirar os parafusos de transporte
+resumo: Parafusos de transporte esquecidos ou uma máquina desnivelada causam vibração e barulho forte na centrifugação.
+perigos:
+  - peso
+  - eletricidade
+ferramentas:
+  - chave-inglesa
+  - nivel-bolha
+tempo_estimado: 30
+passos:
+  - texto: Se a máquina é nova ou foi mudada de casa, vê na parte de trás se ainda tem os parafusos de transporte.
+  - texto: Para os retirar, desaperta-os com a chave indicada no manual, tira-os e tapa os orifícios com as tampas fornecidas. Guarda os parafusos para uma mudança futura.
+  - texto: Pousa um nível de bolha em cima da máquina, nos dois sentidos.
+    imagem:
+      src: imagens/guias/lavar-roupa/nivelar.svg
+      alt: Máquina de lavar vista de frente com um nível de bolha em cima e os pés reguláveis em destaque.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: Desaperta a contraporca de cada pé e roda o pé até a máquina ficar nivelada, com os quatro pés bem assentes no chão.
+  - texto: Aperta as contraporcas contra a máquina para os pés não rodarem com a vibração.
+  - texto: Confirma que a máquina não encosta a móveis nem à parede.
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001742533_A.pdf
+    titulo: Bosch WAX28EH0ES — Manual do utilizador e instruções de instalação (PT)
+    pagina: 13–14, 16–17, 55, 57
+    consultado_em: 2026-11-04
+  - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
+    titulo: Samsung WW**BB — Washing Machine User manual (EN)
+    pagina: 19, 59
+    consultado_em: 2026-11-04
+  - url: https://gscs-b2c.lge.com/open/downloadFile?fileId=JejH72VThF8Jn38SlMQ9eQ
+    titulo: LG — Owner's manual, washing machine (EN)
+    pagina: 12, 35
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7245211_7245212_7245215_7245216_MAQ_LAVAR_ROUPA_BECKEN_BWM5379_BWM5381_manual.pdf
+    titulo: Becken BWM5379/BWM5381 — Manual de instruções (secção PT)
+    pagina: 103–104, 125
+    consultado_em: 2026-11-04

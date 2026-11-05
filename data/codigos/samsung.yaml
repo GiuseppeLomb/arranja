@@ -1,0 +1,119 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/error_code.schema.json
+- id: samsung-lr-oc
+  brand: samsung
+  appliance_type: maquina-lavar-roupa
+  code: OC
+  descricao: A água transbordou. A Samsung indica reiniciar depois da centrifugação e, se o código continuar, contactar a assistência.
+  sources:
+    - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
+      titulo: Samsung WW**BB — Washing Machine User manual (EN)
+      pagina: "62"
+      consultado_em: 2026-11-04
+- id: samsung-lr-lc
+  brand: samsung
+  appliance_type: maquina-lavar-roupa
+  code: LC
+  aliases:
+    - LC1
+  descricao: "Verificar a mangueira de escoamento: a ponta não deve estar pousada no chão e a mangueira não pode estar entupida. Se o código continuar, a Samsung manda contactar a assistência."
+  guias:
+    - lr-verificar-mangueira-escoamento
+  sources:
+    - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
+      titulo: Samsung WW**BB — Washing Machine User manual (EN)
+      pagina: "62"
+      consultado_em: 2026-11-04
+- id: samsung-lr-3c
+  brand: samsung
+  appliance_type: maquina-lavar-roupa
+  code: 3C
+  descricao: Verificar o funcionamento do motor do tambor. Tenta reiniciar o programa; se o código voltar, contacta a assistência.
+  sources:
+    - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
+      titulo: Samsung WW**BB — Washing Machine User manual (EN)
+      pagina: "62"
+      consultado_em: 2026-11-04
+- id: samsung-lr-3cp
+  brand: samsung
+  appliance_type: maquina-lavar-roupa
+  code: 3CP
+  descricao: O comando eletrónico precisa de ser verificado. Tenta reiniciar o programa; se o código voltar, contacta a assistência.
+  sources:
+    - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
+      titulo: Samsung WW**BB — Washing Machine User manual (EN)
+      pagina: "63"
+      consultado_em: 2026-11-04
+- id: samsung-lr-uc
+  brand: samsung
+  appliance_type: maquina-lavar-roupa
+  code: UC
+  descricao: Tensão baixa detetada ou problema de alimentação. Confirma que a ficha está ligada e que há corrente; se o código continuar, contacta a assistência.
+  guias:
+    - lr-verificar-energia-bloqueio
+  sources:
+    - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
+      titulo: Samsung WW**BB — Washing Machine User manual (EN)
+      pagina: "63"
+      consultado_em: 2026-11-04
+- id: samsung-lr-hc
+  brand: samsung
+  appliance_type: maquina-lavar-roupa
+  code: HC
+  descricao: Verificação de aquecimento a alta temperatura. Se o código continuar, a Samsung manda contactar a assistência.
+  sources:
+    - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
+      titulo: Samsung WW**BB — Washing Machine User manual (EN)
+      pagina: "63"
+      consultado_em: 2026-11-04
+- id: samsung-lr-1c
+  brand: samsung
+  appliance_type: maquina-lavar-roupa
+  code: 1C
+  descricao: O sensor do nível de água não está a funcionar bem. Desliga a máquina e reinicia o programa; se o código voltar, contacta a assistência.
+  sources:
+    - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
+      titulo: Samsung WW**BB — Washing Machine User manual (EN)
+      pagina: "63"
+      consultado_em: 2026-11-04
+- id: samsung-lr-ac
+  brand: samsung
+  appliance_type: maquina-lavar-roupa
+  code: AC
+  descricao: Falha de comunicação entre placas eletrónicas da máquina. Desliga a máquina e reinicia o programa; se o código voltar, contacta a assistência.
+  sources:
+    - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
+      titulo: Samsung WW**BB — Washing Machine User manual (EN)
+      pagina: "63"
+      consultado_em: 2026-11-04
+- id: samsung-lr-ac6
+  brand: samsung
+  appliance_type: maquina-lavar-roupa
+  code: AC6
+  descricao: Falha de comunicação entre a placa principal e a placa do inversor. Segundo a Samsung, a máquina pode voltar sozinha ao normal; se não voltar, desliga-a e reinicia o programa. Se o código continuar, contacta a assistência.
+  sources:
+    - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
+      titulo: Samsung WW**BB — Washing Machine User manual (EN)
+      pagina: "63"
+      consultado_em: 2026-11-04
+- id: samsung-lr-8c
+  brand: samsung
+  appliance_type: maquina-lavar-roupa
+  code: 8C
+  descricao: O sensor MEMS da máquina não está a funcionar bem. Desliga a máquina e reinicia o programa; se o código voltar, contacta a assistência.
+  sources:
+    - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
+      titulo: Samsung WW**BB — Washing Machine User manual (EN)
+      pagina: "63"
+      consultado_em: 2026-11-04
+- id: samsung-lr-dc1
+  brand: samsung
+  appliance_type: maquina-lavar-roupa
+  code: DC1
+  descricao: O fecho da porta não está a trancar ou destrancar bem. Desliga a máquina e reinicia o programa; se o código voltar, contacta a assistência.
+  arvore: lr-porta-nao-abre
+  sources:
+    - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
+      titulo: Samsung WW**BB — Washing Machine User manual (EN)
+      pagina: "63"
+      consultado_em: 2026-11-04

@@ -96,8 +96,8 @@
 			{#if aCarregar && todos.length === 0}
 				<div class="carregar"><Skeleton altura="56px" raio="16px" linhas={3} /></div>
 			{:else if todos.length === 0}
-				<EmptyState titulo="Sem resultados" texto="Ainda não temos dados verificados para esta pesquisa." nivel="h3">
-					<Button variante="secundaria" href={resolve('/reparar')}>Escolher o eletrodoméstico</Button>
+				<EmptyState titulo="Sem resultados" texto="Não encontrámos esta marca, modelo ou código. Podes sempre diagnosticar pelo sintoma." nivel="h3">
+					<Button variante="primaria" href={resolve('/reparar')}>Diagnosticar por sintoma</Button>
 					<Button variante="fantasma" href={resolve('/contribuir')}>Contribuir</Button>
 				</EmptyState>
 			{:else}

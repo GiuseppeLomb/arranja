@@ -1,6 +1,7 @@
 import bruto from '#lib/generated/conteudo.json';
 import type { Arvore, CodigoErro, Conteudo, Familia, Ferramenta, Guia, Marca, TipoEletrodomestico } from './tipos';
 import { corresponde, type Correspondencia } from './correspondencia';
+import { normalizarModelo } from './normalizar';
 
 export const conteudo = bruto as unknown as Conteudo;
 
@@ -17,9 +18,9 @@ export const ferramentas: ReadonlyMap<string, Ferramenta> = porId(conteudo.ferra
 export const nomeMarca = (id: string) => marcas.get(id)?.nome ?? id;
 export const nomeTipo = (id: string) => tipos.get(id)?.nome ?? id;
 
-/** Marcas a mostrar para um tipo: com modelos EPREL ou com conteúdo próprio. */
+/** Marcas a mostrar para um tipo: lista curada, marcas com modelos EPREL e marcas com conteúdo. */
 export function marcasDoTipo(tipo: string): Marca[] {
-	return conteudo.marcas.filter((m) => (m.eprel[tipo] ?? 0) > 0 || m.conteudo.includes(tipo));
+	return conteudo.marcas.filter((m) => m.curada || (m.eprel[tipo] ?? 0) > 0 || m.conteudo.includes(tipo));
 }
 
 export const haDadosEprel = conteudo.eprel.grupos.length > 0;
@@ -29,8 +30,11 @@ export interface Encontrado<T> {
 	c: Correspondencia;
 }
 
-/** Conteúdo aplicável a tipo + marca + modelo (normalizado ou null). Ordenado por especificidade. */
-export function conteudoPara(tipo: string, marca: string, modelo: string | null) {
+/**
+ * Conteúdo aplicável a tipo + marca (opcional) + modelo (normalizado, opcional).
+ * Sem marca, só entra o conteúdo universal (brand "*"). Ordenado do mais específico para o geral.
+ */
+export function conteudoPara(tipo: string, marca: string | null, modelo: string | null) {
 	const filtrar = <T extends { appliance_type: string; aplicavel_a?: Guia['aplicavel_a'] }>(xs: T[], brandFixa?: (x: T) => string) => {
 		const r: Encontrado<T>[] = [];
 		for (const x of xs) {
@@ -44,9 +48,18 @@ export function conteudoPara(tipo: string, marca: string, modelo: string | null)
 	};
 	return {
 		codigos: filtrar(conteudo.codigos, (c) => c.brand),
-		arvores: filtrar(conteudo.arvores),
+		arvores: filtrar([...conteudo.arvores].sort((a, b) => (a.ordem ?? 999) - (b.ordem ?? 999))),
 		guias: filtrar(conteudo.guias)
 	};
+}
+
+/** Códigos de erro de um tipo que começam pelo texto indicado (todas as marcas). */
+export function codigosDoTipo(tipo: string, consulta: string): CodigoErro[] {
+	const q = normalizarModelo(consulta);
+	if (!q) return [];
+	return conteudo.codigos.filter(
+		(c) => c.appliance_type === tipo && [c.code, ...(c.aliases ?? [])].some((x) => normalizarModelo(x).startsWith(q))
+	);
 }
 
 /** Famílias de uma marca/tipo que correspondem a um modelo. */

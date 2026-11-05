@@ -1,0 +1,42 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: maquina-lavar-roupa
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: lr-ciclo-limpeza-tambor
+titulo: Fazer o ciclo de limpeza do tambor
+resumo: Um programa de limpeza a alta temperatura, sem roupa, ajuda a evitar maus cheiros e depósitos.
+perigos:
+  - temperatura
+ferramentas: []
+tempo_estimado: 10
+passos:
+  - texto: Com a máquina desligada, retira toda a roupa e objetos do tambor.
+  - texto: Volta a ligar a máquina à corrente e abre a torneira da água.
+  - texto: Escolhe o programa de limpeza do tambor da tua máquina (o nome varia de marca para marca). Se a máquina não tiver este programa, a Bosch indica como alternativa lavar a 60 °C ou mais.
+    imagem:
+      src: imagens/guias/lavar-roupa/limpeza-tambor.svg
+      alt: Tambor de uma máquina de lavar, vazio, com setas circulares a indicar o ciclo de limpeza.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: Usa só o produto que o manual da tua máquina indica para este programa — as indicações mudam de marca para marca (há quem peça detergente em pó, quem peça anticalcário e quem peça nada).
+  - texto: No fim, deixa a porta e a gaveta do detergente abertas para secarem.
+    aviso: Se houver crianças em casa, não deixes a porta aberta sem vigilância.
+  - texto: Repete com regularidade (a LG sugere uma vez por mês; a Samsung avisa a cada 40 lavagens).
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001742533_A.pdf
+    titulo: Bosch WAX28EH0ES — Manual do utilizador e instruções de instalação (PT)
+    pagina: "44"
+    consultado_em: 2026-11-04
+  - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
+    titulo: Samsung WW**BB — Washing Machine User manual (EN)
+    pagina: "51"
+    consultado_em: 2026-11-04
+  - url: https://gscs-b2c.lge.com/open/downloadFile?fileId=JejH72VThF8Jn38SlMQ9eQ
+    titulo: LG — Owner's manual, washing machine (EN)
+    pagina: 30, 32
+    consultado_em: 2026-11-04

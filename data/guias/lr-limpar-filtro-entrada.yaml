@@ -1,0 +1,58 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: maquina-lavar-roupa
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: lr-limpar-filtro-entrada
+titulo: Limpar o filtro da entrada de água
+resumo: Um pequeno filtro de rede na ligação da mangueira pode entupir com calcário. Entupido, a máquina enche devagar ou não enche.
+avisos:
+  - "Antes de começares (e de desligares a máquina), a Bosch recomenda aliviar a pressão da mangueira: com a torneira fechada, liga um programa que não seja de enxaguar e centrifugar nem de escoar, durante cerca de 40 segundos, e para-o."
+perigos:
+  - agua
+  - eletricidade
+ferramentas:
+  - alicate-pontas
+  - escova
+  - toalhas
+  - balde
+tempo_estimado: 20
+passos:
+  - texto: Confirma que a torneira da água está fechada.
+  - texto: "Desenrosca a mangueira de entrada na parte de trás da máquina. Tapa a ponta com um pano: pode sair alguma água."
+    imagem:
+      src: imagens/guias/lavar-roupa/filtro-entrada.svg
+      alt: Ligação da mangueira de entrada na traseira da máquina, com o pequeno filtro de rede retirado e um alicate de pontas.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: Puxa o filtro de rede para fora com um alicate de pontas, sem o apertar demasiado.
+  - texto: Limpa o filtro com uma escova e passa-o por água corrente até ficar sem depósitos.
+  - texto: "Algumas mangueiras têm também um filtro na ponta que liga à torneira: se for o caso, limpa-o da mesma forma."
+    aviso: "Se essa ponta tiver uma válvula Aquastop elétrica, nunca a mergulhes em água: há risco de choque elétrico (Bosch)."
+  - texto: Volta a encaixar o filtro e enrosca a mangueira, bem apertada.
+  - texto: Abre a torneira e confirma que não há fugas nas ligações.
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001742533_A.pdf
+    titulo: Bosch WAX28EH0ES — Manual do utilizador e instruções de instalação (PT)
+    pagina: "15"
+    consultado_em: 2026-11-04
+  - url: https://media3.bosch-home.com/Documents/9001079646_B.pdf
+    titulo: Bosch — Manual de utilização e de instalação, máquina de lavar roupa (PT)
+    pagina: "18"
+    consultado_em: 2026-11-04
+  - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
+    titulo: Samsung WW**BB — Washing Machine User manual (EN)
+    pagina: "53"
+    consultado_em: 2026-11-04
+  - url: https://gscs-b2c.lge.com/open/downloadFile?fileId=JejH72VThF8Jn38SlMQ9eQ
+    titulo: LG — Owner's manual, washing machine (EN)
+    pagina: "30"
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7245211_7245212_7245215_7245216_MAQ_LAVAR_ROUPA_BECKEN_BWM5379_BWM5381_manual.pdf
+    titulo: Becken BWM5379/BWM5381 — Manual de instruções (secção PT)
+    pagina: 121–122
+    consultado_em: 2026-11-04

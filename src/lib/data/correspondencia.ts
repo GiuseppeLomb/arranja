@@ -42,7 +42,7 @@ export function testarFamilia(f: Pick<Familia, 'prefixos' | 'regex' | 'modelos'>
 export function corresponde(
 	regras: AplicavelA[] | undefined,
 	familias: ReadonlyMap<string, Familia>,
-	marca: string,
+	marca: string | null,
 	modelo: string | null
 ): Correspondencia | null {
 	if (!regras || regras.length === 0) return { nivel: 'marca' };

@@ -1,0 +1,57 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: maquina-lavar-roupa
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: lr-esvaziar-agua
+titulo: Esvaziar a água da máquina à mão
+resumo: Para tirar a água que ficou no tambor quando a máquina não escoa ou antes de abrir o filtro da bomba.
+perigos:
+  - agua
+  - temperatura
+  - eletricidade
+avisos:
+  - "Pode sair mais água do que esperas: usa um recipiente largo e baixo e tem panos por perto."
+ferramentas:
+  - balde
+  - toalhas
+  - lanterna
+tempo_estimado: 20
+passos:
+  - texto: Se a máquina lavou a temperatura alta, espera que a água arrefeça antes de começar.
+    aviso: A água de lavagem pode estar muito quente.
+  - texto: Abre a tampa de acesso ao filtro, em baixo, na frente da máquina.
+    imagem:
+      src: imagens/guias/lavar-roupa/esvaziar-agua.svg
+      alt: Frente de uma máquina de lavar com a tampa inferior aberta e uma mangueira curta a escorrer água para um tabuleiro.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: Põe por baixo um recipiente largo e baixo e espalha panos à volta.
+  - texto: Se a máquina tiver uma mangueira de esvaziamento de emergência, puxa-a, segura a ponta sobre o recipiente e tira-lhe a tampa para a água escorrer. Se não tiver, desenrosca muito devagar a tampa do filtro só o suficiente para a água começar a sair.
+  - texto: Quando o recipiente estiver quase cheio, volta a tapar, esvazia-o e repete até deixar de sair água.
+  - texto: Volta a pôr a tampa na mangueira (ou fecha bem o filtro), arruma a mangueira no suporte e fecha a tampa de acesso.
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001742533_A.pdf
+    titulo: Bosch WAX28EH0ES — Manual do utilizador e instruções de instalação (PT)
+    pagina: 46–47
+    consultado_em: 2026-11-04
+  - url: https://media3.bosch-home.com/Documents/9001079646_B.pdf
+    titulo: Bosch — Manual de utilização e de instalação, máquina de lavar roupa (PT)
+    pagina: "17"
+    consultado_em: 2026-11-04
+  - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
+    titulo: Samsung WW**BB — Washing Machine User manual (EN)
+    pagina: "52"
+    consultado_em: 2026-11-04
+  - url: https://gscs-b2c.lge.com/open/downloadFile?fileId=JejH72VThF8Jn38SlMQ9eQ
+    titulo: LG — Owner's manual, washing machine (EN)
+    pagina: "31"
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7245211_7245212_7245215_7245216_MAQ_LAVAR_ROUPA_BECKEN_BWM5379_BWM5381_manual.pdf
+    titulo: Becken BWM5379/BWM5381 — Manual de instruções (secção PT)
+    pagina: 123–124
+    consultado_em: 2026-11-04

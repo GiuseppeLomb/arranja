@@ -1,0 +1,42 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/diagnostic_tree.schema.json
+appliance_type: maquina-lavar-roupa
+aplicavel_a:
+  - brand: "*"
+id: lr-residuos-detergente
+ordem: 10
+titulo: A roupa sai com resíduos de detergente
+sintoma: Roupa com resíduos de detergente
+inicio: gaveta
+nos:
+  gaveta:
+    tipo: pergunta
+    texto: No fim do programa ficam restos de detergente na gaveta?
+    respostas:
+      - texto: Sim
+        ir_para: fim-gaveta
+      - texto: Não
+        ir_para: fim-dose
+  fim-gaveta:
+    tipo: guia
+    guias:
+      - lr-limpar-gaveta-detergente
+      - lr-limpar-filtro-entrada
+    nota: Pouca água a entrar também deixa detergente na gaveta.
+  fim-dose:
+    tipo: guia
+    guias:
+      - lr-reduzir-detergente-enxaguar
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001742533_A.pdf
+    titulo: Bosch WAX28EH0ES — Manual do utilizador e instruções de instalação (PT)
+    pagina: 58–59
+    consultado_em: 2026-11-04
+  - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
+    titulo: Samsung WW**BB — Washing Machine User manual (EN)
+    pagina: 58, 60
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7245211_7245212_7245215_7245216_MAQ_LAVAR_ROUPA_BECKEN_BWM5379_BWM5381_manual.pdf
+    titulo: Becken BWM5379/BWM5381 — Manual de instruções (secção PT)
+    pagina: "125"
+    consultado_em: 2026-11-04

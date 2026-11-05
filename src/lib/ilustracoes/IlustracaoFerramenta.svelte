@@ -94,6 +94,17 @@
 	{:else if id === 'luvas'}
 		<path d="M22 58V31c0-3 4.5-3 4.5 0V18c0-3 4.5-3 4.5 0v-3c0-3 4.5-3 4.5 0v3c0-3 4.5-3 4.5 0v15l3.5-4.5c2-2.5 5.5-.5 4.5 2.5L39 46v12" />
 		<path d="M22 50h17" />
+	{:else if id === 'escova'}
+		<g transform="rotate(-35 32 32)">
+			<rect x="4" y="29" width="34" height="7" rx="3.5" />
+			<rect x="38" y="25" width="20" height="8" rx="2" />
+			<path d="M41 25v-7M45 25v-8M49 25v-8M53 25v-8M57 25v-7" />
+		</g>
+	{:else if id === 'nivel-bolha'}
+		<rect x="4" y="24" width="56" height="16" rx="3" />
+		<rect x="24" y="28" width="16" height="8" rx="4" />
+		<circle cx="32" cy="32" r="2" />
+		<path d="M10 24v6M54 24v6M28 28v8M36 28v8" />
 	{:else}
 		<rect x="10" y="10" width="44" height="44" rx="8" />
 		<path d="M24 24l16 16M40 24L24 40" />

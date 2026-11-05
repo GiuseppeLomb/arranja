@@ -1,0 +1,40 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: maquina-lavar-roupa
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: lr-reduzir-detergente-enxaguar
+titulo: Reduzir o detergente e fazer um enxaguamento extra
+resumo: Detergente a mais faz espuma, deixa resíduos na roupa e pode até fazer verter água.
+perigos:
+  - eletricidade
+ferramentas: []
+tempo_estimado: 10
+passos:
+  - texto: Volta a ligar a máquina e, se a roupa ficou com resíduos, faz um programa só de enxaguamento.
+    imagem:
+      src: imagens/guias/lavar-roupa/dose-detergente.svg
+      alt: Copo doseador de detergente com uma marca a meio a indicar uma dose menor.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: Se houver muita espuma durante a lavagem, a Bosch indica misturar uma colher de sopa de amaciador em meio litro de água e deitá-la no compartimento de dosagem manual do detergente (exceto com microfibras, roupa desportiva ou edredões).
+  - texto: Na próxima lavagem, usa a dose recomendada na embalagem do detergente — menos se a água for macia, a carga pequena ou a roupa pouco suja.
+  - texto: Usa um detergente adequado à máquina e ao tipo de roupa, como indica o manual da tua máquina.
+  - texto: Se os restos ficarem na gaveta, limpa-a (guia «Limpar a gaveta do detergente») e confirma que a torneira está totalmente aberta.
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001742533_A.pdf
+    titulo: Bosch WAX28EH0ES — Manual do utilizador e instruções de instalação (PT)
+    pagina: 49, 53, 55, 58
+    consultado_em: 2026-11-04
+  - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
+    titulo: Samsung WW**BB — Washing Machine User manual (EN)
+    pagina: 58, 60–61
+    consultado_em: 2026-11-04
+  - url: https://gscs-b2c.lge.com/open/downloadFile?fileId=JejH72VThF8Jn38SlMQ9eQ
+    titulo: LG — Owner's manual, washing machine (EN)
+    pagina: "35"
+    consultado_em: 2026-11-04

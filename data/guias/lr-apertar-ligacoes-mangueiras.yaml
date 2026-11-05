@@ -1,0 +1,54 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: maquina-lavar-roupa
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: lr-apertar-ligacoes-mangueiras
+titulo: Verificar e apertar as ligações das mangueiras
+resumo: Ligações soltas na torneira ou na traseira da máquina são uma causa comum de fugas.
+perigos:
+  - agua
+  - peso
+  - eletricidade
+ferramentas:
+  - toalhas
+  - lanterna
+tempo_estimado: 15
+passos:
+  - texto: Seca a zona e põe um pano por baixo das ligações para veres de onde vem a água.
+  - texto: Confirma que a mangueira de entrada está bem enroscada na torneira e na traseira da máquina, e aperta à mão se estiver solta.
+    imagem:
+      src: imagens/guias/lavar-roupa/ligacoes-mangueiras.svg
+      alt: Ligação roscada da mangueira de entrada com uma seta a indicar o aperto.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: Confirma que a mangueira de entrada não está dobrada, torcida nem entalada atrás da máquina.
+  - texto: Confirma que a mangueira de escoamento está bem presa ao esgoto e que a ponta não está no chão.
+  - texto: Abre a torneira devagar e confirma que as ligações não pingam.
+  - texto: "Se uma mangueira estiver rachada ou danificada, não a remendes: substitui-a por uma nova."
+    aviso: Se a água sair da própria mangueira de entrada, para de usar a máquina, desliga-a da corrente e contacta a assistência (Samsung).
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001742533_A.pdf
+    titulo: Bosch WAX28EH0ES — Manual do utilizador e instruções de instalação (PT)
+    pagina: 10, 15, 54, 60
+    consultado_em: 2026-11-04
+  - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
+    titulo: Samsung WW**BB — Washing Machine User manual (EN)
+    pagina: 22, 58, 61
+    consultado_em: 2026-11-04
+  - url: https://gscs-b2c.lge.com/open/downloadFile?fileId=JejH72VThF8Jn38SlMQ9eQ
+    titulo: LG — Owner's manual, washing machine (EN)
+    pagina: 6, 14, 35
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7245211_7245212_7245215_7245216_MAQ_LAVAR_ROUPA_BECKEN_BWM5379_BWM5381_manual.pdf
+    titulo: Becken BWM5379/BWM5381 — Manual de instruções (secção PT)
+    pagina: "125"
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/6383395_MAQ_LAVAR_ROUPA_BECKEN_BoostWash_BWM3641_manual.pdf
+    titulo: Becken BoostWash BWM3639/BWM3640/BWM3641 — Manual de instruções (secção PT)
+    pagina: 122–123
+    consultado_em: 2026-11-04

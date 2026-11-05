@@ -1,0 +1,82 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/diagnostic_tree.schema.json
+appliance_type: maquina-lavar-roupa
+aplicavel_a:
+  - brand: "*"
+id: lr-nao-centrifuga
+ordem: 4
+titulo: A máquina de lavar roupa não centrifuga
+sintoma: Não centrifuga
+inicio: porta
+nos:
+  porta:
+    tipo: pergunta
+    texto: A porta está bem fechada, sem roupa entalada?
+    ajuda: Por segurança, a máquina não roda nem centrifuga com a porta aberta (Samsung).
+    respostas:
+      - texto: Sim
+        ir_para: velocidade
+      - texto: Não ou não sei
+        ir_para: fim-porta
+  velocidade:
+    tipo: pergunta
+    texto: Escolheste uma velocidade de centrifugação baixa ou uma opção sem centrifugação final?
+    respostas:
+      - texto: Sim ou não sei
+        ir_para: fim-velocidade
+      - texto: Não
+        ir_para: carga
+  carga:
+    tipo: pergunta
+    texto: A carga é pequena ou só tem uma peça grande e pesada (por exemplo, um roupão ou umas calças de ganga)?
+    respostas:
+      - texto: Sim
+        ir_para: fim-carga
+      - texto: Não
+        ir_para: agua
+      - texto: Não sei
+        ir_para: fim-carga
+  agua:
+    tipo: pergunta
+    texto: Ficou água no tambor antes da centrifugação?
+    respostas:
+      - texto: Sim
+        ir_para: fim-escoa
+      - texto: Não
+        ir_para: fim-tecnico
+  fim-porta:
+    tipo: guia
+    guias:
+      - lr-verificar-energia-bloqueio
+    nota: Fecha bem a porta, sem roupa entalada, e volta a iniciar.
+  fim-velocidade:
+    tipo: guia
+    guias:
+      - lr-equilibrar-carga
+    nota: Escolhe uma velocidade mais alta e inicia um programa só de centrifugação (Bosch).
+  fim-carga:
+    tipo: guia
+    guias:
+      - lr-equilibrar-carga
+  fim-escoa:
+    tipo: guia
+    guias:
+      - lr-verificar-mangueira-escoamento
+      - lr-limpar-filtro-bomba
+    nota: A máquina não centrifuga enquanto não conseguir escoar a água.
+  fim-tecnico:
+    tipo: tecnico
+    motivo: A Samsung explica que, com alimentação elétrica insuficiente, a máquina deixa temporariamente de escoar e centrifugar e volta ao normal quando a corrente estabiliza. Se continuar, os fabricantes mandam contactar a assistência técnica. As reparações dentro da máquina só podem ser feitas por técnicos qualificados, por risco de choque elétrico.
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001742533_A.pdf
+    titulo: Bosch WAX28EH0ES — Manual do utilizador e instruções de instalação (PT)
+    pagina: 49, 52–53, 56
+    consultado_em: 2026-11-04
+  - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
+    titulo: Samsung WW**BB — Washing Machine User manual (EN)
+    pagina: 59–60
+    consultado_em: 2026-11-04
+  - url: https://gscs-b2c.lge.com/open/downloadFile?fileId=JejH72VThF8Jn38SlMQ9eQ
+    titulo: LG — Owner's manual, washing machine (EN)
+    pagina: 36, 38
+    consultado_em: 2026-11-04

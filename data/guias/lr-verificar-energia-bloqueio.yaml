@@ -1,0 +1,46 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: maquina-lavar-roupa
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: lr-verificar-energia-bloqueio
+titulo: Verificar tomada, disjuntor, torneira e bloqueio para crianças
+resumo: "Antes de pensar em avaria, confirma o que é mais simples: corrente, água, porta e bloqueio para crianças."
+perigos:
+  - eletricidade
+ferramentas: []
+tempo_estimado: 10
+passos:
+  - texto: Confirma que a ficha está bem encaixada na tomada.
+    imagem:
+      src: imagens/guias/lavar-roupa/energia.svg
+      alt: Ficha e tomada ao lado de um disjuntor do quadro elétrico.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: Testa a tomada com outro aparelho, ou confirma se a luz da divisão funciona.
+  - texto: No quadro elétrico, vê se o disjuntor da máquina disparou e, se sim, volta a ligá-lo.
+    aviso: "Se o disjuntor voltar a disparar quando ligas a máquina, não insistas: chama um eletricista ou um técnico."
+  - texto: Volta a ligar a máquina e confirma que a porta está bem fechada, sem roupa entalada.
+  - texto: Se o visor mostrar o símbolo do bloqueio para crianças, desativa-o (normalmente mantendo premidas uma ou duas teclas durante uns segundos — vê o manual).
+  - texto: Confirma que a torneira da água está totalmente aberta.
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001742533_A.pdf
+    titulo: Bosch WAX28EH0ES — Manual do utilizador e instruções de instalação (PT)
+    pagina: 38, 51–52
+    consultado_em: 2026-11-04
+  - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
+    titulo: Samsung WW**BB — Washing Machine User manual (EN)
+    pagina: 43, 58, 60
+    consultado_em: 2026-11-04
+  - url: https://gscs-b2c.lge.com/open/downloadFile?fileId=JejH72VThF8Jn38SlMQ9eQ
+    titulo: LG — Owner's manual, washing machine (EN)
+    pagina: 28, 36
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7245211_7245212_7245215_7245216_MAQ_LAVAR_ROUPA_BECKEN_BWM5379_BWM5381_manual.pdf
+    titulo: Becken BWM5379/BWM5381 — Manual de instruções (secção PT)
+    pagina: 116–117, 125
+    consultado_em: 2026-11-04

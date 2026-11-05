@@ -1,0 +1,61 @@
+# Domínios aceites como fonte (e em links de peças, sites de marcas e atribuições).
+# Esquema: schemas/allowed_source.schema.json — verificado por `npm run validate`.
+# Hierarquia: só documentação oficial dos fabricantes/marcas (incluindo os repositórios
+# onde publicam manuais), retalhistas para as suas marcas próprias, e iFixit.
+# Nada de blogs, fóruns, sites de SEO ou conteúdo gerado por IA.
+
+- dominio: ifixit.com
+  tipo: ifixit
+  descricao: iFixit — guias com licença CC BY-NC-SA (exige atribuição)
+
+- dominio: example.com
+  tipo: exemplo
+  descricao: Só para conteúdo de exemplo (example true), nunca em produção
+
+# --- Grupos e fabricantes ---
+- dominio: bsh-group.com
+  tipo: grupo
+  descricao: BSH Hausgeräte (documentos e manuais em media3.bsh-group.com)
+  marcas: [bosch, siemens, balay, neff]
+- dominio: neff-home.com
+  tipo: fabricante
+  descricao: Neff (BSH)
+  marcas: [neff]
+- dominio: electroluxgroup.com
+  tipo: grupo
+  descricao: Electrolux Group
+  marcas: [electrolux, aeg]
+- dominio: haier-europe.com
+  tipo: grupo
+  descricao: Haier Europe (Haier, Candy, Hoover)
+  marcas: [haier, candy, hoover]
+- dominio: hisense-europe.com
+  tipo: grupo
+  descricao: Hisense Europe (grupo Gorenje)
+  marcas: [hisense, gorenje]
+
+# --- Retalhistas (só para as suas marcas próprias) ---
+- dominio: worten.pt
+  tipo: retalhista-marca-propria
+  descricao: Worten — marcas próprias Becken e Kunft (manuais nas páginas de produto)
+  marcas: [becken, kunft]
+- dominio: bosch-home.com
+  tipo: fabricante
+  descricao: Bosch (BSH) — manuais oficiais em media3.bosch-home.com
+  marcas: [bosch]
+- dominio: samsung.com
+  tipo: fabricante
+  descricao: Samsung — manuais oficiais em downloadcenter.samsung.com
+  marcas: [samsung]
+- dominio: lge.com
+  tipo: fabricante
+  descricao: LG Electronics — manuais oficiais em gscs-b2c.lge.com
+  marcas: [lg]
+- dominio: becken.cors.digital
+  tipo: retalhista-marca-propria
+  descricao: Servidor de conteúdos do site oficial da Becken (beckenhome.com) — manuais
+  marcas: [becken]
+- dominio: beckenhome.com
+  tipo: retalhista-marca-propria
+  descricao: Site oficial da Becken (marca própria Worten)
+  marcas: [becken]

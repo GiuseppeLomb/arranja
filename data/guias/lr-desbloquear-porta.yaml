@@ -1,0 +1,54 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: maquina-lavar-roupa
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: lr-desbloquear-porta
+titulo: Desbloquear a porta depois do programa
+resumo: A porta fica trancada por segurança enquanto há água, temperatura alta ou o programa ainda não acabou.
+perigos:
+  - agua
+  - temperatura
+  - eletricidade
+ferramentas:
+  - balde
+  - toalhas
+tempo_estimado: 15
+passos:
+  - texto: "Espera alguns minutos: a porta só destranca algum tempo depois de a máquina parar e quando a água e a temperatura baixam."
+    imagem:
+      src: imagens/guias/lavar-roupa/desbloquear-porta.svg
+      alt: Porta de máquina de lavar com um cadeado e um relógio, a indicar que é preciso esperar.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: Se vês água no tambor e a máquina tem corrente, escolhe um programa de escoamento ou de centrifugação para a tirar; a porta destranca no fim (Bosch). Com a opção «sem centrifugação final», a máquina para com água de propósito. Sem corrente, esvazia a água à mão (guia «Esvaziar a água da máquina à mão»).
+    aviso: "Não forces a porta com água no tambor: inunda o chão."
+  - texto: Volta a ligar a máquina e confirma que o bloqueio para crianças não está ativo — nalgumas máquinas impede abrir a porta.
+  - texto: Se a porta continuar presa sem água e sem energia, algumas máquinas têm um desbloqueio de emergência junto ao filtro da bomba. Usa-o apenas como o manual da tua máquina indica.
+    aviso: Nunca uses o desbloqueio de emergência com o tambor a rodar nem com água (sobretudo quente) dentro da máquina (Bosch).
+  - texto: Se mesmo assim a porta não abrir, ou se aparecer um código do fecho da porta, chama um técnico.
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001742533_A.pdf
+    titulo: Bosch WAX28EH0ES — Manual do utilizador e instruções de instalação (PT)
+    pagina: 37–38, 52–53, 61
+    consultado_em: 2026-11-04
+  - url: https://media3.bosch-home.com/Documents/9001079646_B.pdf
+    titulo: Bosch — Manual de utilização e de instalação, máquina de lavar roupa (PT)
+    pagina: 21–22
+    consultado_em: 2026-11-04
+  - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
+    titulo: Samsung WW**BB — Washing Machine User manual (EN)
+    pagina: 43, 59, 63
+    consultado_em: 2026-11-04
+  - url: https://gscs-b2c.lge.com/open/downloadFile?fileId=JejH72VThF8Jn38SlMQ9eQ
+    titulo: LG — Owner's manual, washing machine (EN)
+    pagina: "36"
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7245211_7245212_7245215_7245216_MAQ_LAVAR_ROUPA_BECKEN_BWM5379_BWM5381_manual.pdf
+    titulo: Becken BWM5379/BWM5381 — Manual de instruções (secção PT)
+    pagina: "125"
+    consultado_em: 2026-11-04

@@ -1,0 +1,39 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: maquina-lavar-roupa
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: lr-equilibrar-carga
+titulo: Equilibrar a carga e repetir a centrifugação
+resumo: Com a roupa mal distribuída, a máquina reduz ou cancela a centrifugação para se proteger.
+perigos:
+  - eletricidade
+ferramentas: []
+tempo_estimado: 10
+passos:
+  - texto: Abre a porta (quando destrancar) e espalha a roupa pelo tambor, desfazendo bolas e nós.
+    imagem:
+      src: imagens/guias/lavar-roupa/equilibrar-carga.svg
+      alt: Tambor visto de frente com peças de roupa espalhadas de forma equilibrada.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: "Se só tens uma peça grande e pesada (por exemplo, um roupão ou umas calças de ganga), junta-lhe outras peças: a Bosch explica que peças de tamanhos diferentes se distribuem melhor."
+  - texto: Confirma que a velocidade de centrifugação não está no mínimo e que não escolheste uma opção sem centrifugação final. Se escolheste, continua o programa com «Centrifugação» ou «Escoamento» (Bosch).
+  - texto: Volta a ligar a máquina e inicia um programa só de centrifugação.
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001742533_A.pdf
+    titulo: Bosch WAX28EH0ES — Manual do utilizador e instruções de instalação (PT)
+    pagina: 52–54, 56
+    consultado_em: 2026-11-04
+  - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
+    titulo: Samsung WW**BB — Washing Machine User manual (EN)
+    pagina: 59–60, 62
+    consultado_em: 2026-11-04
+  - url: https://gscs-b2c.lge.com/open/downloadFile?fileId=JejH72VThF8Jn38SlMQ9eQ
+    titulo: LG — Owner's manual, washing machine (EN)
+    pagina: 36, 38
+    consultado_em: 2026-11-04

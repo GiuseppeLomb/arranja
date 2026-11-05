@@ -92,8 +92,18 @@ function detetarMarca(tokens: string[]): { marca: string | null; resto: string[]
 			if (id && marcas.has(id)) return { marca: id, resto: [...tokens.slice(0, i), ...tokens.slice(i + n)] };
 		}
 	}
+	// Tolerante a erros (ex.: "bekcen" → Becken): só palavras sem dígitos, para não confundir com códigos.
+	indiceMarcas ??= new Fuse(conteudo.marcas, { keys: ['nome'], threshold: 0.4, ignoreLocation: true, minMatchCharLength: 2, includeScore: true });
+	for (let i = 0; i < tokens.length; i++) {
+		const t = tokens[i];
+		if (t.length < 3 || /d/.test(t)) continue;
+		const [melhor] = indiceMarcas.search(t, { limit: 1 });
+		if (melhor && (melhor.score ?? 1) <= 0.4) return { marca: melhor.item.id, resto: [...tokens.slice(0, i), ...tokens.slice(i + 1)] };
+	}
 	return { marca: null, resto: tokens };
 }
+
+let indiceMarcas: Fuse<(typeof conteudo.marcas)[number]> | null = null;
 
 const pareceModelo = (t: string) => t.length >= 3 && /\d/.test(t) && /[a-z]/i.test(t);
 
@@ -126,7 +136,12 @@ export function pesquisar(consulta: string, limite = 20): Resultado[] {
 	// 2) Pesquisa difusa
 	const termo = textoResto || (marca ? '' : q);
 	if (termo) {
-		for (const r of indice.fuse.search(termo, { limit: limite * 2 })) if (daMarca(r.item)) push(doc(r.item));
+		// Com um código exato encontrado, não misturar códigos parecidos.
+		const haCodigoExato = res.some((x) => x.tipo === 'codigo');
+		for (const r of indice.fuse.search(termo, { limit: limite * 2 })) {
+			if (haCodigoExato && r.item.tipo === 'codigo') continue;
+			if (daMarca(r.item)) push(doc(r.item));
+		}
 	} else if (marca) {
 		for (const d of indice.docs) if (d.marcas.includes(marca)) push(doc(d));
 	}
@@ -151,13 +166,14 @@ export function pesquisar(consulta: string, limite = 20): Resultado[] {
 	// 4) Marca sozinha → entrar no fluxo com a marca escolhida
 	if (marca && !textoResto) {
 		const m = marcas.get(marca)!;
-		for (const t of conteudo.tipos) {
-			if ((m.eprel[t.id] ?? 0) === 0 && !m.conteudo.includes(t.id)) continue;
+		// Todos os tipos: marca sem dados também segue para os sintomas universais.
+		const ordem = [...conteudo.tipos].sort((a, b) => Number(conteudo.arvores.some((x) => x.appliance_type === b.id)) - Number(conteudo.arvores.some((x) => x.appliance_type === a.id)));
+		for (const t of ordem) {
 			push({
 				chave: `marca:${marca}:${t.id}`,
 				tipo: 'marca',
 				titulo: `${m.nome} · ${t.nome}`,
-				subtitulo: m.eprel[t.id] ? `${m.eprel[t.id]} modelos no EPREL` : 'Escolher modelo',
+				subtitulo: m.eprel[t.id] ? `${m.eprel[t.id]} modelos no EPREL` : 'Diagnosticar por sintoma',
 				selecao: { tipo: t.id, marca: { id: m.id, nome: m.nome }, modelo: undefined },
 				exemplo: m.example
 			});

@@ -38,8 +38,19 @@ const PARAMS_AFILIADOS = /[?&](tag|aff|affid|affiliate|ref|refid|partner|utm_[a-
 export interface Marca {
 	id: string;
 	nome: string;
+	site?: string;
+	grupo?: string;
+	distribuidor?: string;
 	pagina_pecas?: string;
+	sources?: { url: string; consultado_em: string }[];
 	example?: boolean;
+}
+
+export interface FontePermitida {
+	dominio: string;
+	tipo: string;
+	descricao: string;
+	marcas?: string[];
 }
 
 export interface DadosBrutos {
@@ -50,6 +61,7 @@ export interface DadosBrutos {
 	guias: Guia[];
 	arvores: Arvore[];
 	codigos: CodigoErro[];
+	fontesPermitidas: FontePermitida[];
 }
 
 export interface Problema {
@@ -75,7 +87,8 @@ function criarAjv() {
 		guia: obter('guide.schema.json'),
 		arvore: obter('diagnostic_tree.schema.json'),
 		codigo: obter('error_code.schema.json'),
-		snapshot: obter('eprel_snapshot.schema.json')
+		snapshot: obter('eprel_snapshot.schema.json'),
+		fontePermitida: obter('allowed_source.schema.json')
 	};
 }
 
@@ -110,7 +123,7 @@ function erroAjv(v: ValidateFunction): string {
 export function carregar(): { dados: DadosBrutos; problemas: Problema[] } {
 	const v = validadores();
 	const problemas: Problema[] = [];
-	const dados: DadosBrutos = { tipos: [], marcas: [], ferramentas: [], familias: [], guias: [], arvores: [], codigos: [] };
+	const dados: DadosBrutos = { tipos: [], marcas: [], ferramentas: [], familias: [], guias: [], arvores: [], codigos: [], fontesPermitidas: [] };
 
 	function lista<T>(ficheiro: string, validar: ValidateFunction, destino: T[]) {
 		let conteudo: unknown;
@@ -149,8 +162,9 @@ export function carregar(): { dados: DadosBrutos; problemas: Problema[] } {
 		destino.push(t);
 	}
 
+	lista(join(DATA, 'fontes-permitidas.yaml'), v.fontePermitida, dados.fontesPermitidas);
 	lista(join(DATA, 'tipos.yaml'), v.tipo, dados.tipos);
-	lista(join(DATA, 'marcas.yaml'), v.marca, dados.marcas);
+	lista(join(DATA, 'brands.yaml'), v.marca, dados.marcas);
 	lista(join(DATA, 'ferramentas.yaml'), v.ferramenta, dados.ferramentas);
 	for (const f of ficheirosYaml(join(DATA, 'familias'))) lista(f, v.familia, dados.familias);
 	for (const f of ficheirosYaml(join(DATA, 'codigos'))) lista(f, v.codigo, dados.codigos);
@@ -198,9 +212,25 @@ export function validarSemantica(d: DadosBrutos, hoje = new Date()): Problema[] 
 		if (!tipos.has(t)) add(onde, `appliance_type desconhecido: ${t}`);
 	};
 
-	const verFontes = (onde: string, fontes: { url: string; consultado_em: string }[]) => {
+	// Allowlist de domínios (data/fontes-permitidas.yaml). "exemplo" só serve conteúdo marcado example: true.
+	const permitido = (url: string, exemplo?: boolean) => {
+		let host: string;
+		try {
+			host = new URL(url).hostname.toLowerCase();
+		} catch {
+			return false;
+		}
+		return d.fontesPermitidas.some(
+			(p) => (host === p.dominio || host.endsWith(`.${p.dominio}`)) && (p.tipo !== 'exemplo' || exemplo)
+		);
+	};
+	const verUrl = (onde: string, url: string | undefined, exemplo?: boolean, oque = 'URL') => {
+		if (url && !permitido(url, exemplo)) add(onde, `${oque} fora da allowlist de domínios (data/fontes-permitidas.yaml): ${url}`);
+	};
+	const verFontes = (onde: string, fontes: { url: string; consultado_em: string }[], exemplo?: boolean) => {
 		for (const f of fontes) {
 			if (f.consultado_em > hojeIso) add(onde, `consultado_em no futuro: ${f.consultado_em}`);
+			verUrl(onde, f.url, exemplo, 'fonte');
 		}
 	};
 
@@ -219,7 +249,7 @@ export function validarSemantica(d: DadosBrutos, hoje = new Date()): Problema[] 
 			if (marcaFixa && r.brand !== marcaFixa) add(onde, `aplicavel_a: a marca tem de ser "${marcaFixa}" (é "${r.brand}")`);
 			if (r.brand !== '*') {
 				const m = marcas.get(r.brand);
-				if (!m) add(onde, `marca desconhecida em aplicavel_a: ${r.brand} (acrescenta-a a data/marcas.yaml)`);
+				if (!m) add(onde, `marca desconhecida em aplicavel_a: ${r.brand} (acrescenta-a a data/brands.yaml)`);
 				exemploRef(onde, item, m, `marca ${r.brand}`);
 			} else if (r.familias || r.prefixos || r.regex || r.modelos) {
 				add(onde, 'aplicavel_a: com brand "*" não se podem usar famílias/padrões (são específicos de uma marca)');
@@ -240,6 +270,9 @@ export function validarSemantica(d: DadosBrutos, hoje = new Date()): Problema[] 
 
 	for (const m of d.marcas) {
 		if (m.pagina_pecas && PARAMS_AFILIADOS.test(m.pagina_pecas)) add(`marcas/${m.id}`, 'pagina_pecas parece ter parâmetros de afiliado/rastreio');
+		verUrl(`marcas/${m.id}`, m.site, m.example, 'site');
+		verUrl(`marcas/${m.id}`, m.pagina_pecas, m.example, 'pagina_pecas');
+		if (m.sources) verFontes(`marcas/${m.id}`, m.sources, m.example);
 	}
 
 	for (const f of d.familias) {
@@ -249,14 +282,15 @@ export function validarSemantica(d: DadosBrutos, hoje = new Date()): Problema[] 
 		if (!m) add(onde, `marca desconhecida: ${f.brand}`);
 		exemploRef(onde, f, m, `marca ${f.brand}`);
 		verRegex(onde, f.regex);
-		verFontes(onde, f.sources);
+		verFontes(onde, f.sources, f.example);
 	}
 
 	for (const g of d.guias) {
 		const onde = `guias/${g.id}`;
 		verTipo(onde, g.appliance_type);
 		verAplicavel(onde, g, g.aplicavel_a);
-		verFontes(onde, g.sources);
+		verFontes(onde, g.sources, g.example);
+		verUrl(onde, g.attribution?.url, g.example, 'atribuição');
 		for (const t of g.ferramentas) if (!ferramentas.has(t)) add(onde, `ferramenta desconhecida: ${t} (acrescenta-a a data/ferramentas.yaml)`);
 
 		// Segurança: perigos proibidos por defeito
@@ -276,12 +310,14 @@ export function validarSemantica(d: DadosBrutos, hoje = new Date()): Problema[] 
 		}
 
 		for (const [i, passo] of g.passos.entries()) {
+			verUrl(onde, passo.imagem?.fonte_url, g.example, 'origem da imagem');
 			if (passo.imagem && !existsSync(join(RAIZ, 'static', passo.imagem.src))) {
 				add(onde, `passos[${i}].imagem: ficheiro não encontrado em static/${passo.imagem.src}`);
 			}
 		}
 		for (const peca of g.pecas) {
 			if (peca.link_oficial && PARAMS_AFILIADOS.test(peca.link_oficial)) add(onde, `link de peça com parâmetros de afiliado/rastreio: ${peca.link_oficial}`);
+			verUrl(onde, peca.link_oficial, g.example, 'link de peça');
 		}
 		if (g.risk_level === 'proibido' && g.ferramentas.length) add(onde, 'guias proibidos não listam ferramentas');
 	}
@@ -290,7 +326,7 @@ export function validarSemantica(d: DadosBrutos, hoje = new Date()): Problema[] 
 		const onde = `arvores/${a.id}`;
 		verTipo(onde, a.appliance_type);
 		verAplicavel(onde, a, a.aplicavel_a);
-		verFontes(onde, a.sources);
+		verFontes(onde, a.sources, a.example);
 		for (const c of a.codigos ?? []) {
 			const cod = codigos.get(c);
 			if (!cod) add(onde, `código de erro desconhecido: ${c}`);
@@ -336,7 +372,7 @@ export function validarSemantica(d: DadosBrutos, hoje = new Date()): Problema[] 
 		if (!m) add(onde, `marca desconhecida: ${c.brand}`);
 		exemploRef(onde, c, m, `marca ${c.brand}`);
 		verAplicavel(onde, c, c.aplicavel_a, c.brand);
-		verFontes(onde, c.sources);
+		verFontes(onde, c.sources, c.example);
 		if (c.arvore) {
 			const a = arvores.get(c.arvore);
 			if (!a) add(onde, `árvore desconhecida: ${c.arvore}`);

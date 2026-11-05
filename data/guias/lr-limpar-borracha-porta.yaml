@@ -1,0 +1,47 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: maquina-lavar-roupa
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: lr-limpar-borracha-porta
+titulo: Limpar a borracha da porta
+resumo: Objetos e cotão presos na borracha causam fugas e maus cheiros.
+perigos:
+  - eletricidade
+ferramentas:
+  - toalhas
+  - lanterna
+tempo_estimado: 10
+passos:
+  - texto: Abre a porta e afasta com cuidado a dobra da borracha para veres o interior.
+    imagem:
+      src: imagens/guias/lavar-roupa/borracha-porta.svg
+      alt: Porta aberta com a dobra da borracha afastada, mostrando uma moeda e cotão no interior.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: Retira moedas, ganchos, botões e cotão presos na dobra.
+  - texto: Limpa a borracha e o vidro da porta com um pano húmido e seca-os.
+  - texto: "A Bosch indica que a abertura de entrada na borracha da porta pode ficar entupida: se a tua máquina a tiver, confirma que está desimpedida, sem usar objetos pontiagudos."
+  - texto: Depois de cada lavagem, deixa a porta entreaberta para o interior secar.
+    aviso: Se houver crianças em casa, não deixes a porta aberta sem vigilância.
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001742533_A.pdf
+    titulo: Bosch WAX28EH0ES — Manual do utilizador e instruções de instalação (PT)
+    pagina: 44, 48
+    consultado_em: 2026-11-04
+  - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
+    titulo: Samsung WW**BB — Washing Machine User manual (EN)
+    pagina: "61"
+    consultado_em: 2026-11-04
+  - url: https://gscs-b2c.lge.com/open/downloadFile?fileId=JejH72VThF8Jn38SlMQ9eQ
+    titulo: LG — Owner's manual, washing machine (EN)
+    pagina: 30, 32, 37
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7245211_7245212_7245215_7245216_MAQ_LAVAR_ROUPA_BECKEN_BWM5379_BWM5381_manual.pdf
+    titulo: Becken BWM5379/BWM5381 — Manual de instruções (secção PT)
+    pagina: "121"
+    consultado_em: 2026-11-04

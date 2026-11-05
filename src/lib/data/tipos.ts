@@ -5,6 +5,8 @@ export type RiskLevel = 'baixo' | 'medio' | 'alto' | 'proibido';
 export interface Fonte {
 	url: string;
 	titulo?: string;
+	/** Página(s) do documento onde está a informação. */
+	pagina?: string;
 	consultado_em: string;
 }
 
@@ -95,6 +97,7 @@ export interface Arvore {
 	id: string;
 	titulo: string;
 	sintoma: string;
+	ordem?: number;
 	appliance_type: string;
 	aplicavel_a: AplicavelA[];
 	codigos?: string[];
@@ -121,6 +124,10 @@ export interface CodigoErro {
 export interface Marca {
 	id: string;
 	nome: string;
+	/** Da lista curada (data/brands.yaml). */
+	curada?: boolean;
+	grupo?: string;
+	distribuidor?: string;
 	pagina_pecas?: string;
 	/** Nº de modelos EPREL por tipo de eletrodoméstico. */
 	eprel: Record<string, number>;

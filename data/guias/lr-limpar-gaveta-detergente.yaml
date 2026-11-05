@@ -1,0 +1,53 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: maquina-lavar-roupa
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: lr-limpar-gaveta-detergente
+titulo: Limpar a gaveta do detergente
+resumo: Restos de detergente e amaciador acumulam-se na gaveta e no encaixe, e podem impedir o detergente de ser levado pela água.
+perigos:
+  - eletricidade
+avisos:
+  - Se a tua máquina tiver doseamento automático de detergente, não mergulhes essa unidade em água — segue o manual.
+ferramentas:
+  - escova
+  - toalhas
+tempo_estimado: 15
+passos:
+  - texto: Puxa a gaveta até parar, carrega na patilha ou botão de desbloqueio e retira-a.
+    imagem:
+      src: imagens/guias/lavar-roupa/gaveta-detergente.svg
+      alt: Gaveta do detergente retirada da máquina, com os compartimentos e a tampa do amaciador.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: Retira as peças amovíveis, como a tampa do compartimento do amaciador.
+  - texto: Lava a gaveta e as peças com água morna e um pano macio. Se houver detergente endurecido, deixa-o amolecer em água morna antes de esfregar.
+  - texto: Limpa o encaixe da gaveta, dentro da máquina, com uma escova pequena que não seja metálica.
+    aviso: Não deites água diretamente para o encaixe da gaveta.
+  - texto: Seca tudo, volta a montar as peças e encaixa a gaveta.
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001742533_A.pdf
+    titulo: Bosch WAX28EH0ES — Manual do utilizador e instruções de instalação (PT)
+    pagina: 44–46
+    consultado_em: 2026-11-04
+  - url: https://media3.bosch-home.com/Documents/9001079646_B.pdf
+    titulo: Bosch — Manual de utilização e de instalação, máquina de lavar roupa (PT)
+    pagina: 20–21
+    consultado_em: 2026-11-04
+  - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
+    titulo: Samsung WW**BB — Washing Machine User manual (EN)
+    pagina: 55–56, 58
+    consultado_em: 2026-11-04
+  - url: https://gscs-b2c.lge.com/open/downloadFile?fileId=JejH72VThF8Jn38SlMQ9eQ
+    titulo: LG — Owner's manual, washing machine (EN)
+    pagina: "32"
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7245211_7245212_7245215_7245216_MAQ_LAVAR_ROUPA_BECKEN_BWM5379_BWM5381_manual.pdf
+    titulo: Becken BWM5379/BWM5381 — Manual de instruções (secção PT)
+    pagina: 111, 122–123
+    consultado_em: 2026-11-04

@@ -50,3 +50,11 @@
 - id: luvas
   nome: Luvas de trabalho
   descricao: Protegem as mãos de arestas cortantes de chapa e de sujidade.
+
+- id: escova
+  nome: Escova de cerdas
+  descricao: Escova pequena (uma escova de dentes velha serve) para tirar resíduos de filtros, gavetas e encaixes sem os riscar.
+
+- id: nivel-bolha
+  nome: Nível de bolha
+  descricao: Régua com uma bolha de ar que mostra se uma superfície está na horizontal. Serve para nivelar a máquina.

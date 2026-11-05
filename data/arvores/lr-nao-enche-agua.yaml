@@ -1,0 +1,88 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/diagnostic_tree.schema.json
+appliance_type: maquina-lavar-roupa
+aplicavel_a:
+  - brand: "*"
+id: lr-nao-enche-agua
+ordem: 2
+titulo: A máquina de lavar roupa não enche água
+sintoma: Não enche água
+codigos:
+  - bosch-lr-e30-10
+  - becken-lr-e10
+inicio: torneira
+nos:
+  torneira:
+    tipo: pergunta
+    texto: A torneira da água está totalmente aberta?
+    ajuda: No início do programa, algumas máquinas rodam o tambor até 2 minutos sem entrar água para detetarem a carga. A Bosch indica que isso é normal.
+    respostas:
+      - texto: Sim
+        ir_para: mangueira
+      - texto: Não ou não sei
+        ir_para: fim-torneira
+  mangueira:
+    tipo: pergunta
+    texto: A mangueira de entrada está direita, sem dobras e sem estar entalada atrás da máquina?
+    respostas:
+      - texto: Sim
+        ir_para: rede
+      - texto: Não ou não sei
+        ir_para: fim-mangueira
+  rede:
+    tipo: pergunta
+    texto: Noutra torneira da casa a água sai com a pressão normal?
+    respostas:
+      - texto: Sim
+        ir_para: filtro
+      - texto: Não
+        ir_para: fim-rede
+  filtro:
+    tipo: pergunta
+    texto: Já limpaste o filtro da entrada de água?
+    respostas:
+      - texto: Não
+        ir_para: fim-filtro
+      - texto: Sim, e continua igual
+        ir_para: fim-tecnico
+  fim-torneira:
+    tipo: guia
+    guias:
+      - lr-verificar-energia-bloqueio
+    nota: Abre a torneira toda e volta a iniciar o programa.
+  fim-mangueira:
+    tipo: guia
+    guias:
+      - lr-apertar-ligacoes-mangueiras
+    nota: A mangueira de entrada não pode ficar dobrada nem entalada.
+  fim-rede:
+    tipo: tecnico
+    motivo: Se falta água ou pressão noutras torneiras, o problema está na canalização ou no abastecimento da casa, não na máquina. Fala com um canalizador ou com a entidade que fornece a água.
+  fim-filtro:
+    tipo: guia
+    guias:
+      - lr-limpar-filtro-entrada
+  fim-tecnico:
+    tipo: tecnico
+    motivo: Com água na torneira, a mangueira direita e o filtro limpo, os fabricantes mandam contactar a assistência técnica. As reparações dentro da máquina só podem ser feitas por técnicos qualificados, por risco de choque elétrico. Se aparecer um código no visor, anota-o para o dares à assistência.
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001742533_A.pdf
+    titulo: Bosch WAX28EH0ES — Manual do utilizador e instruções de instalação (PT)
+    pagina: 49, 51, 54–55
+    consultado_em: 2026-11-04
+  - url: https://media3.bosch-home.com/Documents/9001079646_B.pdf
+    titulo: Bosch — Manual de utilização e de instalação, máquina de lavar roupa (PT)
+    pagina: 18–19
+    consultado_em: 2026-11-04
+  - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
+    titulo: Samsung WW**BB — Washing Machine User manual (EN)
+    pagina: "58"
+    consultado_em: 2026-11-04
+  - url: https://gscs-b2c.lge.com/open/downloadFile?fileId=JejH72VThF8Jn38SlMQ9eQ
+    titulo: LG — Owner's manual, washing machine (EN)
+    pagina: "35"
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7245211_7245212_7245215_7245216_MAQ_LAVAR_ROUPA_BECKEN_BWM5379_BWM5381_manual.pdf
+    titulo: Becken BWM5379/BWM5381 — Manual de instruções (secção PT)
+    pagina: "126"
+    consultado_em: 2026-11-04

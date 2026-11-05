@@ -1,0 +1,110 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/diagnostic_tree.schema.json
+appliance_type: maquina-lavar-roupa
+aplicavel_a:
+  - brand: "*"
+id: lr-porta-nao-abre
+ordem: 8
+titulo: A porta da máquina de lavar roupa não abre
+sintoma: A porta não abre
+codigos:
+  - samsung-lr-dc1
+inicio: terminou
+nos:
+  terminou:
+    tipo: pergunta
+    texto: O programa já terminou e esperaste alguns minutos?
+    respostas:
+      - texto: Sim
+        ir_para: opcao
+      - texto: Não
+        ir_para: fim-esperar
+  opcao:
+    tipo: pergunta
+    texto: Escolheste a opção «sem centrifugação final» ou «paragem no enxaguamento»?
+    ajuda: Com esta opção a máquina para com água e a porta fica trancada de propósito (Bosch).
+    respostas:
+      - texto: Sim
+        ir_para: fim-escoar
+      - texto: Não ou não sei
+        ir_para: agua
+  agua:
+    tipo: pergunta
+    texto: Vês água dentro do tambor?
+    respostas:
+      - texto: Sim
+        ir_para: corrente
+      - texto: Não
+        ir_para: luz
+  corrente:
+    tipo: pergunta
+    texto: A máquina tem corrente (o visor acende)?
+    respostas:
+      - texto: Sim
+        ir_para: fim-escoar
+      - texto: Não
+        ir_para: fim-agua
+  luz:
+    tipo: pergunta
+    texto: Houve falta de luz ou a máquina está sem energia?
+    respostas:
+      - texto: Sim
+        ir_para: fim-emergencia
+      - texto: Não
+        ir_para: bloqueio
+  bloqueio:
+    tipo: pergunta
+    texto: O símbolo do bloqueio para crianças está aceso?
+    respostas:
+      - texto: Sim
+        ir_para: fim-bloqueio
+      - texto: Não
+        ir_para: fim-tecnico
+  fim-esperar:
+    tipo: guia
+    guias:
+      - lr-desbloquear-porta
+    nota: A porta só destranca algum tempo depois de o programa acabar.
+  fim-escoar:
+    tipo: guia
+    guias:
+      - lr-desbloquear-porta
+    nota: Com corrente, escolhe um programa de escoamento ou centrifugação para tirar a água; a porta destranca no fim.
+  fim-agua:
+    tipo: guia
+    guias:
+      - lr-esvaziar-agua
+      - lr-desbloquear-porta
+    nota: Sem corrente, esvazia a água à mão antes de abrires a porta. Não forces a porta com água no tambor.
+  fim-emergencia:
+    tipo: guia
+    guias:
+      - lr-desbloquear-porta
+  fim-bloqueio:
+    tipo: guia
+    guias:
+      - lr-verificar-energia-bloqueio
+  fim-tecnico:
+    tipo: tecnico
+    motivo: Sem água, com energia e sem bloqueio para crianças, o fecho da porta pode não estar a destrancar (a Samsung indica o código DC1 para o fecho da porta e manda contactar a assistência se continuar). As reparações dentro da máquina só podem ser feitas por técnicos qualificados, por risco de choque elétrico.
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001742533_A.pdf
+    titulo: Bosch WAX28EH0ES — Manual do utilizador e instruções de instalação (PT)
+    pagina: 37–38, 49, 52–53, 61
+    consultado_em: 2026-11-04
+  - url: https://media3.bosch-home.com/Documents/9001079646_B.pdf
+    titulo: Bosch — Manual de utilização e de instalação, máquina de lavar roupa (PT)
+    pagina: 21–22
+    consultado_em: 2026-11-04
+  - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
+    titulo: Samsung WW**BB — Washing Machine User manual (EN)
+    pagina: 43, 59, 63
+    consultado_em: 2026-11-04
+  - url: https://gscs-b2c.lge.com/open/downloadFile?fileId=JejH72VThF8Jn38SlMQ9eQ
+    titulo: LG — Owner's manual, washing machine (EN)
+    pagina: "36"
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7245211_7245212_7245215_7245216_MAQ_LAVAR_ROUPA_BECKEN_BWM5379_BWM5381_manual.pdf
+    titulo: Becken BWM5379/BWM5381 — Manual de instruções (secção PT)
+    pagina: "125"
+    consultado_em: 2026-11-04

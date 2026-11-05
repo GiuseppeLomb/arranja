@@ -1,0 +1,100 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/diagnostic_tree.schema.json
+appliance_type: maquina-lavar-roupa
+aplicavel_a:
+  - brand: "*"
+id: lr-para-a-meio
+ordem: 11
+titulo: A máquina de lavar roupa para a meio do programa
+sintoma: Para a meio do programa
+inicio: energia
+nos:
+  energia:
+    tipo: pergunta
+    texto: A máquina ficou sem energia (visor apagado)?
+    ajuda: "Algumas paragens são normais: há programas com pausas de molho e a máquina redistribui a roupa antes de centrifugar."
+    respostas:
+      - texto: Sim
+        ir_para: fim-energia
+      - texto: Não
+        ir_para: agua
+  agua:
+    tipo: pergunta
+    texto: Parou com água no tambor que não escoa?
+    respostas:
+      - texto: Sim
+        ir_para: opcao
+      - texto: Não
+        ir_para: carga
+  opcao:
+    tipo: pergunta
+    texto: Escolheste a opção «sem centrifugação final» ou «paragem no enxaguamento»?
+    respostas:
+      - texto: Sim
+        ir_para: fim-opcao
+      - texto: Não ou não sei
+        ir_para: fim-escoa
+  carga:
+    tipo: pergunta
+    texto: Parou antes de centrifugar, com a roupa toda para um lado?
+    respostas:
+      - texto: Sim
+        ir_para: fim-carga
+      - texto: Não
+        ir_para: entrada
+  entrada:
+    tipo: pergunta
+    texto: A água estava a entrar bem (torneira aberta, filtro limpo)?
+    respostas:
+      - texto: Sim
+        ir_para: fim-tecnico
+      - texto: Não ou não sei
+        ir_para: fim-entrada
+  fim-energia:
+    tipo: guia
+    guias:
+      - lr-verificar-energia-bloqueio
+  fim-opcao:
+    tipo: guia
+    guias:
+      - lr-equilibrar-carga
+    nota: "Não é avaria: a máquina para com água de propósito. Continua o programa escolhendo «Centrifugação» ou «Escoamento» (Bosch)."
+  fim-escoa:
+    tipo: guia
+    guias:
+      - lr-verificar-mangueira-escoamento
+      - lr-esvaziar-agua
+      - lr-limpar-filtro-bomba
+  fim-carga:
+    tipo: guia
+    guias:
+      - lr-equilibrar-carga
+  fim-entrada:
+    tipo: guia
+    guias:
+      - lr-limpar-filtro-entrada
+      - lr-verificar-energia-bloqueio
+  fim-tecnico:
+    tipo: tecnico
+    motivo: Se a máquina continua a parar sem causa visível, desliga-a e volta a ligá-la (Bosch, Samsung). Se voltar a acontecer, os fabricantes mandam contactar a assistência técnica. As reparações dentro da máquina só podem ser feitas por técnicos qualificados, por risco de choque elétrico. Se aparecer um código no visor, anota-o para o dares à assistência.
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001742533_A.pdf
+    titulo: Bosch WAX28EH0ES — Manual do utilizador e instruções de instalação (PT)
+    pagina: 37, 51–56
+    consultado_em: 2026-11-04
+  - url: https://media3.bosch-home.com/Documents/9001079646_B.pdf
+    titulo: Bosch — Manual de utilização e de instalação, máquina de lavar roupa (PT)
+    pagina: 19, 22
+    consultado_em: 2026-11-04
+  - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
+    titulo: Samsung WW**BB — Washing Machine User manual (EN)
+    pagina: 59–60, 63
+    consultado_em: 2026-11-04
+  - url: https://gscs-b2c.lge.com/open/downloadFile?fileId=JejH72VThF8Jn38SlMQ9eQ
+    titulo: LG — Owner's manual, washing machine (EN)
+    pagina: "36"
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7245211_7245212_7245215_7245216_MAQ_LAVAR_ROUPA_BECKEN_BWM5379_BWM5381_manual.pdf
+    titulo: Becken BWM5379/BWM5381 — Manual de instruções (secção PT)
+    pagina: "125"
+    consultado_em: 2026-11-04

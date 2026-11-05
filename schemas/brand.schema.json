@@ -2,16 +2,70 @@
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://github.com/GiuseppeLomb/arranja/schemas/brand.schema.json",
 	"title": "Marca (só nome em texto — sem logótipos)",
+	"description": "Lista curada de marcas vendidas em Portugal. Grupo/fabricante e distribuidor só com fonte oficial.",
 	"type": "object",
-	"required": ["id", "nome"],
+	"required": [
+		"id",
+		"nome"
+	],
 	"additionalProperties": false,
 	"properties": {
-		"id": { "$ref": "common.schema.json#/$defs/id" },
-		"nome": { "type": "string", "minLength": 1, "maxLength": 60 },
+		"id": {
+			"$ref": "common.schema.json#/$defs/id"
+		},
+		"nome": {
+			"type": "string",
+			"minLength": 1,
+			"maxLength": 60
+		},
+		"site": {
+			"$ref": "common.schema.json#/$defs/url",
+			"description": "Site oficial da marca (de preferência em Portugal)."
+		},
+		"grupo": {
+			"type": "string",
+			"minLength": 2,
+			"maxLength": 80,
+			"description": "Grupo/fabricante, só se documentado em fonte oficial."
+		},
+		"distribuidor": {
+			"type": "string",
+			"minLength": 2,
+			"maxLength": 80,
+			"description": "Retalhista dono da marca (marca de distribuidor)."
+		},
 		"pagina_pecas": {
 			"$ref": "common.schema.json#/$defs/url",
 			"description": "Página oficial de peças do fabricante (sem afiliados)."
 		},
-		"example": { "$ref": "common.schema.json#/$defs/example" }
-	}
+		"sources": {
+			"$ref": "common.schema.json#/$defs/sources"
+		},
+		"example": {
+			"$ref": "common.schema.json#/$defs/example"
+		}
+	},
+	"allOf": [
+		{
+			"if": {
+				"anyOf": [
+					{
+						"required": [
+							"grupo"
+						]
+					},
+					{
+						"required": [
+							"distribuidor"
+						]
+					}
+				]
+			},
+			"then": {
+				"required": [
+					"sources"
+				]
+			}
+		}
+	]
 }

@@ -1,0 +1,106 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/diagnostic_tree.schema.json
+appliance_type: maquina-lavar-roupa
+aplicavel_a:
+  - brand: "*"
+id: lr-nao-escoa
+ordem: 3
+titulo: A máquina de lavar roupa não escoa a água
+sintoma: Não escoa a água
+codigos:
+  - bosch-lr-e30-80
+  - bosch-lr-e36
+  - becken-lr-e21
+inicio: opcao
+nos:
+  opcao:
+    tipo: pergunta
+    texto: Escolheste uma opção que para com água no tambor, como «sem centrifugação final» ou «paragem no enxaguamento»?
+    ajuda: Com esta opção a água fica no tambor de propósito, até continuares o programa (Bosch).
+    respostas:
+      - texto: Sim
+        ir_para: fim-opcao
+      - texto: Não ou não sei
+        ir_para: mangueira
+  mangueira:
+    tipo: pergunta
+    texto: A mangueira de escoamento está dobrada, entalada, entupida ou ligada demasiado alta?
+    ajuda: A Bosch indica no máximo 1 metro de altura e não aceita extensões que não estejam previstas.
+    respostas:
+      - texto: Sim
+        ir_para: fim-mangueira
+      - texto: Não sei
+        ir_para: fim-mangueira
+      - texto: Não
+        ir_para: filtro
+  filtro:
+    tipo: pergunta
+    texto: Já limpaste o filtro da bomba de escoamento e voltaste a enroscar bem a tampa?
+    respostas:
+      - texto: Não
+        ir_para: fim-filtro
+      - texto: Sim
+        ir_para: espuma
+  espuma:
+    tipo: pergunta
+    texto: Puseste muito detergente ou há muita espuma no tambor?
+    respostas:
+      - texto: Sim
+        ir_para: fim-espuma
+      - texto: Não
+        ir_para: esgoto
+  esgoto:
+    tipo: pergunta
+    texto: O esgoto da casa escoa bem (por exemplo, o lava-loiça ao lado)?
+    respostas:
+      - texto: Sim
+        ir_para: fim-tecnico
+      - texto: Não
+        ir_para: fim-canalizador
+  fim-opcao:
+    tipo: guia
+    guias:
+      - lr-equilibrar-carga
+    nota: "Não é avaria: continua o programa escolhendo «Centrifugação» ou «Escoamento» (Bosch)."
+  fim-mangueira:
+    tipo: guia
+    guias:
+      - lr-verificar-mangueira-escoamento
+  fim-filtro:
+    tipo: guia
+    guias:
+      - lr-esvaziar-agua
+      - lr-limpar-filtro-bomba
+    nota: Primeiro esvazia a água, depois limpa o filtro.
+  fim-espuma:
+    tipo: guia
+    guias:
+      - lr-reduzir-detergente-enxaguar
+    nota: Detergente a mais também impede a água de escoar (Bosch).
+  fim-canalizador:
+    tipo: tecnico
+    motivo: Se o esgoto da casa também escoa mal, o entupimento está na canalização. Chama um canalizador.
+  fim-tecnico:
+    tipo: tecnico
+    motivo: Com a mangueira desimpedida, o filtro limpo e o esgoto a funcionar, os fabricantes mandam contactar a assistência técnica. As reparações dentro da máquina só podem ser feitas por técnicos qualificados, por risco de choque elétrico. Se aparecer um código no visor, anota-o para o dares à assistência.
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001742533_A.pdf
+    titulo: Bosch WAX28EH0ES — Manual do utilizador e instruções de instalação (PT)
+    pagina: 46–50, 53–54
+    consultado_em: 2026-11-04
+  - url: https://media3.bosch-home.com/Documents/9001079646_B.pdf
+    titulo: Bosch — Manual de utilização e de instalação, máquina de lavar roupa (PT)
+    pagina: "19"
+    consultado_em: 2026-11-04
+  - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
+    titulo: Samsung WW**BB — Washing Machine User manual (EN)
+    pagina: 54, 59, 61
+    consultado_em: 2026-11-04
+  - url: https://gscs-b2c.lge.com/open/downloadFile?fileId=JejH72VThF8Jn38SlMQ9eQ
+    titulo: LG — Owner's manual, washing machine (EN)
+    pagina: 35–36
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7245211_7245212_7245215_7245216_MAQ_LAVAR_ROUPA_BECKEN_BWM5379_BWM5381_manual.pdf
+    titulo: Becken BWM5379/BWM5381 — Manual de instruções (secção PT)
+    pagina: "126"
+    consultado_em: 2026-11-04

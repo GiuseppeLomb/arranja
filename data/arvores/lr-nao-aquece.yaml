@@ -1,0 +1,47 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/diagnostic_tree.schema.json
+appliance_type: maquina-lavar-roupa
+aplicavel_a:
+  - brand: "*"
+id: lr-nao-aquece
+ordem: 7
+titulo: A máquina de lavar roupa não aquece a água
+sintoma: Não aquece a água
+inicio: programa
+nos:
+  programa:
+    tipo: pergunta
+    texto: O programa que escolheste tem uma temperatura acima do frio?
+    ajuda: Alguns programas e opções lavam a frio ou a baixa temperatura de propósito.
+    respostas:
+      - texto: Sim
+        ir_para: fim-tecnico
+      - texto: Não ou não sei
+        ir_para: fim-programa
+  fim-programa:
+    tipo: tecnico
+    motivo: Escolhe um programa com temperatura e repete a lavagem. Se a roupa lavar bem mas a água continuar fria, a Becken indica como causas o sensor de temperatura (NTC) ou o elemento de aquecimento e manda contactar o apoio ao cliente. As reparações dentro da máquina só podem ser feitas por técnicos qualificados, por risco de choque elétrico.
+  fim-tecnico:
+    tipo: tecnico
+    motivo: Se a máquina lava normalmente mas a água continua fria num programa com temperatura, a Becken indica como causas o sensor de temperatura (NTC) ou o elemento de aquecimento e manda contactar o apoio ao cliente. As reparações dentro da máquina só podem ser feitas por técnicos qualificados, por risco de choque elétrico. Se aparecer um código no visor, anota-o para o dares à assistência.
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001742533_A.pdf
+    titulo: Bosch WAX28EH0ES — Manual do utilizador e instruções de instalação (PT)
+    pagina: 22, 31, 49
+    consultado_em: 2026-11-04
+  - url: https://media3.bosch-home.com/Documents/9001079646_B.pdf
+    titulo: Bosch — Manual de utilização e de instalação, máquina de lavar roupa (PT)
+    pagina: "19"
+    consultado_em: 2026-11-04
+  - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
+    titulo: Samsung WW**BB — Washing Machine User manual (EN)
+    pagina: "60"
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7245211_7245212_7245215_7245216_MAQ_LAVAR_ROUPA_BECKEN_BWM5379_BWM5381_manual.pdf
+    titulo: Becken BWM5379/BWM5381 — Manual de instruções (secção PT)
+    pagina: "115"
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/6383395_MAQ_LAVAR_ROUPA_BECKEN_BoostWash_BWM3641_manual.pdf
+    titulo: Becken BoostWash BWM3639/BWM3640/BWM3641 — Manual de instruções (secção PT)
+    pagina: "122"
+    consultado_em: 2026-11-04

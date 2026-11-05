@@ -1,0 +1,55 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/guide.schema.json
+# O passo «Desliga da corrente (e da água, se aplicável)» é acrescentado pela app.
+appliance_type: maquina-lavar-roupa
+aplicavel_a:
+  - brand: "*"
+risk_level: baixo
+pecas: []
+license: CC-BY-NC-SA-4.0
+id: lr-limpar-filtro-bomba
+titulo: Limpar o filtro da bomba de escoamento
+resumo: O filtro apanha cotão, moedas e ganchos. Entupido, a máquina deixa de escoar ou faz barulho.
+perigos:
+  - agua
+  - temperatura
+  - eletricidade
+avisos:
+  - "Nunca abras o filtro durante um programa: pode haver água quente."
+ferramentas:
+  - balde
+  - toalhas
+  - escova
+  - lanterna
+tempo_estimado: 25
+passos:
+  - texto: Esvazia primeiro a água que estiver na máquina (guia «Esvaziar a água da máquina à mão»).
+  - texto: Com o recipiente e os panos no sítio, desenrosca a tampa do filtro devagar, no sentido contrário ao dos ponteiros do relógio — ainda vai sair alguma água.
+    imagem:
+      src: imagens/guias/lavar-roupa/filtro-bomba.svg
+      alt: Tampa redonda do filtro da bomba com uma seta a indicar rotação no sentido contrário ao dos ponteiros do relógio.
+      licenca: CC-BY-NC-SA-4.0
+      autor: Arranja
+  - texto: "Retira o filtro e tira tudo o que estiver preso: cotão, moedas, ganchos, botões."
+  - texto: Limpa o filtro e o interior do alojamento com uma escova macia e água.
+  - texto: Com uma lanterna, confirma que a hélice da bomba, ao fundo do alojamento, roda livremente e não tem nada preso.
+  - texto: Volta a colocar o filtro e enrosca-o até ao fim, bem apertado.
+    aviso: Um filtro mal fechado pode verter água.
+  - texto: Fecha a tampa de acesso. Na próxima lavagem, espreita se há água a sair por esta zona.
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001742533_A.pdf
+    titulo: Bosch WAX28EH0ES — Manual do utilizador e instruções de instalação (PT)
+    pagina: 46–48
+    consultado_em: 2026-11-04
+  - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
+    titulo: Samsung WW**BB — Washing Machine User manual (EN)
+    pagina: "54"
+    consultado_em: 2026-11-04
+  - url: https://gscs-b2c.lge.com/open/downloadFile?fileId=JejH72VThF8Jn38SlMQ9eQ
+    titulo: LG — Owner's manual, washing machine (EN)
+    pagina: "31"
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7245211_7245212_7245215_7245216_MAQ_LAVAR_ROUPA_BECKEN_BWM5379_BWM5381_manual.pdf
+    titulo: Becken BWM5379/BWM5381 — Manual de instruções (secção PT)
+    pagina: 123–124
+    consultado_em: 2026-11-04

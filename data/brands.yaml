@@ -1,0 +1,140 @@
+# Marcas vendidas em Portugal — lista curada, independente do EPREL.
+# Só o nome em texto (nunca logótipos). Esquema: schemas/brand.schema.json
+# `grupo` / `distribuidor` só quando documentado em fonte oficial (com `sources`).
+# Sem fonte oficial confirmada, a marca entra sem grupo.
+
+# --- BSH ---
+- id: bosch
+  nome: Bosch
+  grupo: BSH Hausgeräte
+  sources:
+    - url: https://media3.bsh-group.com/Documents/17589203_210324_BSH-at-a-Glance_EN.pdf
+      titulo: BSH at a Glance (BSH Hausgeräte GmbH)
+      pagina: "2"
+      consultado_em: 2026-11-04
+- id: siemens
+  nome: Siemens
+  grupo: BSH Hausgeräte
+  sources:
+    - url: https://media3.bsh-group.com/Documents/17589203_210324_BSH-at-a-Glance_EN.pdf
+      titulo: BSH at a Glance (BSH Hausgeräte GmbH)
+      pagina: "2"
+      consultado_em: 2026-11-04
+- id: balay
+  nome: Balay
+  grupo: BSH Hausgeräte
+  sources:
+    - url: https://media3.bsh-group.com/Documents/19683018_Servicos%20Tecnicos%20de%20Fabrica%20Equipamentos%20Domesticos_Balay_1Fev2022.pdf
+      titulo: Serviços Técnicos de Fábrica — Balay (BSHP Electrodomésticos)
+      consultado_em: 2026-11-04
+- id: neff
+  nome: Neff
+  grupo: BSH Hausgeräte
+  sources:
+    - url: https://www.neff-home.com/privacy-policy/legal-notice
+      titulo: Legal Notice of the BSH Group (NEFF)
+      consultado_em: 2026-11-04
+
+# --- Electrolux Group ---
+- id: electrolux
+  nome: Electrolux
+  grupo: Electrolux Group
+  sources:
+    - url: https://electroluxgroup.com/en/?p=35050
+      titulo: Three main brands with strong and focused brand propositions — Electrolux Group
+      consultado_em: 2026-11-04
+- id: aeg
+  nome: AEG
+  grupo: Electrolux Group
+  sources:
+    - url: https://electroluxgroup.com/en/?p=35050
+      titulo: Three main brands with strong and focused brand propositions — Electrolux Group
+      consultado_em: 2026-11-04
+- id: zanussi
+  nome: Zanussi
+
+# --- Haier Europe ---
+- id: candy
+  nome: Candy
+  grupo: Haier Europe
+  sources:
+    - url: https://corporate.haier-europe.com/en-gb/our-brands
+      titulo: Our brands — Haier Europe
+      consultado_em: 2026-11-04
+- id: hoover
+  nome: Hoover
+  grupo: Haier Europe
+  sources:
+    - url: https://corporate.haier-europe.com/en-gb/our-brands
+      titulo: Our brands — Haier Europe
+      consultado_em: 2026-11-04
+- id: haier
+  nome: Haier
+  grupo: Haier Europe
+  sources:
+    - url: https://corporate.haier-europe.com/en-gb/our-brands
+      titulo: Our brands — Haier Europe
+      consultado_em: 2026-11-04
+
+# --- Hisense ---
+- id: hisense
+  nome: Hisense
+- id: gorenje
+  nome: Gorenje
+  grupo: Hisense
+  sources:
+    - url: https://www.hisense-europe.com/en/gorenje-group/corporate-governance
+      titulo: Gorenje Group — Corporate governance (Hisense Europe)
+      consultado_em: 2026-11-04
+
+# --- Marcas de distribuidor ---
+- id: becken
+  nome: Becken
+  distribuidor: Worten
+  sources:
+    - url: https://www.worten.pt/i/8e1f3a645d0eb053a7ded130fdf568f73a7b6b10
+      titulo: Regulamento da campanha «Grandes Domésticos Marca Própria» (Worten, fevereiro de 2025)
+      pagina: "1"
+      consultado_em: 2026-11-04
+- id: kunft
+  nome: Kunft
+  distribuidor: Worten
+  sources:
+    - url: https://www.worten.pt/i/8e1f3a645d0eb053a7ded130fdf568f73a7b6b10
+      titulo: Regulamento da campanha «Grandes Domésticos Marca Própria» (Worten, fevereiro de 2025)
+      pagina: "1"
+      consultado_em: 2026-11-04
+
+# --- Outras marcas (sem grupo confirmado em fonte oficial) ---
+- id: samsung
+  nome: Samsung
+- id: lg
+  nome: LG
+- id: whirlpool
+  nome: Whirlpool
+- id: indesit
+  nome: Indesit
+- id: hotpoint
+  nome: Hotpoint
+- id: beko
+  nome: Beko
+- id: grundig
+  nome: Grundig
+- id: teka
+  nome: Teka
+- id: smeg
+  nome: Smeg
+- id: miele
+  nome: Miele
+- id: fagor
+  nome: Fagor
+- id: orima
+  nome: Orima
+- id: jocel
+  nome: Jocel
+
+# --- Exemplo (só em desenvolvimento) ---
+- id: exemplo
+  nome: Marca Exemplo
+  pagina_pecas: https://example.com/pecas
+  example: true

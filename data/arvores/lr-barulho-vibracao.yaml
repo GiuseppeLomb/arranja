@@ -1,0 +1,81 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/diagnostic_tree.schema.json
+appliance_type: maquina-lavar-roupa
+aplicavel_a:
+  - brand: "*"
+id: lr-barulho-vibracao
+ordem: 6
+titulo: A máquina de lavar roupa faz barulho ou vibra muito
+sintoma: Barulho ou vibração forte
+inicio: nova
+nos:
+  nova:
+    tipo: pergunta
+    texto: A máquina é nova ou foi mudada de sítio há pouco tempo?
+    respostas:
+      - texto: Sim
+        ir_para: fim-transporte
+      - texto: Não
+        ir_para: abana
+  abana:
+    tipo: pergunta
+    texto: A máquina abana ou anda durante a centrifugação?
+    respostas:
+      - texto: Sim
+        ir_para: fim-transporte
+      - texto: Não
+        ir_para: chocalho
+  chocalho:
+    tipo: pergunta
+    texto: Ouves um chocalhar ou um bater metálico?
+    respostas:
+      - texto: Sim
+        ir_para: fim-objetos
+      - texto: Não
+        ir_para: carga
+  carga:
+    tipo: pergunta
+    texto: Acontece sobretudo com pouca roupa ou com uma peça pesada?
+    respostas:
+      - texto: Sim
+        ir_para: fim-carga
+      - texto: Não
+        ir_para: fim-tecnico
+  fim-transporte:
+    tipo: guia
+    guias:
+      - lr-nivelar-parafusos-transporte
+  fim-objetos:
+    tipo: guia
+    guias:
+      - lr-esvaziar-agua
+      - lr-limpar-filtro-bomba
+    nota: Moedas e outros objetos metálicos fazem barulho e ficam no tambor ou no filtro da bomba (Samsung, Bosch).
+  fim-carga:
+    tipo: guia
+    guias:
+      - lr-equilibrar-carga
+  fim-tecnico:
+    tipo: tecnico
+    motivo: "Alguns ruídos são normais: motor, bomba a escoar, água a entrar na gaveta, roupa com peças metálicas (Bosch, Samsung). Se o barulho for anormal e continuar com a máquina nivelada, sem objetos e com a carga equilibrada, contacta a assistência técnica. As reparações dentro da máquina só podem ser feitas por técnicos qualificados, por risco de choque elétrico."
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001742533_A.pdf
+    titulo: Bosch WAX28EH0ES — Manual do utilizador e instruções de instalação (PT)
+    pagina: 49, 55–57
+    consultado_em: 2026-11-04
+  - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
+    titulo: Samsung WW**BB — Washing Machine User manual (EN)
+    pagina: 58–59
+    consultado_em: 2026-11-04
+  - url: https://gscs-b2c.lge.com/open/downloadFile?fileId=JejH72VThF8Jn38SlMQ9eQ
+    titulo: LG — Owner's manual, washing machine (EN)
+    pagina: 35, 38
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7245211_7245212_7245215_7245216_MAQ_LAVAR_ROUPA_BECKEN_BWM5379_BWM5381_manual.pdf
+    titulo: Becken BWM5379/BWM5381 — Manual de instruções (secção PT)
+    pagina: "125"
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/6383395_MAQ_LAVAR_ROUPA_BECKEN_BoostWash_BWM3641_manual.pdf
+    titulo: Becken BoostWash BWM3639/BWM3640/BWM3641 — Manual de instruções (secção PT)
+    pagina: "123"
+    consultado_em: 2026-11-04

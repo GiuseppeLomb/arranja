@@ -1,0 +1,91 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/diagnostic_tree.schema.json
+appliance_type: maquina-lavar-roupa
+aplicavel_a:
+  - brand: "*"
+id: lr-cheiro-mau
+ordem: 9
+titulo: A máquina de lavar roupa cheira mal
+sintoma: Cheiro mau
+inicio: porta
+nos:
+  porta:
+    tipo: pergunta
+    texto: Costumas deixar a porta fechada entre lavagens?
+    respostas:
+      - texto: Sim
+        ir_para: fim-borracha
+      - texto: Não
+        ir_para: tambor
+  tambor:
+    tipo: pergunta
+    texto: Fazes regularmente o ciclo de limpeza do tambor?
+    respostas:
+      - texto: Não
+        ir_para: fim-tambor
+      - texto: Sim
+        ir_para: espuma
+  espuma:
+    tipo: pergunta
+    texto: Costuma ficar muita espuma no fim das lavagens?
+    respostas:
+      - texto: Sim
+        ir_para: fim-espuma
+      - texto: Não
+        ir_para: filtro
+  filtro:
+    tipo: pergunta
+    texto: Já limpaste o filtro da bomba de escoamento?
+    respostas:
+      - texto: Não
+        ir_para: fim-filtro
+      - texto: Sim
+        ir_para: mangueira
+  mangueira:
+    tipo: pergunta
+    texto: A mangueira de escoamento está bem instalada, sem dobras?
+    respostas:
+      - texto: Sim
+        ir_para: fim-tecnico
+      - texto: Não ou não sei
+        ir_para: fim-mangueira
+  fim-borracha:
+    tipo: guia
+    guias:
+      - lr-limpar-borracha-porta
+      - lr-ciclo-limpeza-tambor
+  fim-tambor:
+    tipo: guia
+    guias:
+      - lr-ciclo-limpeza-tambor
+  fim-espuma:
+    tipo: guia
+    guias:
+      - lr-reduzir-detergente-enxaguar
+    nota: A espuma a mais acumula-se em recantos e pode causar maus cheiros (Samsung).
+  fim-filtro:
+    tipo: guia
+    guias:
+      - lr-esvaziar-agua
+      - lr-limpar-filtro-bomba
+  fim-mangueira:
+    tipo: guia
+    guias:
+      - lr-verificar-mangueira-escoamento
+    nota: Uma mangueira mal instalada pode deixar água voltar para dentro da máquina (LG).
+  fim-tecnico:
+    tipo: tecnico
+    motivo: Se o cheiro continua depois destas limpezas, pede a um técnico para verificar a instalação da mangueira de escoamento e a ligação ao esgoto (a LG indica que uma instalação mal feita deixa a água voltar para dentro da máquina). As reparações dentro da máquina só podem ser feitas por técnicos qualificados, por risco de choque elétrico.
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001742533_A.pdf
+    titulo: Bosch WAX28EH0ES — Manual do utilizador e instruções de instalação (PT)
+    pagina: 44, 49, 60
+    consultado_em: 2026-11-04
+  - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
+    titulo: Samsung WW**BB — Washing Machine User manual (EN)
+    pagina: 51, 61
+    consultado_em: 2026-11-04
+  - url: https://gscs-b2c.lge.com/open/downloadFile?fileId=JejH72VThF8Jn38SlMQ9eQ
+    titulo: LG — Owner's manual, washing machine (EN)
+    pagina: 30, 32, 37
+    consultado_em: 2026-11-04
