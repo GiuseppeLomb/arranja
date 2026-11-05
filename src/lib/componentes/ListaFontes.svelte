@@ -24,7 +24,7 @@
 		{#each fontes as f (f.url)}
 			<li>
 				<a href={f.url} target="_blank" rel="noopener noreferrer external">{f.titulo ?? host(f.url)}</a>
-				<span class="meta">{#if f.pagina}{f.pagina.includes(',') || f.pagina.includes('–') ? 'pp.' : 'p.'} {f.pagina} · {/if}{host(f.url)} · consultado a {data(f.consultado_em)}</span>
+				<span class="meta">{f.pagina ? `${/[,–]/.test(f.pagina) ? 'pp.' : 'p.'} ${f.pagina} · ` : ''}{host(f.url)} · consultado a {data(f.consultado_em)}</span>
 			</li>
 		{/each}
 	</ul>
