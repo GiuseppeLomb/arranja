@@ -4,119 +4,154 @@
   brand: samsung
   appliance_type: maquina-lavar-roupa
   code: OC
-  descricao: A água transbordou. A Samsung indica reiniciar depois da centrifugação e, se o código continuar, contactar a assistência.
+  aliases:
+    - OE
+    - OF
+  descricao: "Água a mais na máquina; talvez tenhas posto detergente a mais. Desliga a máquina da corrente, espera 1 minuto e volta a ligá-la: a bomba deve escoar a água."
   sources:
-    - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
-      titulo: Samsung WW**BB — Washing Machine User manual (EN)
-      pagina: "62"
+    - url: https://www.samsung.com/uk/support/home-appliances/what-do-the-codes-on-my-washing-machine-mean/
+      titulo: Samsung UK — What do the codes on my washing machine mean? (página de apoio)
       consultado_em: 2026-11-04
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Samsung Reino Unido sobre códigos das máquinas de lavar roupa, sem lista de modelos
 - id: samsung-lr-lc
   brand: samsung
   appliance_type: maquina-lavar-roupa
   code: LC
   aliases:
     - LC1
-  descricao: "Verificar a mangueira de escoamento: a ponta não deve estar pousada no chão e a mangueira não pode estar entupida. Se o código continuar, a Samsung manda contactar a assistência."
+    - LE
+    - LE1
+  descricao: Nível de água baixo. Confirma que a mangueira de escoamento não está abaixo da base da máquina e procura alguma fuga de água. Se não encontrares sinais de fuga, desliga a máquina da corrente, volta a ligá-la e tenta outra vez.
   guias:
     - lr-verificar-mangueira-escoamento
   sources:
-    - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
-      titulo: Samsung WW**BB — Washing Machine User manual (EN)
-      pagina: "62"
+    - url: https://www.samsung.com/uk/support/home-appliances/what-do-the-codes-on-my-washing-machine-mean/
+      titulo: Samsung UK — What do the codes on my washing machine mean? (página de apoio)
       consultado_em: 2026-11-04
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Samsung Reino Unido sobre códigos das máquinas de lavar roupa, sem lista de modelos
 - id: samsung-lr-3c
   brand: samsung
   appliance_type: maquina-lavar-roupa
   code: 3C
-  descricao: Verificar o funcionamento do motor do tambor. Tenta reiniciar o programa; se o código voltar, contacta a assistência.
+  aliases:
+    - 3E
+    - "3E1"
+    - "3E2"
+    - "3E3"
+    - "3E4"
+  descricao: Problema no motor. Desliga a máquina da corrente, espera 1 minuto, volta a ligá-la e começa um programa novo.
   sources:
-    - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
-      titulo: Samsung WW**BB — Washing Machine User manual (EN)
-      pagina: "62"
+    - url: https://www.samsung.com/uk/support/home-appliances/what-do-the-codes-on-my-washing-machine-mean/
+      titulo: Samsung UK — What do the codes on my washing machine mean? (página de apoio)
       consultado_em: 2026-11-04
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Samsung Reino Unido sobre códigos das máquinas de lavar roupa, sem lista de modelos
 - id: samsung-lr-3cp
   brand: samsung
   appliance_type: maquina-lavar-roupa
   code: 3CP
-  descricao: O comando eletrónico precisa de ser verificado. Tenta reiniciar o programa; se o código voltar, contacta a assistência.
+  descricao: Problema no comando eletrónico. Recomeça o programa.
   sources:
-    - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
-      titulo: Samsung WW**BB — Washing Machine User manual (EN)
-      pagina: "63"
+    - url: https://www.samsung.com/uk/support/home-appliances/what-do-the-codes-on-my-washing-machine-mean/
+      titulo: Samsung UK — What do the codes on my washing machine mean? (página de apoio)
       consultado_em: 2026-11-04
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Samsung Reino Unido sobre códigos das máquinas de lavar roupa, sem lista de modelos
 - id: samsung-lr-uc
   brand: samsung
   appliance_type: maquina-lavar-roupa
   code: UC
-  descricao: Tensão baixa detetada ou problema de alimentação. Confirma que a ficha está ligada e que há corrente; se o código continuar, contacta a assistência.
+  descricao: A tensão da corrente está a oscilar. Confirma que a ficha está bem ligada e que a máquina não está ligada a uma extensão nem partilha a tomada com outro aparelho. Desliga-a da corrente, espera 1 minuto, volta a ligá-la e começa um programa novo.
   guias:
     - lr-verificar-energia-bloqueio
   sources:
-    - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
-      titulo: Samsung WW**BB — Washing Machine User manual (EN)
-      pagina: "63"
+    - url: https://www.samsung.com/uk/support/home-appliances/what-do-the-codes-on-my-washing-machine-mean/
+      titulo: Samsung UK — What do the codes on my washing machine mean? (página de apoio)
       consultado_em: 2026-11-04
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Samsung Reino Unido sobre códigos das máquinas de lavar roupa, sem lista de modelos
 - id: samsung-lr-hc
   brand: samsung
   appliance_type: maquina-lavar-roupa
   code: HC
-  descricao: Verificação de aquecimento a alta temperatura. Se o código continuar, a Samsung manda contactar a assistência.
+  aliases:
+    - H1
+    - HE
+  descricao: Problema na temperatura da água. Confirma que a mangueira de entrada está ligada à água fria e não à quente (normalmente a torneira azul).
   sources:
-    - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
-      titulo: Samsung WW**BB — Washing Machine User manual (EN)
-      pagina: "63"
+    - url: https://www.samsung.com/uk/support/home-appliances/what-do-the-codes-on-my-washing-machine-mean/
+      titulo: Samsung UK — What do the codes on my washing machine mean? (página de apoio)
       consultado_em: 2026-11-04
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Samsung Reino Unido sobre códigos das máquinas de lavar roupa, sem lista de modelos
 - id: samsung-lr-1c
   brand: samsung
   appliance_type: maquina-lavar-roupa
   code: 1C
-  descricao: O sensor do nível de água não está a funcionar bem. Desliga a máquina e reinicia o programa; se o código voltar, contacta a assistência.
+  aliases:
+    - 1E
+  descricao: Problema no sensor do nível de água. Desliga a máquina da corrente, espera 1 minuto, volta a ligá-la e começa um programa novo.
   sources:
-    - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
-      titulo: Samsung WW**BB — Washing Machine User manual (EN)
-      pagina: "63"
+    - url: https://www.samsung.com/uk/support/home-appliances/what-do-the-codes-on-my-washing-machine-mean/
+      titulo: Samsung UK — What do the codes on my washing machine mean? (página de apoio)
       consultado_em: 2026-11-04
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Samsung Reino Unido sobre códigos das máquinas de lavar roupa, sem lista de modelos
 - id: samsung-lr-ac
   brand: samsung
   appliance_type: maquina-lavar-roupa
   code: AC
-  descricao: Falha de comunicação entre placas eletrónicas da máquina. Desliga a máquina e reinicia o programa; se o código voltar, contacta a assistência.
+  aliases:
+    - AE
+  descricao: Erro de comunicação. Espera alguns minutos, porque a máquina pode voltar sozinha ao normal; se não voltar, desliga-a e recomeça o programa.
   sources:
-    - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
-      titulo: Samsung WW**BB — Washing Machine User manual (EN)
-      pagina: "63"
+    - url: https://www.samsung.com/uk/support/home-appliances/what-do-the-codes-on-my-washing-machine-mean/
+      titulo: Samsung UK — What do the codes on my washing machine mean? (página de apoio)
       consultado_em: 2026-11-04
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Samsung Reino Unido sobre códigos das máquinas de lavar roupa, sem lista de modelos
 - id: samsung-lr-ac6
   brand: samsung
   appliance_type: maquina-lavar-roupa
   code: AC6
-  descricao: Falha de comunicação entre a placa principal e a placa do inversor. Segundo a Samsung, a máquina pode voltar sozinha ao normal; se não voltar, desliga-a e reinicia o programa. Se o código continuar, contacta a assistência.
+  descricao: Erro de comunicação. Espera alguns minutos, porque a máquina pode voltar sozinha ao normal; se não voltar, desliga-a e recomeça o programa.
   sources:
-    - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
-      titulo: Samsung WW**BB — Washing Machine User manual (EN)
-      pagina: "63"
+    - url: https://www.samsung.com/uk/support/home-appliances/what-do-the-codes-on-my-washing-machine-mean/
+      titulo: Samsung UK — What do the codes on my washing machine mean? (página de apoio)
       consultado_em: 2026-11-04
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Samsung Reino Unido sobre códigos das máquinas de lavar roupa, sem lista de modelos
 - id: samsung-lr-8c
   brand: samsung
   appliance_type: maquina-lavar-roupa
   code: 8C
-  descricao: O sensor MEMS da máquina não está a funcionar bem. Desliga a máquina e reinicia o programa; se o código voltar, contacta a assistência.
+  descricao: Problema no sensor MEMS. Desliga a máquina e recomeça o programa.
   sources:
-    - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
-      titulo: Samsung WW**BB — Washing Machine User manual (EN)
-      pagina: "63"
+    - url: https://www.samsung.com/uk/support/home-appliances/what-do-the-codes-on-my-washing-machine-mean/
+      titulo: Samsung UK — What do the codes on my washing machine mean? (página de apoio)
       consultado_em: 2026-11-04
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Samsung Reino Unido sobre códigos das máquinas de lavar roupa, sem lista de modelos
 - id: samsung-lr-dc1
   brand: samsung
   appliance_type: maquina-lavar-roupa
   code: DC1
-  descricao: O fecho da porta não está a trancar ou destrancar bem. Desliga a máquina e reinicia o programa; se o código voltar, contacta a assistência.
-  arvore: lr-porta-nao-abre
+  aliases:
+    - dC
+    - DC
+    - dE
+    - dE1
+  descricao: Problema na porta. Confirma que a porta está bem fechada e que nada ficou preso nela; vê no manual a carga certa para o programa. Se o bloqueio para crianças estiver ativo, desativa-o.
+  guias:
+    - lr-verificar-energia-bloqueio
   sources:
-    - url: https://downloadcenter.samsung.com/content/UM/202306/20230601125727000/DC68-04464C-00_IB_B-PJT_WASHER-AD_SimpleUX_EN_230508.pdf
-      titulo: Samsung WW**BB — Washing Machine User manual (EN)
-      pagina: "63"
+    - url: https://www.samsung.com/uk/support/home-appliances/what-do-the-codes-on-my-washing-machine-mean/
+      titulo: Samsung UK — What do the codes on my washing machine mean? (página de apoio)
       consultado_em: 2026-11-04
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Samsung Reino Unido sobre códigos das máquinas de lavar roupa, sem lista de modelos
 - id: samsung-ll-1c
   brand: samsung
   appliance_type: maquina-lavar-loica
@@ -130,6 +165,8 @@
     - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
       titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
       consultado_em: 2026-11-04
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Samsung Reino Unido sobre códigos das máquinas de lavar loiça, sem lista de modelos
 - id: samsung-ll-3c
   brand: samsung
   appliance_type: maquina-lavar-loica
@@ -145,6 +182,13 @@
     - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
       titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
       consultado_em: 2026-11-04
+  ambito: modelos
+  ambito_nota: Samsung DW60M9550F* e DW60M9530F* (manual DD68-00203A)
+  aplicavel_a:
+    - brand: samsung
+      prefixos:
+        - DW60M9550F
+        - DW60M9530F
 - id: samsung-ll-4c
   brand: samsung
   appliance_type: maquina-lavar-loica
@@ -163,6 +207,13 @@
     - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
       titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
       consultado_em: 2026-11-04
+  ambito: modelos
+  ambito_nota: Samsung DW60M9550F* e DW60M9530F* (manual DD68-00203A)
+  aplicavel_a:
+    - brand: samsung
+      prefixos:
+        - DW60M9550F
+        - DW60M9530F
 - id: samsung-ll-4c5
   brand: samsung
   appliance_type: maquina-lavar-loica
@@ -177,6 +228,8 @@
     - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
       titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
       consultado_em: 2026-11-04
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Samsung Reino Unido sobre códigos das máquinas de lavar loiça, sem lista de modelos
 - id: samsung-ll-5c
   brand: samsung
   appliance_type: maquina-lavar-loica
@@ -197,6 +250,13 @@
     - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
       titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
       consultado_em: 2026-11-04
+  ambito: modelos
+  ambito_nota: Samsung DW60M9550F* e DW60M9530F* (manual DD68-00203A)
+  aplicavel_a:
+    - brand: samsung
+      prefixos:
+        - DW60M9550F
+        - DW60M9530F
 - id: samsung-ll-5c2
   brand: samsung
   appliance_type: maquina-lavar-loica
@@ -209,6 +269,8 @@
     - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
       titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
       consultado_em: 2026-11-04
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Samsung Reino Unido sobre códigos das máquinas de lavar loiça, sem lista de modelos
 - id: samsung-ll-6c1
   brand: samsung
   appliance_type: maquina-lavar-loica
@@ -218,6 +280,8 @@
     - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
       titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
       consultado_em: 2026-11-04
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Samsung Reino Unido sobre códigos das máquinas de lavar loiça, sem lista de modelos
 - id: samsung-ll-7c
   brand: samsung
   appliance_type: maquina-lavar-loica
@@ -227,6 +291,8 @@
     - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
       titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
       consultado_em: 2026-11-04
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Samsung Reino Unido sobre códigos das máquinas de lavar loiça, sem lista de modelos
 - id: samsung-ll-9c1
   brand: samsung
   appliance_type: maquina-lavar-loica
@@ -241,6 +307,8 @@
     - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
       titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
       consultado_em: 2026-11-04
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Samsung Reino Unido sobre códigos das máquinas de lavar loiça, sem lista de modelos
 - id: samsung-ll-9c2
   brand: samsung
   appliance_type: maquina-lavar-loica
@@ -252,6 +320,8 @@
     - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
       titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
       consultado_em: 2026-11-04
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Samsung Reino Unido sobre códigos das máquinas de lavar loiça, sem lista de modelos
 - id: samsung-ll-ac
   brand: samsung
   appliance_type: maquina-lavar-loica
@@ -261,6 +331,8 @@
     - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
       titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
       consultado_em: 2026-11-04
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Samsung Reino Unido sobre códigos das máquinas de lavar loiça, sem lista de modelos
 - id: samsung-ll-ac6
   brand: samsung
   appliance_type: maquina-lavar-loica
@@ -270,6 +342,8 @@
     - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
       titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
       consultado_em: 2026-11-04
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Samsung Reino Unido sobre códigos das máquinas de lavar loiça, sem lista de modelos
 - id: samsung-ll-dc
   brand: samsung
   appliance_type: maquina-lavar-loica
@@ -283,6 +357,8 @@
     - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
       titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
       consultado_em: 2026-11-04
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Samsung Reino Unido sobre códigos das máquinas de lavar loiça, sem lista de modelos
 - id: samsung-ll-hc
   brand: samsung
   appliance_type: maquina-lavar-loica
@@ -300,6 +376,13 @@
     - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
       titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
       consultado_em: 2026-11-04
+  ambito: modelos
+  ambito_nota: Samsung DW60M9550F* e DW60M9530F* (manual DD68-00203A)
+  aplicavel_a:
+    - brand: samsung
+      prefixos:
+        - DW60M9550F
+        - DW60M9530F
 - id: samsung-ll-hc1
   brand: samsung
   appliance_type: maquina-lavar-loica
@@ -311,6 +394,8 @@
     - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
       titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
       consultado_em: 2026-11-04
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Samsung Reino Unido sobre códigos das máquinas de lavar loiça, sem lista de modelos
 - id: samsung-ll-lc
   brand: samsung
   appliance_type: maquina-lavar-loica
@@ -330,6 +415,13 @@
     - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
       titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
       consultado_em: 2026-11-04
+  ambito: modelos
+  ambito_nota: Samsung DW60M9550F* e DW60M9530F* (manual DD68-00203A)
+  aplicavel_a:
+    - brand: samsung
+      prefixos:
+        - DW60M9550F
+        - DW60M9530F
 - id: samsung-ll-oc
   brand: samsung
   appliance_type: maquina-lavar-loica
@@ -343,6 +435,8 @@
     - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
       titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
       consultado_em: 2026-11-04
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Samsung Reino Unido sobre códigos das máquinas de lavar loiça, sem lista de modelos
 - id: samsung-ll-pc
   brand: samsung
   appliance_type: maquina-lavar-loica
@@ -354,6 +448,8 @@
     - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
       titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
       consultado_em: 2026-11-04
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Samsung Reino Unido sobre códigos das máquinas de lavar loiça, sem lista de modelos
 - id: samsung-ll-tc
   brand: samsung
   appliance_type: maquina-lavar-loica
@@ -366,29 +462,37 @@
     - url: https://www.samsung.com/uk/support/home-appliances/displayed-information-codes-on-my-dishwasher/
       titulo: Samsung UK — What do the error codes on my Dishwasher mean? (página de apoio)
       consultado_em: 2026-11-04
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Samsung Reino Unido sobre códigos das máquinas de lavar loiça, sem lista de modelos
 - id: samsung-ms-tc
   brand: samsung
   appliance_type: maquina-secar
   code: tC
-  descricao: Problema no sensor de temperatura do ar. Limpa o filtro de cotão ou o permutador de calor; se continuar, contacta a assistência.
+  aliases:
+    - tE
+  descricao: Problema no sensor de temperatura do ar. Desliga a máquina da tomada pelo menos 30 segundos e volta a ligá-la. Limpa o filtro de cotão ou o permutador de calor e vê se a saída de ar está obstruída. Se o código continuar, contacta a assistência Samsung.
   guias:
     - ms-limpar-filtro-cotao
     - ms-limpar-permutador
   sources:
-    - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DV90BB5245AW&CttFileID=8724284&CDCttType=UM&VPath=UM%2F202208%2F20220815150115831%2FB-PJT_DV5000B_SimpleUX_WEB_English.pdf
-      titulo: Samsung DV5000B (DV90BB5245AW) — Tumble dryer user manual (EN)
-      pagina: "51"
+    - url: https://www.samsung.com/uk/support/home-appliances/check-the-information-codes-of-the-dryer/
+      titulo: "Samsung UK — Samsung Tumble Dryer error codes: what do they mean? (página de apoio)"
       consultado_em: 2026-11-04
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Samsung Reino Unido sobre códigos das máquinas de secar, sem lista de modelos
 - id: samsung-ms-tc5
   brand: samsung
   appliance_type: maquina-secar
   code: tC5
-  descricao: Problema no sensor de temperatura do compressor. Espera dois a três minutos, volta a ligar a máquina e recomeça.
+  aliases:
+    - tE5
+  descricao: Problema no sensor de temperatura do compressor. Espera dois a três minutos, volta a ligar a máquina e recomeça; vê se o filtro de cotão está entupido e se a saída de ar está obstruída. Se o código continuar, contacta a assistência Samsung.
   sources:
-    - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DV90BB5245AW&CttFileID=8724284&CDCttType=UM&VPath=UM%2F202208%2F20220815150115831%2FB-PJT_DV5000B_SimpleUX_WEB_English.pdf
-      titulo: Samsung DV5000B (DV90BB5245AW) — Tumble dryer user manual (EN)
-      pagina: "51"
+    - url: https://www.samsung.com/uk/support/home-appliances/check-the-information-codes-of-the-dryer/
+      titulo: "Samsung UK — Samsung Tumble Dryer error codes: what do they mean? (página de apoio)"
       consultado_em: 2026-11-04
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Samsung Reino Unido sobre códigos das máquinas de secar, sem lista de modelos
 - id: samsung-ms-tc7
   brand: samsung
   appliance_type: maquina-secar
@@ -399,26 +503,38 @@
       titulo: Samsung DV5000B (DV90BB5245AW) — Tumble dryer user manual (EN)
       pagina: "51"
       consultado_em: 2026-11-04
+  ambito: modelos
+  ambito_nota: Samsung DV9*BB5245** (série DV5000B)
+  aplicavel_a:
+    - brand: samsung
+      regex:
+        - ^DV9.BB5245
 - id: samsung-ms-3c
   brand: samsung
   appliance_type: maquina-secar
   code: 3C
-  descricao: Verificar o funcionamento do motor. Tenta recomeçar o programa; se continuar, contacta a assistência.
+  aliases:
+    - 3E
+  descricao: Problema no funcionamento do motor do inversor. Tenta recomeçar o programa; se o código continuar, contacta a assistência Samsung.
   sources:
-    - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DV90BB5245AW&CttFileID=8724284&CDCttType=UM&VPath=UM%2F202208%2F20220815150115831%2FB-PJT_DV5000B_SimpleUX_WEB_English.pdf
-      titulo: Samsung DV5000B (DV90BB5245AW) — Tumble dryer user manual (EN)
-      pagina: "51"
+    - url: https://www.samsung.com/uk/support/home-appliances/check-the-information-codes-of-the-dryer/
+      titulo: "Samsung UK — Samsung Tumble Dryer error codes: what do they mean? (página de apoio)"
       consultado_em: 2026-11-04
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Samsung Reino Unido sobre códigos das máquinas de secar, sem lista de modelos
 - id: samsung-ms-ac6
   brand: samsung
   appliance_type: maquina-secar
   code: AC6
-  descricao: Falha de comunicação entre a placa principal e a placa do inversor. Tenta recomeçar o programa; se continuar, contacta a assistência.
+  aliases:
+    - AE6
+  descricao: Falha de comunicação entre a placa principal e a placa do inversor. Tenta recomeçar o programa; se o código continuar, contacta a assistência Samsung.
   sources:
-    - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DV90BB5245AW&CttFileID=8724284&CDCttType=UM&VPath=UM%2F202208%2F20220815150115831%2FB-PJT_DV5000B_SimpleUX_WEB_English.pdf
-      titulo: Samsung DV5000B (DV90BB5245AW) — Tumble dryer user manual (EN)
-      pagina: "52"
+    - url: https://www.samsung.com/uk/support/home-appliances/check-the-information-codes-of-the-dryer/
+      titulo: "Samsung UK — Samsung Tumble Dryer error codes: what do they mean? (página de apoio)"
       consultado_em: 2026-11-04
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Samsung Reino Unido sobre códigos das máquinas de secar, sem lista de modelos
 - id: samsung-ms-hcl
   brand: samsung
   appliance_type: maquina-secar
@@ -429,16 +545,25 @@
       titulo: Samsung DV5000B (DV90BB5245AW) — Tumble dryer user manual (EN)
       pagina: 8, 52
       consultado_em: 2026-11-04
+  ambito: modelos
+  ambito_nota: Samsung DV9*BB5245** (série DV5000B)
+  aplicavel_a:
+    - brand: samsung
+      regex:
+        - ^DV9.BB5245
 - id: samsung-ms-hc
   brand: samsung
   appliance_type: maquina-secar
   code: HC
-  descricao: Sobreaquecimento do compressor. Verifica se o permutador de calor e o filtro de cotão estão limpos; se continuar, contacta a assistência.
+  aliases:
+    - HE
+  descricao: "Sobreaquecimento do compressor ou do aquecimento. Vê se algum disjuntor do quadro elétrico disparou e volta a ligá-lo, e limpa o filtro de cotão. Não mexas nas ligações do elemento de aquecimento: a Samsung diz que isso exige um eletricista certificado. Se o código continuar, contacta a assistência Samsung."
   guias:
+    - ms-verificar-energia-porta
     - ms-limpar-filtro-cotao
-    - ms-limpar-permutador
   sources:
-    - url: https://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_UK&OriginYN=N&ModelType=N&ModelName=DV90BB5245AW&CttFileID=8724284&CDCttType=UM&VPath=UM%2F202208%2F20220815150115831%2FB-PJT_DV5000B_SimpleUX_WEB_English.pdf
-      titulo: Samsung DV5000B (DV90BB5245AW) — Tumble dryer user manual (EN)
-      pagina: "52"
+    - url: https://www.samsung.com/uk/support/home-appliances/check-the-information-codes-of-the-dryer/
+      titulo: "Samsung UK — Samsung Tumble Dryer error codes: what do they mean? (página de apoio)"
       consultado_em: 2026-11-04
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Samsung Reino Unido sobre códigos das máquinas de secar, sem lista de modelos

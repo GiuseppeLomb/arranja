@@ -20,6 +20,14 @@
     - url: https://service.hoover.co.uk/advice-centre/error-message-e02-appears-in-the-display-on-the-washing-machine/
       titulo: "Hoover — Advice Centre: error message E02"
       consultado_em: 2026-11-05
+  ambito: modelos
+  ambito_nota: Hoover HBWMO…T-AH, de 6 a 9 kg (manual HBWMO96TAHC); 446 modelos Hoover listados no Centro de Apoio
+  aplicavel_a:
+    - brand: hoover
+      regex:
+        - ^HBWMO[6-9]\dTAH
+      familias:
+        - hoover-lr-centro-apoio
 - id: hoover-lr-e3
   brand: hoover
   appliance_type: maquina-lavar-roupa
@@ -40,6 +48,14 @@
     - url: https://service.hoover.co.uk/advice-centre/error-message-e03-appears-in-the-display-of-the-washing-machine/
       titulo: "Hoover — Advice Centre: error message E03"
       consultado_em: 2026-11-05
+  ambito: modelos
+  ambito_nota: Hoover HBWMO…T-AH, de 6 a 9 kg (manual HBWMO96TAHC); 446 modelos Hoover listados no Centro de Apoio
+  aplicavel_a:
+    - brand: hoover
+      regex:
+        - ^HBWMO[6-9]\dTAH
+      familias:
+        - hoover-lr-centro-apoio
 - id: hoover-lr-e4
   brand: hoover
   appliance_type: maquina-lavar-roupa
@@ -57,6 +73,14 @@
     - url: https://service.hoover.co.uk/advice-centre/error-04-message/
       titulo: "Hoover — Advice Centre: error message E04"
       consultado_em: 2026-11-05
+  ambito: modelos
+  ambito_nota: Hoover HBWMO…T-AH, de 6 a 9 kg (manual HBWMO96TAHC); 446 modelos Hoover listados no Centro de Apoio
+  aplicavel_a:
+    - brand: hoover
+      regex:
+        - ^HBWMO[6-9]\dTAH
+      familias:
+        - hoover-lr-centro-apoio
 - id: hoover-lr-e7
   brand: hoover
   appliance_type: maquina-lavar-roupa
@@ -70,3 +94,9 @@
       titulo: Hoover HBWMO96TAHC — Instruction manual (EN)
       pagina: "24"
       consultado_em: 2026-11-05
+  ambito: modelos
+  ambito_nota: Hoover HBWMO…T-AH, de 6 a 9 kg (manual HBWMO96TAHC)
+  aplicavel_a:
+    - brand: hoover
+      regex:
+        - ^HBWMO[6-9]\dTAH

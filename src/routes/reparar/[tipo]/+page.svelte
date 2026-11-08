@@ -11,6 +11,7 @@
 	import Fuse from 'fuse.js';
 	import ChevronRight from '@lucide/svelte/icons/chevron-right';
 	import CircleAlert from '@lucide/svelte/icons/circle-alert';
+	import CircleCheck from '@lucide/svelte/icons/circle-check';
 	import Stethoscope from '@lucide/svelte/icons/stethoscope';
 	import BookOpen from '@lucide/svelte/icons/book-open';
 	import CircleQuestionMark from '@lucide/svelte/icons/circle-question-mark';
@@ -75,14 +76,25 @@
 	const encontrado = $derived(conteudoPara(tipo.id, marcaId, modeloNorm));
 
 	let consultaCodigo = $state('');
-	const codigosMostrados = $derived.by(() => {
+	// Com marca: todos os códigos da marca, separados entre confirmados para o modelo indicado e os outros
+	// (documentados noutros modelos — mostram-se com aviso). Sem marca: pesquisa em todas as marcas.
+	const codigosEncontrados = $derived.by(() => {
 		if (marcaId) {
 			const q = normalizarModelo(consultaCodigo);
-			const lista = encontrado.codigos.map((c) => c.item);
-			return q ? lista.filter((c) => [c.code, ...(c.aliases ?? [])].some((x) => normalizarModelo(x).startsWith(q))) : lista;
+			const lista = encontrado.codigos;
+			return q ? lista.filter(({ item: c }) => [c.code, ...(c.aliases ?? [])].some((x) => normalizarModelo(x).startsWith(q))) : lista;
 		}
-		return consultaCodigo.trim() ? codigosDoTipo(tipo.id, consultaCodigo) : [];
+		return consultaCodigo.trim() ? codigosDoTipo(tipo.id, consultaCodigo).map((item) => ({ item, confirmado: false })) : [];
 	});
+	const codigosMostrados = $derived(codigosEncontrados.map((c) => c.item));
+	const codigosConfirmados = $derived(codigosEncontrados.filter((c) => c.confirmado).map((c) => c.item));
+	// Sem marca não há grupos: é uma pesquisa em todas as marcas.
+	const codigosOutros = $derived(
+		codigosEncontrados.filter((c) => !c.confirmado && (!marcaId || c.item.ambito === 'modelos')).map((c) => c.item)
+	);
+	const codigosSemModelos = $derived(marcaId ? codigosEncontrados.filter((c) => c.item.ambito === 'sem-modelos').map((c) => c.item) : []);
+	// Códigos que a fonte diz valerem para todos os modelos da marca (sem modelo indicado ainda não estão confirmados para «o teu»).
+	const codigosTodaMarca = $derived(marcaId ? codigosEncontrados.filter((c) => !c.confirmado && c.item.ambito === 'marca').map((c) => c.item) : []);
 
 	$effect(() => {
 		if (montado && passo === 'problema' && selecao.marca) {
@@ -243,16 +255,70 @@
 				<h3 id="codigos-t" class="secao-titulo">Aparece um código de erro no visor?</h3>
 				<SearchBar bind:value={consultaCodigo} rotulo="Código de erro" placeholder="Ex.: E18" maiusculas />
 				{#if codigosMostrados.length}
-					<ul class="chips">
-						{#each codigosMostrados.slice(0, 60) as c, i (c.id)}
-							<li in:entrar={{ delay: cascata(i, 10) }}>
-								<Chip href={resolve('/erro/[id]', { id: c.id })}>
-									{#snippet icone()}<CircleAlert aria-hidden="true" />{/snippet}
-									{c.code}{marcaId ? '' : ` · ${nomeMarca(c.brand)}`}
-								</Chip>
-							</li>
-						{/each}
-					</ul>
+					{#if codigosConfirmados.length}
+						<p class="grupo-codigos confirmado"><CircleCheck aria-hidden="true" /> Confirmados para o teu modelo</p>
+						<ul class="chips">
+							{#each codigosConfirmados.slice(0, 60) as c, i (c.id)}
+								<li in:entrar={{ delay: cascata(i, 10) }}>
+									<Chip href={resolve('/erro/[id]', { id: c.id })}>
+										{#snippet icone()}<CircleAlert aria-hidden="true" />{/snippet}
+										{c.code}
+									</Chip>
+								</li>
+							{/each}
+						</ul>
+					{/if}
+					{#if codigosOutros.length}
+						{#if marcaId}
+							<p class="grupo-codigos">
+								{#if modeloNorm}
+									{codigosConfirmados.length ? 'Outros códigos' : 'Códigos'} {selecao.marca?.nome} confirmados noutros modelos — no teu pode ser diferente;
+									confirma no manual.
+								{:else}
+									Códigos {selecao.marca?.nome} confirmados só em alguns modelos. Indica o modelo para saberes se estão confirmados para o teu.
+								{/if}
+							</p>
+						{/if}
+						<ul class="chips">
+							{#each codigosOutros.slice(0, 60) as c, i (c.id)}
+								<li in:entrar={{ delay: cascata(i, 10) }}>
+									<Chip href={resolve('/erro/[id]', { id: c.id })}>
+										{#snippet icone()}<CircleAlert aria-hidden="true" />{/snippet}
+										{c.code}{marcaId ? '' : ` · ${nomeMarca(c.brand)}`}
+									</Chip>
+								</li>
+							{/each}
+						</ul>
+					{/if}
+					{#if codigosTodaMarca.length}
+						<p class="grupo-codigos">Códigos que a {selecao.marca?.nome} indica para todos os seus modelos.</p>
+						<ul class="chips">
+							{#each codigosTodaMarca.slice(0, 60) as c, i (c.id)}
+								<li in:entrar={{ delay: cascata(i, 10) }}>
+									<Chip href={resolve('/erro/[id]', { id: c.id })}>
+										{#snippet icone()}<CircleAlert aria-hidden="true" />{/snippet}
+										{c.code}
+									</Chip>
+								</li>
+							{/each}
+						</ul>
+					{/if}
+					{#if codigosSemModelos.length}
+						<p class="grupo-codigos">
+							Códigos {selecao.marca?.nome} indicados em páginas gerais ou manuais sem modelos — no teu pode ser diferente; confirma no manual do teu
+							modelo.
+						</p>
+						<ul class="chips">
+							{#each codigosSemModelos.slice(0, 60) as c, i (c.id)}
+								<li in:entrar={{ delay: cascata(i, 10) }}>
+									<Chip href={resolve('/erro/[id]', { id: c.id })}>
+										{#snippet icone()}<CircleAlert aria-hidden="true" />{/snippet}
+										{c.code}
+									</Chip>
+								</li>
+							{/each}
+						</ul>
+					{/if}
 				{:else if consultaCodigo.trim()}
 					<p class="nota">
 						Não encontrámos este código{selecao.marca ? ` para ${selecao.marca.nome}` : ''}. Escolhe o sintoma acima — funciona com qualquer
@@ -431,6 +497,23 @@
 		display: flex;
 		flex-wrap: wrap;
 		gap: var(--e-2);
+	}
+	.grupo-codigos {
+		display: flex;
+		align-items: flex-start;
+		gap: var(--e-2);
+		color: var(--texto-suave);
+		font-size: var(--t-sm);
+	}
+	.grupo-codigos.confirmado {
+		color: var(--texto);
+		font-weight: 700;
+	}
+	.grupo-codigos :global(svg) {
+		flex: none;
+		width: 18px;
+		height: 18px;
+		color: var(--primaria);
 	}
 	.nota {
 		color: var(--texto-suave);

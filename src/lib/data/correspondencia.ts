@@ -1,4 +1,4 @@
-import type { AplicavelA, Familia } from './tipos';
+import type { AplicavelA, CodigoErro, Familia } from './tipos';
 
 /** Quão específica é a correspondência (maior = mais específica). */
 export type Nivel = 'modelo' | 'familia' | 'marca' | 'todas';
@@ -88,4 +88,22 @@ export function descreverAplicacao(
 		for (const m of r.modelos ?? []) partes.push(m);
 		return partes.length ? `${marca}: ${partes.join(', ')}` : `${marca}: todos os modelos`;
 	});
+}
+
+/**
+ * Estado de um código de erro para a marca e o modelo do utilizador.
+ * confirmado = o modelo está nos modelos/famílias documentados (ou a fonte diz que vale para toda a marca).
+ * Sem modelo, ou fora do que a fonte documenta, não está confirmado: mostra-se com aviso.
+ */
+export function estadoCodigo(
+	c: Pick<CodigoErro, 'brand' | 'ambito' | 'aplicavel_a'>,
+	familias: ReadonlyMap<string, Familia>,
+	marca: string | null,
+	modelo: string | null
+): { confirmado: boolean } {
+	if (!marca || marca !== c.brand || !modelo) return { confirmado: false };
+	if (c.ambito === 'marca') return { confirmado: true };
+	if (c.ambito !== 'modelos') return { confirmado: false };
+	const m = corresponde(c.aplicavel_a, familias, marca, modelo);
+	return { confirmado: !!m && (m.nivel === 'modelo' || m.nivel === 'familia') };
 }

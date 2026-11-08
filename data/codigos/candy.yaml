@@ -28,6 +28,15 @@
           - GWD 4106B8-S
         url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
         alojado_por: Auchan
+  ambito: modelos
+  ambito_nota: Candy GWD 474SB5-S, GWD 485B6-S, GWD 496B8-S e GWD 4106B8-S
+  aplicavel_a:
+    - brand: candy
+      prefixos:
+        - GWD474SB5S
+        - GWD485B6S
+        - GWD496B8S
+        - GWD4106B8S
 - id: candy-lr-e2
   brand: candy
   appliance_type: maquina-lavar-roupa
@@ -46,6 +55,15 @@
         modelos: *a1
         url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
         alojado_por: Auchan
+  ambito: modelos
+  ambito_nota: Candy GWD 474SB5-S, GWD 485B6-S, GWD 496B8-S e GWD 4106B8-S
+  aplicavel_a:
+    - brand: candy
+      prefixos:
+        - GWD474SB5S
+        - GWD485B6S
+        - GWD496B8S
+        - GWD4106B8S
 - id: candy-lr-e4
   brand: candy
   appliance_type: maquina-lavar-roupa
@@ -66,6 +84,15 @@
         modelos: *a1
         url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
         alojado_por: Auchan
+  ambito: modelos
+  ambito_nota: Candy GWD 474SB5-S, GWD 485B6-S, GWD 496B8-S e GWD 4106B8-S
+  aplicavel_a:
+    - brand: candy
+      prefixos:
+        - GWD474SB5S
+        - GWD485B6S
+        - GWD496B8S
+        - GWD4106B8S
 - id: candy-lr-e5
   brand: candy
   appliance_type: maquina-lavar-roupa
@@ -84,6 +111,15 @@
         modelos: *a1
         url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
         alojado_por: Auchan
+  ambito: modelos
+  ambito_nota: Candy GWD 474SB5-S, GWD 485B6-S, GWD 496B8-S e GWD 4106B8-S
+  aplicavel_a:
+    - brand: candy
+      prefixos:
+        - GWD474SB5S
+        - GWD485B6S
+        - GWD496B8S
+        - GWD4106B8S
 - id: candy-lr-e8
   brand: candy
   appliance_type: maquina-lavar-roupa
@@ -100,6 +136,15 @@
         modelos: *a1
         url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
         alojado_por: Auchan
+  ambito: modelos
+  ambito_nota: Candy GWD 474SB5-S, GWD 485B6-S, GWD 496B8-S e GWD 4106B8-S
+  aplicavel_a:
+    - brand: candy
+      prefixos:
+        - GWD474SB5S
+        - GWD485B6S
+        - GWD496B8S
+        - GWD4106B8S
 - id: candy-lr-e9
   brand: candy
   appliance_type: maquina-lavar-roupa
@@ -118,6 +163,15 @@
         modelos: *a1
         url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
         alojado_por: Auchan
+  ambito: modelos
+  ambito_nota: Candy GWD 474SB5-S, GWD 485B6-S, GWD 496B8-S e GWD 4106B8-S
+  aplicavel_a:
+    - brand: candy
+      prefixos:
+        - GWD474SB5S
+        - GWD485B6S
+        - GWD496B8S
+        - GWD4106B8S
 - id: candy-lr-eb
   brand: candy
   appliance_type: maquina-lavar-roupa
@@ -134,6 +188,15 @@
         modelos: *a1
         url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
         alojado_por: Auchan
+  ambito: modelos
+  ambito_nota: Candy GWD 474SB5-S, GWD 485B6-S, GWD 496B8-S e GWD 4106B8-S
+  aplicavel_a:
+    - brand: candy
+      prefixos:
+        - GWD474SB5S
+        - GWD485B6S
+        - GWD496B8S
+        - GWD4106B8S
 - id: candy-lr-f9
   brand: candy
   appliance_type: maquina-lavar-roupa
@@ -150,6 +213,15 @@
         modelos: *a1
         url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
         alojado_por: Auchan
+  ambito: modelos
+  ambito_nota: Candy GWD 474SB5-S, GWD 485B6-S, GWD 496B8-S e GWD 4106B8-S
+  aplicavel_a:
+    - brand: candy
+      prefixos:
+        - GWD474SB5S
+        - GWD485B6S
+        - GWD496B8S
+        - GWD4106B8S
 - id: candy-lr-fd
   brand: candy
   appliance_type: maquina-lavar-roupa
@@ -166,6 +238,15 @@
         modelos: *a1
         url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
         alojado_por: Auchan
+  ambito: modelos
+  ambito_nota: Candy GWD 474SB5-S, GWD 485B6-S, GWD 496B8-S e GWD 4106B8-S
+  aplicavel_a:
+    - brand: candy
+      prefixos:
+        - GWD474SB5S
+        - GWD485B6S
+        - GWD496B8S
+        - GWD4106B8S
 - id: candy-lr-fb
   brand: candy
   appliance_type: maquina-lavar-roupa
@@ -182,6 +263,15 @@
         modelos: *a1
         url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
         alojado_por: Auchan
+  ambito: modelos
+  ambito_nota: Candy GWD 474SB5-S, GWD 485B6-S, GWD 496B8-S e GWD 4106B8-S
+  aplicavel_a:
+    - brand: candy
+      prefixos:
+        - GWD474SB5S
+        - GWD485B6S
+        - GWD496B8S
+        - GWD4106B8S
 - id: candy-lr-f3
   brand: candy
   appliance_type: maquina-lavar-roupa
@@ -198,6 +288,15 @@
         modelos: *a1
         url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
         alojado_por: Auchan
+  ambito: modelos
+  ambito_nota: Candy GWD 474SB5-S, GWD 485B6-S, GWD 496B8-S e GWD 4106B8-S
+  aplicavel_a:
+    - brand: candy
+      prefixos:
+        - GWD474SB5S
+        - GWD485B6S
+        - GWD496B8S
+        - GWD4106B8S
 - id: candy-lr-f4
   brand: candy
   appliance_type: maquina-lavar-roupa
@@ -214,6 +313,15 @@
         modelos: *a1
         url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
         alojado_por: Auchan
+  ambito: modelos
+  ambito_nota: Candy GWD 474SB5-S, GWD 485B6-S, GWD 496B8-S e GWD 4106B8-S
+  aplicavel_a:
+    - brand: candy
+      prefixos:
+        - GWD474SB5S
+        - GWD485B6S
+        - GWD496B8S
+        - GWD4106B8S
 - id: candy-lr-f7
   brand: candy
   appliance_type: maquina-lavar-roupa
@@ -230,6 +338,15 @@
         modelos: *a1
         url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
         alojado_por: Auchan
+  ambito: modelos
+  ambito_nota: Candy GWD 474SB5-S, GWD 485B6-S, GWD 496B8-S e GWD 4106B8-S
+  aplicavel_a:
+    - brand: candy
+      prefixos:
+        - GWD474SB5S
+        - GWD485B6S
+        - GWD496B8S
+        - GWD4106B8S
 - id: candy-lr-fa
   brand: candy
   appliance_type: maquina-lavar-roupa
@@ -246,6 +363,15 @@
         modelos: *a1
         url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
         alojado_por: Auchan
+  ambito: modelos
+  ambito_nota: Candy GWD 474SB5-S, GWD 485B6-S, GWD 496B8-S e GWD 4106B8-S
+  aplicavel_a:
+    - brand: candy
+      prefixos:
+        - GWD474SB5S
+        - GWD485B6S
+        - GWD496B8S
+        - GWD4106B8S
 - id: candy-lr-fc0
   brand: candy
   appliance_type: maquina-lavar-roupa
@@ -265,3 +391,12 @@
         modelos: *a1
         url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw72e599f6/documents/003935663_c2833190-40af-47bd-bb19-6b63c76ebed8.pdf
         alojado_por: Auchan
+  ambito: modelos
+  ambito_nota: Candy GWD 474SB5-S, GWD 485B6-S, GWD 496B8-S e GWD 4106B8-S
+  aplicavel_a:
+    - brand: candy
+      prefixos:
+        - GWD474SB5S
+        - GWD485B6S
+        - GWD496B8S
+        - GWD4106B8S

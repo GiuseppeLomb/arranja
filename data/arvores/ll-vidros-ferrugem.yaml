@@ -1,0 +1,108 @@
+# Gerado a partir de manuais oficiais (ver sources). Texto próprio em PT-PT.
+# Esquema: schemas/diagnostic_tree.schema.json
+appliance_type: maquina-lavar-loica
+aplicavel_a:
+  - brand: "*"
+id: ll-vidros-ferrugem
+ordem: 12
+titulo: Copos baços, riscos, ferrugem ou peças descoloradas
+sintoma: Vidros baços, riscos, ferrugem ou descoloração
+inicio: oque
+nos:
+  oque:
+    tipo: pergunta
+    texto: O que aparece na loiça?
+    respostas:
+      - texto: Copos baços ou opacos
+        ir_para: baco
+      - texto: Riscos ou película azulada nos copos e talheres
+        ir_para: riscos
+      - texto: Ferrugem nos talheres
+        ir_para: ferrugem
+      - texto: Peças de plástico, prata ou alumínio descoloradas
+        ir_para: descolor
+  baco:
+    tipo: pergunta
+    texto: Os copos são próprios para lavar na máquina?
+    ajuda: Alguns copos ficam baços depois de muitas lavagens (Becken), e a opacidade pode ser irreversível (Bosch).
+    respostas:
+      - texto: Não ou não sei
+        ir_para: fim-copos
+      - texto: Sim
+        ir_para: fim-baco
+  riscos:
+    tipo: pergunta
+    texto: A tampa do dispensador de detergente abre sem bater em nenhuma peça?
+    respostas:
+      - texto: Não ou não sei
+        ir_para: fim-tampa
+      - texto: Sim
+        ir_para: fim-abrilhantador
+  ferrugem:
+    tipo: pergunta
+    texto: A tampa do depósito do sal está bem enroscada e não há sal entornado na cuba?
+    respostas:
+      - texto: Não ou não sei
+        ir_para: fim-sal
+      - texto: Sim
+        ir_para: fim-talheres
+  descolor:
+    tipo: pergunta
+    texto: O que está descolorado?
+    ajuda: "As peças de plástico do interior da própria máquina podem descolorir com o tempo: é normal e não afeta o funcionamento (Bosch)."
+    respostas:
+      - texto: Loiça ou utensílios de plástico
+        ir_para: fim-plastico
+      - texto: Peças de prata ou alumínio
+        ir_para: fim-metal
+  fim-copos:
+    tipo: guia
+    guias:
+      - ll-arrumar-loica
+    nota: Usa copos resistentes à lavagem na máquina (Bosch); alguns tipos de copos ficam baços depois de muitas lavagens (Becken).
+  fim-baco:
+    tipo: guia
+    guias:
+      - ll-sal-abrilhantador
+      - ll-programa-detergente
+    nota: Regula a dureza da água no sistema de descalcificação (se for preciso, um nível abaixo), usa detergente com proteção para copos, lava a uma temperatura mais baixa e não deixes a loiça muito tempo na máquina depois do fim do programa (Bosch).
+  fim-tampa:
+    tipo: guia
+    guias:
+      - ll-arrumar-loica
+    nota: Se a tampa do detergente não abre por completo, ficam restos de detergente na fase do abrilhantador. Não ponhas loiça nem ambientadores no compartimento das pastilhas (Bosch).
+  fim-abrilhantador:
+    tipo: guia
+    guias:
+      - ll-sal-abrilhantador
+      - ll-programa-detergente
+    nota: "Se o depósito do abrilhantador estiver vazio ou a dose muito baixa, enche-o e regula a dose (a Bosch recomenda o nível 4–5). Se tiver abrilhantador e a dose não for baixa, baixa-a: riscos ou película azulada indicam abrilhantador a mais (Bosch, Becken). Não pré-laves a loiça: tira só os restos maiores (Bosch)."
+  fim-sal:
+    tipo: guia
+    guias:
+      - ll-sal-abrilhantador
+    nota: Com a tampa do sal mal fechada ou sal entornado, a água de lavagem fica com sal a mais e os talheres ganham ferrugem (Bosch). Se continuar, vê também se os talheres são inoxidáveis.
+  fim-talheres:
+    tipo: guia
+    guias:
+      - ll-arrumar-loica
+    nota: "Usa talheres inoxidáveis. As peças com ferrugem passam-na aos talheres: não as laves na máquina (por exemplo, pegas de tachos). Um cesto da máquina danificado tem o mesmo efeito (Bosch). Artigos de aço sujeitos a ferrugem não são próprios para a máquina (Becken)."
+  fim-plastico:
+    tipo: guia
+    guias:
+      - ll-programa-detergente
+    nota: "Escolhe um programa com temperatura mais alta e não pré-laves a loiça: tira só os restos maiores (Bosch)."
+  fim-metal:
+    tipo: guia
+    guias:
+      - ll-arrumar-loica
+    nota: "A prata e o alumínio tendem a mudar de cor na máquina: não são totalmente próprios para lavar lá (Becken, Bosch)."
+sources:
+  - url: https://media3.bosch-home.com/Documents/9001036344_B.pdf
+    titulo: Bosch — Instruções de serviço, máquina de lavar loiça SB…/SM… (PT)
+    pagina: 19, 47–48
+    consultado_em: 2026-11-04
+  - url: https://becken.cors.digital/wp-content/uploads/manuais/7141543_7141540_MAQ_LAVAR_LOICA_BECKEN_BDW1965N_manual.pdf
+    titulo: Becken BDW1965N — Manual de instruções da máquina de lavar loiça (secção PT)
+    pagina: 115, 124–125
+    consultado_em: 2026-11-04

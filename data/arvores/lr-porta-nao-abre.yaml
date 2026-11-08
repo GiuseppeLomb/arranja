@@ -7,8 +7,6 @@ id: lr-porta-nao-abre
 ordem: 8
 titulo: A porta da máquina de lavar roupa não abre
 sintoma: A porta não abre
-codigos:
-  - samsung-lr-dc1
 inicio: terminou
 nos:
   terminou:

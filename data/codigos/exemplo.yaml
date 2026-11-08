@@ -7,6 +7,8 @@
   code: EX01
   aliases: [EX-01]
   descricao: "[Exemplo] Descrição fictícia de um código de erro, para testar o ecrã. Não corresponde a nenhum aparelho real."
+  ambito: modelos
+  ambito_nota: "[Exemplo] Série EX (fonte fictícia)"
   aplicavel_a:
     - brand: exemplo
       familias: [exemplo-serie-ex]
@@ -22,6 +24,8 @@
   appliance_type: maquina-lavar-roupa
   code: EX02
   descricao: "[Exemplo] Segundo código fictício, ligado diretamente a um guia de exemplo. Não corresponde a nenhum aparelho real."
+  ambito: sem-modelos
+  ambito_nota: "[Exemplo] Fonte fictícia sem modelos indicados"
   guias: [exemplo-guia]
   sources:
     - url: https://example.com/fonte-de-exemplo

@@ -12,6 +12,12 @@
       titulo: Smeg LB1T60ES — Manual de usuario de la lavadora (ES; página do PDF)
       pagina: "32"
       consultado_em: 2026-11-05
+  ambito: modelos
+  ambito_nota: Smeg LB1T60ES
+  aplicavel_a:
+    - brand: smeg
+      prefixos:
+        - LB1T60ES
 - id: smeg-lr-e02
   brand: smeg
   appliance_type: maquina-lavar-roupa
@@ -23,6 +29,12 @@
       titulo: Smeg LB1T60ES — Manual de usuario de la lavadora (ES; página do PDF)
       pagina: "32"
       consultado_em: 2026-11-05
+  ambito: modelos
+  ambito_nota: Smeg LB1T60ES
+  aplicavel_a:
+    - brand: smeg
+      prefixos:
+        - LB1T60ES
 - id: smeg-lr-e03
   brand: smeg
   appliance_type: maquina-lavar-roupa
@@ -36,6 +48,12 @@
       titulo: Smeg LB1T60ES — Manual de usuario de la lavadora (ES; página do PDF)
       pagina: "32"
       consultado_em: 2026-11-05
+  ambito: modelos
+  ambito_nota: Smeg LB1T60ES
+  aplicavel_a:
+    - brand: smeg
+      prefixos:
+        - LB1T60ES
 - id: smeg-lr-e04
   brand: smeg
   appliance_type: maquina-lavar-roupa
@@ -46,3 +64,9 @@
       titulo: Smeg LB1T60ES — Manual de usuario de la lavadora (ES; página do PDF)
       pagina: "32"
       consultado_em: 2026-11-05
+  ambito: modelos
+  ambito_nota: Smeg LB1T60ES
+  aplicavel_a:
+    - brand: smeg
+      prefixos:
+        - LB1T60ES

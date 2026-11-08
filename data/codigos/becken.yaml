@@ -13,6 +13,14 @@
       titulo: Becken BoostWash BWM3639/BWM3640/BWM3641 — Manual de instruções (secção PT)
       pagina: "124"
       consultado_em: 2026-11-04
+  ambito: modelos
+  ambito_nota: Becken BWM3639, BWM3640 e BWM3641
+  aplicavel_a:
+    - brand: becken
+      prefixos:
+        - BWM3639
+        - BWM3640
+        - BWM3641
 - id: becken-lr-e10
   brand: becken
   appliance_type: maquina-lavar-roupa
@@ -28,6 +36,14 @@
       titulo: Becken BoostWash BWM3639/BWM3640/BWM3641 — Manual de instruções (secção PT)
       pagina: "124"
       consultado_em: 2026-11-04
+  ambito: modelos
+  ambito_nota: Becken BWM3639, BWM3640 e BWM3641
+  aplicavel_a:
+    - brand: becken
+      prefixos:
+        - BWM3639
+        - BWM3640
+        - BWM3641
 - id: becken-lr-e21
   brand: becken
   appliance_type: maquina-lavar-roupa
@@ -43,6 +59,14 @@
       titulo: Becken BoostWash BWM3639/BWM3640/BWM3641 — Manual de instruções (secção PT)
       pagina: "124"
       consultado_em: 2026-11-04
+  ambito: modelos
+  ambito_nota: Becken BWM3639, BWM3640 e BWM3641
+  aplicavel_a:
+    - brand: becken
+      prefixos:
+        - BWM3639
+        - BWM3640
+        - BWM3641
 - id: becken-ll-e1
   brand: becken
   appliance_type: maquina-lavar-loica
@@ -56,6 +80,12 @@
       titulo: Becken BDW1965N — Manual de instruções da máquina de lavar loiça (secção PT)
       pagina: "135"
       consultado_em: 2026-11-04
+  ambito: modelos
+  ambito_nota: Becken BDW1965N
+  aplicavel_a:
+    - brand: becken
+      prefixos:
+        - BDW1965N
 - id: becken-ll-e2
   brand: becken
   appliance_type: maquina-lavar-loica
@@ -69,6 +99,12 @@
       titulo: Becken BDW1965N — Manual de instruções da máquina de lavar loiça (secção PT)
       pagina: 135–136
       consultado_em: 2026-11-04
+  ambito: modelos
+  ambito_nota: Becken BDW1965N
+  aplicavel_a:
+    - brand: becken
+      prefixos:
+        - BDW1965N
 - id: becken-ll-e3
   brand: becken
   appliance_type: maquina-lavar-loica
@@ -84,6 +120,12 @@
       titulo: Becken BDW1965N — Manual de instruções da máquina de lavar loiça (secção PT)
       pagina: 106, 108, 130–132, 135
       consultado_em: 2026-11-04
+  ambito: modelos
+  ambito_nota: Becken BDW1965N
+  aplicavel_a:
+    - brand: becken
+      prefixos:
+        - BDW1965N
 - id: becken-ll-e4
   brand: becken
   appliance_type: maquina-lavar-loica
@@ -94,6 +136,12 @@
       titulo: Becken BDW1965N — Manual de instruções da máquina de lavar loiça (secção PT)
       pagina: "135"
       consultado_em: 2026-11-04
+  ambito: modelos
+  ambito_nota: Becken BDW1965N
+  aplicavel_a:
+    - brand: becken
+      prefixos:
+        - BDW1965N
 - id: becken-ll-e5
   brand: becken
   appliance_type: maquina-lavar-loica
@@ -105,6 +153,12 @@
       titulo: Becken BDW1965N — Manual de instruções da máquina de lavar loiça (secção PT)
       pagina: "135"
       consultado_em: 2026-11-04
+  ambito: modelos
+  ambito_nota: Becken BDW1965N
+  aplicavel_a:
+    - brand: becken
+      prefixos:
+        - BDW1965N
 - id: becken-ll-e6
   brand: becken
   appliance_type: maquina-lavar-loica
@@ -116,6 +170,12 @@
       titulo: Becken BDW1965N — Manual de instruções da máquina de lavar loiça (secção PT)
       pagina: "135"
       consultado_em: 2026-11-04
+  ambito: modelos
+  ambito_nota: Becken BDW1965N
+  aplicavel_a:
+    - brand: becken
+      prefixos:
+        - BDW1965N
 - id: becken-ll-e7
   brand: becken
   appliance_type: maquina-lavar-loica
@@ -126,6 +186,12 @@
       titulo: Becken BDW1965N — Manual de instruções da máquina de lavar loiça (secção PT)
       pagina: "135"
       consultado_em: 2026-11-04
+  ambito: modelos
+  ambito_nota: Becken BDW1965N
+  aplicavel_a:
+    - brand: becken
+      prefixos:
+        - BDW1965N
 - id: becken-ms-9h
   brand: becken
   appliance_type: maquina-secar
@@ -138,6 +204,13 @@
       titulo: Becken BDM2740/BDM2741 HP — Manual de instruções da máquina de secar (secção PT; páginas do PDF)
       pagina: "25"
       consultado_em: 2026-11-04
+  ambito: modelos
+  ambito_nota: Becken BDM2740 e BDM2741
+  aplicavel_a:
+    - brand: becken
+      prefixos:
+        - BDM2740
+        - BDM2741
 - id: becken-ms-6h
   brand: becken
   appliance_type: maquina-secar
@@ -150,6 +223,13 @@
       titulo: Becken BDM2740/BDM2741 HP — Manual de instruções da máquina de secar (secção PT; páginas do PDF)
       pagina: "25"
       consultado_em: 2026-11-04
+  ambito: modelos
+  ambito_nota: Becken BDM2740 e BDM2741
+  aplicavel_a:
+    - brand: becken
+      prefixos:
+        - BDM2740
+        - BDM2741
 - id: becken-ms-3h
   brand: becken
   appliance_type: maquina-secar
@@ -163,3 +243,10 @@
       titulo: Becken BDM2740/BDM2741 HP — Manual de instruções da máquina de secar (secção PT; páginas do PDF)
       pagina: "25"
       consultado_em: 2026-11-04
+  ambito: modelos
+  ambito_nota: Becken BDM2740 e BDM2741
+  aplicavel_a:
+    - brand: becken
+      prefixos:
+        - BDM2740
+        - BDM2741

@@ -3,7 +3,7 @@
 	"$id": "https://github.com/GiuseppeLomb/arranja/schemas/error_code.schema.json",
 	"title": "Código de erro",
 	"type": "object",
-	"required": ["id", "brand", "appliance_type", "code", "descricao", "sources"],
+	"required": ["id", "brand", "appliance_type", "code", "descricao", "ambito", "ambito_nota", "sources"],
 	"additionalProperties": false,
 	"properties": {
 		"id": { "$ref": "common.schema.json#/$defs/id" },
@@ -17,9 +17,19 @@
 			"maxLength": 600,
 			"description": "Em PT-PT, reescrita por palavras próprias (nunca copiada)."
 		},
+		"ambito": {
+			"enum": ["modelos", "marca", "sem-modelos"],
+			"description": "A que modelos se aplica, segundo a fonte: \"modelos\" (só os de aplicavel_a), \"marca\" (a fonte diz explicitamente que vale para todos os modelos da marca) ou \"sem-modelos\" (a fonte não indica modelos; nunca é confirmado para um modelo)."
+		},
+		"ambito_nota": {
+			"type": "string",
+			"minLength": 10,
+			"maxLength": 300,
+			"description": "Em que modelos ou documento foi confirmado, em texto legível (ex.: «LG F4WR5013A6W (manual MFL71766782)»). Com \"marca\", o que a fonte diz sobre todos os modelos."
+		},
 		"aplicavel_a": {
 			"$ref": "common.schema.json#/$defs/aplicavelA",
-			"description": "Opcional: restringe a famílias/modelos. Todas as entradas têm de ser da mesma marca do código."
+			"description": "Com ambito \"modelos\": os modelos, famílias ou padrões documentados na fonte (todas as entradas da marca do código e sempre com restrição)."
 		},
 		"arvore": { "$ref": "common.schema.json#/$defs/id", "description": "Árvore de diagnóstico associada." },
 		"guias": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/id" } },

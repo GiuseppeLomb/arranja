@@ -37,6 +37,15 @@
           - F4WR3511A*W
         url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
         alojado_por: Macorlux
+  ambito: modelos
+  ambito_nota: LG F4WR5013A6W (manual MFL71766782); LG F4WR359S6M e F4WR35**A*W (manual MFL72012058)
+  aplicavel_a:
+    - brand: lg
+      regex:
+        - ^F4WR35\d\dA.W
+      modelos:
+        - F4WR5013A6W
+        - F4WR359S6M
 - id: lg-lr-ue
   brand: lg
   appliance_type: maquina-lavar-roupa
@@ -77,6 +86,17 @@
           - F8K5XN3
         url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dwe3ad2e70/documents/002736577_89c8c892-f0d8-4e67-83f0-dba469fb6eca.pdf
         alojado_por: Auchan
+  ambito: modelos
+  ambito_nota: LG F4WR5013A6W (manual MFL71766782); LG F4WR359S6M e F4WR35**A*W (manual MFL72012058); LG Mini F8K5XN3 (manual MFL68881095)
+  aplicavel_a:
+    - brand: lg
+      prefixos:
+        - F8K5XN3
+      regex:
+        - ^F4WR35\d\dA.W
+      modelos:
+        - F4WR5013A6W
+        - F4WR359S6M
 - id: lg-lr-oe
   brand: lg
   appliance_type: maquina-lavar-roupa
@@ -108,6 +128,15 @@
         modelos: *a2
         url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
         alojado_por: Macorlux
+  ambito: modelos
+  ambito_nota: LG F4WR5013A6W (manual MFL71766782); LG F4WR359S6M e F4WR35**A*W (manual MFL72012058)
+  aplicavel_a:
+    - brand: lg
+      regex:
+        - ^F4WR35\d\dA.W
+      modelos:
+        - F4WR5013A6W
+        - F4WR359S6M
 - id: lg-lr-de
   brand: lg
   appliance_type: maquina-lavar-roupa
@@ -138,6 +167,15 @@
         modelos: *a2
         url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
         alojado_por: Macorlux
+  ambito: modelos
+  ambito_nota: LG F4WR5013A6W (manual MFL71766782); LG F4WR359S6M e F4WR35**A*W (manual MFL72012058)
+  aplicavel_a:
+    - brand: lg
+      regex:
+        - ^F4WR35\d\dA.W
+      modelos:
+        - F4WR5013A6W
+        - F4WR359S6M
 - id: lg-lr-te
   brand: lg
   appliance_type: maquina-lavar-roupa
@@ -164,6 +202,15 @@
         modelos: *a2
         url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
         alojado_por: Macorlux
+  ambito: modelos
+  ambito_nota: LG F4WR5013A6W (manual MFL71766782); LG F4WR359S6M e F4WR35**A*W (manual MFL72012058)
+  aplicavel_a:
+    - brand: lg
+      regex:
+        - ^F4WR35\d\dA.W
+      modelos:
+        - F4WR5013A6W
+        - F4WR359S6M
 - id: lg-lr-le
   brand: lg
   appliance_type: maquina-lavar-roupa
@@ -201,6 +248,17 @@
           - F8K5XN3
         url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dwe3ad2e70/documents/002736577_89c8c892-f0d8-4e67-83f0-dba469fb6eca.pdf
         alojado_por: Auchan
+  ambito: modelos
+  ambito_nota: LG F4WR5013A6W (manual MFL71766782); LG F4WR359S6M e F4WR35**A*W (manual MFL72012058); LG Mini F8K5XN3 (manual MFL68881095)
+  aplicavel_a:
+    - brand: lg
+      prefixos:
+        - F8K5XN3
+      regex:
+        - ^F4WR35\d\dA.W
+      modelos:
+        - F4WR5013A6W
+        - F4WR359S6M
 - id: lg-lr-fe
   brand: lg
   appliance_type: maquina-lavar-roupa
@@ -227,6 +285,15 @@
         modelos: *a2
         url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
         alojado_por: Macorlux
+  ambito: modelos
+  ambito_nota: LG F4WR5013A6W (manual MFL71766782); LG F4WR359S6M e F4WR35**A*W (manual MFL72012058)
+  aplicavel_a:
+    - brand: lg
+      regex:
+        - ^F4WR35\d\dA.W
+      modelos:
+        - F4WR5013A6W
+        - F4WR359S6M
 - id: lg-lr-pe
   brand: lg
   appliance_type: maquina-lavar-roupa
@@ -253,6 +320,15 @@
         modelos: *a2
         url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
         alojado_por: Macorlux
+  ambito: modelos
+  ambito_nota: LG F4WR5013A6W (manual MFL71766782); LG F4WR359S6M e F4WR35**A*W (manual MFL72012058)
+  aplicavel_a:
+    - brand: lg
+      regex:
+        - ^F4WR35\d\dA.W
+      modelos:
+        - F4WR5013A6W
+        - F4WR359S6M
 - id: lg-lr-vs
   brand: lg
   appliance_type: maquina-lavar-roupa
@@ -279,6 +355,15 @@
         modelos: *a2
         url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
         alojado_por: Macorlux
+  ambito: modelos
+  ambito_nota: LG F4WR5013A6W (manual MFL71766782); LG F4WR359S6M e F4WR35**A*W (manual MFL72012058)
+  aplicavel_a:
+    - brand: lg
+      regex:
+        - ^F4WR35\d\dA.W
+      modelos:
+        - F4WR5013A6W
+        - F4WR359S6M
 - id: lg-lr-ff
   brand: lg
   appliance_type: maquina-lavar-roupa
@@ -305,6 +390,15 @@
         modelos: *a2
         url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
         alojado_por: Macorlux
+  ambito: modelos
+  ambito_nota: LG F4WR5013A6W (manual MFL71766782); LG F4WR359S6M e F4WR35**A*W (manual MFL72012058)
+  aplicavel_a:
+    - brand: lg
+      regex:
+        - ^F4WR35\d\dA.W
+      modelos:
+        - F4WR5013A6W
+        - F4WR359S6M
 - id: lg-lr-ae
   brand: lg
   appliance_type: maquina-lavar-roupa
@@ -331,6 +425,15 @@
         modelos: *a2
         url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
         alojado_por: Macorlux
+  ambito: modelos
+  ambito_nota: LG F4WR5013A6W (manual MFL71766782); LG F4WR359S6M e F4WR35**A*W (manual MFL72012058)
+  aplicavel_a:
+    - brand: lg
+      regex:
+        - ^F4WR35\d\dA.W
+      modelos:
+        - F4WR5013A6W
+        - F4WR359S6M
 - id: lg-lr-pf
   brand: lg
   appliance_type: maquina-lavar-roupa
@@ -357,6 +460,15 @@
         modelos: *a2
         url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
         alojado_por: Macorlux
+  ambito: modelos
+  ambito_nota: LG F4WR5013A6W (manual MFL71766782); LG F4WR359S6M e F4WR35**A*W (manual MFL72012058)
+  aplicavel_a:
+    - brand: lg
+      regex:
+        - ^F4WR35\d\dA.W
+      modelos:
+        - F4WR5013A6W
+        - F4WR359S6M
 - id: lg-lr-cl
   brand: lg
   appliance_type: maquina-lavar-roupa
@@ -376,6 +488,12 @@
           - F8K5XN3
         url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dwe3ad2e70/documents/002736577_89c8c892-f0d8-4e67-83f0-dba469fb6eca.pdf
         alojado_por: Auchan
+  ambito: modelos
+  ambito_nota: LG Mini F8K5XN3 (manual MFL68881095)
+  aplicavel_a:
+    - brand: lg
+      prefixos:
+        - F8K5XN3
 - id: lg-lr-ed1
   brand: lg
   appliance_type: maquina-lavar-roupa
@@ -394,6 +512,14 @@
         modelos: *a2
         url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
         alojado_por: Macorlux
+  ambito: modelos
+  ambito_nota: LG F4WR359S6M e F4WR35**A*W (manual MFL72012058)
+  aplicavel_a:
+    - brand: lg
+      regex:
+        - ^F4WR35\d\dA.W
+      modelos:
+        - F4WR359S6M
 - id: lg-lr-ed2
   brand: lg
   appliance_type: maquina-lavar-roupa
@@ -412,6 +538,14 @@
         modelos: *a2
         url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
         alojado_por: Macorlux
+  ambito: modelos
+  ambito_nota: LG F4WR359S6M e F4WR35**A*W (manual MFL72012058)
+  aplicavel_a:
+    - brand: lg
+      regex:
+        - ^F4WR35\d\dA.W
+      modelos:
+        - F4WR359S6M
 - id: lg-lr-ed3
   brand: lg
   appliance_type: maquina-lavar-roupa
@@ -430,6 +564,14 @@
         modelos: *a2
         url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
         alojado_por: Macorlux
+  ambito: modelos
+  ambito_nota: LG F4WR359S6M e F4WR35**A*W (manual MFL72012058)
+  aplicavel_a:
+    - brand: lg
+      regex:
+        - ^F4WR35\d\dA.W
+      modelos:
+        - F4WR359S6M
 - id: lg-lr-ed4
   brand: lg
   appliance_type: maquina-lavar-roupa
@@ -448,6 +590,14 @@
         modelos: *a2
         url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
         alojado_por: Macorlux
+  ambito: modelos
+  ambito_nota: LG F4WR359S6M e F4WR35**A*W (manual MFL72012058)
+  aplicavel_a:
+    - brand: lg
+      regex:
+        - ^F4WR35\d\dA.W
+      modelos:
+        - F4WR359S6M
 - id: lg-lr-ed5
   brand: lg
   appliance_type: maquina-lavar-roupa
@@ -466,6 +616,14 @@
         modelos: *a2
         url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
         alojado_por: Macorlux
+  ambito: modelos
+  ambito_nota: LG F4WR359S6M e F4WR35**A*W (manual MFL72012058)
+  aplicavel_a:
+    - brand: lg
+      regex:
+        - ^F4WR35\d\dA.W
+      modelos:
+        - F4WR359S6M
 - id: lg-lr-opn
   brand: lg
   appliance_type: maquina-lavar-roupa
@@ -484,3 +642,11 @@
         modelos: *a2
         url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/81907/81907.pdf
         alojado_por: Macorlux
+  ambito: modelos
+  ambito_nota: LG F4WR359S6M e F4WR35**A*W (manual MFL72012058)
+  aplicavel_a:
+    - brand: lg
+      regex:
+        - ^F4WR35\d\dA.W
+      modelos:
+        - F4WR359S6M

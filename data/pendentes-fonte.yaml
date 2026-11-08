@@ -1,0 +1,65 @@
+# Fontes obtidas sem respeitar o robots.txt dos sites.
+# Decisão (2026-11-05): o conteúdo publicado mantém-se, e estas fontes vão sendo substituídas por fontes
+# permitidas, obtidas sempre por pedidos que cumprem o robots.txt (≥ 1 s entre pedidos, User-Agent identificado,
+# paragem a qualquer sinal de bloqueio). O `npm run validate` confirma que os ids existem, que cada item (guia, árvore,
+# código ou família) que cite um domínio de `fontes_proibidas` está aqui, e que está na secção certa.
+#
+# - so_estas_fontes: itens cuja única fonte é uma destas. `sem_alternativa: true` = procurei uma fonte permitida e
+#   não encontrei; a decisão é do responsável pelo projeto.
+# - parcial: itens que também têm fontes permitidas. A fonte proibida sai quando as permitidas cobrirem todo o
+#   conteúdo (e, nos guias e árvores universais, pelo menos 2 marcas).
+
+fontes_proibidas:
+  - dominios: [macorlux.pt]
+    regra: "Disallow: /bizizi1/ para todos os robôs (é onde estão os manuais); Disallow: / para ClaudeBot"
+  - dominios: [downloadcenter.samsung.com]
+    nota: inclui org.downloadcenter.samsung.com
+    regra: "Disallow: / para todos os robôs"
+  - dominios: []
+    nota: "bosch-home.pt — Disallow: /*productservice/; nenhum item publicado cita estas páginas (o resto do site é permitido)"
+
+substituidas:
+  - fonte_nova: https://www.samsung.com/uk/support/home-appliances/what-do-the-codes-on-my-washing-machine-mean/
+    antes: manual Samsung WW**BB (servidor de downloads da Samsung)
+    nota: Descrições reescritas a partir da página oficial; âmbito passa a «sem-modelos» (a página não indica modelos).
+    ids: [samsung-lr-oc, samsung-lr-lc, samsung-lr-3c, samsung-lr-3cp, samsung-lr-uc, samsung-lr-hc, samsung-lr-1c, samsung-lr-ac, samsung-lr-ac6, samsung-lr-8c, samsung-lr-dc1]
+  - fonte_nova: https://www.samsung.com/uk/support/home-appliances/check-the-information-codes-of-the-dryer/
+    antes: manual Samsung DV5000B (servidor de downloads da Samsung)
+    nota: Descrições reescritas a partir da página oficial; âmbito passa a «sem-modelos».
+    ids: [samsung-ms-tc, samsung-ms-tc5, samsung-ms-3c, samsung-ms-ac6, samsung-ms-hc]
+
+so_estas_fontes:
+  - grupo: LG — manuais MFL71766782 (F4WR5013A6W) e MFL72012058 (F4WR35…) alojados pela Macorlux
+    ids: [lg-lr-ie, lg-lr-oe, lg-lr-de, lg-lr-te, lg-lr-fe, lg-lr-pe, lg-lr-vs, lg-lr-ff, lg-lr-ae, lg-lr-pf, lg-lr-ed1, lg-lr-ed2, lg-lr-ed3, lg-lr-ed4, lg-lr-ed5, lg-lr-opn]
+    procura: "Auchan aloja só a ficha técnica do F4WR5013A6W (sem códigos); pesquisa pelas referências MFL e pelo modelo não encontrou o manual em lg.com nem noutro site permitido — só em sites genéricos de manuais, que não são fonte aceite."
+    sem_alternativa: true
+  - grupo: AEG e Electrolux — manuais de máquinas de secar (136202450-A-322023 e 136205020-A-122024) alojados pela Macorlux
+    ids: [aeg-ms-e50, aeg-ms-e90, aeg-ms-eh0, electrolux-ms-e50, electrolux-ms-e90, electrolux-ms-eh0]
+    procura: "Os sites de apoio AEG/Electrolux Portugal não têm artigos sobre estes códigos de secar; electrolux-ui.com é permitido mas só se pesquisa por PNC na página (sem endereço direto encontrado); os outros resultados são sites genéricos de manuais."
+    sem_alternativa: true
+  - grupo: Teka — manual TKD 1480 / TKD 1280 alojado pela Macorlux
+    ids: [teka-lr-e30, teka-lr-e10, teka-lr-e21]
+    procura: "teka.com não tem o PDF; só aparece em sites genéricos de manuais."
+    sem_alternativa: true
+  - grupo: Whirlpool — manual 400011319210 (combinado W9) alojado pela Macorlux
+    ids: [whirlpool-fr-f]
+    procura: "docs.whirlpool.eu é permitido pelo robots.txt, mas pede o código do produto e já respondeu 403 a pedidos automáticos (não se contorna); não encontrei outra cópia em site permitido."
+    sem_alternativa: true
+  - grupo: Samsung — manual DV5000B (servidor de downloads da Samsung), códigos que a página oficial do Reino Unido não tem
+    ids: [samsung-ms-tc7, samsung-ms-hcl]
+    procura: "A página oficial da Samsung Reino Unido sobre códigos de máquinas de secar não lista tC7 nem HCL."
+    sem_alternativa: true
+
+parcial:
+  - grupo: Samsung RB7300T (frigorífico) citado a par de fontes permitidas de outras marcas
+    ids: [fr-arrumar-alimentos, fr-descongelar-congelador, fr-instalacao-ventilacao, fr-limpar-interior, fr-limpar-vedante, fr-nivelar, fr-regular-temperatura, fr-verificar-energia, fr-agua-no-chao, fr-agua-no-fundo, fr-arrefece-pouco, fr-barulho, fr-cheiro, fr-condensacao, fr-frio-demais, fr-gelo, fr-luz, fr-motor-sempre, fr-nao-liga, fr-porta-nao-fecha]
+  - grupo: Samsung DW60M9550FS (máquina de lavar loiça) citado a par de fontes permitidas (outras marcas ou a página oficial da Samsung Reino Unido)
+    ids: [ll-arrumar-loica, ll-limpar-bomba-escoamento, ll-limpar-bracos-aspersores, ll-limpar-filtros, ll-limpeza-cuba-vedante, ll-nivelar, ll-programa-detergente, ll-sal-abrilhantador, ll-verificar-energia, ll-verificar-entrada-agua, ll-verificar-mangueira-escoamento, ll-barulho, ll-cheiro-mau, ll-detergente-fica, ll-espuma, ll-loica-suja, ll-manchas-brancas, ll-nao-enche-agua, ll-nao-escoa, ll-nao-liga, ll-nao-seca, ll-verte-agua, samsung-ll-3c, samsung-ll-4c, samsung-ll-5c, samsung-ll-hc, samsung-ll-lc]
+  - grupo: Samsung WW**BB (máquina de lavar roupa) citado a par de fontes permitidas de outras marcas
+    ids: [lr-apertar-ligacoes-mangueiras, lr-ciclo-limpeza-tambor, lr-desbloquear-porta, lr-equilibrar-carga, lr-esvaziar-agua, lr-limpar-borracha-porta, lr-limpar-filtro-bomba, lr-limpar-filtro-entrada, lr-limpar-gaveta-detergente, lr-nivelar-parafusos-transporte, lr-reduzir-detergente-enxaguar, lr-verificar-energia-bloqueio, lr-verificar-mangueira-escoamento, lr-barulho-vibracao, lr-cheiro-mau, lr-nao-aquece, lr-nao-centrifuga, lr-nao-enche-agua, lr-nao-escoa, lr-nao-liga, lr-para-a-meio, lr-porta-nao-abre, lr-residuos-detergente, lr-verte-agua]
+  - grupo: Samsung DV5000B (máquina de secar) citado a par de fontes permitidas de outras marcas
+    ids: [ms-carga-programa, ms-esvaziar-deposito, ms-limpar-filtro-cotao, ms-limpar-permutador, ms-mangueira-escoamento, ms-nivelar, ms-ventilar-divisao, ms-verificar-energia-porta, ms-barulho, ms-cheiro, ms-demora, ms-deposito-cheio, ms-humidade-divisao, ms-nao-aquece, ms-nao-liga, ms-nao-seca, ms-para-a-meio, ms-verte-agua]
+  - grupo: Samsung DV5000B — árvore que sem a Samsung fica só com 1 marca (Bosch); precisa de uma segunda marca permitida
+    ids: [ms-cotao-na-roupa]
+  - grupo: LG — códigos com o manual do LG Mini F8K5XN3 (Auchan, permitido) além dos manuais na Macorlux
+    ids: [lg-lr-ue, lg-lr-le]

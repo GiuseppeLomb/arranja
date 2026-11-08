@@ -10,6 +10,8 @@
       titulo: Miele — Instruções de utilização, máquina de lavar louça (pt-PT, M.-Nr. 11 941 802, HG07-W)
       pagina: "99"
       consultado_em: 2026-11-05
+  ambito: sem-modelos
+  ambito_nota: manual Miele de máquina de lavar louça M.-Nr. 11 941 802 (geração HG07-W), sem modelos indicados
 - id: miele-ll-f18
   brand: miele
   appliance_type: maquina-lavar-loica
@@ -20,6 +22,8 @@
       titulo: Miele — Instruções de utilização, máquina de lavar louça (pt-PT, M.-Nr. 11 941 802, HG07-W)
       pagina: "101"
       consultado_em: 2026-11-05
+  ambito: sem-modelos
+  ambito_nota: manual Miele de máquina de lavar louça M.-Nr. 11 941 802 (geração HG07-W), sem modelos indicados
 - id: miele-ll-waterproof
   brand: miele
   appliance_type: maquina-lavar-loica
@@ -30,6 +34,8 @@
       titulo: Miele — Instruções de utilização, máquina de lavar louça (pt-PT, M.-Nr. 11 941 802, HG07-W)
       pagina: "99"
       consultado_em: 2026-11-05
+  ambito: sem-modelos
+  ambito_nota: manual Miele de máquina de lavar louça M.-Nr. 11 941 802 (geração HG07-W), sem modelos indicados
 - id: miele-ll-entrada-agua
   brand: miele
   appliance_type: maquina-lavar-loica
@@ -43,6 +49,8 @@
       titulo: Miele — Instruções de utilização, máquina de lavar louça (pt-PT, M.-Nr. 11 941 802, HG07-W)
       pagina: "101"
       consultado_em: 2026-11-05
+  ambito: sem-modelos
+  ambito_nota: manual Miele de máquina de lavar louça M.-Nr. 11 941 802 (geração HG07-W), sem modelos indicados
 - id: miele-ll-esgoto-agua
   brand: miele
   appliance_type: maquina-lavar-loica
@@ -58,3 +66,5 @@
       titulo: Miele — Instruções de utilização, máquina de lavar louça (pt-PT, M.-Nr. 11 941 802, HG07-W)
       pagina: "102"
       consultado_em: 2026-11-05
+  ambito: sem-modelos
+  ambito_nota: manual Miele de máquina de lavar louça M.-Nr. 11 941 802 (geração HG07-W), sem modelos indicados

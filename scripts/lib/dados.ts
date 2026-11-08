@@ -393,6 +393,13 @@ export function validarSemantica(d: DadosBrutos, hoje = new Date()): Problema[] 
 		exemploRef(onde, c, m, `marca ${c.brand}`);
 		verAplicavel(onde, c, c.aplicavel_a, c.brand);
 		verFontes(onde, c.sources, c.example);
+		// Âmbito: um código só vale para os modelos que a fonte documenta.
+		const restrita = (r: AplicavelA) => !!(r.familias?.length || r.prefixos?.length || r.regex?.length || r.modelos?.length);
+		if (c.ambito === 'modelos') {
+			if (!c.aplicavel_a?.length) add(onde, 'ambito "modelos" sem aplicavel_a: indica os modelos/famílias que a fonte documenta');
+			for (const r of c.aplicavel_a ?? [])
+				if (!restrita(r)) add(onde, 'aplicavel_a sem modelos/famílias/padrões ("toda a marca"): usa ambito "marca" só se a fonte o disser explicitamente');
+		} else if (c.aplicavel_a?.length) add(onde, `ambito "${c.ambito}" não leva aplicavel_a (só "modelos")`);
 		if (c.arvore) {
 			const a = arvores.get(c.arvore);
 			if (!a) add(onde, `árvore desconhecida: ${c.arvore}`);
@@ -411,6 +418,39 @@ export function validarSemantica(d: DadosBrutos, hoje = new Date()): Problema[] 
 		const k = `${c.brand}|${c.appliance_type}|${c.code.toUpperCase()}`;
 		if (chaves.has(k) && !c.aplicavel_a) add(`codigos/${c.id}`, `código ${c.code} repetido para ${c.brand} sem aplicavel_a a distinguir`);
 		chaves.add(k);
+	}
+
+	// Fontes obtidas sem respeitar o robots.txt (data/pendentes-fonte.yaml): cada item que cite um desses domínios tem de
+	// estar na lista; em «so_estas_fontes» não pode ter fontes permitidas e em «parcial» tem de ter pelo menos uma.
+	const pendentes = join(DATA, 'pendentes-fonte.yaml');
+	if (existsSync(pendentes)) {
+		type Grupo = { ids?: string[]; dominios?: string[] };
+		const doc = YAML.parse(readFileSync(pendentes, 'utf8')) as Record<string, Grupo[] | undefined>;
+		const proibidos = (doc.fontes_proibidas ?? []).flatMap((g) => g.dominios ?? []);
+		const eProibida = (url: string) => {
+			const h = new URL(url).hostname;
+			return proibidos.some((d) => h === d || h.endsWith(`.${d}`));
+		};
+		const itens = new Map<string, { sources: Fonte[] }>([...guias, ...arvores, ...codigos, ...familias]);
+		const listados = new Map<string, string>();
+		for (const secao of ['substituidas', 'so_estas_fontes', 'parcial'])
+			for (const g of doc[secao] ?? [])
+				for (const id of g.ids ?? []) {
+					const it = itens.get(id);
+					if (!it) {
+						add('pendentes-fonte.yaml', `${secao}: id desconhecido ${id}`);
+						continue;
+					}
+					listados.set(id, secao);
+					const nProib = it.sources.filter((f) => eProibida(f.url)).length;
+					const nOk = it.sources.length - nProib;
+					if (secao === 'so_estas_fontes' && (nOk > 0 || nProib === 0)) add('pendentes-fonte.yaml', `so_estas_fontes: ${id} não depende só de fontes proibidas`);
+					if (secao === 'parcial' && (nOk === 0 || nProib === 0)) add('pendentes-fonte.yaml', `parcial: ${id} tem de ter fontes proibidas e permitidas`);
+					if (secao === 'substituidas' && nProib > 0) add('pendentes-fonte.yaml', `substituidas: ${id} ainda cita uma fonte proibida`);
+				}
+		for (const [id, it] of itens)
+			if (it.sources.some((f) => eProibida(f.url)) && !['so_estas_fontes', 'parcial'].includes(listados.get(id) ?? ''))
+				add(id, 'cita uma fonte obtida sem respeitar o robots.txt: acrescenta-o a data/pendentes-fonte.yaml ou usa uma fonte permitida');
 	}
 
 	return p;

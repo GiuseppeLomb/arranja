@@ -20,6 +20,13 @@
           - TKD 1280
         url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/74173/74173.pdf
         alojado_por: Macorlux
+  ambito: modelos
+  ambito_nota: Teka TKD 1480 e TKD 1280
+  aplicavel_a:
+    - brand: teka
+      prefixos:
+        - TKD1480
+        - TKD1280
 - id: teka-lr-e10
   brand: teka
   appliance_type: maquina-lavar-roupa
@@ -40,6 +47,13 @@
         modelos: *a1
         url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/74173/74173.pdf
         alojado_por: Macorlux
+  ambito: modelos
+  ambito_nota: Teka TKD 1480 e TKD 1280
+  aplicavel_a:
+    - brand: teka
+      prefixos:
+        - TKD1480
+        - TKD1280
 - id: teka-lr-e21
   brand: teka
   appliance_type: maquina-lavar-roupa
@@ -61,3 +75,10 @@
         modelos: *a1
         url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/74173/74173.pdf
         alojado_por: Macorlux
+  ambito: modelos
+  ambito_nota: Teka TKD 1480 e TKD 1280
+  aplicavel_a:
+    - brand: teka
+      prefixos:
+        - TKD1480
+        - TKD1280

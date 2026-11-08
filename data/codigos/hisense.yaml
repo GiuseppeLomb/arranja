@@ -12,6 +12,12 @@
       titulo: Hisense WFQY1014EVJM — Manual de utilização, máquina de lavar roupa (PT)
       pagina: "21"
       consultado_em: 2026-11-05
+  ambito: modelos
+  ambito_nota: "Hisense WFQY1014EVJM (o manual não imprime o modelo: é a Hisense Portugal que o associa a este modelo, no nome do ficheiro)"
+  aplicavel_a:
+    - brand: hisense
+      prefixos:
+        - WFQY1014EVJM
 - id: hisense-lr-f14
   brand: hisense
   appliance_type: maquina-lavar-roupa
@@ -22,6 +28,12 @@
       titulo: Hisense WFQY1014EVJM — Manual de utilização, máquina de lavar roupa (PT)
       pagina: "21"
       consultado_em: 2026-11-05
+  ambito: modelos
+  ambito_nota: "Hisense WFQY1014EVJM (o manual não imprime o modelo: é a Hisense Portugal que o associa a este modelo, no nome do ficheiro)"
+  aplicavel_a:
+    - brand: hisense
+      prefixos:
+        - WFQY1014EVJM
 - id: hisense-lr-f24
   brand: hisense
   appliance_type: maquina-lavar-roupa
@@ -32,6 +44,12 @@
       titulo: Hisense WFQY1014EVJM — Manual de utilização, máquina de lavar roupa (PT)
       pagina: "21"
       consultado_em: 2026-11-05
+  ambito: modelos
+  ambito_nota: "Hisense WFQY1014EVJM (o manual não imprime o modelo: é a Hisense Portugal que o associa a este modelo, no nome do ficheiro)"
+  aplicavel_a:
+    - brand: hisense
+      prefixos:
+        - WFQY1014EVJM
 - id: hisense-lr-unb
   brand: hisense
   appliance_type: maquina-lavar-roupa
@@ -45,3 +63,9 @@
       titulo: Hisense WFQY1014EVJM — Manual de utilização, máquina de lavar roupa (PT)
       pagina: "21"
       consultado_em: 2026-11-05
+  ambito: modelos
+  ambito_nota: "Hisense WFQY1014EVJM (o manual não imprime o modelo: é a Hisense Portugal que o associa a este modelo, no nome do ficheiro)"
+  aplicavel_a:
+    - brand: hisense
+      prefixos:
+        - WFQY1014EVJM

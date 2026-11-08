@@ -10,6 +10,12 @@
       titulo: Gorenje WM85.C-P / WMC89XXP — User manual, washing machine (EN)
       consultado_em: 2026-11-05
       pagina: "43"
+  ambito: modelos
+  ambito_nota: Gorenje WMC89…P (WMC8943PC, WMC8947PI)
+  aplicavel_a:
+    - brand: gorenje
+      regex:
+        - ^WMC89\d\dP
 - id: gorenje-lr-e1
   brand: gorenje
   appliance_type: maquina-lavar-roupa
@@ -20,6 +26,12 @@
       titulo: Gorenje WM85.C-P / WMC89XXP — User manual, washing machine (EN)
       consultado_em: 2026-11-05
       pagina: "43"
+  ambito: modelos
+  ambito_nota: Gorenje WMC89…P (WMC8943PC, WMC8947PI)
+  aplicavel_a:
+    - brand: gorenje
+      regex:
+        - ^WMC89\d\dP
 - id: gorenje-lr-e2
   brand: gorenje
   appliance_type: maquina-lavar-roupa
@@ -32,6 +44,12 @@
       titulo: Gorenje WM85.C-P / WMC89XXP — User manual, washing machine (EN)
       consultado_em: 2026-11-05
       pagina: "43"
+  ambito: modelos
+  ambito_nota: Gorenje WMC89…P (WMC8943PC, WMC8947PI)
+  aplicavel_a:
+    - brand: gorenje
+      regex:
+        - ^WMC89\d\dP
 - id: gorenje-lr-e3
   brand: gorenje
   appliance_type: maquina-lavar-roupa
@@ -46,6 +64,12 @@
       titulo: Gorenje WM85.C-P / WMC89XXP — User manual, washing machine (EN)
       consultado_em: 2026-11-05
       pagina: "43"
+  ambito: modelos
+  ambito_nota: Gorenje WMC89…P (WMC8943PC, WMC8947PI)
+  aplicavel_a:
+    - brand: gorenje
+      regex:
+        - ^WMC89\d\dP
 - id: gorenje-lr-e6
   brand: gorenje
   appliance_type: maquina-lavar-roupa
@@ -56,6 +80,12 @@
       titulo: Gorenje WM85.C-P / WMC89XXP — User manual, washing machine (EN)
       consultado_em: 2026-11-05
       pagina: "43"
+  ambito: modelos
+  ambito_nota: Gorenje WMC89…P (WMC8943PC, WMC8947PI)
+  aplicavel_a:
+    - brand: gorenje
+      regex:
+        - ^WMC89\d\dP
 - id: gorenje-lr-e7
   brand: gorenje
   appliance_type: maquina-lavar-roupa
@@ -71,6 +101,12 @@
       titulo: Gorenje WM85.C-P / WMC89XXP — User manual, washing machine (EN)
       consultado_em: 2026-11-05
       pagina: "43"
+  ambito: modelos
+  ambito_nota: Gorenje WMC89…P (WMC8943PC, WMC8947PI)
+  aplicavel_a:
+    - brand: gorenje
+      regex:
+        - ^WMC89\d\dP
 - id: gorenje-lr-e10
   brand: gorenje
   appliance_type: maquina-lavar-roupa
@@ -81,6 +117,12 @@
       titulo: Gorenje WM85.C-P / WMC89XXP — User manual, washing machine (EN)
       consultado_em: 2026-11-05
       pagina: "44"
+  ambito: modelos
+  ambito_nota: Gorenje WMC89…P (WMC8943PC, WMC8947PI)
+  aplicavel_a:
+    - brand: gorenje
+      regex:
+        - ^WMC89\d\dP
 - id: gorenje-lr-e11
   brand: gorenje
   appliance_type: maquina-lavar-roupa
@@ -91,6 +133,12 @@
       titulo: Gorenje WM85.C-P / WMC89XXP — User manual, washing machine (EN)
       consultado_em: 2026-11-05
       pagina: "44"
+  ambito: modelos
+  ambito_nota: Gorenje WMC89…P (WMC8943PC, WMC8947PI)
+  aplicavel_a:
+    - brand: gorenje
+      regex:
+        - ^WMC89\d\dP
 - id: gorenje-lr-e12
   brand: gorenje
   appliance_type: maquina-lavar-roupa
@@ -101,6 +149,12 @@
       titulo: Gorenje WM85.C-P / WMC89XXP — User manual, washing machine (EN)
       consultado_em: 2026-11-05
       pagina: "44"
+  ambito: modelos
+  ambito_nota: Gorenje WMC89…P (WMC8943PC, WMC8947PI)
+  aplicavel_a:
+    - brand: gorenje
+      regex:
+        - ^WMC89\d\dP
 - id: gorenje-lr-e23
   brand: gorenje
   appliance_type: maquina-lavar-roupa
@@ -113,6 +167,12 @@
       titulo: Gorenje WM85.C-P / WMC89XXP — User manual, washing machine (EN)
       consultado_em: 2026-11-05
       pagina: "44"
+  ambito: modelos
+  ambito_nota: Gorenje WMC89…P (WMC8943PC, WMC8947PI)
+  aplicavel_a:
+    - brand: gorenje
+      regex:
+        - ^WMC89\d\dP
 - id: gorenje-lr-e40
   brand: gorenje
   appliance_type: maquina-lavar-roupa
@@ -125,6 +185,12 @@
       titulo: Gorenje WM85.C-P / WMC89XXP — User manual, washing machine (EN)
       consultado_em: 2026-11-05
       pagina: "44"
+  ambito: modelos
+  ambito_nota: Gorenje WMC89…P (WMC8943PC, WMC8947PI)
+  aplicavel_a:
+    - brand: gorenje
+      regex:
+        - ^WMC89\d\dP
 - id: gorenje-lr-e41
   brand: gorenje
   appliance_type: maquina-lavar-roupa
@@ -135,3 +201,9 @@
       titulo: Gorenje WM85.C-P / WMC89XXP — User manual, washing machine (EN)
       consultado_em: 2026-11-05
       pagina: "44"
+  ambito: modelos
+  ambito_nota: Gorenje WMC89…P (WMC8943PC, WMC8947PI)
+  aplicavel_a:
+    - brand: gorenje
+      regex:
+        - ^WMC89\d\dP

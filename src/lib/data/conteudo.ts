@@ -1,6 +1,6 @@
 import bruto from '#lib/generated/conteudo.json';
 import type { Arvore, CodigoErro, Conteudo, Familia, Ferramenta, Guia, Marca, TipoEletrodomestico } from './tipos';
-import { corresponde, type Correspondencia } from './correspondencia';
+import { corresponde, estadoCodigo, type Correspondencia } from './correspondencia';
 import { normalizarModelo } from './normalizar';
 
 export const conteudo = bruto as unknown as Conteudo;
@@ -46,8 +46,14 @@ export function conteudoPara(tipo: string, marca: string | null, modelo: string 
 		const peso = { modelo: 0, familia: 1, marca: 2, todas: 3 } as const;
 		return r.sort((a, b) => peso[a.c.nivel] - peso[b.c.nivel]);
 	};
+	const codigosMarca = marca
+		? conteudo.codigos
+				.filter((c) => c.appliance_type === tipo && c.brand === marca)
+				.map((c) => ({ item: c, confirmado: estadoCodigo(c, familias, marca, modelo).confirmado }))
+				.sort((a, b) => Number(b.confirmado) - Number(a.confirmado))
+		: [];
 	return {
-		codigos: filtrar(conteudo.codigos, (c) => c.brand),
+		codigos: codigosMarca,
 		arvores: filtrar([...conteudo.arvores].sort((a, b) => (a.ordem ?? 999) - (b.ordem ?? 999))),
 		guias: filtrar(conteudo.guias)
 	};

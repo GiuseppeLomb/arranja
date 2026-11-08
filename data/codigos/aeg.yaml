@@ -16,6 +16,8 @@
     - url: https://support.aeg.com.pt/support-articles/article/a-maquina-de-lavar-exibe-a-mensagem-de-erro-e10-c1-ou-emite-1-bip-pisca-1-vez
       titulo: "AEG — artigo de apoio oficial: código E10 na máquina de lavar roupa"
       consultado_em: 2026-11-05
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da AEG Portugal sobre este código, sem lista de modelos
 - id: aeg-lr-e20
   brand: aeg
   appliance_type: maquina-lavar-roupa
@@ -34,6 +36,8 @@
     - url: https://support.aeg.com.pt/support-articles/article/a-maquina-de-lavar-nao-drena-a-agua-e-exibe-a-mensagem-de-erro-e20-e21-ou-c2
       titulo: "AEG — artigo de apoio oficial: código E20 na máquina de lavar roupa"
       consultado_em: 2026-11-05
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da AEG Portugal sobre este código, sem lista de modelos
 - id: aeg-lr-e30
   brand: aeg
   appliance_type: maquina-lavar-roupa
@@ -49,6 +53,8 @@
     - url: https://support.aeg.com.pt/support-articles/article/a-maquina-de-lavar-exibe-a-mensagem-de-erro-e30-c3-ou-emite-3-bips
       titulo: "AEG — artigo de apoio oficial: código E30 na máquina de lavar roupa"
       consultado_em: 2026-11-05
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da AEG Portugal sobre este código, sem lista de modelos
 - id: aeg-lr-e40
   brand: aeg
   appliance_type: maquina-lavar-roupa
@@ -60,6 +66,8 @@
     - url: https://support.aeg.com.pt/support-articles/article/a-maquina-de-lavar-e-secar-exibe-a-mensagem-de-erro-e40-ou-emite-4-bipspisca-4-vezes
       titulo: "AEG — artigo de apoio oficial: código E40 na máquina de lavar roupa"
       consultado_em: 2026-11-05
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da AEG Portugal sobre este código, sem lista de modelos
 - id: aeg-lr-e50
   brand: aeg
   appliance_type: maquina-lavar-roupa
@@ -72,6 +80,8 @@
     - url: https://support.aeg.com.pt/support-articles/article/a-maquina-de-lavar-exibe-a-mensagem-de-erro-e50
       titulo: "AEG — artigo de apoio oficial: código E50 na máquina de lavar roupa"
       consultado_em: 2026-11-05
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da AEG Portugal sobre este código, sem lista de modelos
 - id: aeg-lr-e60
   brand: aeg
   appliance_type: maquina-lavar-roupa
@@ -81,6 +91,8 @@
     - url: https://support.aeg.com.pt/support-articles/article/a-maquina-de-lavar-exibe-a-mensagem-de-erro-e60
       titulo: "AEG — artigo de apoio oficial: código E60 na máquina de lavar roupa"
       consultado_em: 2026-11-05
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da AEG Portugal sobre este código, sem lista de modelos
 - id: aeg-lr-ef0
   brand: aeg
   appliance_type: maquina-lavar-roupa
@@ -101,6 +113,8 @@
     - url: https://support.aeg.com.pt/support-articles/article/a-maquina-de-lavar-exibe-a-mensagem-de-erro-ef0-efo-ef3-ou-emite-15-bipspisca-15-vezes
       titulo: "AEG — artigo de apoio oficial: código EF0 na máquina de lavar roupa"
       consultado_em: 2026-11-05
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da AEG Portugal sobre este código, sem lista de modelos
 - id: aeg-lr-eh0
   brand: aeg
   appliance_type: maquina-lavar-roupa
@@ -117,6 +131,8 @@
     - url: https://support.aeg.com.pt/support-articles/article/a-maquina-de-lavar-roupa-exibe-a-mensagem-de-erro-ehoeh0
       titulo: "AEG — artigo de apoio oficial: código EH0 na máquina de lavar roupa"
       consultado_em: 2026-11-05
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da AEG Portugal sobre este código, sem lista de modelos
 - id: aeg-ll-i10
   brand: aeg
   appliance_type: maquina-lavar-loica
@@ -136,6 +152,8 @@
     - url: https://support.aeg.com.pt/support-articles/article/a-maquina-de-lavar-loica-exibe-a-mensagem-de-erro-al5-c1-f1-i10-ou-i11-emite-um-aviso-sonoro-ou-a-luz-de-aviso-pisca-uma-vez
       titulo: "AEG — artigo de apoio oficial: código i10 na máquina de lavar loiça"
       consultado_em: 2026-11-05
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da AEG Portugal sobre este código, sem lista de modelos
 - id: aeg-ll-i20
   brand: aeg
   appliance_type: maquina-lavar-loica
@@ -153,6 +171,8 @@
     - url: https://support.aeg.com.pt/support-articles/article/a-maquina-de-lavar-loica-exibe-a-mensagem-de-erro-c2-f2-i20-al6-emite-2-bips-ou-o-led-pisca-2-vezes
       titulo: "AEG — artigo de apoio oficial: código i20 na máquina de lavar loiça"
       consultado_em: 2026-11-05
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da AEG Portugal sobre este código, sem lista de modelos
 - id: aeg-ll-i30
   brand: aeg
   appliance_type: maquina-lavar-loica
@@ -169,6 +189,8 @@
     - url: https://support.aeg.com.pt/support-articles/article/a-maquina-de-lavar-loica-exibe-a-mensagem-de-erro-i30-drena-constantemente
       titulo: "AEG — artigo de apoio oficial: código i30 na máquina de lavar loiça"
       consultado_em: 2026-11-05
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da AEG Portugal sobre este código, sem lista de modelos
 - id: aeg-ll-i40
   brand: aeg
   appliance_type: maquina-lavar-loica
@@ -184,6 +206,8 @@
     - url: https://support.aeg.com.pt/support-articles/article/a-maquina-de-lavar-loica-exibe-a-mensagem-de-erro-i40-i43-ou-i44
       titulo: "AEG — artigo de apoio oficial: código i40 na máquina de lavar loiça"
       consultado_em: 2026-11-05
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da AEG Portugal sobre este código, sem lista de modelos
 - id: aeg-ll-i50
   brand: aeg
   appliance_type: maquina-lavar-loica
@@ -212,6 +236,8 @@
     - url: https://support.aeg.com.pt/support-articles/article/a-maquina-de-lavar-loica-exibe-a-mensagem-de-erro-i50-i51-i52-i53-i54-i55-i56-i57-i58-i59-i5a-i5b-i5h-i5c-i5d-i5e-i5f
       titulo: "AEG — artigo de apoio oficial: código i50 na máquina de lavar loiça"
       consultado_em: 2026-11-05
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da AEG Portugal sobre este código, sem lista de modelos
 - id: aeg-ll-i60
   brand: aeg
   appliance_type: maquina-lavar-loica
@@ -226,6 +252,8 @@
     - url: https://support.aeg.com.pt/support-articles/article/a-maquina-de-lavar-loica-exibe-a-mensagem-de-erro-i60
       titulo: "AEG — artigo de apoio oficial: código i60 na máquina de lavar loiça"
       consultado_em: 2026-11-05
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da AEG Portugal sobre este código, sem lista de modelos
 - id: aeg-ll-if0
   brand: aeg
   appliance_type: maquina-lavar-loica
@@ -242,6 +270,8 @@
     - url: https://support.aeg.com.pt/support-articles/article/a-maquina-de-lavar-loica-exibe-a-mensagem-de-erro-if0-ifo-o-if1
       titulo: "AEG — artigo de apoio oficial: código iF0 na máquina de lavar loiça"
       consultado_em: 2026-11-05
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da AEG Portugal sobre este código, sem lista de modelos
 - id: aeg-ms-e50
   brand: aeg
   appliance_type: maquina-secar
@@ -262,6 +292,13 @@
           - TR749M4OB
         url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/84521/84521.pdf
         alojado_por: Macorlux
+  ambito: modelos
+  ambito_nota: AEG TR739M4OB e TR749M4OB (manual 136202450-A-322023)
+  aplicavel_a:
+    - brand: aeg
+      prefixos:
+        - TR739M4OB
+        - TR749M4OB
 - id: aeg-ms-e90
   brand: aeg
   appliance_type: maquina-secar
@@ -280,6 +317,13 @@
         modelos: *a1
         url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/84521/84521.pdf
         alojado_por: Macorlux
+  ambito: modelos
+  ambito_nota: AEG TR739M4OB e TR749M4OB (manual 136202450-A-322023)
+  aplicavel_a:
+    - brand: aeg
+      prefixos:
+        - TR739M4OB
+        - TR749M4OB
 - id: aeg-ms-eh0
   brand: aeg
   appliance_type: maquina-secar
@@ -296,3 +340,10 @@
         modelos: *a1
         url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/84521/84521.pdf
         alojado_por: Macorlux
+  ambito: modelos
+  ambito_nota: AEG TR739M4OB e TR749M4OB (manual 136202450-A-322023)
+  aplicavel_a:
+    - brand: aeg
+      prefixos:
+        - TR739M4OB
+        - TR749M4OB

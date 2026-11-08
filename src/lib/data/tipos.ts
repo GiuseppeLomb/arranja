@@ -128,6 +128,10 @@ export interface CodigoErro {
 	code: string;
 	aliases?: string[];
 	descricao: string;
+	/** "modelos": só os de aplicavel_a; "marca": a fonte diz que vale para todos; "sem-modelos": fonte sem modelos. */
+	ambito: 'modelos' | 'marca' | 'sem-modelos';
+	/** Em que modelos/documento foi confirmado, legível. */
+	ambito_nota: string;
 	aplicavel_a?: AplicavelA[];
 	arvore?: string;
 	guias?: string[];

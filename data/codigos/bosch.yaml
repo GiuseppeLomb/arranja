@@ -17,6 +17,12 @@
       titulo: Bosch WAX28EH0ES — Manual do utilizador e instruções de instalação (PT)
       pagina: 49–50
       consultado_em: 2026-11-04
+  ambito: modelos
+  ambito_nota: Bosch WAX28EH0ES
+  aplicavel_a:
+    - brand: bosch
+      prefixos:
+        - WAX28EH0ES
 - id: bosch-lr-e36
   brand: bosch
   appliance_type: maquina-lavar-roupa
@@ -35,6 +41,12 @@
       titulo: Bosch WAX28EH0ES — Manual do utilizador e instruções de instalação (PT)
       pagina: "50"
       consultado_em: 2026-11-04
+  ambito: modelos
+  ambito_nota: Bosch WAX28EH0ES
+  aplicavel_a:
+    - brand: bosch
+      prefixos:
+        - WAX28EH0ES
 - id: bosch-lr-e38
   brand: bosch
   appliance_type: maquina-lavar-roupa
@@ -53,6 +65,12 @@
       titulo: Bosch WAX28EH0ES — Manual do utilizador e instruções de instalação (PT)
       pagina: "50"
       consultado_em: 2026-11-04
+  ambito: modelos
+  ambito_nota: Bosch WAX28EH0ES
+  aplicavel_a:
+    - brand: bosch
+      prefixos:
+        - WAX28EH0ES
 - id: bosch-lr-e30-10
   brand: bosch
   appliance_type: maquina-lavar-roupa
@@ -71,6 +89,12 @@
       titulo: Bosch WAX28EH0ES — Manual do utilizador e instruções de instalação (PT)
       pagina: 50–51
       consultado_em: 2026-11-04
+  ambito: modelos
+  ambito_nota: Bosch WAX28EH0ES
+  aplicavel_a:
+    - brand: bosch
+      prefixos:
+        - WAX28EH0ES
 - id: bosch-lr-e30-20
   brand: bosch
   appliance_type: maquina-lavar-roupa
@@ -84,6 +108,12 @@
       titulo: Bosch WAX28EH0ES — Manual do utilizador e instruções de instalação (PT)
       pagina: "51"
       consultado_em: 2026-11-04
+  ambito: modelos
+  ambito_nota: Bosch WAX28EH0ES
+  aplicavel_a:
+    - brand: bosch
+      prefixos:
+        - WAX28EH0ES
 - id: bosch-ll-e22
   brand: bosch
   appliance_type: maquina-lavar-loica
@@ -98,6 +128,13 @@
       titulo: Bosch — Instruções de serviço, máquina de lavar loiça SB…/SM… (PT)
       pagina: "39"
       consultado_em: 2026-11-04
+  ambito: modelos
+  ambito_nota: Bosch SB… e SM… (manual de máquina de lavar loiça 9001036344)
+  aplicavel_a:
+    - brand: bosch
+      prefixos:
+        - SB
+        - SM
 - id: bosch-ll-e24
   brand: bosch
   appliance_type: maquina-lavar-loica
@@ -113,6 +150,8 @@
       titulo: Bosch — Instruções de serviço, máquina de lavar loiça (PT, 9000405528)
       pagina: 20–21
       consultado_em: 2026-11-05
+  ambito: sem-modelos
+  ambito_nota: manual Bosch de máquina de lavar loiça 9000405528, sem modelos indicados
 - id: bosch-ll-e25
   brand: bosch
   appliance_type: maquina-lavar-loica
@@ -128,6 +167,8 @@
       titulo: Bosch — Instruções de serviço, máquina de lavar loiça (PT, 9000405528)
       pagina: 20–21
       consultado_em: 2026-11-05
+  ambito: sem-modelos
+  ambito_nota: manual Bosch de máquina de lavar loiça 9000405528, sem modelos indicados
 - id: bosch-lr-e16
   brand: bosch
   appliance_type: maquina-lavar-roupa
@@ -141,6 +182,8 @@
     - url: https://www.bosch-home.ie/customer-service/get-support/error-e16-or-f16-washing-machine
       titulo: Bosch Irlanda — código de erro E16 / F16 das máquinas de lavar roupa (página oficial de apoio, EN)
       consultado_em: 2026-11-05
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Bosch Irlanda sobre códigos das máquinas de lavar roupa, sem lista de modelos
 - id: bosch-lr-e17
   brand: bosch
   appliance_type: maquina-lavar-roupa
@@ -153,6 +196,8 @@
     - url: https://www.bosch-home.ie/customer-service/get-support/error-e17-or-f17-washing-machine
       titulo: Bosch Irlanda — código de erro E17 / F17 das máquinas de lavar roupa (página oficial de apoio, EN)
       consultado_em: 2026-11-05
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Bosch Irlanda sobre códigos das máquinas de lavar roupa, sem lista de modelos
 - id: bosch-lr-e19
   brand: bosch
   appliance_type: maquina-lavar-roupa
@@ -164,6 +209,8 @@
     - url: https://www.bosch-home.ie/customer-service/get-support/error-e19-or-f19-washing-machine
       titulo: Bosch Irlanda — código de erro E19 / F19 das máquinas de lavar roupa (página oficial de apoio, EN)
       consultado_em: 2026-11-05
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Bosch Irlanda sobre códigos das máquinas de lavar roupa, sem lista de modelos
 - id: bosch-lr-e20
   brand: bosch
   appliance_type: maquina-lavar-roupa
@@ -175,6 +222,8 @@
     - url: https://www.bosch-home.ie/customer-service/get-support/error-e20-or-f20-washing-machine
       titulo: Bosch Irlanda — código de erro E20 / F20 das máquinas de lavar roupa (página oficial de apoio, EN)
       consultado_em: 2026-11-05
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Bosch Irlanda sobre códigos das máquinas de lavar roupa, sem lista de modelos
 - id: bosch-lr-e23
   brand: bosch
   appliance_type: maquina-lavar-roupa
@@ -186,6 +235,8 @@
     - url: https://www.bosch-home.ie/customer-service/get-support/error-e23-or-f23-washing-machine
       titulo: Bosch Irlanda — código de erro E23 / F23 das máquinas de lavar roupa (página oficial de apoio, EN)
       consultado_em: 2026-11-05
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Bosch Irlanda sobre códigos das máquinas de lavar roupa, sem lista de modelos
 - id: bosch-lr-e25
   brand: bosch
   appliance_type: maquina-lavar-roupa
@@ -197,6 +248,8 @@
     - url: https://www.bosch-home.ie/customer-service/get-support/error-e25-or-f25-washing-machine
       titulo: Bosch Irlanda — código de erro E25 / F25 das máquinas de lavar roupa (página oficial de apoio, EN)
       consultado_em: 2026-11-05
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Bosch Irlanda sobre códigos das máquinas de lavar roupa, sem lista de modelos
 - id: bosch-lr-e26
   brand: bosch
   appliance_type: maquina-lavar-roupa
@@ -208,6 +261,8 @@
     - url: https://www.bosch-home.ie/customer-service/get-support/error-e26-or-f26-washing-machine
       titulo: Bosch Irlanda — código de erro E26 / F26 das máquinas de lavar roupa (página oficial de apoio, EN)
       consultado_em: 2026-11-05
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Bosch Irlanda sobre códigos das máquinas de lavar roupa, sem lista de modelos
 - id: bosch-lr-e27
   brand: bosch
   appliance_type: maquina-lavar-roupa
@@ -219,6 +274,8 @@
     - url: https://www.bosch-home.ie/customer-service/get-support/error-f27-washing-machine
       titulo: Bosch Irlanda — código de erro E27 / F27 das máquinas de lavar roupa (página oficial de apoio, EN)
       consultado_em: 2026-11-05
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Bosch Irlanda sobre códigos das máquinas de lavar roupa, sem lista de modelos
 - id: bosch-lr-e28
   brand: bosch
   appliance_type: maquina-lavar-roupa
@@ -230,3 +287,5 @@
     - url: https://www.bosch-home.ie/customer-service/get-support/error-e28-or-f28-washing-machine
       titulo: Bosch Irlanda — código de erro E28 / F28 das máquinas de lavar roupa (página oficial de apoio, EN)
       consultado_em: 2026-11-05
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da Bosch Irlanda sobre códigos das máquinas de lavar roupa, sem lista de modelos

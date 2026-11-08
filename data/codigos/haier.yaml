@@ -26,6 +26,13 @@
           - HW90-B14959EU1
         url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw1b5afd23/documents/003941875_15bf0e11-bf75-490e-954c-3f17f7bafd1b.pdf
         alojado_por: Auchan
+  ambito: modelos
+  ambito_nota: Haier HW80-B14959EU1 e HW90-B14959EU1
+  aplicavel_a:
+    - brand: haier
+      prefixos:
+        - HW80B14959EU1
+        - HW90B14959EU1
 - id: haier-lr-e2
   brand: haier
   appliance_type: maquina-lavar-roupa
@@ -44,6 +51,13 @@
         modelos: *a1
         url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw1b5afd23/documents/003941875_15bf0e11-bf75-490e-954c-3f17f7bafd1b.pdf
         alojado_por: Auchan
+  ambito: modelos
+  ambito_nota: Haier HW80-B14959EU1 e HW90-B14959EU1
+  aplicavel_a:
+    - brand: haier
+      prefixos:
+        - HW80B14959EU1
+        - HW90B14959EU1
 - id: haier-lr-e4
   brand: haier
   appliance_type: maquina-lavar-roupa
@@ -63,6 +77,13 @@
         modelos: *a1
         url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw1b5afd23/documents/003941875_15bf0e11-bf75-490e-954c-3f17f7bafd1b.pdf
         alojado_por: Auchan
+  ambito: modelos
+  ambito_nota: Haier HW80-B14959EU1 e HW90-B14959EU1
+  aplicavel_a:
+    - brand: haier
+      prefixos:
+        - HW80B14959EU1
+        - HW90B14959EU1
 - id: haier-lr-e8
   brand: haier
   appliance_type: maquina-lavar-roupa
@@ -79,6 +100,13 @@
         modelos: *a1
         url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw1b5afd23/documents/003941875_15bf0e11-bf75-490e-954c-3f17f7bafd1b.pdf
         alojado_por: Auchan
+  ambito: modelos
+  ambito_nota: Haier HW80-B14959EU1 e HW90-B14959EU1
+  aplicavel_a:
+    - brand: haier
+      prefixos:
+        - HW80B14959EU1
+        - HW90B14959EU1
 - id: haier-lr-f3
   brand: haier
   appliance_type: maquina-lavar-roupa
@@ -95,6 +123,13 @@
         modelos: *a1
         url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw1b5afd23/documents/003941875_15bf0e11-bf75-490e-954c-3f17f7bafd1b.pdf
         alojado_por: Auchan
+  ambito: modelos
+  ambito_nota: Haier HW80-B14959EU1 e HW90-B14959EU1
+  aplicavel_a:
+    - brand: haier
+      prefixos:
+        - HW80B14959EU1
+        - HW90B14959EU1
 - id: haier-lr-f4
   brand: haier
   appliance_type: maquina-lavar-roupa
@@ -111,6 +146,13 @@
         modelos: *a1
         url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw1b5afd23/documents/003941875_15bf0e11-bf75-490e-954c-3f17f7bafd1b.pdf
         alojado_por: Auchan
+  ambito: modelos
+  ambito_nota: Haier HW80-B14959EU1 e HW90-B14959EU1
+  aplicavel_a:
+    - brand: haier
+      prefixos:
+        - HW80B14959EU1
+        - HW90B14959EU1
 - id: haier-lr-f7
   brand: haier
   appliance_type: maquina-lavar-roupa
@@ -127,6 +169,13 @@
         modelos: *a1
         url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw1b5afd23/documents/003941875_15bf0e11-bf75-490e-954c-3f17f7bafd1b.pdf
         alojado_por: Auchan
+  ambito: modelos
+  ambito_nota: Haier HW80-B14959EU1 e HW90-B14959EU1
+  aplicavel_a:
+    - brand: haier
+      prefixos:
+        - HW80B14959EU1
+        - HW90B14959EU1
 - id: haier-lr-fa
   brand: haier
   appliance_type: maquina-lavar-roupa
@@ -143,6 +192,13 @@
         modelos: *a1
         url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw1b5afd23/documents/003941875_15bf0e11-bf75-490e-954c-3f17f7bafd1b.pdf
         alojado_por: Auchan
+  ambito: modelos
+  ambito_nota: Haier HW80-B14959EU1 e HW90-B14959EU1
+  aplicavel_a:
+    - brand: haier
+      prefixos:
+        - HW80B14959EU1
+        - HW90B14959EU1
 - id: haier-lr-fc1
   brand: haier
   appliance_type: maquina-lavar-roupa
@@ -162,3 +218,10 @@
         modelos: *a1
         url_alojamento: https://www.auchan.pt/on/demandware.static/-/Library-Sites-AuchanPTSharedLibrary/default/dw1b5afd23/documents/003941875_15bf0e11-bf75-490e-954c-3f17f7bafd1b.pdf
         alojado_por: Auchan
+  ambito: modelos
+  ambito_nota: Haier HW80-B14959EU1 e HW90-B14959EU1
+  aplicavel_a:
+    - brand: haier
+      prefixos:
+        - HW80B14959EU1
+        - HW90B14959EU1
