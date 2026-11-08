@@ -400,6 +400,8 @@ export function validarSemantica(d: DadosBrutos, hoje = new Date()): Problema[] 
 			for (const r of c.aplicavel_a ?? [])
 				if (!restrita(r)) add(onde, 'aplicavel_a sem modelos/famílias/padrões ("toda a marca"): usa ambito "marca" só se a fonte o disser explicitamente');
 		} else if (c.aplicavel_a?.length) add(onde, `ambito "${c.ambito}" não leva aplicavel_a (só "modelos")`);
+		if (c.pendente_fonte && !c.motivo_aviso?.trim()) add(onde, 'pendente_fonte: true exige motivo_aviso');
+		if (!c.pendente_fonte && c.motivo_aviso) add(onde, 'motivo_aviso só se usa com pendente_fonte: true');
 		if (c.arvore) {
 			const a = arvores.get(c.arvore);
 			if (!a) add(onde, `árvore desconhecida: ${c.arvore}`);
@@ -423,6 +425,8 @@ export function validarSemantica(d: DadosBrutos, hoje = new Date()): Problema[] 
 	// Fontes obtidas sem respeitar o robots.txt (data/pendentes-fonte.yaml): cada item que cite um desses domínios tem de
 	// estar na lista; em «so_estas_fontes» não pode ter fontes permitidas e em «parcial» tem de ter pelo menos uma.
 	const pendentes = join(DATA, 'pendentes-fonte.yaml');
+	if (!existsSync(pendentes))
+		for (const c of d.codigos) if (c.pendente_fonte) add(`codigos/${c.id}`, 'pendente_fonte: true sem data/pendentes-fonte.yaml');
 	if (existsSync(pendentes)) {
 		type Grupo = { ids?: string[]; dominios?: string[] };
 		const doc = YAML.parse(readFileSync(pendentes, 'utf8')) as Record<string, Grupo[] | undefined>;
@@ -448,6 +452,12 @@ export function validarSemantica(d: DadosBrutos, hoje = new Date()): Problema[] 
 					if (secao === 'parcial' && (nOk === 0 || nProib === 0)) add('pendentes-fonte.yaml', `parcial: ${id} tem de ter fontes proibidas e permitidas`);
 					if (secao === 'substituidas' && nProib > 0) add('pendentes-fonte.yaml', `substituidas: ${id} ainda cita uma fonte proibida`);
 				}
+		// Códigos em «so_estas_fontes» levam o aviso; os outros não.
+		for (const c of d.codigos) {
+			const listadoSo = listados.get(c.id) === 'so_estas_fontes';
+			if (listadoSo && !c.pendente_fonte) add(`codigos/${c.id}`, 'está em so_estas_fontes: precisa de pendente_fonte: true e motivo_aviso');
+			if (!listadoSo && c.pendente_fonte) add(`codigos/${c.id}`, 'pendente_fonte: true só para códigos em so_estas_fontes (data/pendentes-fonte.yaml)');
+		}
 		for (const [id, it] of itens)
 			if (it.sources.some((f) => eProibida(f.url)) && !['so_estas_fontes', 'parcial'].includes(listados.get(id) ?? ''))
 				add(id, 'cita uma fonte obtida sem respeitar o robots.txt: acrescenta-o a data/pendentes-fonte.yaml ou usa uma fonte permitida');

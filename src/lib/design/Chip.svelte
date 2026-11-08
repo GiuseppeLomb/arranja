@@ -6,29 +6,42 @@
 		href?: string;
 		onclick?: (e: MouseEvent) => void;
 		selecionado?: boolean;
+		/** Âmbar neutro: «fonte por confirmar». Não é uma cor de risco. */
+		aviso?: boolean;
 		vt?: string;
 		icone?: Snippet;
 		children: Snippet;
 	};
 
-	let { href, onclick, selecionado, vt, icone, children }: Props = $props();
+	let { href, onclick, selecionado, aviso, vt, icone, children }: Props = $props();
 </script>
 
 {#if href}
-	<a {href} class="chip" class:sel={selecionado} style:view-transition-name={vt} aria-current={selecionado ? 'true' : undefined} use:pressao>
+	<a {href} class="chip" class:sel={selecionado} class:aviso style:view-transition-name={vt} aria-current={selecionado ? 'true' : undefined} use:pressao>
 		{@render icone?.()}<span>{@render children()}</span>
 	</a>
 {:else if onclick}
-	<button type="button" class="chip" class:sel={selecionado} style:view-transition-name={vt} aria-pressed={selecionado} {onclick} use:pressao>
+	<button type="button" class="chip" class:sel={selecionado} class:aviso style:view-transition-name={vt} aria-pressed={selecionado} {onclick} use:pressao>
 		{@render icone?.()}<span>{@render children()}</span>
 	</button>
 {:else}
-	<span class="chip estatico" class:sel={selecionado} style:view-transition-name={vt}>
+	<span class="chip estatico" class:sel={selecionado} class:aviso style:view-transition-name={vt}>
 		{@render icone?.()}<span>{@render children()}</span>
 	</span>
 {/if}
 
 <style>
+	.chip.aviso:not(.sel) {
+		background: var(--aviso-fundo);
+		border-color: var(--aviso-linha);
+	}
+	@media (hover: hover) {
+		button.chip.aviso:not(.sel):hover,
+		a.chip.aviso:not(.sel):hover {
+			background: var(--aviso-fundo);
+			border-color: var(--aviso-icone);
+		}
+	}
 	.chip {
 		display: inline-flex;
 		align-items: center;

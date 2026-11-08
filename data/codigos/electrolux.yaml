@@ -308,6 +308,8 @@
     - brand: electrolux
       prefixos:
         - EDI618A5BO
+  pendente_fonte: true
+  motivo_aviso: As páginas de apoio da marca ainda não explicam este código; a descrição vem do manual da máquina de secar.
 - id: electrolux-ms-eh0
   brand: electrolux
   appliance_type: maquina-secar

@@ -509,6 +509,8 @@
     - brand: samsung
       regex:
         - ^DV9.BB5245
+  pendente_fonte: true
+  motivo_aviso: As páginas de apoio da Samsung ainda não listam este código; a descrição vem do manual da máquina de secar.
 - id: samsung-ms-3c
   brand: samsung
   appliance_type: maquina-secar
@@ -551,6 +553,8 @@
     - brand: samsung
       regex:
         - ^DV9.BB5245
+  pendente_fonte: true
+  motivo_aviso: As páginas de apoio da Samsung ainda não listam este código; a descrição vem do manual da máquina de secar.
 - id: samsung-ms-hc
   brand: samsung
   appliance_type: maquina-secar

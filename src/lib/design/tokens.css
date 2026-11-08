@@ -38,6 +38,10 @@
 	--sombra-cor: 20 48 43;
 	--verificado: #14302b;
 	--sobre-verificado: #ffffff;
+	/* Aviso «fonte por confirmar»: âmbar neutro, diferente das cores de risco. */
+	--aviso-fundo: #f5e4bd;
+	--aviso-linha: #c9a25a;
+	--aviso-icone: #7a5310;
 
 	/* Ilustração da cozinha (Início). Sem cores de risco. */
 	--k-parede: #efe6d6;
@@ -156,6 +160,9 @@
 		--sombra-cor: 0 0 0;
 		--verificado: #8ccfbf;
 		--sobre-verificado: #0f1a18;
+		--aviso-fundo: #33291a;
+		--aviso-linha: #8c6d33;
+		--aviso-icone: #e3bd72;
 		--k-parede: #1b2926;
 		--k-parede-2: #15211e;
 		--k-chao: #111b19;
@@ -216,6 +223,9 @@
 	--sombra-cor: 0 0 0;
 	--verificado: #8ccfbf;
 	--sobre-verificado: #0f1a18;
+	--aviso-fundo: #33291a;
+	--aviso-linha: #8c6d33;
+	--aviso-icone: #e3bd72;
 	--k-parede: #1b2926;
 	--k-parede-2: #15211e;
 	--k-chao: #111b19;

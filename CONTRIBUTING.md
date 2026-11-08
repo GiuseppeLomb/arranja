@@ -29,7 +29,8 @@ Obrigado! O Arranja só é útil se for **fiável**. Por isso, as regras de veri
    - `ambito: marca`: só se a fonte disser explicitamente que vale para todos os modelos, com essa indicação em `ambito_nota`. O `validate` não consegue verificar isto: confirma-se na revisão.
    - `ambito: sem-modelos`: página geral ou manual sem modelos indicados. Um modelo associado só pelo retalhista (`modelos_fonte: alojamento`, regra 8) não conta como documentado: o código fica `sem-modelos`. Estes códigos nunca aparecem como confirmados.
    - O `validate` rejeita `modelos` sem `aplicavel_a`, regras de `aplicavel_a` sem modelos/famílias/padrões («toda a marca») e `aplicavel_a` em `marca` ou `sem-modelos`.
-10. **Revisão antes do merge.** Todo o conteúdo é revisto por outra pessoa. O CI corre `npm run validate`.
+10. **Fonte por confirmar.** Se a única fonte de um código foi obtida sem respeitar o robots.txt e ainda não há alternativa permitida (`data/pendentes-fonte.yaml` → `so_estas_fontes`), o código fica visível com `pendente_fonte: true` e `motivo_aviso` (frase própria do caso). A app mostra o aviso âmbar «Fonte por confirmar» na página do código e no fluxo, mantém o link para o documento e acrescenta sempre o botão «Diagnosticar por sintoma». Quando surgir uma fonte permitida e passar a revisão, retira-se a flag e o aviso, e o item passa de `so_estas_fontes` para `substituidas` (ou para `parcial`, se mantiver a fonte antiga); o `validate` exige coerência entre a lista e a flag.
+11. **Revisão antes do merge.** Todo o conteúdo é revisto por outra pessoa. O CI corre `npm run validate`.
 
 ## Segurança
 

@@ -27,6 +27,16 @@
 			"maxLength": 300,
 			"description": "Em que modelos ou documento foi confirmado, em texto legível (ex.: «LG F4WR5013A6W (manual MFL71766782)»). Com \"marca\", o que a fonte diz sobre todos os modelos."
 		},
+		"pendente_fonte": {
+			"type": "boolean",
+			"description": "true = a única fonte foi obtida sem respeitar o robots.txt e ainda não há fonte permitida (data/pendentes-fonte.yaml → so_estas_fontes). A app mostra o aviso «Fonte por confirmar»."
+		},
+		"motivo_aviso": {
+			"type": "string",
+			"minLength": 10,
+			"maxLength": 300,
+			"description": "Frase em PT-PT mostrada no aviso «Fonte por confirmar», a explicar o caso deste código."
+		},
 		"aplicavel_a": {
 			"$ref": "common.schema.json#/$defs/aplicavelA",
 			"description": "Com ambito \"modelos\": os modelos, famílias ou padrões documentados na fonte (todas as entradas da marca do código e sempre com restrição)."
@@ -35,5 +45,7 @@
 		"guias": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/id" } },
 		"sources": { "$ref": "common.schema.json#/$defs/sources" },
 		"example": { "$ref": "common.schema.json#/$defs/example" }
-	}
+	},
+	"if": { "properties": { "pendente_fonte": { "const": true } }, "required": ["pendente_fonte"] },
+	"then": { "required": ["motivo_aviso"] }
 }

@@ -6,6 +6,7 @@
 	import CircleCheck from '@lucide/svelte/icons/circle-check';
 	import TriangleAlert from '@lucide/svelte/icons/triangle-alert';
 	import ExternalLink from '@lucide/svelte/icons/external-link';
+	import FileQuestionMark from '@lucide/svelte/icons/file-question-mark';
 	import { onMount } from 'svelte';
 	import BarraTopo from '#lib/componentes/BarraTopo.svelte';
 	import BotaoFavorito from '#lib/componentes/BotaoFavorito.svelte';
@@ -51,6 +52,18 @@
 		</div>
 	</header>
 	{#if c.example}<AvisoExemplo />{/if}
+	{#if c.pendente_fonte}
+		<div class="por-confirmar" role="note">
+			<FileQuestionMark aria-hidden="true" />
+			<div>
+				<p>
+					<strong>Fonte por confirmar:</strong> este código vem de um manual oficial, mas ainda não o confirmámos numa fonte pública atual. Confirma
+					no manual do teu aparelho antes de agir.
+				</p>
+				{#if c.motivo_aviso}<p>{c.motivo_aviso}</p>{/if}
+			</div>
+		</div>
+	{/if}
 
 	<section class="pilha" aria-labelledby="sig-t">
 		<h2 id="sig-t" class="secao-titulo">O que significa</h2>
@@ -58,13 +71,19 @@
 		{#if c.aliases?.length}<p class="nota">Também aparece como: {c.aliases.join(', ')}</p>{/if}
 	</section>
 
-	{#if arvore || listaGuias.length}
+	{#if arvore || listaGuias.length || c.pendente_fonte}
 		<section class="pilha" aria-labelledby="fazer-t">
 			<h2 id="fazer-t" class="secao-titulo">O que fazer</h2>
 			{#if arvore}
 				<Button variante="destaque" tamanho="grande" largo href={resolve('/diagnostico/[id]', { id: arvore.id })}>
 					{#snippet icone()}<Stethoscope aria-hidden="true" />{/snippet}
 					Fazer o diagnóstico
+				</Button>
+			{/if}
+			{#if c.pendente_fonte}
+				<Button variante={arvore ? 'secundaria' : 'destaque'} tamanho="grande" largo href={resolve('/reparar/[tipo]', { tipo: c.appliance_type })}>
+					{#snippet icone()}<Stethoscope aria-hidden="true" />{/snippet}
+					Diagnosticar por sintoma
 				</Button>
 			{/if}
 			<ul class="guias">
@@ -176,6 +195,27 @@
 		flex-direction: column;
 		align-items: flex-start;
 		gap: var(--e-2);
+	}
+	.por-confirmar {
+		display: flex;
+		align-items: flex-start;
+		gap: var(--e-3);
+		padding: var(--e-4);
+		border-radius: 16px;
+		background: var(--aviso-fundo);
+		border: 1px solid var(--aviso-linha);
+		color: var(--texto);
+	}
+	.por-confirmar > div {
+		display: flex;
+		flex-direction: column;
+		gap: var(--e-2);
+	}
+	.por-confirmar :global(svg) {
+		flex: none;
+		width: 24px;
+		height: 24px;
+		color: var(--aviso-icone);
 	}
 	.estado {
 		display: flex;

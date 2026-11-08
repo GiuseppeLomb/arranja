@@ -315,6 +315,8 @@
       prefixos:
         - TR739M4OB
         - TR749M4OB
+  pendente_fonte: true
+  motivo_aviso: As páginas de apoio da marca ainda não explicam este código; a descrição vem do manual da máquina de secar.
 - id: aeg-ms-eh0
   brand: aeg
   appliance_type: maquina-secar

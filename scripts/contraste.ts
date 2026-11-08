@@ -66,7 +66,9 @@ const PARES: [string, string, number, string][] = [
 	['sobre-risco-baixo', 'risco-baixo', 4.5, 'selo risco baixo'],
 	['sobre-risco-medio', 'risco-medio', 4.5, 'selo risco médio'],
 	['sobre-risco-alto', 'risco-alto', 4.5, 'selo risco alto'],
-	['sobre-risco-proibido', 'risco-proibido', 4.5, 'selo proibido']
+	['sobre-risco-proibido', 'risco-proibido', 4.5, 'selo proibido'],
+	['texto', 'aviso-fundo', 4.5, 'texto do aviso «fonte por confirmar»'],
+	['aviso-icone', 'aviso-fundo', 3, 'ícone do aviso «fonte por confirmar»']
 ];
 
 export function verificarContraste(): boolean {

@@ -12,6 +12,7 @@
 	import ChevronRight from '@lucide/svelte/icons/chevron-right';
 	import CircleAlert from '@lucide/svelte/icons/circle-alert';
 	import CircleCheck from '@lucide/svelte/icons/circle-check';
+	import FileQuestionMark from '@lucide/svelte/icons/file-question-mark';
 	import Stethoscope from '@lucide/svelte/icons/stethoscope';
 	import BookOpen from '@lucide/svelte/icons/book-open';
 	import CircleQuestionMark from '@lucide/svelte/icons/circle-question-mark';
@@ -92,6 +93,7 @@
 	const codigosOutros = $derived(
 		codigosEncontrados.filter((c) => !c.confirmado && (!marcaId || c.item.ambito === 'modelos')).map((c) => c.item)
 	);
+	const codigosPorConfirmar = $derived(codigosMostrados.filter((c) => c.pendente_fonte));
 	const codigosSemModelos = $derived(marcaId ? codigosEncontrados.filter((c) => c.item.ambito === 'sem-modelos').map((c) => c.item) : []);
 	// Códigos que a fonte diz valerem para todos os modelos da marca (sem modelo indicado ainda não estão confirmados para «o teu»).
 	const codigosTodaMarca = $derived(marcaId ? codigosEncontrados.filter((c) => !c.confirmado && c.item.ambito === 'marca').map((c) => c.item) : []);
@@ -260,7 +262,7 @@
 						<ul class="chips">
 							{#each codigosConfirmados.slice(0, 60) as c, i (c.id)}
 								<li in:entrar={{ delay: cascata(i, 10) }}>
-									<Chip href={resolve('/erro/[id]', { id: c.id })}>
+									<Chip href={resolve('/erro/[id]', { id: c.id })} aviso={c.pendente_fonte}>
 										{#snippet icone()}<CircleAlert aria-hidden="true" />{/snippet}
 										{c.code}
 									</Chip>
@@ -278,11 +280,12 @@
 									Códigos {selecao.marca?.nome} confirmados só em alguns modelos. Indica o modelo para saberes se estão confirmados para o teu.
 								{/if}
 							</p>
+							<p class="grupo-codigos confirmado-em">Confirmado em: {[...new Set(codigosOutros.flatMap((x) => x.ambito_nota.split('; ')))].join(' · ')}</p>
 						{/if}
 						<ul class="chips">
 							{#each codigosOutros.slice(0, 60) as c, i (c.id)}
 								<li in:entrar={{ delay: cascata(i, 10) }}>
-									<Chip href={resolve('/erro/[id]', { id: c.id })}>
+									<Chip href={resolve('/erro/[id]', { id: c.id })} aviso={c.pendente_fonte}>
 										{#snippet icone()}<CircleAlert aria-hidden="true" />{/snippet}
 										{c.code}{marcaId ? '' : ` · ${nomeMarca(c.brand)}`}
 									</Chip>
@@ -295,7 +298,7 @@
 						<ul class="chips">
 							{#each codigosTodaMarca.slice(0, 60) as c, i (c.id)}
 								<li in:entrar={{ delay: cascata(i, 10) }}>
-									<Chip href={resolve('/erro/[id]', { id: c.id })}>
+									<Chip href={resolve('/erro/[id]', { id: c.id })} aviso={c.pendente_fonte}>
 										{#snippet icone()}<CircleAlert aria-hidden="true" />{/snippet}
 										{c.code}
 									</Chip>
@@ -311,13 +314,26 @@
 						<ul class="chips">
 							{#each codigosSemModelos.slice(0, 60) as c, i (c.id)}
 								<li in:entrar={{ delay: cascata(i, 10) }}>
-									<Chip href={resolve('/erro/[id]', { id: c.id })}>
+									<Chip href={resolve('/erro/[id]', { id: c.id })} aviso={c.pendente_fonte}>
 										{#snippet icone()}<CircleAlert aria-hidden="true" />{/snippet}
 										{c.code}
 									</Chip>
 								</li>
 							{/each}
 						</ul>
+					{/if}
+					{#if codigosPorConfirmar.length}
+						<div class="por-confirmar" role="note">
+							<FileQuestionMark aria-hidden="true" />
+							<div class="textos">
+								<p><strong>{[...new Set(codigosPorConfirmar.map((x) => (marcaId ? x.code : `${x.code} · ${nomeMarca(x.brand)}`)))].join(', ')}</strong></p>
+								<p>
+									<strong>Fonte por confirmar:</strong> este código vem de um manual oficial, mas ainda não o confirmámos numa fonte pública atual. Confirma
+									no manual do teu aparelho antes de agir.
+								</p>
+								{#each [...new Set(codigosPorConfirmar.map((x) => x.motivo_aviso).filter((m) => !!m))] as motivo (motivo)}<p>{motivo}</p>{/each}
+							</div>
+						</div>
 					{/if}
 				{:else if consultaCodigo.trim()}
 					<p class="nota">
@@ -497,6 +513,27 @@
 		display: flex;
 		flex-wrap: wrap;
 		gap: var(--e-2);
+	}
+	.por-confirmar {
+		display: flex;
+		align-items: flex-start;
+		gap: var(--e-3);
+		padding: var(--e-3) var(--e-4);
+		border-radius: 16px;
+		background: var(--aviso-fundo);
+		border: 1px solid var(--aviso-linha);
+		font-size: var(--t-sm);
+	}
+	.por-confirmar .textos {
+		display: flex;
+		flex-direction: column;
+		gap: var(--e-2);
+	}
+	.por-confirmar :global(svg) {
+		flex: none;
+		width: 20px;
+		height: 20px;
+		color: var(--aviso-icone);
 	}
 	.grupo-codigos {
 		display: flex;

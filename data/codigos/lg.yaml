@@ -406,6 +406,8 @@
         - ^F4WR35\d\dA.W
       modelos:
         - F4WR359S6M
+  pendente_fonte: true
+  motivo_aviso: O significado deste código pode variar entre regiões; esta descrição é a do manual europeu.
 - id: lg-lr-ed2
   brand: lg
   appliance_type: maquina-lavar-roupa
@@ -432,6 +434,8 @@
         - ^F4WR35\d\dA.W
       modelos:
         - F4WR359S6M
+  pendente_fonte: true
+  motivo_aviso: O significado deste código pode variar entre regiões; esta descrição é a do manual europeu.
 - id: lg-lr-ed3
   brand: lg
   appliance_type: maquina-lavar-roupa
@@ -458,6 +462,8 @@
         - ^F4WR35\d\dA.W
       modelos:
         - F4WR359S6M
+  pendente_fonte: true
+  motivo_aviso: O significado deste código pode variar entre regiões; esta descrição é a do manual europeu.
 - id: lg-lr-ed4
   brand: lg
   appliance_type: maquina-lavar-roupa
@@ -484,6 +490,8 @@
         - ^F4WR35\d\dA.W
       modelos:
         - F4WR359S6M
+  pendente_fonte: true
+  motivo_aviso: O significado deste código pode variar entre regiões; esta descrição é a do manual europeu.
 - id: lg-lr-ed5
   brand: lg
   appliance_type: maquina-lavar-roupa
@@ -510,6 +518,8 @@
         - ^F4WR35\d\dA.W
       modelos:
         - F4WR359S6M
+  pendente_fonte: true
+  motivo_aviso: O significado deste código pode variar entre regiões; esta descrição é a do manual europeu.
 - id: lg-lr-opn
   brand: lg
   appliance_type: maquina-lavar-roupa
@@ -536,3 +546,5 @@
         - ^F4WR35\d\dA.W
       modelos:
         - F4WR359S6M
+  pendente_fonte: true
+  motivo_aviso: O significado deste código pode variar entre regiões; esta descrição é a do manual europeu.

@@ -132,6 +132,10 @@ export interface CodigoErro {
 	ambito: 'modelos' | 'marca' | 'sem-modelos';
 	/** Em que modelos/documento foi confirmado, legível. */
 	ambito_nota: string;
+	/** Fonte por confirmar: a única fonte foi obtida sem respeitar o robots.txt (ver data/pendentes-fonte.yaml). */
+	pendente_fonte?: boolean;
+	/** Frase do aviso «Fonte por confirmar» para este código. */
+	motivo_aviso?: string;
 	aplicavel_a?: AplicavelA[];
 	arvore?: string;
 	guias?: string[];
