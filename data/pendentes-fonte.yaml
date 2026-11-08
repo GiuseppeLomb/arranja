@@ -27,27 +27,35 @@ substituidas:
     antes: manual Samsung DV5000B (servidor de downloads da Samsung)
     nota: Descrições reescritas a partir da página oficial; âmbito passa a «sem-modelos».
     ids: [samsung-ms-tc, samsung-ms-tc5, samsung-ms-3c, samsung-ms-ac6, samsung-ms-hc]
+  - fonte_nova: páginas oficiais de apoio da LG Reino Unido (help library)
+    antes: manuais LG MFL71766782 e MFL72012058 (Macorlux)
+    nota: Descrições reescritas a partir da página da LG; UE e LE mantêm também o manual da LG Mini (Auchan).
+    ids: [lg-lr-ie, lg-lr-ue, lg-lr-oe, lg-lr-le, lg-lr-ff]
+  - fonte_nova: artigos oficiais de apoio da AEG Reino Unido e da Electrolux Irlanda
+    antes: manuais AEG 136202450-A-322023 e Electrolux 136205020-A-122024 (Macorlux)
+    nota: Descrições reescritas a partir dos artigos de cada marca; âmbito passa a «sem-modelos».
+    ids: [aeg-ms-e50, aeg-ms-eh0, electrolux-ms-e50, electrolux-ms-eh0]
+  - fonte_nova: https://apiportalsat.teka.com/api/documentos/descargar/15
+    antes: manual Teka TKD 1480 / TKD 1280 (Macorlux)
+    nota: Manual de serviço oficial da gama SPA (TKD 1270, 1280, 1480, 1490, 1610 WD); descrições reescritas a partir da tabela de erros.
+    ids: [teka-lr-e30, teka-lr-e10, teka-lr-e21]
 
 so_estas_fontes:
-  - grupo: LG — manuais MFL71766782 (F4WR5013A6W) e MFL72012058 (F4WR35…) alojados pela Macorlux
-    ids: [lg-lr-ie, lg-lr-oe, lg-lr-de, lg-lr-te, lg-lr-fe, lg-lr-pe, lg-lr-vs, lg-lr-ff, lg-lr-ae, lg-lr-pf, lg-lr-ed1, lg-lr-ed2, lg-lr-ed3, lg-lr-ed4, lg-lr-ed5, lg-lr-opn]
-    procura: "Auchan aloja só a ficha técnica do F4WR5013A6W (sem códigos); pesquisa pelas referências MFL e pelo modelo não encontrou o manual em lg.com nem noutro site permitido — só em sites genéricos de manuais, que não são fonte aceite."
+  - grupo: LG — códigos ezDispense do manual MFL72012058 alojado pela Macorlux
+    ids: [lg-lr-ed1, lg-lr-ed2, lg-lr-ed3, lg-lr-ed4, lg-lr-ed5, lg-lr-opn]
+    procura: "O manual não está em lg.com nem noutro site permitido. As páginas oficiais da LG de outras regiões (Índia, EUA, Emirados) dão a estes códigos significados diferentes do manual europeu, por isso não servem de substituto."
     sem_alternativa: true
-  - grupo: AEG e Electrolux — manuais de máquinas de secar (136202450-A-322023 e 136205020-A-122024) alojados pela Macorlux
-    ids: [aeg-ms-e50, aeg-ms-e90, aeg-ms-eh0, electrolux-ms-e50, electrolux-ms-e90, electrolux-ms-eh0]
-    procura: "Os sites de apoio AEG/Electrolux Portugal não têm artigos sobre estes códigos de secar; electrolux-ui.com é permitido mas só se pesquisa por PNC na página (sem endereço direto encontrado); os outros resultados são sites genéricos de manuais."
-    sem_alternativa: true
-  - grupo: Teka — manual TKD 1480 / TKD 1280 alojado pela Macorlux
-    ids: [teka-lr-e30, teka-lr-e10, teka-lr-e21]
-    procura: "teka.com não tem o PDF; só aparece em sites genéricos de manuais."
+  - grupo: AEG e Electrolux — E90/E91 dos manuais de máquinas de secar alojados pela Macorlux
+    ids: [aeg-ms-e90, electrolux-ms-e90]
+    procura: "Os sites de apoio AEG/Electrolux (Portugal, Reino Unido, Irlanda) têm artigos para E50 e EH0, mas não para E90; electrolux-ui.com só pesquisa por PNC na página."
     sem_alternativa: true
   - grupo: Whirlpool — manual 400011319210 (combinado W9) alojado pela Macorlux
     ids: [whirlpool-fr-f]
-    procura: "docs.whirlpool.eu é permitido pelo robots.txt, mas pede o código do produto e já respondeu 403 a pedidos automáticos (não se contorna); não encontrei outra cópia em site permitido."
+    procura: "docs.whirlpool.eu é permitido pelo robots.txt, mas respondeu 403 a um pedido identificado (2026-11-08) e não se contorna; as páginas de apoio da Whirlpool (whirlpool.it) não têm o «F» dos frigoríficos."
     sem_alternativa: true
   - grupo: Samsung — manual DV5000B (servidor de downloads da Samsung), códigos que a página oficial do Reino Unido não tem
     ids: [samsung-ms-tc7, samsung-ms-hcl]
-    procura: "A página oficial da Samsung Reino Unido sobre códigos de máquinas de secar não lista tC7 nem HCL."
+    procura: "As páginas oficiais da Samsung sobre códigos de máquinas de secar (Reino Unido, Austrália, Canadá, Emirados) não listam tC7 nem HCL."
     sem_alternativa: true
 
 parcial:
@@ -61,5 +69,5 @@ parcial:
     ids: [ms-carga-programa, ms-esvaziar-deposito, ms-limpar-filtro-cotao, ms-limpar-permutador, ms-mangueira-escoamento, ms-nivelar, ms-ventilar-divisao, ms-verificar-energia-porta, ms-barulho, ms-cheiro, ms-demora, ms-deposito-cheio, ms-humidade-divisao, ms-nao-aquece, ms-nao-liga, ms-nao-seca, ms-para-a-meio, ms-verte-agua]
   - grupo: Samsung DV5000B — árvore que sem a Samsung fica só com 1 marca (Bosch); precisa de uma segunda marca permitida
     ids: [ms-cotao-na-roupa]
-  - grupo: LG — códigos com o manual do LG Mini F8K5XN3 (Auchan, permitido) além dos manuais na Macorlux
-    ids: [lg-lr-ue, lg-lr-le]
+  - grupo: LG — página de apoio da LG Reino Unido (só o nome do código) a par dos manuais na Macorlux (passos)
+    ids: [lg-lr-de, lg-lr-te, lg-lr-fe, lg-lr-pe, lg-lr-vs, lg-lr-ae, lg-lr-pf]

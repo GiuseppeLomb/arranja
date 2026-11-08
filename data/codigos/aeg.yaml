@@ -276,29 +276,18 @@
   brand: aeg
   appliance_type: maquina-secar
   code: E50
-  descricao: "O motor está sobrecarregado: roupa a mais ou roupa presa no tambor, e o programa não terminou. Tira roupa do tambor, escolhe o programa e recomeça o ciclo. (Indicado no manual AEG TR739M4OB/TR749M4OB, ref. 136202450-A-322023.)"
+  descricao: "O tambor está sobrecarregado ou há um problema no motor: o programa pode parar, ou o tambor rodar mal ou não rodar. Abre a porta, vê se o tambor está demasiado cheio ou se há roupa presa, tira roupa se passar da carga máxima do programa e recomeça. Se o código continuar, desliga a máquina da corrente cerca de 1 minuto, volta a ligá-la e escolhe um programa. Se voltar com a carga certa, contacta a assistência. (Artigo oficial de apoio da AEG Reino Unido.)"
   guias:
     - ms-carga-programa
   sources:
-    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/84521/84521.pdf
-      titulo: AEG TR739M4OB / TR749M4OB — Manual de instruções, secador de roupa (PT)
-      pagina: "25"
-      consultado_em: 2026-11-05
-      documento_oficial:
-        fabricante: aeg
-        referencia_documento: 136202450-A-322023
-        modelos: &a1
-          - TR739M4OB
-          - TR749M4OB
-        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/84521/84521.pdf
-        alojado_por: Macorlux
-  ambito: modelos
-  ambito_nota: AEG TR739M4OB e TR749M4OB (manual 136202450-A-322023)
-  aplicavel_a:
-    - brand: aeg
-      prefixos:
-        - TR739M4OB
-        - TR749M4OB
+    - url: https://support.aeg.co.uk/support-articles/article/tumble-dryer-displays-error-message-e50
+      titulo: AEG UK — Tumble Dryer displays error code E50 (artigo de apoio)
+      consultado_em: 2026-11-08
+  aliases:
+    - E5E
+  arvore: ms-tambor
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da AEG Reino Unido sobre este código das máquinas de secar, sem lista de modelos
 - id: aeg-ms-e90
   brand: aeg
   appliance_type: maquina-secar
@@ -314,7 +303,9 @@
       documento_oficial:
         fabricante: aeg
         referencia_documento: 136202450-A-322023
-        modelos: *a1
+        modelos:
+          - TR739M4OB
+          - TR749M4OB
         url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/84521/84521.pdf
         alojado_por: Macorlux
   ambito: modelos
@@ -328,22 +319,14 @@
   brand: aeg
   appliance_type: maquina-secar
   code: EH0
-  descricao: A alimentação elétrica está instável. Espera até estabilizar e carrega em Início/Pausa; se a máquina parar o ciclo sem nenhuma indicação, volta a carregar em início. Se o aviso se repetir, verifica o estado do cabo, da tomada ou da alimentação elétrica. (Indicado no manual AEG TR739M4OB/TR749M4OB, ref. 136202450-A-322023.)
+  descricao: "Problema na alimentação elétrica (tensão baixa, alta ou instável); o mesmo vale para os códigos começados por EH. Liga outro aparelho à mesma tomada: se também não funcionar, provavelmente o problema é da instalação elétrica e deves falar com um eletricista. Não uses extensões, porque há risco de curto-circuito ou incêndio. Depois, tira a ficha da tomada, espera 30 segundos, volta a ligá-la e escolhe um programa. Se continuar, contacta a assistência. (Artigo oficial de apoio da AEG Reino Unido.)"
   sources:
-    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/84521/84521.pdf
-      titulo: AEG TR739M4OB / TR749M4OB — Manual de instruções, secador de roupa (PT)
-      pagina: "25"
-      consultado_em: 2026-11-05
-      documento_oficial:
-        fabricante: aeg
-        referencia_documento: 136202450-A-322023
-        modelos: *a1
-        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/84521/84521.pdf
-        alojado_por: Macorlux
-  ambito: modelos
-  ambito_nota: AEG TR739M4OB e TR749M4OB (manual 136202450-A-322023)
-  aplicavel_a:
-    - brand: aeg
-      prefixos:
-        - TR739M4OB
-        - TR749M4OB
+    - url: https://support.aeg.co.uk/support-articles/article/tumble-dryer-displays-error-message-eho-eh0
+      titulo: AEG UK — Tumble dryer displays error message EHO, EH0 (artigo de apoio)
+      consultado_em: 2026-11-08
+  aliases:
+    - EHO
+    - EH1
+    - EH2
+  ambito: sem-modelos
+  ambito_nota: página geral de apoio da AEG Reino Unido sobre este código das máquinas de secar, sem lista de modelos

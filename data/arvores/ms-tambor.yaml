@@ -12,7 +12,7 @@ nos:
   arranque:
     tipo: pergunta
     texto: Com a porta fechada e o programa iniciado, o tambor está parado há mais de um minuto?
-    ajuda: O tambor pode parar cerca de 40 segundos a meio da secagem e depois continua sozinho (Becken). No fim do programa o tambor para (Becken); na fase antirrugas só se mexe de tempos a tempos (Bosch). Com início diferido, o programa só arranca quando acabar a contagem (Bosch, Becken).
+    ajuda: O tambor pode parar cerca de 40 segundos a meio da secagem e depois continua sozinho (Becken). No fim do programa o tambor para (Becken); na fase antirrugas só se mexe de tempos a tempos (Bosch). Com início diferido, o programa só arranca quando acabar a contagem (Bosch, Becken, Electrolux).
     respostas:
       - texto: Sim
         ir_para: carga
@@ -48,6 +48,7 @@ nos:
     tipo: guia
     guias:
       - ms-verificar-energia-porta
+    nota: "Se a porta não estiver bem fechada ou o modo de poupança de energia estiver ativo, só pisca a tecla de início: fecha bem a porta ou desliga e volta a ligar a máquina, escolhe um programa e carrega em Início/Pausa (Electrolux)."
   fim-carga:
     tipo: guia
     guias:
@@ -72,3 +73,8 @@ sources:
     titulo: Becken BDM2740/BDM2741 HP — Manual de instruções da máquina de secar (secção PT; páginas do PDF)
     pagina: 20, 21, 22, 24, 25, 26
     consultado_em: 2026-11-04
+  - url: https://support.electrolux.ie/support-articles/article/tumble-dryer-drum-does-not-rotate-no-error-message
+    titulo: Electrolux Irlanda — Tumble dryer drum does not rotate, no error message (artigo de apoio)
+    consultado_em: 2026-11-08
+codigos:
+  - aeg-ms-e50

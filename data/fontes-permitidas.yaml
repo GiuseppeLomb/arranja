@@ -92,6 +92,22 @@
   tipo: fabricante
   descricao: Smeg — repositório oficial de documentos de produto (productdocs.smeg.it)
   marcas: [smeg]
+- dominio: lg.com
+  tipo: fabricante
+  descricao: LG Electronics — páginas oficiais de apoio (help library)
+  marcas: [lg]
+- dominio: aeg.co.uk
+  tipo: fabricante
+  descricao: AEG Reino Unido (Electrolux Group) — artigos oficiais de apoio em support.aeg.co.uk
+  marcas: [aeg]
+- dominio: electrolux.ie
+  tipo: fabricante
+  descricao: Electrolux Irlanda — artigos oficiais de apoio em support.electrolux.ie
+  marcas: [electrolux]
+- dominio: teka.com
+  tipo: fabricante
+  descricao: Teka — site oficial e portal de assistência técnica (apiportalsat.teka.com)
+  marcas: [teka]
 - dominio: samsung.com
   tipo: fabricante
   descricao: Samsung — manuais oficiais em downloadcenter.samsung.com

@@ -4,81 +4,62 @@
   brand: teka
   appliance_type: maquina-lavar-roupa
   code: E30
-  descricao: "Problema no fecho da porta: a porta não está bem fechada. Fecha-a bem e recomeça; se continuar, contacta a assistência técnica. (Indicado no manual Teka TKD 1480 INOX.)"
+  descricao: "A porta não tranca: está mal fechada ou o fecho da porta está avariado. Fecha bem a porta e recomeça; se continuar, contacta a assistência técnica. (Indicado no manual de serviço Teka MSWM15043 da gama SPA TKD.)"
   guias:
     - lr-verificar-energia-bloqueio
   sources:
-    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/74173/74173.pdf
-      titulo: Teka TKD 1480 INOX — Manual de instruções, máquina de lavar roupa (ES/PT/EN)
-      pagina: "70"
-      consultado_em: 2026-11-05
-      documento_oficial:
-        fabricante: teka
-        identificacao: Manual com a marca TEKA e o modelo TKD 1480 INOX na capa; a ficha de produto cobre TKD 1280 / TKD 1480.
-        modelos: &a1
-          - TKD 1480 INOX
-          - TKD 1280
-        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/74173/74173.pdf
-        alojado_por: Macorlux
+    - &a1
+      url: https://apiportalsat.teka.com/api/documentos/descargar/15
+      titulo: Teka — Manual de serviço MSWM15043, gama de máquinas de lavar roupa SPA (TKD) (ES; página do PDF)
+      pagina: "10"
+      consultado_em: 2026-11-08
   ambito: modelos
-  ambito_nota: Teka TKD 1480 e TKD 1280
+  ambito_nota: "Teka gama SPA: TKD 1270, TKD 1280, TKD 1480, TKD 1490 e TKD 1610 WD (manual de serviço MSWM15043)"
   aplicavel_a:
     - brand: teka
       prefixos:
-        - TKD1480
+        - TKD1270
         - TKD1280
+        - TKD1480
+        - TKD1490
+        - TKD1610
 - id: teka-lr-e10
   brand: teka
   appliance_type: maquina-lavar-roupa
   code: E10
-  descricao: "Problema na entrada de água durante a lavagem: torneira fechada ou caudal fraco, filtro da válvula entupido, mangueira de entrada torcida ou dobrada, ou falta de água. Abre a torneira ou espera que o caudal normalize, verifica o filtro, estica a mangueira e vê se há água noutras torneiras. Se continuar, contacta a assistência técnica. (Indicado no manual Teka TKD 1480 INOX.)"
+  descricao: "O enchimento demorou mais de 7 minutos: torneira fechada, mangueira de entrada entalada, pressão da água baixa ou válvula de entrada avariada. Confirma que a torneira está aberta e que a mangueira não está entalada; se continuar, contacta a assistência técnica. (Indicado no manual de serviço Teka MSWM15043 da gama SPA TKD.)"
   arvore: lr-nao-enche-agua
-  guias:
-    - lr-limpar-filtro-entrada
-    - lr-apertar-ligacoes-mangueiras
   sources:
-    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/74173/74173.pdf
-      titulo: Teka TKD 1480 INOX — Manual de instruções, máquina de lavar roupa (ES/PT/EN)
-      pagina: "70"
-      consultado_em: 2026-11-05
-      documento_oficial:
-        fabricante: teka
-        identificacao: Manual com a marca TEKA e o modelo TKD 1480 INOX na capa; a ficha de produto cobre TKD 1280 / TKD 1480.
-        modelos: *a1
-        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/74173/74173.pdf
-        alojado_por: Macorlux
+    - *a1
   ambito: modelos
-  ambito_nota: Teka TKD 1480 e TKD 1280
+  ambito_nota: "Teka gama SPA: TKD 1270, TKD 1280, TKD 1480, TKD 1490 e TKD 1610 WD (manual de serviço MSWM15043)"
   aplicavel_a:
     - brand: teka
       prefixos:
-        - TKD1480
+        - TKD1270
         - TKD1280
+        - TKD1480
+        - TKD1490
+        - TKD1610
 - id: teka-lr-e21
   brand: teka
   appliance_type: maquina-lavar-roupa
   code: E21
-  descricao: "Problema de escoamento durante a lavagem: mangueira de escoamento torcida ou dobrada, ou bomba bloqueada. Limpa e estica a mangueira e limpa o filtro da bomba. Se continuar, contacta a assistência técnica. (Indicado no manual Teka TKD 1480 INOX.)"
+  descricao: "O escoamento demorou mais de 3 minutos: mangueira de escoamento entalada ou bomba de escoamento bloqueada (por exemplo, por objetos presos). Confirma que a mangueira não está entalada e limpa o filtro da bomba; se continuar, contacta a assistência técnica. (Indicado no manual de serviço Teka MSWM15043 da gama SPA TKD.)"
   arvore: lr-nao-escoa
   guias:
     - lr-esvaziar-agua
     - lr-limpar-filtro-bomba
     - lr-verificar-mangueira-escoamento
   sources:
-    - url: https://www.macorlux.pt/bizizi1/img_upload/Manuais/74173/74173.pdf
-      titulo: Teka TKD 1480 INOX — Manual de instruções, máquina de lavar roupa (ES/PT/EN)
-      pagina: "70"
-      consultado_em: 2026-11-05
-      documento_oficial:
-        fabricante: teka
-        identificacao: Manual com a marca TEKA e o modelo TKD 1480 INOX na capa; a ficha de produto cobre TKD 1280 / TKD 1480.
-        modelos: *a1
-        url_alojamento: https://www.macorlux.pt/bizizi1/img_upload/Manuais/74173/74173.pdf
-        alojado_por: Macorlux
+    - *a1
   ambito: modelos
-  ambito_nota: Teka TKD 1480 e TKD 1280
+  ambito_nota: "Teka gama SPA: TKD 1270, TKD 1280, TKD 1480, TKD 1490 e TKD 1610 WD (manual de serviço MSWM15043)"
   aplicavel_a:
     - brand: teka
       prefixos:
-        - TKD1480
+        - TKD1270
         - TKD1280
+        - TKD1480
+        - TKD1490
+        - TKD1610
